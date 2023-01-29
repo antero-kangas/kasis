@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/antero-kangas/kasis/issues"
   },
-  "homepage": "https://github.com/antero-kangas/kasis#readme",
-  "dependencies": {
-    "antlr4": "^4.12.0-beta.4"
-  }
+  "homepage": "https://github.com/antero-kangas/kasis#readme"
 }
