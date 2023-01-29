@@ -1,0 +1,30 @@
+{
+  "name": "kasis",
+  "version": "1.0.0",
+  "description": "Manuscript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antero-kangas/kasis.git"
+  },
+  "keywords": [
+    "manuscript",
+    "speech",
+    "parser"
+  ],
+  "author": "Antero Kangas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antero-kangas/kasis/issues"
+  },
+  "homepage": "https://github.com/antero-kangas/kasis#readme",
+  "dependencies": {
+    "antlr4": "^4.12.0-beta.4"
+  }
+}
