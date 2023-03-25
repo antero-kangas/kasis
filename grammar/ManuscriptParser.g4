@@ -1,37 +1,71 @@
 parser grammar ManuscriptParser;
+options {
 	tokenVocab = ManuscriptLexer;
 }
 
-manuscript: title? author? date? synopsis? scenes? EOF;
-title: wss sceneHeading eol eol;
-author: replique;
-date: replique;
+manuscript: 
+    titleParagraph? 
+    authorParagraph? 
+    dateParagraph? 
+    synopsisPart?
+    scenesPart? 
+    EOF;
 
-synopsis: Synopsis eol eol (parenthesis+ eol*)+;
-wss: WhiteSpace+;
-eol: WhiteSpace* EOL;
+titleParagraph: wss title eol+;
+title: heading;
+authorParagraph: wss author eol+;
+author: anyText;
+dateParagraph: wss date eol+;
+date: anyText;
 
+synopsisPart: synopsisTitle eol+ synopsisParagraphs?;
+synopsisTitle: Synopsis;
+synopsisParagraphs: (synopsisParagraph+ eol*)+;
+synopsisParagraph: anyText;
+
+wss: WSS;
+eol: wss? EOL;
+
+scenesPart: sceneHeading eol+ scenes?;
+scenesHeading: Scene;
 scenes: scene+;
 
-scene: sceneHeading (parenthesis  | (name replique+)+ )+;
+scene: 
+    sceneHeading eol+ 
+    (
+        (parenthesis eol+)*
+        (wss name eol+ 
+         (
+            ( (wss replique)
+            | parenthesis
+            ) eol+
+         )+
+        )+
+    )+ 
+    ;
 
-sceneHeading:
-    (capitalword | Number | Punctuation)+ 
-    (wss (capitalword | Number | Punctuation)+)* 
-    eol;
+sceneHeading: heading;
 
-capitalword: CapitalWord (Minus CapitalWord)*;
+heading:
+    (CapitalWord | Number | Punctuation | Extra | Minus)+ 
+    (wss (CapitalWord | Number | Punctuation | Extra | Minus)+)* 
+    ;
 
-name: wss capitalWord eol;
-anyWord: 
-    ( CapitalWord 
-    | MinusculeWord 
-    | Number 
-    | LeftParenthesis 
-    | RightParenthesis
-    )+;
-minusculeWord: MinusculeWord;
-anyText: (capitalWord | anyWord)* minusculeword (capitalWord | anyWord)*;
-replique : wss anyText eol;
+name: CapitalWord (wss CapitalWord)*;
+replique : anyTextOrCommand ;
+parenthesis: anyTextOrCommand ;
+//anyTextOrCommand: (anyText | command) (wss? anyText | wss? command)* ;
+anyTextOrCommand: 
+    ( anyText ((wss? command)+ (wss? anyText)?)* 
+    | (command (wss? command)* (wss? anyText)?)+ 
+    )
+    ;
+command: LeftParenthesis wss? anyText wss? RightParenthesis;
 
-parenthesis: anyText eol;
+capitalword: CapitalWord ;
+
+anyText: 
+    (CapitalWord | Number | Punctuation | Extra | Minus | MinusculeWord)+
+    ( wss (CapitalWord | Number | Punctuation | Extra | Minus | MinusculeWord)+
+    )*
+    ;

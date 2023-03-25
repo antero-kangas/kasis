@@ -1,4 +1,4 @@
-                                 MYLLYRANNAN KAUNIS REGINA
+                                 MYLLYRANNAN KAUNIS REGINA 
 
                                        Antero Kangas
                                         21.1.2023
@@ -18,14 +18,20 @@ REGINA ja ENGELBERT eivät saa toisiaan mielestään. Kun he seuraavan kerran ta
 REGINA ja MATILDA ovat tanssiaisissa, mutta he vain istuvat ja odottavat ENGELBERTIA ja ONTREITA. Paljastuu, että REGINA on varannut tanssikortistaan kaikki tanssit pelkästään ENGELBERTILLE ja MATILDA ONTREILLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, ENGELBERT ja ONTREI saapuvat ja hakevat REGINAN ja MATILDAN tanssimaan.
 
 
+KOHTAUKSET
+
 
 KOHTAUS 1: ENSIKOHTAAMINEN
 
-REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan.
+REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan (askelia).
 
+(aurinko paistaa)
 REGINA niiaa nöyrästi ja esittelee kukkiaan.
 
         REGINA
+
+        (itsevarmasti) 
+(itsevarmasti) 
 
     Komea herra. Ostakaa ruusu morsiamellenne.
 
@@ -197,7 +203,7 @@ ENGELBERT ojentaa kengän REGINALLE.
 
     En toki.
 
-    (tauko)
+(tauko)
 
     Kaipaat varmaan tätä kenkää.
 
@@ -238,7 +244,7 @@ ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä.
 
         REGINA
 
-    Minäkin teitä (tauko) – ja tanssiaisia.
+    Minäkin teitä (tauko) - +  - ja tanssiaisia.
 
         ENGELBERT
 
@@ -331,3 +337,5 @@ ENGELBERT ja ONTREI saattavat daaminsa tanssipaikalle.
 Salonkitanssijat, ENGELBERT ja REGINA sekä ONTREI ja MATILDA tanssivat masurkan. Masurkassa on uusia kuvioita.
 
 Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle.
+
+

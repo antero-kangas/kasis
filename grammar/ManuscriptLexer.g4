@@ -1,23 +1,26 @@
 lexer grammar ManuscriptLexer;
-
-channels { ERROR };
+options { 
+    language = 'JavaScript';
+}
 
 MultiLineComment:   '/*' .*? '*/'             -> channel(HIDDEN);
 SingleLineComment:  '//' ~[\r\n\u2028\u2029]* -> channel(HIDDEN);
 
 
-WhiteSpace:         [ \t];
+fragment WhiteSpace: [ \t];
+WSS:				WhiteSpace+ ;
 EOL:                '\r'? '\n';
 Capital:            [A-ZÅÄÖ];
 Minuscule:          [a-zåäö];        
-Digit:              [0-9];
-Punctuation:        [\.,;:!?];
+fragment Digit:     [0-9];
+Punctuation:        [.,;:!?];
 LeftParenthesis:    '(';
 RightParenthesis:   ')';
-Plus:               '+';
+Extra:              [+*=#"|'@€%/];
 Minus:              '-';
 
+Synopsis:           'SYNOPSIS' | 'TIIVISTELMÄ';
+Scene:				'KOHTAUKSET';
 CapitalWord:        Capital+ (Minus Capital+)*;
 Number:             Digit+;
 MinusculeWord:      (Minuscule | Capital)+ (Minus (Minuscule | Capital)+)*;
-Synopsis:           'SYNOPSIS';
