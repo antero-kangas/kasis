@@ -1,4 +1,4 @@
-// Generated from ManuscriptParser.g4 by ANTLR 4.9
+// Generated from java-escape by ANTLR 4.11.1
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -87,6 +87,16 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 */
 	void exitSynopsisPart(ManuscriptParser.SynopsisPartContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link ManuscriptParser#synopsisTitle}.
+	 * @param ctx the parse tree
+	 */
+	void enterSynopsisTitle(ManuscriptParser.SynopsisTitleContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ManuscriptParser#synopsisTitle}.
+	 * @param ctx the parse tree
+	 */
+	void exitSynopsisTitle(ManuscriptParser.SynopsisTitleContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link ManuscriptParser#synopsisParagraphs}.
 	 * @param ctx the parse tree
 	 */
@@ -136,6 +146,16 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitScenesPart(ManuscriptParser.ScenesPartContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ManuscriptParser#scenesHeading}.
+	 * @param ctx the parse tree
+	 */
+	void enterScenesHeading(ManuscriptParser.ScenesHeadingContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ManuscriptParser#scenesHeading}.
+	 * @param ctx the parse tree
+	 */
+	void exitScenesHeading(ManuscriptParser.ScenesHeadingContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ManuscriptParser#scenes}.
 	 * @param ctx the parse tree
@@ -207,15 +227,15 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 */
 	void exitParenthesis(ManuscriptParser.ParenthesisContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ManuscriptParser#anyTextOrCommand}.
+	 * Enter a parse tree produced by {@link ManuscriptParser#nonCapitalTextOrCommand}.
 	 * @param ctx the parse tree
 	 */
-	void enterAnyTextOrCommand(ManuscriptParser.AnyTextOrCommandContext ctx);
+	void enterNonCapitalTextOrCommand(ManuscriptParser.NonCapitalTextOrCommandContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ManuscriptParser#anyTextOrCommand}.
+	 * Exit a parse tree produced by {@link ManuscriptParser#nonCapitalTextOrCommand}.
 	 * @param ctx the parse tree
 	 */
-	void exitAnyTextOrCommand(ManuscriptParser.AnyTextOrCommandContext ctx);
+	void exitNonCapitalTextOrCommand(ManuscriptParser.NonCapitalTextOrCommandContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ManuscriptParser#command}.
 	 * @param ctx the parse tree
@@ -227,23 +247,23 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 */
 	void exitCommand(ManuscriptParser.CommandContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ManuscriptParser#capitalword}.
+	 * Enter a parse tree produced by {@link ManuscriptParser#nonCapitalWord}.
 	 * @param ctx the parse tree
 	 */
-	void enterCapitalword(ManuscriptParser.CapitalwordContext ctx);
+	void enterNonCapitalWord(ManuscriptParser.NonCapitalWordContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ManuscriptParser#capitalword}.
+	 * Exit a parse tree produced by {@link ManuscriptParser#nonCapitalWord}.
 	 * @param ctx the parse tree
 	 */
-	void exitCapitalword(ManuscriptParser.CapitalwordContext ctx);
+	void exitNonCapitalWord(ManuscriptParser.NonCapitalWordContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ManuscriptParser#anyText}.
+	 * Enter a parse tree produced by {@link ManuscriptParser#nonCapitalText}.
 	 * @param ctx the parse tree
 	 */
-	void enterAnyText(ManuscriptParser.AnyTextContext ctx);
+	void enterNonCapitalText(ManuscriptParser.NonCapitalTextContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ManuscriptParser#anyText}.
+	 * Exit a parse tree produced by {@link ManuscriptParser#nonCapitalText}.
 	 * @param ctx the parse tree
 	 */
-	void exitAnyText(ManuscriptParser.AnyTextContext ctx);
+	void exitNonCapitalText(ManuscriptParser.NonCapitalTextContext ctx);
 }

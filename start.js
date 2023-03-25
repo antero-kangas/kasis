@@ -4,9 +4,9 @@ import parseManuscript from './js/parseManuscript.js';
 async function main(){
 	const args = process.argv.slice(2);
 	console.log(args)
-	const manuscriptFilename = args[0];
+	//const manuscriptFilename = args[0];
 
-  
+  	const manuscriptFilename = '/data/data/com.termux/files/home/git/kasis/test/myllyrannan-kaunis-regina.txt';
 	// Calling the readFileSync() method
 	// to read 'input.txt' file
 	const manuscriptText = readFileSync(manuscriptFilename,

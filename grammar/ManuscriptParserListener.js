@@ -1,4 +1,4 @@
-// Generated from ManuscriptParser.g4 by ANTLR 4.9
+// Generated from java-escape by ANTLR 4.11.1
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
@@ -203,12 +203,12 @@ export default class ManuscriptParserListener extends antlr4.tree.ParseTreeListe
 	}
 
 
-	// Enter a parse tree produced by ManuscriptParser#anyTextOrCommand.
-	enterAnyTextOrCommand(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#nonCapitalTextOrCommand.
+	enterNonCapitalTextOrCommand(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#anyTextOrCommand.
-	exitAnyTextOrCommand(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#nonCapitalTextOrCommand.
+	exitNonCapitalTextOrCommand(ctx) {
 	}
 
 
@@ -221,21 +221,21 @@ export default class ManuscriptParserListener extends antlr4.tree.ParseTreeListe
 	}
 
 
-	// Enter a parse tree produced by ManuscriptParser#capitalword.
-	enterCapitalword(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#nonCapitalWord.
+	enterNonCapitalWord(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#capitalword.
-	exitCapitalword(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#nonCapitalWord.
+	exitNonCapitalWord(ctx) {
 	}
 
 
-	// Enter a parse tree produced by ManuscriptParser#anyText.
-	enterAnyText(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#nonCapitalText.
+	enterNonCapitalText(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#anyText.
-	exitAnyText(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#nonCapitalText.
+	exitNonCapitalText(ctx) {
 	}
 
 

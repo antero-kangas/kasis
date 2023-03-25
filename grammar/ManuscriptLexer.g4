@@ -16,11 +16,11 @@ fragment Digit:     [0-9];
 Punctuation:        [.,;:!?];
 LeftParenthesis:    '(';
 RightParenthesis:   ')';
-Extra:              [+*=#"|'@€%/];
-Minus:              '-';
+fragment Minus:     '-';
+Extra:              [+*=#"|'@€%/] | Minus ;
 
 Synopsis:           'SYNOPSIS' | 'TIIVISTELMÄ';
 Scene:				'KOHTAUKSET';
-CapitalWord:        Capital+ (Minus Capital+)*;
+CapitalWord:        Capital+;
 Number:             Digit+;
-MinusculeWord:      (Minuscule | Capital)+ (Minus (Minuscule | Capital)+)*;
+//MinusculeWord:      (Minuscule | Capital)* Minuscule (Minuscule | Capital)*;

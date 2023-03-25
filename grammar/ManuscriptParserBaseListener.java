@@ -1,4 +1,4 @@
-// Generated from ManuscriptParser.g4 by ANTLR 4.9
+// Generated from java-escape by ANTLR 4.11.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -9,6 +9,7 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
+@SuppressWarnings("CheckReturnValue")
 public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	/**
 	 * {@inheritDoc}
@@ -111,6 +112,18 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterSynopsisTitle(ManuscriptParser.SynopsisTitleContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSynopsisTitle(ManuscriptParser.SynopsisTitleContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterSynopsisParagraphs(ManuscriptParser.SynopsisParagraphsContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -166,6 +179,18 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitScenesPart(ManuscriptParser.ScenesPartContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterScenesHeading(ManuscriptParser.ScenesHeadingContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitScenesHeading(ManuscriptParser.ScenesHeadingContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -255,13 +280,13 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAnyTextOrCommand(ManuscriptParser.AnyTextOrCommandContext ctx) { }
+	@Override public void enterNonCapitalTextOrCommand(ManuscriptParser.NonCapitalTextOrCommandContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAnyTextOrCommand(ManuscriptParser.AnyTextOrCommandContext ctx) { }
+	@Override public void exitNonCapitalTextOrCommand(ManuscriptParser.NonCapitalTextOrCommandContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -279,25 +304,25 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCapitalword(ManuscriptParser.CapitalwordContext ctx) { }
+	@Override public void enterNonCapitalWord(ManuscriptParser.NonCapitalWordContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCapitalword(ManuscriptParser.CapitalwordContext ctx) { }
+	@Override public void exitNonCapitalWord(ManuscriptParser.NonCapitalWordContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAnyText(ManuscriptParser.AnyTextContext ctx) { }
+	@Override public void enterNonCapitalText(ManuscriptParser.NonCapitalTextContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAnyText(ManuscriptParser.AnyTextContext ctx) { }
+	@Override public void exitNonCapitalText(ManuscriptParser.NonCapitalTextContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

@@ -1,208 +1,104 @@
-// Generated from ManuscriptParser.g4 by ANTLR 4.9
+// Generated from java-escape by ANTLR 4.11.1
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import ManuscriptParserListener from './ManuscriptParserListener.js';
-
-const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
-    "\u5964\u0003\u0012\u012a\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004",
-    "\u0004\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t",
-    "\u0007\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004",
-    "\f\t\f\u0004\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010",
-    "\t\u0010\u0004\u0011\t\u0011\u0004\u0012\t\u0012\u0004\u0013\t\u0013",
-    "\u0004\u0014\t\u0014\u0004\u0015\t\u0015\u0004\u0016\t\u0016\u0004\u0017",
-    "\t\u0017\u0004\u0018\t\u0018\u0004\u0019\t\u0019\u0004\u001a\t\u001a",
-    "\u0004\u001b\t\u001b\u0003\u0002\u0005\u00028\n\u0002\u0003\u0002\u0005",
-    "\u0002;\n\u0002\u0003\u0002\u0005\u0002>\n\u0002\u0003\u0002\u0005\u0002",
-    "A\n\u0002\u0003\u0002\u0005\u0002D\n\u0002\u0003\u0002\u0003\u0002\u0003",
-    "\u0003\u0003\u0003\u0003\u0003\u0006\u0003K\n\u0003\r\u0003\u000e\u0003",
-    "L\u0003\u0004\u0003\u0004\u0003\u0005\u0003\u0005\u0003\u0005\u0006",
-    "\u0005T\n\u0005\r\u0005\u000e\u0005U\u0003\u0006\u0003\u0006\u0003\u0007",
-    "\u0003\u0007\u0003\u0007\u0006\u0007]\n\u0007\r\u0007\u000e\u0007^\u0003",
-    "\b\u0003\b\u0003\t\u0003\t\u0006\te\n\t\r\t\u000e\tf\u0003\t\u0005\t",
-    "j\n\t\u0003\n\u0003\n\u0003\u000b\u0006\u000bo\n\u000b\r\u000b\u000e",
-    "\u000bp\u0003\u000b\u0007\u000bt\n\u000b\f\u000b\u000e\u000bw\u000b",
-    "\u000b\u0006\u000by\n\u000b\r\u000b\u000e\u000bz\u0003\f\u0003\f\u0003",
-    "\r\u0003\r\u0003\u000e\u0005\u000e\u0082\n\u000e\u0003\u000e\u0003\u000e",
-    "\u0003\u000f\u0003\u000f\u0006\u000f\u0088\n\u000f\r\u000f\u000e\u000f",
-    "\u0089\u0003\u000f\u0005\u000f\u008d\n\u000f\u0003\u0010\u0003\u0010",
-    "\u0003\u0011\u0006\u0011\u0092\n\u0011\r\u0011\u000e\u0011\u0093\u0003",
-    "\u0012\u0003\u0012\u0006\u0012\u0098\n\u0012\r\u0012\u000e\u0012\u0099",
-    "\u0003\u0012\u0003\u0012\u0006\u0012\u009e\n\u0012\r\u0012\u000e\u0012",
-    "\u009f\u0007\u0012\u00a2\n\u0012\f\u0012\u000e\u0012\u00a5\u000b\u0012",
-    "\u0003\u0012\u0003\u0012\u0003\u0012\u0006\u0012\u00aa\n\u0012\r\u0012",
-    "\u000e\u0012\u00ab\u0003\u0012\u0003\u0012\u0003\u0012\u0003\u0012\u0005",
-    "\u0012\u00b2\n\u0012\u0003\u0012\u0006\u0012\u00b5\n\u0012\r\u0012\u000e",
-    "\u0012\u00b6\u0006\u0012\u00b9\n\u0012\r\u0012\u000e\u0012\u00ba\u0006",
-    "\u0012\u00bd\n\u0012\r\u0012\u000e\u0012\u00be\u0006\u0012\u00c1\n\u0012",
-    "\r\u0012\u000e\u0012\u00c2\u0003\u0013\u0003\u0013\u0003\u0014\u0006",
-    "\u0014\u00c8\n\u0014\r\u0014\u000e\u0014\u00c9\u0003\u0014\u0003\u0014",
-    "\u0006\u0014\u00ce\n\u0014\r\u0014\u000e\u0014\u00cf\u0007\u0014\u00d2",
-    "\n\u0014\f\u0014\u000e\u0014\u00d5\u000b\u0014\u0003\u0015\u0003\u0015",
-    "\u0003\u0015\u0003\u0015\u0007\u0015\u00db\n\u0015\f\u0015\u000e\u0015",
-    "\u00de\u000b\u0015\u0003\u0016\u0003\u0016\u0003\u0017\u0003\u0017\u0003",
-    "\u0018\u0003\u0018\u0005\u0018\u00e6\n\u0018\u0003\u0018\u0006\u0018",
-    "\u00e9\n\u0018\r\u0018\u000e\u0018\u00ea\u0003\u0018\u0005\u0018\u00ee",
-    "\n\u0018\u0003\u0018\u0005\u0018\u00f1\n\u0018\u0007\u0018\u00f3\n\u0018",
-    "\f\u0018\u000e\u0018\u00f6\u000b\u0018\u0003\u0018\u0003\u0018\u0005",
-    "\u0018\u00fa\n\u0018\u0003\u0018\u0007\u0018\u00fd\n\u0018\f\u0018\u000e",
-    "\u0018\u0100\u000b\u0018\u0003\u0018\u0005\u0018\u0103\n\u0018\u0003",
-    "\u0018\u0005\u0018\u0106\n\u0018\u0006\u0018\u0108\n\u0018\r\u0018\u000e",
-    "\u0018\u0109\u0005\u0018\u010c\n\u0018\u0003\u0019\u0003\u0019\u0005",
-    "\u0019\u0110\n\u0019\u0003\u0019\u0003\u0019\u0005\u0019\u0114\n\u0019",
-    "\u0003\u0019\u0003\u0019\u0003\u001a\u0003\u001a\u0003\u001b\u0006\u001b",
-    "\u011b\n\u001b\r\u001b\u000e\u001b\u011c\u0003\u001b\u0003\u001b\u0006",
-    "\u001b\u0121\n\u001b\r\u001b\u000e\u001b\u0122\u0007\u001b\u0125\n\u001b",
-    "\f\u001b\u000e\u001b\u0128\u000b\u001b\u0003\u001b\u0002\u0002\u001c",
-    "\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0016\u0018\u001a\u001c",
-    "\u001e \"$&(*,.024\u0002\u0004\u0005\u0002\t\t\f\r\u0010\u0011\u0005",
-    "\u0002\t\t\f\r\u0010\u0012\u0002\u013d\u00027\u0003\u0002\u0002\u0002",
-    "\u0004G\u0003\u0002\u0002\u0002\u0006N\u0003\u0002\u0002\u0002\bP\u0003",
-    "\u0002\u0002\u0002\nW\u0003\u0002\u0002\u0002\fY\u0003\u0002\u0002\u0002",
-    "\u000e`\u0003\u0002\u0002\u0002\u0010b\u0003\u0002\u0002\u0002\u0012",
-    "k\u0003\u0002\u0002\u0002\u0014x\u0003\u0002\u0002\u0002\u0016|\u0003",
-    "\u0002\u0002\u0002\u0018~\u0003\u0002\u0002\u0002\u001a\u0081\u0003",
-    "\u0002\u0002\u0002\u001c\u0085\u0003\u0002\u0002\u0002\u001e\u008e\u0003",
-    "\u0002\u0002\u0002 \u0091\u0003\u0002\u0002\u0002\"\u0095\u0003\u0002",
-    "\u0002\u0002$\u00c4\u0003\u0002\u0002\u0002&\u00c7\u0003\u0002\u0002",
-    "\u0002(\u00d6\u0003\u0002\u0002\u0002*\u00df\u0003\u0002\u0002\u0002",
-    ",\u00e1\u0003\u0002\u0002\u0002.\u010b\u0003\u0002\u0002\u00020\u010d",
-    "\u0003\u0002\u0002\u00022\u0117\u0003\u0002\u0002\u00024\u011a\u0003",
-    "\u0002\u0002\u000268\u0005\u0004\u0003\u000276\u0003\u0002\u0002\u0002",
-    "78\u0003\u0002\u0002\u00028:\u0003\u0002\u0002\u00029;\u0005\b\u0005",
-    "\u0002:9\u0003\u0002\u0002\u0002:;\u0003\u0002\u0002\u0002;=\u0003\u0002",
-    "\u0002\u0002<>\u0005\f\u0007\u0002=<\u0003\u0002\u0002\u0002=>\u0003",
-    "\u0002\u0002\u0002>@\u0003\u0002\u0002\u0002?A\u0005\u0010\t\u0002@",
-    "?\u0003\u0002\u0002\u0002@A\u0003\u0002\u0002\u0002AC\u0003\u0002\u0002",
-    "\u0002BD\u0005\u001c\u000f\u0002CB\u0003\u0002\u0002\u0002CD\u0003\u0002",
-    "\u0002\u0002DE\u0003\u0002\u0002\u0002EF\u0007\u0002\u0002\u0003F\u0003",
-    "\u0003\u0002\u0002\u0002GH\u0005\u0018\r\u0002HJ\u0005\u0006\u0004\u0002",
-    "IK\u0005\u001a\u000e\u0002JI\u0003\u0002\u0002\u0002KL\u0003\u0002\u0002",
-    "\u0002LJ\u0003\u0002\u0002\u0002LM\u0003\u0002\u0002\u0002M\u0005\u0003",
-    "\u0002\u0002\u0002NO\u0005&\u0014\u0002O\u0007\u0003\u0002\u0002\u0002",
-    "PQ\u0005\u0018\r\u0002QS\u0005\n\u0006\u0002RT\u0005\u001a\u000e\u0002",
-    "SR\u0003\u0002\u0002\u0002TU\u0003\u0002\u0002\u0002US\u0003\u0002\u0002",
-    "\u0002UV\u0003\u0002\u0002\u0002V\t\u0003\u0002\u0002\u0002WX\u0005",
-    "4\u001b\u0002X\u000b\u0003\u0002\u0002\u0002YZ\u0005\u0018\r\u0002Z",
-    "\\\u0005\u000e\b\u0002[]\u0005\u001a\u000e\u0002\\[\u0003\u0002\u0002",
-    "\u0002]^\u0003\u0002\u0002\u0002^\\\u0003\u0002\u0002\u0002^_\u0003",
-    "\u0002\u0002\u0002_\r\u0003\u0002\u0002\u0002`a\u00054\u001b\u0002a",
-    "\u000f\u0003\u0002\u0002\u0002bd\u0005\u0012\n\u0002ce\u0005\u001a\u000e",
-    "\u0002dc\u0003\u0002\u0002\u0002ef\u0003\u0002\u0002\u0002fd\u0003\u0002",
-    "\u0002\u0002fg\u0003\u0002\u0002\u0002gi\u0003\u0002\u0002\u0002hj\u0005",
-    "\u0014\u000b\u0002ih\u0003\u0002\u0002\u0002ij\u0003\u0002\u0002\u0002",
-    "j\u0011\u0003\u0002\u0002\u0002kl\u0007\u000e\u0002\u0002l\u0013\u0003",
-    "\u0002\u0002\u0002mo\u0005\u0016\f\u0002nm\u0003\u0002\u0002\u0002o",
-    "p\u0003\u0002\u0002\u0002pn\u0003\u0002\u0002\u0002pq\u0003\u0002\u0002",
-    "\u0002qu\u0003\u0002\u0002\u0002rt\u0005\u001a\u000e\u0002sr\u0003\u0002",
-    "\u0002\u0002tw\u0003\u0002\u0002\u0002us\u0003\u0002\u0002\u0002uv\u0003",
-    "\u0002\u0002\u0002vy\u0003\u0002\u0002\u0002wu\u0003\u0002\u0002\u0002",
-    "xn\u0003\u0002\u0002\u0002yz\u0003\u0002\u0002\u0002zx\u0003\u0002\u0002",
-    "\u0002z{\u0003\u0002\u0002\u0002{\u0015\u0003\u0002\u0002\u0002|}\u0005",
-    "4\u001b\u0002}\u0017\u0003\u0002\u0002\u0002~\u007f\u0007\u0005\u0002",
-    "\u0002\u007f\u0019\u0003\u0002\u0002\u0002\u0080\u0082\u0005\u0018\r",
-    "\u0002\u0081\u0080\u0003\u0002\u0002\u0002\u0081\u0082\u0003\u0002\u0002",
-    "\u0002\u0082\u0083\u0003\u0002\u0002\u0002\u0083\u0084\u0007\u0006\u0002",
-    "\u0002\u0084\u001b\u0003\u0002\u0002\u0002\u0085\u0087\u0005$\u0013",
-    "\u0002\u0086\u0088\u0005\u001a\u000e\u0002\u0087\u0086\u0003\u0002\u0002",
-    "\u0002\u0088\u0089\u0003\u0002\u0002\u0002\u0089\u0087\u0003\u0002\u0002",
-    "\u0002\u0089\u008a\u0003\u0002\u0002\u0002\u008a\u008c\u0003\u0002\u0002",
-    "\u0002\u008b\u008d\u0005 \u0011\u0002\u008c\u008b\u0003\u0002\u0002",
-    "\u0002\u008c\u008d\u0003\u0002\u0002\u0002\u008d\u001d\u0003\u0002\u0002",
-    "\u0002\u008e\u008f\u0007\u000f\u0002\u0002\u008f\u001f\u0003\u0002\u0002",
-    "\u0002\u0090\u0092\u0005\"\u0012\u0002\u0091\u0090\u0003\u0002\u0002",
-    "\u0002\u0092\u0093\u0003\u0002\u0002\u0002\u0093\u0091\u0003\u0002\u0002",
-    "\u0002\u0093\u0094\u0003\u0002\u0002\u0002\u0094!\u0003\u0002\u0002",
-    "\u0002\u0095\u0097\u0005$\u0013\u0002\u0096\u0098\u0005\u001a\u000e",
-    "\u0002\u0097\u0096\u0003\u0002\u0002\u0002\u0098\u0099\u0003\u0002\u0002",
-    "\u0002\u0099\u0097\u0003\u0002\u0002\u0002\u0099\u009a\u0003\u0002\u0002",
-    "\u0002\u009a\u00c0\u0003\u0002\u0002\u0002\u009b\u009d\u0005,\u0017",
-    "\u0002\u009c\u009e\u0005\u001a\u000e\u0002\u009d\u009c\u0003\u0002\u0002",
-    "\u0002\u009e\u009f\u0003\u0002\u0002\u0002\u009f\u009d\u0003\u0002\u0002",
-    "\u0002\u009f\u00a0\u0003\u0002\u0002\u0002\u00a0\u00a2\u0003\u0002\u0002",
-    "\u0002\u00a1\u009b\u0003\u0002\u0002\u0002\u00a2\u00a5\u0003\u0002\u0002",
-    "\u0002\u00a3\u00a1\u0003\u0002\u0002\u0002\u00a3\u00a4\u0003\u0002\u0002",
-    "\u0002\u00a4\u00bc\u0003\u0002\u0002\u0002\u00a5\u00a3\u0003\u0002\u0002",
-    "\u0002\u00a6\u00a7\u0005\u0018\r\u0002\u00a7\u00a9\u0005(\u0015\u0002",
-    "\u00a8\u00aa\u0005\u001a\u000e\u0002\u00a9\u00a8\u0003\u0002\u0002\u0002",
-    "\u00aa\u00ab\u0003\u0002\u0002\u0002\u00ab\u00a9\u0003\u0002\u0002\u0002",
-    "\u00ab\u00ac\u0003\u0002\u0002\u0002\u00ac\u00b8\u0003\u0002\u0002\u0002",
-    "\u00ad\u00ae\u0005\u0018\r\u0002\u00ae\u00af\u0005*\u0016\u0002\u00af",
-    "\u00b2\u0003\u0002\u0002\u0002\u00b0\u00b2\u0005,\u0017\u0002\u00b1",
-    "\u00ad\u0003\u0002\u0002\u0002\u00b1\u00b0\u0003\u0002\u0002\u0002\u00b2",
-    "\u00b4\u0003\u0002\u0002\u0002\u00b3\u00b5\u0005\u001a\u000e\u0002\u00b4",
-    "\u00b3\u0003\u0002\u0002\u0002\u00b5\u00b6\u0003\u0002\u0002\u0002\u00b6",
-    "\u00b4\u0003\u0002\u0002\u0002\u00b6\u00b7\u0003\u0002\u0002\u0002\u00b7",
-    "\u00b9\u0003\u0002\u0002\u0002\u00b8\u00b1\u0003\u0002\u0002\u0002\u00b9",
-    "\u00ba\u0003\u0002\u0002\u0002\u00ba\u00b8\u0003\u0002\u0002\u0002\u00ba",
-    "\u00bb\u0003\u0002\u0002\u0002\u00bb\u00bd\u0003\u0002\u0002\u0002\u00bc",
-    "\u00a6\u0003\u0002\u0002\u0002\u00bd\u00be\u0003\u0002\u0002\u0002\u00be",
-    "\u00bc\u0003\u0002\u0002\u0002\u00be\u00bf\u0003\u0002\u0002\u0002\u00bf",
-    "\u00c1\u0003\u0002\u0002\u0002\u00c0\u00a3\u0003\u0002\u0002\u0002\u00c1",
-    "\u00c2\u0003\u0002\u0002\u0002\u00c2\u00c0\u0003\u0002\u0002\u0002\u00c2",
-    "\u00c3\u0003\u0002\u0002\u0002\u00c3#\u0003\u0002\u0002\u0002\u00c4",
-    "\u00c5\u0005&\u0014\u0002\u00c5%\u0003\u0002\u0002\u0002\u00c6\u00c8",
-    "\t\u0002\u0002\u0002\u00c7\u00c6\u0003\u0002\u0002\u0002\u00c8\u00c9",
-    "\u0003\u0002\u0002\u0002\u00c9\u00c7\u0003\u0002\u0002\u0002\u00c9\u00ca",
-    "\u0003\u0002\u0002\u0002\u00ca\u00d3\u0003\u0002\u0002\u0002\u00cb\u00cd",
-    "\u0005\u0018\r\u0002\u00cc\u00ce\t\u0002\u0002\u0002\u00cd\u00cc\u0003",
-    "\u0002\u0002\u0002\u00ce\u00cf\u0003\u0002\u0002\u0002\u00cf\u00cd\u0003",
-    "\u0002\u0002\u0002\u00cf\u00d0\u0003\u0002\u0002\u0002\u00d0\u00d2\u0003",
-    "\u0002\u0002\u0002\u00d1\u00cb\u0003\u0002\u0002\u0002\u00d2\u00d5\u0003",
-    "\u0002\u0002\u0002\u00d3\u00d1\u0003\u0002\u0002\u0002\u00d3\u00d4\u0003",
-    "\u0002\u0002\u0002\u00d4\'\u0003\u0002\u0002\u0002\u00d5\u00d3\u0003",
-    "\u0002\u0002\u0002\u00d6\u00dc\u0007\u0010\u0002\u0002\u00d7\u00d8\u0005",
-    "\u0018\r\u0002\u00d8\u00d9\u0007\u0010\u0002\u0002\u00d9\u00db\u0003",
-    "\u0002\u0002\u0002\u00da\u00d7\u0003\u0002\u0002\u0002\u00db\u00de\u0003",
-    "\u0002\u0002\u0002\u00dc\u00da\u0003\u0002\u0002\u0002\u00dc\u00dd\u0003",
-    "\u0002\u0002\u0002\u00dd)\u0003\u0002\u0002\u0002\u00de\u00dc\u0003",
-    "\u0002\u0002\u0002\u00df\u00e0\u0005.\u0018\u0002\u00e0+\u0003\u0002",
-    "\u0002\u0002\u00e1\u00e2\u0005.\u0018\u0002\u00e2-\u0003\u0002\u0002",
-    "\u0002\u00e3\u00f4\u00054\u001b\u0002\u00e4\u00e6\u0005\u0018\r\u0002",
-    "\u00e5\u00e4\u0003\u0002\u0002\u0002\u00e5\u00e6\u0003\u0002\u0002\u0002",
-    "\u00e6\u00e7\u0003\u0002\u0002\u0002\u00e7\u00e9\u00050\u0019\u0002",
-    "\u00e8\u00e5\u0003\u0002\u0002\u0002\u00e9\u00ea\u0003\u0002\u0002\u0002",
-    "\u00ea\u00e8\u0003\u0002\u0002\u0002\u00ea\u00eb\u0003\u0002\u0002\u0002",
-    "\u00eb\u00f0\u0003\u0002\u0002\u0002\u00ec\u00ee\u0005\u0018\r\u0002",
-    "\u00ed\u00ec\u0003\u0002\u0002\u0002\u00ed\u00ee\u0003\u0002\u0002\u0002",
-    "\u00ee\u00ef\u0003\u0002\u0002\u0002\u00ef\u00f1\u00054\u001b\u0002",
-    "\u00f0\u00ed\u0003\u0002\u0002\u0002\u00f0\u00f1\u0003\u0002\u0002\u0002",
-    "\u00f1\u00f3\u0003\u0002\u0002\u0002\u00f2\u00e8\u0003\u0002\u0002\u0002",
-    "\u00f3\u00f6\u0003\u0002\u0002\u0002\u00f4\u00f2\u0003\u0002\u0002\u0002",
-    "\u00f4\u00f5\u0003\u0002\u0002\u0002\u00f5\u010c\u0003\u0002\u0002\u0002",
-    "\u00f6\u00f4\u0003\u0002\u0002\u0002\u00f7\u00fe\u00050\u0019\u0002",
-    "\u00f8\u00fa\u0005\u0018\r\u0002\u00f9\u00f8\u0003\u0002\u0002\u0002",
-    "\u00f9\u00fa\u0003\u0002\u0002\u0002\u00fa\u00fb\u0003\u0002\u0002\u0002",
-    "\u00fb\u00fd\u00050\u0019\u0002\u00fc\u00f9\u0003\u0002\u0002\u0002",
-    "\u00fd\u0100\u0003\u0002\u0002\u0002\u00fe\u00fc\u0003\u0002\u0002\u0002",
-    "\u00fe\u00ff\u0003\u0002\u0002\u0002\u00ff\u0105\u0003\u0002\u0002\u0002",
-    "\u0100\u00fe\u0003\u0002\u0002\u0002\u0101\u0103\u0005\u0018\r\u0002",
-    "\u0102\u0101\u0003\u0002\u0002\u0002\u0102\u0103\u0003\u0002\u0002\u0002",
-    "\u0103\u0104\u0003\u0002\u0002\u0002\u0104\u0106\u00054\u001b\u0002",
-    "\u0105\u0102\u0003\u0002\u0002\u0002\u0105\u0106\u0003\u0002\u0002\u0002",
-    "\u0106\u0108\u0003\u0002\u0002\u0002\u0107\u00f7\u0003\u0002\u0002\u0002",
-    "\u0108\u0109\u0003\u0002\u0002\u0002\u0109\u0107\u0003\u0002\u0002\u0002",
-    "\u0109\u010a\u0003\u0002\u0002\u0002\u010a\u010c\u0003\u0002\u0002\u0002",
-    "\u010b\u00e3\u0003\u0002\u0002\u0002\u010b\u0107\u0003\u0002\u0002\u0002",
-    "\u010c/\u0003\u0002\u0002\u0002\u010d\u010f\u0007\n\u0002\u0002\u010e",
-    "\u0110\u0005\u0018\r\u0002\u010f\u010e\u0003\u0002\u0002\u0002\u010f",
-    "\u0110\u0003\u0002\u0002\u0002\u0110\u0111\u0003\u0002\u0002\u0002\u0111",
-    "\u0113\u00054\u001b\u0002\u0112\u0114\u0005\u0018\r\u0002\u0113\u0112",
-    "\u0003\u0002\u0002\u0002\u0113\u0114\u0003\u0002\u0002\u0002\u0114\u0115",
-    "\u0003\u0002\u0002\u0002\u0115\u0116\u0007\u000b\u0002\u0002\u01161",
-    "\u0003\u0002\u0002\u0002\u0117\u0118\u0007\u0010\u0002\u0002\u01183",
-    "\u0003\u0002\u0002\u0002\u0119\u011b\t\u0003\u0002\u0002\u011a\u0119",
-    "\u0003\u0002\u0002\u0002\u011b\u011c\u0003\u0002\u0002\u0002\u011c\u011a",
-    "\u0003\u0002\u0002\u0002\u011c\u011d\u0003\u0002\u0002\u0002\u011d\u0126",
-    "\u0003\u0002\u0002\u0002\u011e\u0120\u0005\u0018\r\u0002\u011f\u0121",
-    "\t\u0003\u0002\u0002\u0120\u011f\u0003\u0002\u0002\u0002\u0121\u0122",
-    "\u0003\u0002\u0002\u0002\u0122\u0120\u0003\u0002\u0002\u0002\u0122\u0123",
-    "\u0003\u0002\u0002\u0002\u0123\u0125\u0003\u0002\u0002\u0002\u0124\u011e",
-    "\u0003\u0002\u0002\u0002\u0125\u0128\u0003\u0002\u0002\u0002\u0126\u0124",
-    "\u0003\u0002\u0002\u0002\u0126\u0127\u0003\u0002\u0002\u0002\u01275",
-    "\u0003\u0002\u0002\u0002\u0128\u0126\u0003\u0002\u0002\u000207:=@CL",
-    "U^fipuz\u0081\u0089\u008c\u0093\u0099\u009f\u00a3\u00ab\u00b1\u00b6",
-    "\u00ba\u00be\u00c2\u00c9\u00cf\u00d3\u00dc\u00e5\u00ea\u00ed\u00f0\u00f4",
-    "\u00f9\u00fe\u0102\u0105\u0109\u010b\u010f\u0113\u011c\u0122\u0126"].join("");
+const serializedATN = [4,1,14,295,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,
+4,2,5,7,5,2,6,7,6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,
+2,13,7,13,2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,
+20,7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,1,0,3,0,54,8,0,
+1,0,3,0,57,8,0,1,0,3,0,60,8,0,1,0,3,0,63,8,0,1,0,3,0,66,8,0,1,0,1,0,1,1,
+1,1,1,1,4,1,73,8,1,11,1,12,1,74,1,2,1,2,1,3,1,3,1,3,4,3,82,8,3,11,3,12,3,
+83,1,4,1,4,1,5,1,5,1,5,4,5,91,8,5,11,5,12,5,92,1,6,1,6,1,7,1,7,4,7,99,8,
+7,11,7,12,7,100,1,7,3,7,104,8,7,1,8,1,8,1,9,1,9,4,9,110,8,9,11,9,12,9,111,
+4,9,114,8,9,11,9,12,9,115,1,10,1,10,1,11,1,11,1,12,3,12,123,8,12,1,12,1,
+12,1,13,1,13,4,13,129,8,13,11,13,12,13,130,1,13,3,13,134,8,13,1,14,1,14,
+1,15,4,15,139,8,15,11,15,12,15,140,1,16,1,16,4,16,145,8,16,11,16,12,16,146,
+1,16,1,16,4,16,151,8,16,11,16,12,16,152,5,16,155,8,16,10,16,12,16,158,9,
+16,1,16,1,16,1,16,4,16,163,8,16,11,16,12,16,164,1,16,1,16,1,16,1,16,3,16,
+171,8,16,1,16,4,16,174,8,16,11,16,12,16,175,4,16,178,8,16,11,16,12,16,179,
+4,16,182,8,16,11,16,12,16,183,4,16,186,8,16,11,16,12,16,187,1,17,1,17,1,
+18,4,18,193,8,18,11,18,12,18,194,1,18,1,18,4,18,199,8,18,11,18,12,18,200,
+5,18,203,8,18,10,18,12,18,206,9,18,1,19,1,19,1,19,1,19,5,19,212,8,19,10,
+19,12,19,215,9,19,1,20,1,20,1,21,1,21,1,22,1,22,3,22,223,8,22,1,22,4,22,
+226,8,22,11,22,12,22,227,1,22,3,22,231,8,22,1,22,3,22,234,8,22,5,22,236,
+8,22,10,22,12,22,239,9,22,1,22,1,22,3,22,243,8,22,1,22,5,22,246,8,22,10,
+22,12,22,249,9,22,1,22,3,22,252,8,22,1,22,3,22,255,8,22,4,22,257,8,22,11,
+22,12,22,258,3,22,261,8,22,1,23,1,23,1,23,1,23,4,23,267,8,23,11,23,12,23,
+268,1,23,1,23,1,24,5,24,274,8,24,10,24,12,24,277,9,24,1,24,1,24,5,24,281,
+8,24,10,24,12,24,284,9,24,1,25,1,25,1,25,1,25,5,25,290,8,25,10,25,12,25,
+293,9,25,1,25,0,0,26,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,
+38,40,42,44,46,48,50,0,2,3,0,7,7,10,10,13,14,3,0,6,7,10,10,13,14,314,0,53,
+1,0,0,0,2,69,1,0,0,0,4,76,1,0,0,0,6,78,1,0,0,0,8,85,1,0,0,0,10,87,1,0,0,
+0,12,94,1,0,0,0,14,96,1,0,0,0,16,105,1,0,0,0,18,113,1,0,0,0,20,117,1,0,0,
+0,22,119,1,0,0,0,24,122,1,0,0,0,26,126,1,0,0,0,28,135,1,0,0,0,30,138,1,0,
+0,0,32,142,1,0,0,0,34,189,1,0,0,0,36,192,1,0,0,0,38,207,1,0,0,0,40,216,1,
+0,0,0,42,218,1,0,0,0,44,260,1,0,0,0,46,262,1,0,0,0,48,275,1,0,0,0,50,285,
+1,0,0,0,52,54,3,2,1,0,53,52,1,0,0,0,53,54,1,0,0,0,54,56,1,0,0,0,55,57,3,
+6,3,0,56,55,1,0,0,0,56,57,1,0,0,0,57,59,1,0,0,0,58,60,3,10,5,0,59,58,1,0,
+0,0,59,60,1,0,0,0,60,62,1,0,0,0,61,63,3,14,7,0,62,61,1,0,0,0,62,63,1,0,0,
+0,63,65,1,0,0,0,64,66,3,26,13,0,65,64,1,0,0,0,65,66,1,0,0,0,66,67,1,0,0,
+0,67,68,5,0,0,1,68,1,1,0,0,0,69,70,3,22,11,0,70,72,3,4,2,0,71,73,3,24,12,
+0,72,71,1,0,0,0,73,74,1,0,0,0,74,72,1,0,0,0,74,75,1,0,0,0,75,3,1,0,0,0,76,
+77,3,36,18,0,77,5,1,0,0,0,78,79,3,22,11,0,79,81,3,8,4,0,80,82,3,24,12,0,
+81,80,1,0,0,0,82,83,1,0,0,0,83,81,1,0,0,0,83,84,1,0,0,0,84,7,1,0,0,0,85,
+86,3,50,25,0,86,9,1,0,0,0,87,88,3,22,11,0,88,90,3,12,6,0,89,91,3,24,12,0,
+90,89,1,0,0,0,91,92,1,0,0,0,92,90,1,0,0,0,92,93,1,0,0,0,93,11,1,0,0,0,94,
+95,3,50,25,0,95,13,1,0,0,0,96,98,3,16,8,0,97,99,3,24,12,0,98,97,1,0,0,0,
+99,100,1,0,0,0,100,98,1,0,0,0,100,101,1,0,0,0,101,103,1,0,0,0,102,104,3,
+18,9,0,103,102,1,0,0,0,103,104,1,0,0,0,104,15,1,0,0,0,105,106,5,11,0,0,106,
+17,1,0,0,0,107,109,3,20,10,0,108,110,3,24,12,0,109,108,1,0,0,0,110,111,1,
+0,0,0,111,109,1,0,0,0,111,112,1,0,0,0,112,114,1,0,0,0,113,107,1,0,0,0,114,
+115,1,0,0,0,115,113,1,0,0,0,115,116,1,0,0,0,116,19,1,0,0,0,117,118,3,50,
+25,0,118,21,1,0,0,0,119,120,5,3,0,0,120,23,1,0,0,0,121,123,3,22,11,0,122,
+121,1,0,0,0,122,123,1,0,0,0,123,124,1,0,0,0,124,125,5,4,0,0,125,25,1,0,0,
+0,126,128,3,28,14,0,127,129,3,24,12,0,128,127,1,0,0,0,129,130,1,0,0,0,130,
+128,1,0,0,0,130,131,1,0,0,0,131,133,1,0,0,0,132,134,3,30,15,0,133,132,1,
+0,0,0,133,134,1,0,0,0,134,27,1,0,0,0,135,136,5,12,0,0,136,29,1,0,0,0,137,
+139,3,32,16,0,138,137,1,0,0,0,139,140,1,0,0,0,140,138,1,0,0,0,140,141,1,
+0,0,0,141,31,1,0,0,0,142,144,3,34,17,0,143,145,3,24,12,0,144,143,1,0,0,0,
+145,146,1,0,0,0,146,144,1,0,0,0,146,147,1,0,0,0,147,185,1,0,0,0,148,150,
+3,42,21,0,149,151,3,24,12,0,150,149,1,0,0,0,151,152,1,0,0,0,152,150,1,0,
+0,0,152,153,1,0,0,0,153,155,1,0,0,0,154,148,1,0,0,0,155,158,1,0,0,0,156,
+154,1,0,0,0,156,157,1,0,0,0,157,181,1,0,0,0,158,156,1,0,0,0,159,160,3,22,
+11,0,160,162,3,38,19,0,161,163,3,24,12,0,162,161,1,0,0,0,163,164,1,0,0,0,
+164,162,1,0,0,0,164,165,1,0,0,0,165,177,1,0,0,0,166,167,3,22,11,0,167,168,
+3,40,20,0,168,171,1,0,0,0,169,171,3,42,21,0,170,166,1,0,0,0,170,169,1,0,
+0,0,171,173,1,0,0,0,172,174,3,24,12,0,173,172,1,0,0,0,174,175,1,0,0,0,175,
+173,1,0,0,0,175,176,1,0,0,0,176,178,1,0,0,0,177,170,1,0,0,0,178,179,1,0,
+0,0,179,177,1,0,0,0,179,180,1,0,0,0,180,182,1,0,0,0,181,159,1,0,0,0,182,
+183,1,0,0,0,183,181,1,0,0,0,183,184,1,0,0,0,184,186,1,0,0,0,185,156,1,0,
+0,0,186,187,1,0,0,0,187,185,1,0,0,0,187,188,1,0,0,0,188,33,1,0,0,0,189,190,
+3,36,18,0,190,35,1,0,0,0,191,193,7,0,0,0,192,191,1,0,0,0,193,194,1,0,0,0,
+194,192,1,0,0,0,194,195,1,0,0,0,195,204,1,0,0,0,196,198,3,22,11,0,197,199,
+7,0,0,0,198,197,1,0,0,0,199,200,1,0,0,0,200,198,1,0,0,0,200,201,1,0,0,0,
+201,203,1,0,0,0,202,196,1,0,0,0,203,206,1,0,0,0,204,202,1,0,0,0,204,205,
+1,0,0,0,205,37,1,0,0,0,206,204,1,0,0,0,207,213,5,13,0,0,208,209,3,22,11,
+0,209,210,5,13,0,0,210,212,1,0,0,0,211,208,1,0,0,0,212,215,1,0,0,0,213,211,
+1,0,0,0,213,214,1,0,0,0,214,39,1,0,0,0,215,213,1,0,0,0,216,217,3,44,22,0,
+217,41,1,0,0,0,218,219,3,44,22,0,219,43,1,0,0,0,220,237,3,50,25,0,221,223,
+3,22,11,0,222,221,1,0,0,0,222,223,1,0,0,0,223,224,1,0,0,0,224,226,3,46,23,
+0,225,222,1,0,0,0,226,227,1,0,0,0,227,225,1,0,0,0,227,228,1,0,0,0,228,233,
+1,0,0,0,229,231,3,22,11,0,230,229,1,0,0,0,230,231,1,0,0,0,231,232,1,0,0,
+0,232,234,3,50,25,0,233,230,1,0,0,0,233,234,1,0,0,0,234,236,1,0,0,0,235,
+225,1,0,0,0,236,239,1,0,0,0,237,235,1,0,0,0,237,238,1,0,0,0,238,261,1,0,
+0,0,239,237,1,0,0,0,240,247,3,46,23,0,241,243,3,22,11,0,242,241,1,0,0,0,
+242,243,1,0,0,0,243,244,1,0,0,0,244,246,3,46,23,0,245,242,1,0,0,0,246,249,
+1,0,0,0,247,245,1,0,0,0,247,248,1,0,0,0,248,254,1,0,0,0,249,247,1,0,0,0,
+250,252,3,22,11,0,251,250,1,0,0,0,251,252,1,0,0,0,252,253,1,0,0,0,253,255,
+3,50,25,0,254,251,1,0,0,0,254,255,1,0,0,0,255,257,1,0,0,0,256,240,1,0,0,
+0,257,258,1,0,0,0,258,256,1,0,0,0,258,259,1,0,0,0,259,261,1,0,0,0,260,220,
+1,0,0,0,260,256,1,0,0,0,261,45,1,0,0,0,262,266,5,8,0,0,263,267,3,22,11,0,
+264,267,3,50,25,0,265,267,5,13,0,0,266,263,1,0,0,0,266,264,1,0,0,0,266,265,
+1,0,0,0,267,268,1,0,0,0,268,266,1,0,0,0,268,269,1,0,0,0,269,270,1,0,0,0,
+270,271,5,9,0,0,271,47,1,0,0,0,272,274,7,1,0,0,273,272,1,0,0,0,274,277,1,
+0,0,0,275,273,1,0,0,0,275,276,1,0,0,0,276,278,1,0,0,0,277,275,1,0,0,0,278,
+282,5,6,0,0,279,281,7,1,0,0,280,279,1,0,0,0,281,284,1,0,0,0,282,280,1,0,
+0,0,282,283,1,0,0,0,283,49,1,0,0,0,284,282,1,0,0,0,285,291,3,48,24,0,286,
+287,3,22,11,0,287,288,3,48,24,0,288,290,1,0,0,0,289,286,1,0,0,0,290,293,
+1,0,0,0,291,289,1,0,0,0,291,292,1,0,0,0,292,51,1,0,0,0,293,291,1,0,0,0,45,
+53,56,59,62,65,74,83,92,100,103,111,115,122,130,133,140,146,152,156,164,
+170,175,179,183,187,194,200,204,213,222,227,230,233,237,242,247,251,254,
+258,260,266,268,275,282,291];
 
 
 const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -213,21 +109,20 @@ const sharedContextCache = new antlr4.atn.PredictionContextCache();
 
 export default class ManuscriptParser extends antlr4.Parser {
 
-    static grammarFileName = "ManuscriptParser.g4";
+    static grammarFileName = "java-escape";
     static literalNames = [ null, null, null, null, null, null, null, null, 
-                            "'('", "')'", null, "'-'", null, "'KOHTAUKSET'" ];
+                            "'('", "')'", null, null, "'KOHTAUKSET'" ];
     static symbolicNames = [ null, "MultiLineComment", "SingleLineComment", 
                              "WSS", "EOL", "Capital", "Minuscule", "Punctuation", 
                              "LeftParenthesis", "RightParenthesis", "Extra", 
-                             "Minus", "Synopsis", "Scene", "CapitalWord", 
-                             "Number", "MinusculeWord" ];
+                             "Synopsis", "Scene", "CapitalWord", "Number" ];
     static ruleNames = [ "manuscript", "titleParagraph", "title", "authorParagraph", 
                          "author", "dateParagraph", "date", "synopsisPart", 
                          "synopsisTitle", "synopsisParagraphs", "synopsisParagraph", 
                          "wss", "eol", "scenesPart", "scenesHeading", "scenes", 
                          "scene", "sceneHeading", "heading", "name", "replique", 
-                         "parenthesis", "anyTextOrCommand", "command", "capitalword", 
-                         "anyText" ];
+                         "parenthesis", "nonCapitalTextOrCommand", "command", 
+                         "nonCapitalWord", "nonCapitalText" ];
 
     constructor(input) {
         super(input);
@@ -247,7 +142,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new ManuscriptContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 0, ManuscriptParser.RULE_manuscript);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 53;
 	        this._errHandler.sync(this);
@@ -268,7 +163,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	        this.state = 59;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        if(_la===ManuscriptParser.WSS) {
+	        if(_la===3) {
 	            this.state = 58;
 	            this.dateParagraph();
 	        }
@@ -276,7 +171,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	        this.state = 62;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        if(_la===ManuscriptParser.Synopsis) {
+	        if(_la===11) {
 	            this.state = 61;
 	            this.synopsisPart();
 	        }
@@ -284,7 +179,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	        this.state = 65;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        if((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number))) !== 0)) {
+	        if(_la===12) {
 	            this.state = 64;
 	            this.scenesPart();
 	        }
@@ -310,7 +205,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	titleParagraph() {
 	    let localctx = new TitleParagraphContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 2, ManuscriptParser.RULE_titleParagraph);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 69;
 	        this.wss();
@@ -318,7 +213,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	        this.title();
 	        this.state = 72; 
 	        this._errHandler.sync(this);
-	        _alt = 1;
+	        var _alt = 1;
 	        do {
 	        	switch (_alt) {
 	        	case 1:
@@ -351,7 +246,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	title() {
 	    let localctx = new TitleContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 4, ManuscriptParser.RULE_title);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 76;
 	        this.heading();
@@ -374,7 +269,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	authorParagraph() {
 	    let localctx = new AuthorParagraphContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 6, ManuscriptParser.RULE_authorParagraph);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 78;
 	        this.wss();
@@ -382,7 +277,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	        this.author();
 	        this.state = 81; 
 	        this._errHandler.sync(this);
-	        _alt = 1;
+	        var _alt = 1;
 	        do {
 	        	switch (_alt) {
 	        	case 1:
@@ -415,10 +310,10 @@ export default class ManuscriptParser extends antlr4.Parser {
 	author() {
 	    let localctx = new AuthorContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 8, ManuscriptParser.RULE_author);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 85;
-	        this.anyText();
+	        this.nonCapitalText();
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -439,7 +334,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new DateParagraphContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 10, ManuscriptParser.RULE_dateParagraph);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 87;
 	        this.wss();
@@ -454,7 +349,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	            this.state = 92; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	        } while(_la===ManuscriptParser.WSS || _la===ManuscriptParser.EOL);
+	        } while(_la===3 || _la===4);
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -474,10 +369,10 @@ export default class ManuscriptParser extends antlr4.Parser {
 	date() {
 	    let localctx = new DateContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 12, ManuscriptParser.RULE_date);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 94;
-	        this.anyText();
+	        this.nonCapitalText();
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -498,7 +393,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new SynopsisPartContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 14, ManuscriptParser.RULE_synopsisPart);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 96;
 	        this.synopsisTitle();
@@ -511,15 +406,15 @@ export default class ManuscriptParser extends antlr4.Parser {
 	            this.state = 100; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	        } while(_la===ManuscriptParser.WSS || _la===ManuscriptParser.EOL);
+	        } while(_la===3 || _la===4);
 	        this.state = 103;
 	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,9,this._ctx);
-	        if(la_===1) {
+	        _la = this._input.LA(1);
+	        if((((_la) & ~0x1f) == 0 && ((1 << _la) & 25792) !== 0)) {
 	            this.state = 102;
 	            this.synopsisParagraphs();
-
 	        }
+
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -539,7 +434,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	synopsisTitle() {
 	    let localctx = new SynopsisTitleContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 16, ManuscriptParser.RULE_synopsisTitle);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 105;
 	        this.match(ManuscriptParser.Synopsis);
@@ -563,48 +458,28 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new SynopsisParagraphsContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 18, ManuscriptParser.RULE_synopsisParagraphs);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 118; 
+	        this.state = 113; 
 	        this._errHandler.sync(this);
-	        _alt = 1;
+	        _la = this._input.LA(1);
 	        do {
-	        	switch (_alt) {
-	        	case 1:
-	        		this.state = 108; 
-	        		this._errHandler.sync(this);
-	        		_alt = 1;
-	        		do {
-	        			switch (_alt) {
-	        			case 1:
-	        				this.state = 107;
-	        				this.synopsisParagraph();
-	        				break;
-	        			default:
-	        				throw new antlr4.error.NoViableAltException(this);
-	        			}
-	        			this.state = 110; 
-	        			this._errHandler.sync(this);
-	        			_alt = this._interp.adaptivePredict(this._input,10, this._ctx);
-	        		} while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
-	        		this.state = 115;
-	        		this._errHandler.sync(this);
-	        		_la = this._input.LA(1);
-	        		while(_la===ManuscriptParser.WSS || _la===ManuscriptParser.EOL) {
-	        		    this.state = 112;
-	        		    this.eol();
-	        		    this.state = 117;
-	        		    this._errHandler.sync(this);
-	        		    _la = this._input.LA(1);
-	        		}
-	        		break;
-	        	default:
-	        		throw new antlr4.error.NoViableAltException(this);
-	        	}
-	        	this.state = 120; 
-	        	this._errHandler.sync(this);
-	        	_alt = this._interp.adaptivePredict(this._input,12, this._ctx);
-	        } while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
+	            this.state = 107;
+	            this.synopsisParagraph();
+	            this.state = 109; 
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	            do {
+	                this.state = 108;
+	                this.eol();
+	                this.state = 111; 
+	                this._errHandler.sync(this);
+	                _la = this._input.LA(1);
+	            } while(_la===3 || _la===4);
+	            this.state = 115; 
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        } while((((_la) & ~0x1f) == 0 && ((1 << _la) & 25792) !== 0));
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -624,10 +499,10 @@ export default class ManuscriptParser extends antlr4.Parser {
 	synopsisParagraph() {
 	    let localctx = new SynopsisParagraphContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 20, ManuscriptParser.RULE_synopsisParagraph);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 122;
-	        this.anyText();
+	        this.state = 117;
+	        this.nonCapitalText();
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -647,9 +522,9 @@ export default class ManuscriptParser extends antlr4.Parser {
 	wss() {
 	    let localctx = new WssContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 22, ManuscriptParser.RULE_wss);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 124;
+	        this.state = 119;
 	        this.match(ManuscriptParser.WSS);
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
@@ -671,17 +546,17 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new EolContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 24, ManuscriptParser.RULE_eol);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 127;
+	        this.state = 122;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        if(_la===ManuscriptParser.WSS) {
-	            this.state = 126;
+	        if(_la===3) {
+	            this.state = 121;
 	            this.wss();
 	        }
 
-	        this.state = 129;
+	        this.state = 124;
 	        this.match(ManuscriptParser.EOL);
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
@@ -703,25 +578,25 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new ScenesPartContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 26, ManuscriptParser.RULE_scenesPart);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 131;
-	        this.sceneHeading();
-	        this.state = 133; 
+	        this.state = 126;
+	        this.scenesHeading();
+	        this.state = 128; 
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
 	        do {
-	            this.state = 132;
+	            this.state = 127;
 	            this.eol();
-	            this.state = 135; 
+	            this.state = 130; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	        } while(_la===ManuscriptParser.WSS || _la===ManuscriptParser.EOL);
-	        this.state = 138;
+	        } while(_la===3 || _la===4);
+	        this.state = 133;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        if((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number))) !== 0)) {
-	            this.state = 137;
+	        if((((_la) & ~0x1f) == 0 && ((1 << _la) & 25728) !== 0)) {
+	            this.state = 132;
 	            this.scenes();
 	        }
 
@@ -744,9 +619,9 @@ export default class ManuscriptParser extends antlr4.Parser {
 	scenesHeading() {
 	    let localctx = new ScenesHeadingContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 28, ManuscriptParser.RULE_scenesHeading);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 140;
+	        this.state = 135;
 	        this.match(ManuscriptParser.Scene);
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
@@ -768,18 +643,18 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new ScenesContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 30, ManuscriptParser.RULE_scenes);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 143; 
+	        this.state = 138; 
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
 	        do {
-	            this.state = 142;
+	            this.state = 137;
 	            this.scene();
-	            this.state = 145; 
+	            this.state = 140; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	        } while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number))) !== 0));
+	        } while((((_la) & ~0x1f) == 0 && ((1 << _la) & 25728) !== 0));
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -800,151 +675,150 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new SceneContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 32, ManuscriptParser.RULE_scene);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 147;
+	        this.state = 142;
 	        this.sceneHeading();
-	        this.state = 149; 
+	        this.state = 144; 
 	        this._errHandler.sync(this);
-	        _alt = 1;
+	        var _alt = 1;
 	        do {
 	        	switch (_alt) {
 	        	case 1:
-	        		this.state = 148;
+	        		this.state = 143;
 	        		this.eol();
 	        		break;
 	        	default:
 	        		throw new antlr4.error.NoViableAltException(this);
 	        	}
-	        	this.state = 151; 
+	        	this.state = 146; 
 	        	this._errHandler.sync(this);
-	        	_alt = this._interp.adaptivePredict(this._input,17, this._ctx);
+	        	_alt = this._interp.adaptivePredict(this._input,16, this._ctx);
 	        } while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
-	        this.state = 190; 
+	        this.state = 185; 
 	        this._errHandler.sync(this);
-	        _alt = 1;
+	        var _alt = 1;
 	        do {
 	        	switch (_alt) {
 	        	case 1:
-	        		this.state = 161;
+	        		this.state = 156;
 	        		this._errHandler.sync(this);
 	        		_la = this._input.LA(1);
-	        		while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.LeftParenthesis) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number) | (1 << ManuscriptParser.MinusculeWord))) !== 0)) {
-	        		    this.state = 153;
+	        		while((((_la) & ~0x1f) == 0 && ((1 << _la) & 26048) !== 0)) {
+	        		    this.state = 148;
 	        		    this.parenthesis();
-	        		    this.state = 155; 
+	        		    this.state = 150; 
 	        		    this._errHandler.sync(this);
-	        		    _alt = 1;
+	        		    var _alt = 1;
 	        		    do {
 	        		    	switch (_alt) {
 	        		    	case 1:
-	        		    		this.state = 154;
+	        		    		this.state = 149;
 	        		    		this.eol();
 	        		    		break;
 	        		    	default:
 	        		    		throw new antlr4.error.NoViableAltException(this);
 	        		    	}
-	        		    	this.state = 157; 
+	        		    	this.state = 152; 
 	        		    	this._errHandler.sync(this);
-	        		    	_alt = this._interp.adaptivePredict(this._input,18, this._ctx);
+	        		    	_alt = this._interp.adaptivePredict(this._input,17, this._ctx);
 	        		    } while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
-	        		    this.state = 163;
+	        		    this.state = 158;
 	        		    this._errHandler.sync(this);
 	        		    _la = this._input.LA(1);
 	        		}
-	        		this.state = 186; 
+	        		this.state = 181; 
 	        		this._errHandler.sync(this);
-	        		_alt = 1;
+	        		var _alt = 1;
 	        		do {
 	        			switch (_alt) {
 	        			case 1:
-	        				this.state = 164;
+	        				this.state = 159;
 	        				this.wss();
-	        				this.state = 165;
+	        				this.state = 160;
 	        				this.name();
-	        				this.state = 167; 
+	        				this.state = 162; 
 	        				this._errHandler.sync(this);
-	        				_alt = 1;
+	        				var _alt = 1;
 	        				do {
 	        					switch (_alt) {
 	        					case 1:
-	        						this.state = 166;
+	        						this.state = 161;
 	        						this.eol();
 	        						break;
 	        					default:
 	        						throw new antlr4.error.NoViableAltException(this);
 	        					}
-	        					this.state = 169; 
+	        					this.state = 164; 
 	        					this._errHandler.sync(this);
-	        					_alt = this._interp.adaptivePredict(this._input,20, this._ctx);
+	        					_alt = this._interp.adaptivePredict(this._input,19, this._ctx);
 	        				} while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
-	        				this.state = 182; 
+	        				this.state = 177; 
 	        				this._errHandler.sync(this);
-	        				_alt = 1;
+	        				var _alt = 1;
 	        				do {
 	        					switch (_alt) {
 	        					case 1:
-	        						this.state = 175;
+	        						this.state = 170;
 	        						this._errHandler.sync(this);
 	        						switch(this._input.LA(1)) {
-	        						case ManuscriptParser.WSS:
-	        						    this.state = 171;
+	        						case 3:
+	        						    this.state = 166;
 	        						    this.wss();
-	        						    this.state = 172;
+	        						    this.state = 167;
 	        						    this.replique();
 	        						    break;
-	        						case ManuscriptParser.Punctuation:
-	        						case ManuscriptParser.LeftParenthesis:
-	        						case ManuscriptParser.Extra:
-	        						case ManuscriptParser.Minus:
-	        						case ManuscriptParser.CapitalWord:
-	        						case ManuscriptParser.Number:
-	        						case ManuscriptParser.MinusculeWord:
-	        						    this.state = 174;
+	        						case 6:
+	        						case 7:
+	        						case 8:
+	        						case 10:
+	        						case 13:
+	        						case 14:
+	        						    this.state = 169;
 	        						    this.parenthesis();
 	        						    break;
 	        						default:
 	        						    throw new antlr4.error.NoViableAltException(this);
 	        						}
-	        						this.state = 178; 
+	        						this.state = 173; 
 	        						this._errHandler.sync(this);
-	        						_alt = 1;
+	        						var _alt = 1;
 	        						do {
 	        							switch (_alt) {
 	        							case 1:
-	        								this.state = 177;
+	        								this.state = 172;
 	        								this.eol();
 	        								break;
 	        							default:
 	        								throw new antlr4.error.NoViableAltException(this);
 	        							}
-	        							this.state = 180; 
+	        							this.state = 175; 
 	        							this._errHandler.sync(this);
-	        							_alt = this._interp.adaptivePredict(this._input,22, this._ctx);
+	        							_alt = this._interp.adaptivePredict(this._input,21, this._ctx);
 	        						} while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
 	        						break;
 	        					default:
 	        						throw new antlr4.error.NoViableAltException(this);
 	        					}
-	        					this.state = 184; 
+	        					this.state = 179; 
 	        					this._errHandler.sync(this);
-	        					_alt = this._interp.adaptivePredict(this._input,23, this._ctx);
+	        					_alt = this._interp.adaptivePredict(this._input,22, this._ctx);
 	        				} while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
 	        				break;
 	        			default:
 	        				throw new antlr4.error.NoViableAltException(this);
 	        			}
-	        			this.state = 188; 
+	        			this.state = 183; 
 	        			this._errHandler.sync(this);
-	        			_alt = this._interp.adaptivePredict(this._input,24, this._ctx);
+	        			_alt = this._interp.adaptivePredict(this._input,23, this._ctx);
 	        		} while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
 	        		break;
 	        	default:
 	        		throw new antlr4.error.NoViableAltException(this);
 	        	}
-	        	this.state = 192; 
+	        	this.state = 187; 
 	        	this._errHandler.sync(this);
-	        	_alt = this._interp.adaptivePredict(this._input,25, this._ctx);
+	        	_alt = this._interp.adaptivePredict(this._input,24, this._ctx);
 	        } while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
@@ -965,9 +839,9 @@ export default class ManuscriptParser extends antlr4.Parser {
 	sceneHeading() {
 	    let localctx = new SceneHeadingContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 34, ManuscriptParser.RULE_sceneHeading);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 194;
+	        this.state = 189;
 	        this.heading();
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
@@ -989,53 +863,53 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new HeadingContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 36, ManuscriptParser.RULE_heading);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 197; 
+	        this.state = 192; 
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
 	        do {
-	            this.state = 196;
+	            this.state = 191;
 	            _la = this._input.LA(1);
-	            if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number))) !== 0))) {
+	            if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & 25728) !== 0))) {
 	            this._errHandler.recoverInline(this);
 	            }
 	            else {
 	            	this._errHandler.reportMatch(this);
 	                this.consume();
 	            }
-	            this.state = 199; 
+	            this.state = 194; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	        } while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number))) !== 0));
-	        this.state = 209;
+	        } while((((_la) & ~0x1f) == 0 && ((1 << _la) & 25728) !== 0));
+	        this.state = 204;
 	        this._errHandler.sync(this);
-	        _alt = this._interp.adaptivePredict(this._input,28,this._ctx)
+	        var _alt = this._interp.adaptivePredict(this._input,27,this._ctx)
 	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
 	            if(_alt===1) {
-	                this.state = 201;
+	                this.state = 196;
 	                this.wss();
-	                this.state = 203; 
+	                this.state = 198; 
 	                this._errHandler.sync(this);
 	                _la = this._input.LA(1);
 	                do {
-	                    this.state = 202;
+	                    this.state = 197;
 	                    _la = this._input.LA(1);
-	                    if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number))) !== 0))) {
+	                    if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & 25728) !== 0))) {
 	                    this._errHandler.recoverInline(this);
 	                    }
 	                    else {
 	                    	this._errHandler.reportMatch(this);
 	                        this.consume();
 	                    }
-	                    this.state = 205; 
+	                    this.state = 200; 
 	                    this._errHandler.sync(this);
 	                    _la = this._input.LA(1);
-	                } while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number))) !== 0)); 
+	                } while((((_la) & ~0x1f) == 0 && ((1 << _la) & 25728) !== 0)); 
 	            }
-	            this.state = 211;
+	            this.state = 206;
 	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,28,this._ctx);
+	            _alt = this._interp.adaptivePredict(this._input,27,this._ctx);
 	        }
 
 	    } catch (re) {
@@ -1057,23 +931,23 @@ export default class ManuscriptParser extends antlr4.Parser {
 	name() {
 	    let localctx = new NameContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 38, ManuscriptParser.RULE_name);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 212;
+	        this.state = 207;
 	        this.match(ManuscriptParser.CapitalWord);
-	        this.state = 218;
+	        this.state = 213;
 	        this._errHandler.sync(this);
-	        _alt = this._interp.adaptivePredict(this._input,29,this._ctx)
+	        var _alt = this._interp.adaptivePredict(this._input,28,this._ctx)
 	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
 	            if(_alt===1) {
-	                this.state = 213;
+	                this.state = 208;
 	                this.wss();
-	                this.state = 214;
+	                this.state = 209;
 	                this.match(ManuscriptParser.CapitalWord); 
 	            }
-	            this.state = 220;
+	            this.state = 215;
 	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,29,this._ctx);
+	            _alt = this._interp.adaptivePredict(this._input,28,this._ctx);
 	        }
 
 	    } catch (re) {
@@ -1095,10 +969,10 @@ export default class ManuscriptParser extends antlr4.Parser {
 	replique() {
 	    let localctx = new RepliqueContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 40, ManuscriptParser.RULE_replique);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 221;
-	        this.anyTextOrCommand();
+	        this.state = 216;
+	        this.nonCapitalTextOrCommand();
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -1118,10 +992,10 @@ export default class ManuscriptParser extends antlr4.Parser {
 	parenthesis() {
 	    let localctx = new ParenthesisContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 42, ManuscriptParser.RULE_parenthesis);
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 223;
-	        this.anyTextOrCommand();
+	        this.state = 218;
+	        this.nonCapitalTextOrCommand();
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -1138,123 +1012,122 @@ export default class ManuscriptParser extends antlr4.Parser {
 
 
 
-	anyTextOrCommand() {
-	    let localctx = new AnyTextOrCommandContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 44, ManuscriptParser.RULE_anyTextOrCommand);
+	nonCapitalTextOrCommand() {
+	    let localctx = new NonCapitalTextOrCommandContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 44, ManuscriptParser.RULE_nonCapitalTextOrCommand);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 265;
+	        this.state = 260;
 	        this._errHandler.sync(this);
 	        switch(this._input.LA(1)) {
-	        case ManuscriptParser.Punctuation:
-	        case ManuscriptParser.Extra:
-	        case ManuscriptParser.Minus:
-	        case ManuscriptParser.CapitalWord:
-	        case ManuscriptParser.Number:
-	        case ManuscriptParser.MinusculeWord:
-	            this.state = 225;
-	            this.anyText();
-	            this.state = 242;
+	        case 6:
+	        case 7:
+	        case 10:
+	        case 13:
+	        case 14:
+	            this.state = 220;
+	            this.nonCapitalText();
+	            this.state = 237;
 	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,34,this._ctx)
+	            var _alt = this._interp.adaptivePredict(this._input,33,this._ctx)
 	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
 	                if(_alt===1) {
-	                    this.state = 230; 
+	                    this.state = 225; 
 	                    this._errHandler.sync(this);
-	                    _alt = 1;
+	                    var _alt = 1;
 	                    do {
 	                    	switch (_alt) {
 	                    	case 1:
-	                    		this.state = 227;
+	                    		this.state = 222;
 	                    		this._errHandler.sync(this);
 	                    		_la = this._input.LA(1);
-	                    		if(_la===ManuscriptParser.WSS) {
-	                    		    this.state = 226;
+	                    		if(_la===3) {
+	                    		    this.state = 221;
 	                    		    this.wss();
 	                    		}
 
-	                    		this.state = 229;
+	                    		this.state = 224;
 	                    		this.command();
 	                    		break;
 	                    	default:
 	                    		throw new antlr4.error.NoViableAltException(this);
 	                    	}
-	                    	this.state = 232; 
+	                    	this.state = 227; 
 	                    	this._errHandler.sync(this);
-	                    	_alt = this._interp.adaptivePredict(this._input,31, this._ctx);
+	                    	_alt = this._interp.adaptivePredict(this._input,30, this._ctx);
 	                    } while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
-	                    this.state = 238;
+	                    this.state = 233;
 	                    this._errHandler.sync(this);
-	                    var la_ = this._interp.adaptivePredict(this._input,33,this._ctx);
+	                    var la_ = this._interp.adaptivePredict(this._input,32,this._ctx);
 	                    if(la_===1) {
-	                        this.state = 235;
+	                        this.state = 230;
 	                        this._errHandler.sync(this);
 	                        _la = this._input.LA(1);
-	                        if(_la===ManuscriptParser.WSS) {
-	                            this.state = 234;
+	                        if(_la===3) {
+	                            this.state = 229;
 	                            this.wss();
 	                        }
 
-	                        this.state = 237;
-	                        this.anyText();
+	                        this.state = 232;
+	                        this.nonCapitalText();
 
 	                    } 
 	                }
-	                this.state = 244;
+	                this.state = 239;
 	                this._errHandler.sync(this);
-	                _alt = this._interp.adaptivePredict(this._input,34,this._ctx);
+	                _alt = this._interp.adaptivePredict(this._input,33,this._ctx);
 	            }
 
 	            break;
-	        case ManuscriptParser.LeftParenthesis:
-	            this.state = 261; 
+	        case 8:
+	            this.state = 256; 
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
 	            do {
-	                this.state = 245;
+	                this.state = 240;
 	                this.command();
-	                this.state = 252;
+	                this.state = 247;
 	                this._errHandler.sync(this);
-	                _alt = this._interp.adaptivePredict(this._input,36,this._ctx)
+	                var _alt = this._interp.adaptivePredict(this._input,35,this._ctx)
 	                while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
 	                    if(_alt===1) {
-	                        this.state = 247;
+	                        this.state = 242;
 	                        this._errHandler.sync(this);
 	                        _la = this._input.LA(1);
-	                        if(_la===ManuscriptParser.WSS) {
-	                            this.state = 246;
+	                        if(_la===3) {
+	                            this.state = 241;
 	                            this.wss();
 	                        }
 
-	                        this.state = 249;
+	                        this.state = 244;
 	                        this.command(); 
 	                    }
-	                    this.state = 254;
+	                    this.state = 249;
 	                    this._errHandler.sync(this);
-	                    _alt = this._interp.adaptivePredict(this._input,36,this._ctx);
+	                    _alt = this._interp.adaptivePredict(this._input,35,this._ctx);
 	                }
 
-	                this.state = 259;
+	                this.state = 254;
 	                this._errHandler.sync(this);
-	                var la_ = this._interp.adaptivePredict(this._input,38,this._ctx);
+	                var la_ = this._interp.adaptivePredict(this._input,37,this._ctx);
 	                if(la_===1) {
-	                    this.state = 256;
+	                    this.state = 251;
 	                    this._errHandler.sync(this);
 	                    _la = this._input.LA(1);
-	                    if(_la===ManuscriptParser.WSS) {
-	                        this.state = 255;
+	                    if(_la===3) {
+	                        this.state = 250;
 	                        this.wss();
 	                    }
 
-	                    this.state = 258;
-	                    this.anyText();
+	                    this.state = 253;
+	                    this.nonCapitalText();
 
 	                }
-	                this.state = 263; 
+	                this.state = 258; 
 	                this._errHandler.sync(this);
 	                _la = this._input.LA(1);
-	            } while(_la===ManuscriptParser.LeftParenthesis);
+	            } while(_la===8);
 	            break;
 	        default:
 	            throw new antlr4.error.NoViableAltException(this);
@@ -1279,29 +1152,39 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new CommandContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 46, ManuscriptParser.RULE_command);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 267;
+	        this.state = 262;
 	        this.match(ManuscriptParser.LeftParenthesis);
-	        this.state = 269;
+	        this.state = 266; 
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        if(_la===ManuscriptParser.WSS) {
-	            this.state = 268;
-	            this.wss();
-	        }
+	        do {
+	            this.state = 266;
+	            this._errHandler.sync(this);
+	            var la_ = this._interp.adaptivePredict(this._input,40,this._ctx);
+	            switch(la_) {
+	            case 1:
+	                this.state = 263;
+	                this.wss();
+	                break;
 
-	        this.state = 271;
-	        this.anyText();
-	        this.state = 273;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===ManuscriptParser.WSS) {
-	            this.state = 272;
-	            this.wss();
-	        }
+	            case 2:
+	                this.state = 264;
+	                this.nonCapitalText();
+	                break;
 
-	        this.state = 275;
+	            case 3:
+	                this.state = 265;
+	                this.match(ManuscriptParser.CapitalWord);
+	                break;
+
+	            }
+	            this.state = 268; 
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        } while((((_la) & ~0x1f) == 0 && ((1 << _la) & 25800) !== 0));
+	        this.state = 270;
 	        this.match(ManuscriptParser.RightParenthesis);
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
@@ -1319,13 +1202,54 @@ export default class ManuscriptParser extends antlr4.Parser {
 
 
 
-	capitalword() {
-	    let localctx = new CapitalwordContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 48, ManuscriptParser.RULE_capitalword);
-	    try { let _alt
+	nonCapitalWord() {
+	    let localctx = new NonCapitalWordContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 48, ManuscriptParser.RULE_nonCapitalWord);
+	    var _la = 0; // Token type
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 277;
-	        this.match(ManuscriptParser.CapitalWord);
+	        this.state = 275;
+	        this._errHandler.sync(this);
+	        var _alt = this._interp.adaptivePredict(this._input,42,this._ctx)
+	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+	            if(_alt===1) {
+	                this.state = 272;
+	                _la = this._input.LA(1);
+	                if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & 25792) !== 0))) {
+	                this._errHandler.recoverInline(this);
+	                }
+	                else {
+	                	this._errHandler.reportMatch(this);
+	                    this.consume();
+	                } 
+	            }
+	            this.state = 277;
+	            this._errHandler.sync(this);
+	            _alt = this._interp.adaptivePredict(this._input,42,this._ctx);
+	        }
+
+	        this.state = 278;
+	        this.match(ManuscriptParser.Minuscule);
+	        this.state = 282;
+	        this._errHandler.sync(this);
+	        var _alt = this._interp.adaptivePredict(this._input,43,this._ctx)
+	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+	            if(_alt===1) {
+	                this.state = 279;
+	                _la = this._input.LA(1);
+	                if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & 25792) !== 0))) {
+	                this._errHandler.recoverInline(this);
+	                }
+	                else {
+	                	this._errHandler.reportMatch(this);
+	                    this.consume();
+	                } 
+	            }
+	            this.state = 284;
+	            this._errHandler.sync(this);
+	            _alt = this._interp.adaptivePredict(this._input,43,this._ctx);
+	        }
+
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -1342,69 +1266,26 @@ export default class ManuscriptParser extends antlr4.Parser {
 
 
 
-	anyText() {
-	    let localctx = new AnyTextContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 50, ManuscriptParser.RULE_anyText);
-	    var _la = 0; // Token type
-	    try { let _alt
+	nonCapitalText() {
+	    let localctx = new NonCapitalTextContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 50, ManuscriptParser.RULE_nonCapitalText);
+	    try {
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 280; 
+	        this.state = 285;
+	        this.nonCapitalWord();
+	        this.state = 291;
 	        this._errHandler.sync(this);
-	        _alt = 1;
-	        do {
-	        	switch (_alt) {
-	        	case 1:
-	        		this.state = 279;
-	        		_la = this._input.LA(1);
-	        		if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number) | (1 << ManuscriptParser.MinusculeWord))) !== 0))) {
-	        		this._errHandler.recoverInline(this);
-	        		}
-	        		else {
-	        			this._errHandler.reportMatch(this);
-	        		    this.consume();
-	        		}
-	        		break;
-	        	default:
-	        		throw new antlr4.error.NoViableAltException(this);
-	        	}
-	        	this.state = 282; 
-	        	this._errHandler.sync(this);
-	        	_alt = this._interp.adaptivePredict(this._input,43, this._ctx);
-	        } while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER );
-	        this.state = 292;
-	        this._errHandler.sync(this);
-	        _alt = this._interp.adaptivePredict(this._input,45,this._ctx)
+	        var _alt = this._interp.adaptivePredict(this._input,44,this._ctx)
 	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
 	            if(_alt===1) {
-	                this.state = 284;
+	                this.state = 286;
 	                this.wss();
-	                this.state = 286; 
-	                this._errHandler.sync(this);
-	                _alt = 1;
-	                do {
-	                	switch (_alt) {
-	                	case 1:
-	                		this.state = 285;
-	                		_la = this._input.LA(1);
-	                		if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << ManuscriptParser.Punctuation) | (1 << ManuscriptParser.Extra) | (1 << ManuscriptParser.Minus) | (1 << ManuscriptParser.CapitalWord) | (1 << ManuscriptParser.Number) | (1 << ManuscriptParser.MinusculeWord))) !== 0))) {
-	                		this._errHandler.recoverInline(this);
-	                		}
-	                		else {
-	                			this._errHandler.reportMatch(this);
-	                		    this.consume();
-	                		}
-	                		break;
-	                	default:
-	                		throw new antlr4.error.NoViableAltException(this);
-	                	}
-	                	this.state = 288; 
-	                	this._errHandler.sync(this);
-	                	_alt = this._interp.adaptivePredict(this._input,44, this._ctx);
-	                } while ( _alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER ); 
+	                this.state = 287;
+	                this.nonCapitalWord(); 
 	            }
-	            this.state = 294;
+	            this.state = 293;
 	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,45,this._ctx);
+	            _alt = this._interp.adaptivePredict(this._input,44,this._ctx);
 	        }
 
 	    } catch (re) {
@@ -1435,12 +1316,10 @@ ManuscriptParser.Punctuation = 7;
 ManuscriptParser.LeftParenthesis = 8;
 ManuscriptParser.RightParenthesis = 9;
 ManuscriptParser.Extra = 10;
-ManuscriptParser.Minus = 11;
-ManuscriptParser.Synopsis = 12;
-ManuscriptParser.Scene = 13;
-ManuscriptParser.CapitalWord = 14;
-ManuscriptParser.Number = 15;
-ManuscriptParser.MinusculeWord = 16;
+ManuscriptParser.Synopsis = 11;
+ManuscriptParser.Scene = 12;
+ManuscriptParser.CapitalWord = 13;
+ManuscriptParser.Number = 14;
 
 ManuscriptParser.RULE_manuscript = 0;
 ManuscriptParser.RULE_titleParagraph = 1;
@@ -1464,10 +1343,10 @@ ManuscriptParser.RULE_heading = 18;
 ManuscriptParser.RULE_name = 19;
 ManuscriptParser.RULE_replique = 20;
 ManuscriptParser.RULE_parenthesis = 21;
-ManuscriptParser.RULE_anyTextOrCommand = 22;
+ManuscriptParser.RULE_nonCapitalTextOrCommand = 22;
 ManuscriptParser.RULE_command = 23;
-ManuscriptParser.RULE_capitalword = 24;
-ManuscriptParser.RULE_anyText = 25;
+ManuscriptParser.RULE_nonCapitalWord = 24;
+ManuscriptParser.RULE_nonCapitalText = 25;
 
 class ManuscriptContext extends antlr4.ParserRuleContext {
 
@@ -1673,8 +1552,8 @@ class AuthorContext extends antlr4.ParserRuleContext {
         this.ruleIndex = ManuscriptParser.RULE_author;
     }
 
-	anyText() {
-	    return this.getTypedRuleContext(AnyTextContext,0);
+	nonCapitalText() {
+	    return this.getTypedRuleContext(NonCapitalTextContext,0);
 	};
 
 	enterRule(listener) {
@@ -1758,8 +1637,8 @@ class DateContext extends antlr4.ParserRuleContext {
         this.ruleIndex = ManuscriptParser.RULE_date;
     }
 
-	anyText() {
-	    return this.getTypedRuleContext(AnyTextContext,0);
+	nonCapitalText() {
+	    return this.getTypedRuleContext(NonCapitalTextContext,0);
 	};
 
 	enterRule(listener) {
@@ -1931,8 +1810,8 @@ class SynopsisParagraphContext extends antlr4.ParserRuleContext {
         this.ruleIndex = ManuscriptParser.RULE_synopsisParagraph;
     }
 
-	anyText() {
-	    return this.getTypedRuleContext(AnyTextContext,0);
+	nonCapitalText() {
+	    return this.getTypedRuleContext(NonCapitalTextContext,0);
 	};
 
 	enterRule(listener) {
@@ -2040,8 +1919,8 @@ class ScenesPartContext extends antlr4.ParserRuleContext {
         this.ruleIndex = ManuscriptParser.RULE_scenesPart;
     }
 
-	sceneHeading() {
-	    return this.getTypedRuleContext(SceneHeadingContext,0);
+	scenesHeading() {
+	    return this.getTypedRuleContext(ScenesHeadingContext,0);
 	};
 
 	eol = function(i) {
@@ -2351,18 +2230,6 @@ class HeadingContext extends antlr4.ParserRuleContext {
 	};
 
 
-	Minus = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(ManuscriptParser.Minus);
-	    } else {
-	        return this.getToken(ManuscriptParser.Minus, i);
-	    }
-	};
-
-
 	enterRule(listener) {
 	    if(listener instanceof ManuscriptParserListener ) {
 	        listener.enterHeading(this);
@@ -2448,8 +2315,8 @@ class RepliqueContext extends antlr4.ParserRuleContext {
         this.ruleIndex = ManuscriptParser.RULE_replique;
     }
 
-	anyTextOrCommand() {
-	    return this.getTypedRuleContext(AnyTextOrCommandContext,0);
+	nonCapitalTextOrCommand() {
+	    return this.getTypedRuleContext(NonCapitalTextOrCommandContext,0);
 	};
 
 	enterRule(listener) {
@@ -2483,8 +2350,8 @@ class ParenthesisContext extends antlr4.ParserRuleContext {
         this.ruleIndex = ManuscriptParser.RULE_parenthesis;
     }
 
-	anyTextOrCommand() {
-	    return this.getTypedRuleContext(AnyTextOrCommandContext,0);
+	nonCapitalTextOrCommand() {
+	    return this.getTypedRuleContext(NonCapitalTextOrCommandContext,0);
 	};
 
 	enterRule(listener) {
@@ -2504,7 +2371,7 @@ class ParenthesisContext extends antlr4.ParserRuleContext {
 
 
 
-class AnyTextOrCommandContext extends antlr4.ParserRuleContext {
+class NonCapitalTextOrCommandContext extends antlr4.ParserRuleContext {
 
     constructor(parser, parent, invokingState) {
         if(parent===undefined) {
@@ -2515,17 +2382,17 @@ class AnyTextOrCommandContext extends antlr4.ParserRuleContext {
         }
         super(parent, invokingState);
         this.parser = parser;
-        this.ruleIndex = ManuscriptParser.RULE_anyTextOrCommand;
+        this.ruleIndex = ManuscriptParser.RULE_nonCapitalTextOrCommand;
     }
 
-	anyText = function(i) {
+	nonCapitalText = function(i) {
 	    if(i===undefined) {
 	        i = null;
 	    }
 	    if(i===null) {
-	        return this.getTypedRuleContexts(AnyTextContext);
+	        return this.getTypedRuleContexts(NonCapitalTextContext);
 	    } else {
-	        return this.getTypedRuleContext(AnyTextContext,i);
+	        return this.getTypedRuleContext(NonCapitalTextContext,i);
 	    }
 	};
 
@@ -2553,13 +2420,13 @@ class AnyTextOrCommandContext extends antlr4.ParserRuleContext {
 
 	enterRule(listener) {
 	    if(listener instanceof ManuscriptParserListener ) {
-	        listener.enterAnyTextOrCommand(this);
+	        listener.enterNonCapitalTextOrCommand(this);
 		}
 	}
 
 	exitRule(listener) {
 	    if(listener instanceof ManuscriptParserListener ) {
-	        listener.exitAnyTextOrCommand(this);
+	        listener.exitNonCapitalTextOrCommand(this);
 		}
 	}
 
@@ -2586,10 +2453,6 @@ class CommandContext extends antlr4.ParserRuleContext {
 	    return this.getToken(ManuscriptParser.LeftParenthesis, 0);
 	};
 
-	anyText() {
-	    return this.getTypedRuleContext(AnyTextContext,0);
-	};
-
 	RightParenthesis() {
 	    return this.getToken(ManuscriptParser.RightParenthesis, 0);
 	};
@@ -2604,6 +2467,29 @@ class CommandContext extends antlr4.ParserRuleContext {
 	        return this.getTypedRuleContext(WssContext,i);
 	    }
 	};
+
+	nonCapitalText = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(NonCapitalTextContext);
+	    } else {
+	        return this.getTypedRuleContext(NonCapitalTextContext,i);
+	    }
+	};
+
+	CapitalWord = function(i) {
+		if(i===undefined) {
+			i = null;
+		}
+	    if(i===null) {
+	        return this.getTokens(ManuscriptParser.CapitalWord);
+	    } else {
+	        return this.getToken(ManuscriptParser.CapitalWord, i);
+	    }
+	};
+
 
 	enterRule(listener) {
 	    if(listener instanceof ManuscriptParserListener ) {
@@ -2622,7 +2508,7 @@ class CommandContext extends antlr4.ParserRuleContext {
 
 
 
-class CapitalwordContext extends antlr4.ParserRuleContext {
+class NonCapitalWordContext extends antlr4.ParserRuleContext {
 
     constructor(parser, parent, invokingState) {
         if(parent===undefined) {
@@ -2633,54 +2519,20 @@ class CapitalwordContext extends antlr4.ParserRuleContext {
         }
         super(parent, invokingState);
         this.parser = parser;
-        this.ruleIndex = ManuscriptParser.RULE_capitalword;
+        this.ruleIndex = ManuscriptParser.RULE_nonCapitalWord;
     }
 
-	CapitalWord() {
-	    return this.getToken(ManuscriptParser.CapitalWord, 0);
-	};
-
-	enterRule(listener) {
-	    if(listener instanceof ManuscriptParserListener ) {
-	        listener.enterCapitalword(this);
+	Minuscule = function(i) {
+		if(i===undefined) {
+			i = null;
 		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof ManuscriptParserListener ) {
-	        listener.exitCapitalword(this);
-		}
-	}
-
-
-}
-
-
-
-class AnyTextContext extends antlr4.ParserRuleContext {
-
-    constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
-            parent = null;
-        }
-        if(invokingState===undefined || invokingState===null) {
-            invokingState = -1;
-        }
-        super(parent, invokingState);
-        this.parser = parser;
-        this.ruleIndex = ManuscriptParser.RULE_anyText;
-    }
-
-	wss = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
 	    if(i===null) {
-	        return this.getTypedRuleContexts(WssContext);
+	        return this.getTokens(ManuscriptParser.Minuscule);
 	    } else {
-	        return this.getTypedRuleContext(WssContext,i);
+	        return this.getToken(ManuscriptParser.Minuscule, i);
 	    }
 	};
+
 
 	CapitalWord = function(i) {
 		if(i===undefined) {
@@ -2730,39 +2582,68 @@ class AnyTextContext extends antlr4.ParserRuleContext {
 	};
 
 
-	Minus = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(ManuscriptParser.Minus);
-	    } else {
-	        return this.getToken(ManuscriptParser.Minus, i);
-	    }
-	};
-
-
-	MinusculeWord = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(ManuscriptParser.MinusculeWord);
-	    } else {
-	        return this.getToken(ManuscriptParser.MinusculeWord, i);
-	    }
-	};
-
-
 	enterRule(listener) {
 	    if(listener instanceof ManuscriptParserListener ) {
-	        listener.enterAnyText(this);
+	        listener.enterNonCapitalWord(this);
 		}
 	}
 
 	exitRule(listener) {
 	    if(listener instanceof ManuscriptParserListener ) {
-	        listener.exitAnyText(this);
+	        listener.exitNonCapitalWord(this);
+		}
+	}
+
+
+}
+
+
+
+class NonCapitalTextContext extends antlr4.ParserRuleContext {
+
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = ManuscriptParser.RULE_nonCapitalText;
+    }
+
+	nonCapitalWord = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(NonCapitalWordContext);
+	    } else {
+	        return this.getTypedRuleContext(NonCapitalWordContext,i);
+	    }
+	};
+
+	wss = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(WssContext);
+	    } else {
+	        return this.getTypedRuleContext(WssContext,i);
+	    }
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof ManuscriptParserListener ) {
+	        listener.enterNonCapitalText(this);
+		}
+	}
+
+	exitRule(listener) {
+	    if(listener instanceof ManuscriptParserListener ) {
+	        listener.exitNonCapitalText(this);
 		}
 	}
 
@@ -2794,7 +2675,7 @@ ManuscriptParser.HeadingContext = HeadingContext;
 ManuscriptParser.NameContext = NameContext; 
 ManuscriptParser.RepliqueContext = RepliqueContext; 
 ManuscriptParser.ParenthesisContext = ParenthesisContext; 
-ManuscriptParser.AnyTextOrCommandContext = AnyTextOrCommandContext; 
+ManuscriptParser.NonCapitalTextOrCommandContext = NonCapitalTextOrCommandContext; 
 ManuscriptParser.CommandContext = CommandContext; 
-ManuscriptParser.CapitalwordContext = CapitalwordContext; 
-ManuscriptParser.AnyTextContext = AnyTextContext; 
+ManuscriptParser.NonCapitalWordContext = NonCapitalWordContext; 
+ManuscriptParser.NonCapitalTextContext = NonCapitalTextContext; 

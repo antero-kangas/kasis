@@ -1,4 +1,4 @@
-// Generated from ManuscriptParser.g4 by ANTLR 4.9
+// Generated from java-escape by ANTLR 4.11.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -8,40 +8,40 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
 public class ManuscriptParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.11.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
 		MultiLineComment=1, SingleLineComment=2, WSS=3, EOL=4, Capital=5, Minuscule=6, 
-		Punctuation=7, LeftParenthesis=8, RightParenthesis=9, Extra=10, Minus=11, 
-		Synopsis=12, Scene=13, CapitalWord=14, Number=15, MinusculeWord=16;
+		Punctuation=7, LeftParenthesis=8, RightParenthesis=9, Extra=10, Synopsis=11, 
+		Scene=12, CapitalWord=13, Number=14;
 	public static final int
 		RULE_manuscript = 0, RULE_titleParagraph = 1, RULE_title = 2, RULE_authorParagraph = 3, 
 		RULE_author = 4, RULE_dateParagraph = 5, RULE_date = 6, RULE_synopsisPart = 7, 
-		RULE_synopsisParagraphs = 8, RULE_synopsisParagraph = 9, RULE_wss = 10, 
-		RULE_eol = 11, RULE_scenesPart = 12, RULE_scenes = 13, RULE_scene = 14, 
-		RULE_sceneHeading = 15, RULE_heading = 16, RULE_name = 17, RULE_replique = 18, 
-		RULE_parenthesis = 19, RULE_anyTextOrCommand = 20, RULE_command = 21, 
-		RULE_capitalword = 22, RULE_anyText = 23;
+		RULE_synopsisTitle = 8, RULE_synopsisParagraphs = 9, RULE_synopsisParagraph = 10, 
+		RULE_wss = 11, RULE_eol = 12, RULE_scenesPart = 13, RULE_scenesHeading = 14, 
+		RULE_scenes = 15, RULE_scene = 16, RULE_sceneHeading = 17, RULE_heading = 18, 
+		RULE_name = 19, RULE_replique = 20, RULE_parenthesis = 21, RULE_nonCapitalTextOrCommand = 22, 
+		RULE_command = 23, RULE_nonCapitalWord = 24, RULE_nonCapitalText = 25;
 	private static String[] makeRuleNames() {
 		return new String[] {
 			"manuscript", "titleParagraph", "title", "authorParagraph", "author", 
-			"dateParagraph", "date", "synopsisPart", "synopsisParagraphs", "synopsisParagraph", 
-			"wss", "eol", "scenesPart", "scenes", "scene", "sceneHeading", "heading", 
-			"name", "replique", "parenthesis", "anyTextOrCommand", "command", "capitalword", 
-			"anyText"
+			"dateParagraph", "date", "synopsisPart", "synopsisTitle", "synopsisParagraphs", 
+			"synopsisParagraph", "wss", "eol", "scenesPart", "scenesHeading", "scenes", 
+			"scene", "sceneHeading", "heading", "name", "replique", "parenthesis", 
+			"nonCapitalTextOrCommand", "command", "nonCapitalWord", "nonCapitalText"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, null, null, null, null, null, null, null, "'('", "')'", null, "'-'", 
-			null, "'KOHTAUKSET'"
+			null, null, null, null, null, null, null, null, "'('", "')'", null, null, 
+			"'KOHTAUKSET'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -49,7 +49,7 @@ public class ManuscriptParser extends Parser {
 		return new String[] {
 			null, "MultiLineComment", "SingleLineComment", "WSS", "EOL", "Capital", 
 			"Minuscule", "Punctuation", "LeftParenthesis", "RightParenthesis", "Extra", 
-			"Minus", "Synopsis", "Scene", "CapitalWord", "Number", "MinusculeWord"
+			"Synopsis", "Scene", "CapitalWord", "Number"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -87,7 +87,7 @@ public class ManuscriptParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "ManuscriptParser.g4"; }
+	public String getGrammarFileName() { return "java-escape"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -103,6 +103,7 @@ public class ManuscriptParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ManuscriptContext extends ParserRuleContext {
 		public TerminalNode EOF() { return getToken(ManuscriptParser.EOF, 0); }
 		public TitleParagraphContext titleParagraph() {
@@ -141,57 +142,57 @@ public class ManuscriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(49);
+			setState(53);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,0,_ctx) ) {
 			case 1:
 				{
-				setState(48);
+				setState(52);
 				titleParagraph();
 				}
 				break;
 			}
-			setState(52);
+			setState(56);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,1,_ctx) ) {
 			case 1:
 				{
-				setState(51);
+				setState(55);
 				authorParagraph();
 				}
 				break;
 			}
-			setState(55);
+			setState(59);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==WSS) {
 				{
-				setState(54);
+				setState(58);
 				dateParagraph();
 				}
 			}
 
-			setState(58);
+			setState(62);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==Synopsis) {
 				{
-				setState(57);
+				setState(61);
 				synopsisPart();
 				}
 			}
 
-			setState(61);
+			setState(65);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==Scene) {
 				{
-				setState(60);
+				setState(64);
 				scenesPart();
 				}
 			}
 
-			setState(63);
+			setState(67);
 			match(EOF);
 			}
 		}
@@ -206,6 +207,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class TitleParagraphContext extends ParserRuleContext {
 		public WssContext wss() {
 			return getRuleContext(WssContext.class,0);
@@ -240,11 +242,11 @@ public class ManuscriptParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(65);
+			setState(69);
 			wss();
-			setState(66);
+			setState(70);
 			title();
-			setState(68); 
+			setState(72); 
 			_errHandler.sync(this);
 			_alt = 1;
 			do {
@@ -252,7 +254,7 @@ public class ManuscriptParser extends Parser {
 				case 1:
 					{
 					{
-					setState(67);
+					setState(71);
 					eol();
 					}
 					}
@@ -260,7 +262,7 @@ public class ManuscriptParser extends Parser {
 				default:
 					throw new NoViableAltException(this);
 				}
-				setState(70); 
+				setState(74); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,5,_ctx);
 			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
@@ -277,6 +279,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class TitleContext extends ParserRuleContext {
 		public HeadingContext heading() {
 			return getRuleContext(HeadingContext.class,0);
@@ -301,7 +304,7 @@ public class ManuscriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(72);
+			setState(76);
 			heading();
 			}
 		}
@@ -316,6 +319,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class AuthorParagraphContext extends ParserRuleContext {
 		public WssContext wss() {
 			return getRuleContext(WssContext.class,0);
@@ -350,11 +354,11 @@ public class ManuscriptParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(74);
+			setState(78);
 			wss();
-			setState(75);
+			setState(79);
 			author();
-			setState(77); 
+			setState(81); 
 			_errHandler.sync(this);
 			_alt = 1;
 			do {
@@ -362,7 +366,7 @@ public class ManuscriptParser extends Parser {
 				case 1:
 					{
 					{
-					setState(76);
+					setState(80);
 					eol();
 					}
 					}
@@ -370,7 +374,7 @@ public class ManuscriptParser extends Parser {
 				default:
 					throw new NoViableAltException(this);
 				}
-				setState(79); 
+				setState(83); 
 				_errHandler.sync(this);
 				_alt = getInterpreter().adaptivePredict(_input,6,_ctx);
 			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
@@ -387,9 +391,10 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class AuthorContext extends ParserRuleContext {
-		public AnyTextContext anyText() {
-			return getRuleContext(AnyTextContext.class,0);
+		public NonCapitalTextContext nonCapitalText() {
+			return getRuleContext(NonCapitalTextContext.class,0);
 		}
 		public AuthorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -411,8 +416,8 @@ public class ManuscriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(81);
-			anyText();
+			setState(85);
+			nonCapitalText();
 			}
 		}
 		catch (RecognitionException re) {
@@ -426,6 +431,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class DateParagraphContext extends ParserRuleContext {
 		public WssContext wss() {
 			return getRuleContext(WssContext.class,0);
@@ -460,21 +466,21 @@ public class ManuscriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(83);
+			setState(87);
 			wss();
-			setState(84);
+			setState(88);
 			date();
-			setState(86); 
+			setState(90); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(85);
+				setState(89);
 				eol();
 				}
 				}
-				setState(88); 
+				setState(92); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==WSS || _la==EOL );
@@ -491,9 +497,10 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class DateContext extends ParserRuleContext {
-		public AnyTextContext anyText() {
-			return getRuleContext(AnyTextContext.class,0);
+		public NonCapitalTextContext nonCapitalText() {
+			return getRuleContext(NonCapitalTextContext.class,0);
 		}
 		public DateContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -515,8 +522,8 @@ public class ManuscriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(90);
-			anyText();
+			setState(94);
+			nonCapitalText();
 			}
 		}
 		catch (RecognitionException re) {
@@ -530,8 +537,11 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class SynopsisPartContext extends ParserRuleContext {
-		public TerminalNode Synopsis() { return getToken(ManuscriptParser.Synopsis, 0); }
+		public SynopsisTitleContext synopsisTitle() {
+			return getRuleContext(SynopsisTitleContext.class,0);
+		}
 		public List<EolContext> eol() {
 			return getRuleContexts(EolContext.class);
 		}
@@ -562,28 +572,28 @@ public class ManuscriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(92);
-			match(Synopsis);
-			setState(94); 
+			setState(96);
+			synopsisTitle();
+			setState(98); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(93);
+				setState(97);
 				eol();
 				}
 				}
-				setState(96); 
+				setState(100); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==WSS || _la==EOL );
-			setState(99);
+			setState(103);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number) | (1L << MinusculeWord))) != 0)) {
+			if (((_la) & ~0x3f) == 0 && ((1L << _la) & 25792L) != 0) {
 				{
-				setState(98);
+				setState(102);
 				synopsisParagraphs();
 				}
 			}
@@ -601,6 +611,45 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
+	public static class SynopsisTitleContext extends ParserRuleContext {
+		public TerminalNode Synopsis() { return getToken(ManuscriptParser.Synopsis, 0); }
+		public SynopsisTitleContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_synopsisTitle; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).enterSynopsisTitle(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).exitSynopsisTitle(this);
+		}
+	}
+
+	public final SynopsisTitleContext synopsisTitle() throws RecognitionException {
+		SynopsisTitleContext _localctx = new SynopsisTitleContext(_ctx, getState());
+		enterRule(_localctx, 16, RULE_synopsisTitle);
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(105);
+			match(Synopsis);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	@SuppressWarnings("CheckReturnValue")
 	public static class SynopsisParagraphsContext extends ParserRuleContext {
 		public List<SynopsisParagraphContext> synopsisParagraph() {
 			return getRuleContexts(SynopsisParagraphContext.class);
@@ -630,58 +679,39 @@ public class ManuscriptParser extends Parser {
 
 	public final SynopsisParagraphsContext synopsisParagraphs() throws RecognitionException {
 		SynopsisParagraphsContext _localctx = new SynopsisParagraphsContext(_ctx, getState());
-		enterRule(_localctx, 16, RULE_synopsisParagraphs);
+		enterRule(_localctx, 18, RULE_synopsisParagraphs);
 		int _la;
 		try {
-			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(112); 
+			setState(113); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(102); 
-				_errHandler.sync(this);
-				_alt = 1;
-				do {
-					switch (_alt) {
-					case 1:
-						{
-						{
-						setState(101);
-						synopsisParagraph();
-						}
-						}
-						break;
-					default:
-						throw new NoViableAltException(this);
-					}
-					setState(104); 
-					_errHandler.sync(this);
-					_alt = getInterpreter().adaptivePredict(_input,10,_ctx);
-				} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
-				setState(109);
+				setState(107);
+				synopsisParagraph();
+				setState(109); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				while (_la==WSS || _la==EOL) {
+				do {
 					{
 					{
-					setState(106);
+					setState(108);
 					eol();
 					}
 					}
-					setState(111);
+					setState(111); 
 					_errHandler.sync(this);
 					_la = _input.LA(1);
+				} while ( _la==WSS || _la==EOL );
 				}
 				}
-				}
-				setState(114); 
+				setState(115); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number) | (1L << MinusculeWord))) != 0) );
+			} while ( ((_la) & ~0x3f) == 0 && ((1L << _la) & 25792L) != 0 );
 			}
 		}
 		catch (RecognitionException re) {
@@ -695,9 +725,10 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class SynopsisParagraphContext extends ParserRuleContext {
-		public AnyTextContext anyText() {
-			return getRuleContext(AnyTextContext.class,0);
+		public NonCapitalTextContext nonCapitalText() {
+			return getRuleContext(NonCapitalTextContext.class,0);
 		}
 		public SynopsisParagraphContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -715,12 +746,12 @@ public class ManuscriptParser extends Parser {
 
 	public final SynopsisParagraphContext synopsisParagraph() throws RecognitionException {
 		SynopsisParagraphContext _localctx = new SynopsisParagraphContext(_ctx, getState());
-		enterRule(_localctx, 18, RULE_synopsisParagraph);
+		enterRule(_localctx, 20, RULE_synopsisParagraph);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(116);
-			anyText();
+			setState(117);
+			nonCapitalText();
 			}
 		}
 		catch (RecognitionException re) {
@@ -734,6 +765,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class WssContext extends ParserRuleContext {
 		public TerminalNode WSS() { return getToken(ManuscriptParser.WSS, 0); }
 		public WssContext(ParserRuleContext parent, int invokingState) {
@@ -752,11 +784,11 @@ public class ManuscriptParser extends Parser {
 
 	public final WssContext wss() throws RecognitionException {
 		WssContext _localctx = new WssContext(_ctx, getState());
-		enterRule(_localctx, 20, RULE_wss);
+		enterRule(_localctx, 22, RULE_wss);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(118);
+			setState(119);
 			match(WSS);
 			}
 		}
@@ -771,6 +803,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class EolContext extends ParserRuleContext {
 		public TerminalNode EOL() { return getToken(ManuscriptParser.EOL, 0); }
 		public WssContext wss() {
@@ -792,22 +825,22 @@ public class ManuscriptParser extends Parser {
 
 	public final EolContext eol() throws RecognitionException {
 		EolContext _localctx = new EolContext(_ctx, getState());
-		enterRule(_localctx, 22, RULE_eol);
+		enterRule(_localctx, 24, RULE_eol);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(121);
+			setState(122);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==WSS) {
 				{
-				setState(120);
+				setState(121);
 				wss();
 				}
 			}
 
-			setState(123);
+			setState(124);
 			match(EOL);
 			}
 		}
@@ -822,8 +855,11 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ScenesPartContext extends ParserRuleContext {
-		public TerminalNode Scene() { return getToken(ManuscriptParser.Scene, 0); }
+		public ScenesHeadingContext scenesHeading() {
+			return getRuleContext(ScenesHeadingContext.class,0);
+		}
 		public List<EolContext> eol() {
 			return getRuleContexts(EolContext.class);
 		}
@@ -849,33 +885,33 @@ public class ManuscriptParser extends Parser {
 
 	public final ScenesPartContext scenesPart() throws RecognitionException {
 		ScenesPartContext _localctx = new ScenesPartContext(_ctx, getState());
-		enterRule(_localctx, 24, RULE_scenesPart);
+		enterRule(_localctx, 26, RULE_scenesPart);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(125);
-			match(Scene);
-			setState(127); 
+			setState(126);
+			scenesHeading();
+			setState(128); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(126);
+				setState(127);
 				eol();
 				}
 				}
-				setState(129); 
+				setState(130); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==WSS || _la==EOL );
-			setState(132);
+			setState(133);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number))) != 0)) {
+			if (((_la) & ~0x3f) == 0 && ((1L << _la) & 25728L) != 0) {
 				{
-				setState(131);
+				setState(132);
 				scenes();
 				}
 			}
@@ -893,6 +929,45 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
+	public static class ScenesHeadingContext extends ParserRuleContext {
+		public TerminalNode Scene() { return getToken(ManuscriptParser.Scene, 0); }
+		public ScenesHeadingContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_scenesHeading; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).enterScenesHeading(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).exitScenesHeading(this);
+		}
+	}
+
+	public final ScenesHeadingContext scenesHeading() throws RecognitionException {
+		ScenesHeadingContext _localctx = new ScenesHeadingContext(_ctx, getState());
+		enterRule(_localctx, 28, RULE_scenesHeading);
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(135);
+			match(Scene);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	@SuppressWarnings("CheckReturnValue")
 	public static class ScenesContext extends ParserRuleContext {
 		public List<SceneContext> scene() {
 			return getRuleContexts(SceneContext.class);
@@ -916,25 +991,25 @@ public class ManuscriptParser extends Parser {
 
 	public final ScenesContext scenes() throws RecognitionException {
 		ScenesContext _localctx = new ScenesContext(_ctx, getState());
-		enterRule(_localctx, 26, RULE_scenes);
+		enterRule(_localctx, 30, RULE_scenes);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(135); 
+			setState(138); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(134);
+				setState(137);
 				scene();
 				}
 				}
-				setState(137); 
+				setState(140); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number))) != 0) );
+			} while ( ((_la) & ~0x3f) == 0 && ((1L << _la) & 25728L) != 0 );
 			}
 		}
 		catch (RecognitionException re) {
@@ -948,6 +1023,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class SceneContext extends ParserRuleContext {
 		public SceneHeadingContext sceneHeading() {
 			return getRuleContext(SceneHeadingContext.class,0);
@@ -998,15 +1074,15 @@ public class ManuscriptParser extends Parser {
 
 	public final SceneContext scene() throws RecognitionException {
 		SceneContext _localctx = new SceneContext(_ctx, getState());
-		enterRule(_localctx, 28, RULE_scene);
+		enterRule(_localctx, 32, RULE_scene);
 		int _la;
 		try {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(139);
+			setState(142);
 			sceneHeading();
-			setState(141); 
+			setState(144); 
 			_errHandler.sync(this);
 			_alt = 1;
 			do {
@@ -1014,7 +1090,7 @@ public class ManuscriptParser extends Parser {
 				case 1:
 					{
 					{
-					setState(140);
+					setState(143);
 					eol();
 					}
 					}
@@ -1022,11 +1098,11 @@ public class ManuscriptParser extends Parser {
 				default:
 					throw new NoViableAltException(this);
 				}
-				setState(143); 
+				setState(146); 
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,17,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,16,_ctx);
 			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
-			setState(182); 
+			setState(185); 
 			_errHandler.sync(this);
 			_alt = 1;
 			do {
@@ -1034,15 +1110,15 @@ public class ManuscriptParser extends Parser {
 				case 1:
 					{
 					{
-					setState(153);
+					setState(156);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
-					while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << LeftParenthesis) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number) | (1L << MinusculeWord))) != 0)) {
+					while (((_la) & ~0x3f) == 0 && ((1L << _la) & 26048L) != 0) {
 						{
 						{
-						setState(145);
+						setState(148);
 						parenthesis();
-						setState(147); 
+						setState(150); 
 						_errHandler.sync(this);
 						_alt = 1;
 						do {
@@ -1050,7 +1126,7 @@ public class ManuscriptParser extends Parser {
 							case 1:
 								{
 								{
-								setState(146);
+								setState(149);
 								eol();
 								}
 								}
@@ -1058,17 +1134,17 @@ public class ManuscriptParser extends Parser {
 							default:
 								throw new NoViableAltException(this);
 							}
-							setState(149); 
+							setState(152); 
 							_errHandler.sync(this);
-							_alt = getInterpreter().adaptivePredict(_input,18,_ctx);
+							_alt = getInterpreter().adaptivePredict(_input,17,_ctx);
 						} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 						}
 						}
-						setState(155);
+						setState(158);
 						_errHandler.sync(this);
 						_la = _input.LA(1);
 					}
-					setState(178); 
+					setState(181); 
 					_errHandler.sync(this);
 					_alt = 1;
 					do {
@@ -1076,11 +1152,11 @@ public class ManuscriptParser extends Parser {
 						case 1:
 							{
 							{
-							setState(156);
+							setState(159);
 							wss();
-							setState(157);
+							setState(160);
 							name();
-							setState(159); 
+							setState(162); 
 							_errHandler.sync(this);
 							_alt = 1;
 							do {
@@ -1088,7 +1164,7 @@ public class ManuscriptParser extends Parser {
 								case 1:
 									{
 									{
-									setState(158);
+									setState(161);
 									eol();
 									}
 									}
@@ -1096,11 +1172,11 @@ public class ManuscriptParser extends Parser {
 								default:
 									throw new NoViableAltException(this);
 								}
-								setState(161); 
+								setState(164); 
 								_errHandler.sync(this);
-								_alt = getInterpreter().adaptivePredict(_input,20,_ctx);
+								_alt = getInterpreter().adaptivePredict(_input,19,_ctx);
 							} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
-							setState(174); 
+							setState(177); 
 							_errHandler.sync(this);
 							_alt = 1;
 							do {
@@ -1108,35 +1184,34 @@ public class ManuscriptParser extends Parser {
 								case 1:
 									{
 									{
-									setState(167);
+									setState(170);
 									_errHandler.sync(this);
 									switch (_input.LA(1)) {
 									case WSS:
 										{
 										{
-										setState(163);
+										setState(166);
 										wss();
-										setState(164);
+										setState(167);
 										replique();
 										}
 										}
 										break;
+									case Minuscule:
 									case Punctuation:
 									case LeftParenthesis:
 									case Extra:
-									case Minus:
 									case CapitalWord:
 									case Number:
-									case MinusculeWord:
 										{
-										setState(166);
+										setState(169);
 										parenthesis();
 										}
 										break;
 									default:
 										throw new NoViableAltException(this);
 									}
-									setState(170); 
+									setState(173); 
 									_errHandler.sync(this);
 									_alt = 1;
 									do {
@@ -1144,7 +1219,7 @@ public class ManuscriptParser extends Parser {
 										case 1:
 											{
 											{
-											setState(169);
+											setState(172);
 											eol();
 											}
 											}
@@ -1152,9 +1227,9 @@ public class ManuscriptParser extends Parser {
 										default:
 											throw new NoViableAltException(this);
 										}
-										setState(172); 
+										setState(175); 
 										_errHandler.sync(this);
-										_alt = getInterpreter().adaptivePredict(_input,22,_ctx);
+										_alt = getInterpreter().adaptivePredict(_input,21,_ctx);
 									} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 									}
 									}
@@ -1162,9 +1237,9 @@ public class ManuscriptParser extends Parser {
 								default:
 									throw new NoViableAltException(this);
 								}
-								setState(176); 
+								setState(179); 
 								_errHandler.sync(this);
-								_alt = getInterpreter().adaptivePredict(_input,23,_ctx);
+								_alt = getInterpreter().adaptivePredict(_input,22,_ctx);
 							} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 							}
 							}
@@ -1172,9 +1247,9 @@ public class ManuscriptParser extends Parser {
 						default:
 							throw new NoViableAltException(this);
 						}
-						setState(180); 
+						setState(183); 
 						_errHandler.sync(this);
-						_alt = getInterpreter().adaptivePredict(_input,24,_ctx);
+						_alt = getInterpreter().adaptivePredict(_input,23,_ctx);
 					} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 					}
 					}
@@ -1182,9 +1257,9 @@ public class ManuscriptParser extends Parser {
 				default:
 					throw new NoViableAltException(this);
 				}
-				setState(184); 
+				setState(187); 
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,25,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,24,_ctx);
 			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 			}
 		}
@@ -1199,6 +1274,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class SceneHeadingContext extends ParserRuleContext {
 		public HeadingContext heading() {
 			return getRuleContext(HeadingContext.class,0);
@@ -1219,11 +1295,11 @@ public class ManuscriptParser extends Parser {
 
 	public final SceneHeadingContext sceneHeading() throws RecognitionException {
 		SceneHeadingContext _localctx = new SceneHeadingContext(_ctx, getState());
-		enterRule(_localctx, 30, RULE_sceneHeading);
+		enterRule(_localctx, 34, RULE_sceneHeading);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(186);
+			setState(189);
 			heading();
 			}
 		}
@@ -1238,6 +1314,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class HeadingContext extends ParserRuleContext {
 		public List<WssContext> wss() {
 			return getRuleContexts(WssContext.class);
@@ -1261,10 +1338,6 @@ public class ManuscriptParser extends Parser {
 		public TerminalNode Extra(int i) {
 			return getToken(ManuscriptParser.Extra, i);
 		}
-		public List<TerminalNode> Minus() { return getTokens(ManuscriptParser.Minus); }
-		public TerminalNode Minus(int i) {
-			return getToken(ManuscriptParser.Minus, i);
-		}
 		public HeadingContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -1281,21 +1354,21 @@ public class ManuscriptParser extends Parser {
 
 	public final HeadingContext heading() throws RecognitionException {
 		HeadingContext _localctx = new HeadingContext(_ctx, getState());
-		enterRule(_localctx, 32, RULE_heading);
+		enterRule(_localctx, 36, RULE_heading);
 		int _la;
 		try {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(189); 
+			setState(192); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(188);
+				setState(191);
 				_la = _input.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number))) != 0)) ) {
+				if ( !(((_la) & ~0x3f) == 0 && ((1L << _la) & 25728L) != 0) ) {
 				_errHandler.recoverInline(this);
 				}
 				else {
@@ -1305,28 +1378,28 @@ public class ManuscriptParser extends Parser {
 				}
 				}
 				}
-				setState(191); 
+				setState(194); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number))) != 0) );
-			setState(201);
+			} while ( ((_la) & ~0x3f) == 0 && ((1L << _la) & 25728L) != 0 );
+			setState(204);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,28,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,27,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(193);
+					setState(196);
 					wss();
-					setState(195); 
+					setState(198); 
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 					do {
 						{
 						{
-						setState(194);
+						setState(197);
 						_la = _input.LA(1);
-						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number))) != 0)) ) {
+						if ( !(((_la) & ~0x3f) == 0 && ((1L << _la) & 25728L) != 0) ) {
 						_errHandler.recoverInline(this);
 						}
 						else {
@@ -1336,16 +1409,16 @@ public class ManuscriptParser extends Parser {
 						}
 						}
 						}
-						setState(197); 
+						setState(200); 
 						_errHandler.sync(this);
 						_la = _input.LA(1);
-					} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number))) != 0) );
+					} while ( ((_la) & ~0x3f) == 0 && ((1L << _la) & 25728L) != 0 );
 					}
 					} 
 				}
-				setState(203);
+				setState(206);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,28,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,27,_ctx);
 			}
 			}
 		}
@@ -1360,6 +1433,7 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class NameContext extends ParserRuleContext {
 		public List<TerminalNode> CapitalWord() { return getTokens(ManuscriptParser.CapitalWord); }
 		public TerminalNode CapitalWord(int i) {
@@ -1387,30 +1461,30 @@ public class ManuscriptParser extends Parser {
 
 	public final NameContext name() throws RecognitionException {
 		NameContext _localctx = new NameContext(_ctx, getState());
-		enterRule(_localctx, 34, RULE_name);
+		enterRule(_localctx, 38, RULE_name);
 		try {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(204);
+			setState(207);
 			match(CapitalWord);
-			setState(210);
+			setState(213);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,29,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,28,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(205);
+					setState(208);
 					wss();
-					setState(206);
+					setState(209);
 					match(CapitalWord);
 					}
 					} 
 				}
-				setState(212);
+				setState(215);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,29,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,28,_ctx);
 			}
 			}
 		}
@@ -1425,9 +1499,10 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class RepliqueContext extends ParserRuleContext {
-		public AnyTextOrCommandContext anyTextOrCommand() {
-			return getRuleContext(AnyTextOrCommandContext.class,0);
+		public NonCapitalTextOrCommandContext nonCapitalTextOrCommand() {
+			return getRuleContext(NonCapitalTextOrCommandContext.class,0);
 		}
 		public RepliqueContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1445,12 +1520,12 @@ public class ManuscriptParser extends Parser {
 
 	public final RepliqueContext replique() throws RecognitionException {
 		RepliqueContext _localctx = new RepliqueContext(_ctx, getState());
-		enterRule(_localctx, 36, RULE_replique);
+		enterRule(_localctx, 40, RULE_replique);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(213);
-			anyTextOrCommand();
+			setState(216);
+			nonCapitalTextOrCommand();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1464,9 +1539,10 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ParenthesisContext extends ParserRuleContext {
-		public AnyTextOrCommandContext anyTextOrCommand() {
-			return getRuleContext(AnyTextOrCommandContext.class,0);
+		public NonCapitalTextOrCommandContext nonCapitalTextOrCommand() {
+			return getRuleContext(NonCapitalTextOrCommandContext.class,0);
 		}
 		public ParenthesisContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1484,12 +1560,12 @@ public class ManuscriptParser extends Parser {
 
 	public final ParenthesisContext parenthesis() throws RecognitionException {
 		ParenthesisContext _localctx = new ParenthesisContext(_ctx, getState());
-		enterRule(_localctx, 38, RULE_parenthesis);
+		enterRule(_localctx, 42, RULE_parenthesis);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(215);
-			anyTextOrCommand();
+			setState(218);
+			nonCapitalTextOrCommand();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1503,12 +1579,13 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
-	public static class AnyTextOrCommandContext extends ParserRuleContext {
-		public List<AnyTextContext> anyText() {
-			return getRuleContexts(AnyTextContext.class);
+	@SuppressWarnings("CheckReturnValue")
+	public static class NonCapitalTextOrCommandContext extends ParserRuleContext {
+		public List<NonCapitalTextContext> nonCapitalText() {
+			return getRuleContexts(NonCapitalTextContext.class);
 		}
-		public AnyTextContext anyText(int i) {
-			return getRuleContext(AnyTextContext.class,i);
+		public NonCapitalTextContext nonCapitalText(int i) {
+			return getRuleContext(NonCapitalTextContext.class,i);
 		}
 		public List<CommandContext> command() {
 			return getRuleContexts(CommandContext.class);
@@ -1522,48 +1599,47 @@ public class ManuscriptParser extends Parser {
 		public WssContext wss(int i) {
 			return getRuleContext(WssContext.class,i);
 		}
-		public AnyTextOrCommandContext(ParserRuleContext parent, int invokingState) {
+		public NonCapitalTextOrCommandContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
-		@Override public int getRuleIndex() { return RULE_anyTextOrCommand; }
+		@Override public int getRuleIndex() { return RULE_nonCapitalTextOrCommand; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).enterAnyTextOrCommand(this);
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).enterNonCapitalTextOrCommand(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).exitAnyTextOrCommand(this);
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).exitNonCapitalTextOrCommand(this);
 		}
 	}
 
-	public final AnyTextOrCommandContext anyTextOrCommand() throws RecognitionException {
-		AnyTextOrCommandContext _localctx = new AnyTextOrCommandContext(_ctx, getState());
-		enterRule(_localctx, 40, RULE_anyTextOrCommand);
+	public final NonCapitalTextOrCommandContext nonCapitalTextOrCommand() throws RecognitionException {
+		NonCapitalTextOrCommandContext _localctx = new NonCapitalTextOrCommandContext(_ctx, getState());
+		enterRule(_localctx, 44, RULE_nonCapitalTextOrCommand);
 		int _la;
 		try {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(257);
+			setState(260);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
+			case Minuscule:
 			case Punctuation:
 			case Extra:
-			case Minus:
 			case CapitalWord:
 			case Number:
-			case MinusculeWord:
 				{
-				setState(217);
-				anyText();
-				setState(234);
+				setState(220);
+				nonCapitalText();
+				setState(237);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,34,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,33,_ctx);
 				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 					if ( _alt==1 ) {
 						{
 						{
-						setState(222); 
+						setState(225); 
 						_errHandler.sync(this);
 						_alt = 1;
 						do {
@@ -1571,17 +1647,17 @@ public class ManuscriptParser extends Parser {
 							case 1:
 								{
 								{
-								setState(219);
+								setState(222);
 								_errHandler.sync(this);
 								_la = _input.LA(1);
 								if (_la==WSS) {
 									{
-									setState(218);
+									setState(221);
 									wss();
 									}
 								}
 
-								setState(221);
+								setState(224);
 								command();
 								}
 								}
@@ -1589,98 +1665,98 @@ public class ManuscriptParser extends Parser {
 							default:
 								throw new NoViableAltException(this);
 							}
-							setState(224); 
+							setState(227); 
 							_errHandler.sync(this);
-							_alt = getInterpreter().adaptivePredict(_input,31,_ctx);
+							_alt = getInterpreter().adaptivePredict(_input,30,_ctx);
 						} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
-						setState(230);
+						setState(233);
 						_errHandler.sync(this);
-						switch ( getInterpreter().adaptivePredict(_input,33,_ctx) ) {
+						switch ( getInterpreter().adaptivePredict(_input,32,_ctx) ) {
 						case 1:
 							{
-							setState(227);
+							setState(230);
 							_errHandler.sync(this);
 							_la = _input.LA(1);
 							if (_la==WSS) {
 								{
-								setState(226);
+								setState(229);
 								wss();
 								}
 							}
 
-							setState(229);
-							anyText();
+							setState(232);
+							nonCapitalText();
 							}
 							break;
 						}
 						}
 						} 
 					}
-					setState(236);
+					setState(239);
 					_errHandler.sync(this);
-					_alt = getInterpreter().adaptivePredict(_input,34,_ctx);
+					_alt = getInterpreter().adaptivePredict(_input,33,_ctx);
 				}
 				}
 				break;
 			case LeftParenthesis:
 				{
-				setState(253); 
+				setState(256); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				do {
 					{
 					{
-					setState(237);
+					setState(240);
 					command();
-					setState(244);
+					setState(247);
 					_errHandler.sync(this);
-					_alt = getInterpreter().adaptivePredict(_input,36,_ctx);
+					_alt = getInterpreter().adaptivePredict(_input,35,_ctx);
 					while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 						if ( _alt==1 ) {
 							{
 							{
-							setState(239);
+							setState(242);
 							_errHandler.sync(this);
 							_la = _input.LA(1);
 							if (_la==WSS) {
 								{
-								setState(238);
+								setState(241);
 								wss();
 								}
 							}
 
-							setState(241);
+							setState(244);
 							command();
 							}
 							} 
 						}
-						setState(246);
+						setState(249);
 						_errHandler.sync(this);
-						_alt = getInterpreter().adaptivePredict(_input,36,_ctx);
+						_alt = getInterpreter().adaptivePredict(_input,35,_ctx);
 					}
-					setState(251);
+					setState(254);
 					_errHandler.sync(this);
-					switch ( getInterpreter().adaptivePredict(_input,38,_ctx) ) {
+					switch ( getInterpreter().adaptivePredict(_input,37,_ctx) ) {
 					case 1:
 						{
-						setState(248);
+						setState(251);
 						_errHandler.sync(this);
 						_la = _input.LA(1);
 						if (_la==WSS) {
 							{
-							setState(247);
+							setState(250);
 							wss();
 							}
 						}
 
-						setState(250);
-						anyText();
+						setState(253);
+						nonCapitalText();
 						}
 						break;
 					}
 					}
 					}
-					setState(255); 
+					setState(258); 
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				} while ( _la==LeftParenthesis );
@@ -1702,17 +1778,25 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class CommandContext extends ParserRuleContext {
 		public TerminalNode LeftParenthesis() { return getToken(ManuscriptParser.LeftParenthesis, 0); }
-		public AnyTextContext anyText() {
-			return getRuleContext(AnyTextContext.class,0);
-		}
 		public TerminalNode RightParenthesis() { return getToken(ManuscriptParser.RightParenthesis, 0); }
 		public List<WssContext> wss() {
 			return getRuleContexts(WssContext.class);
 		}
 		public WssContext wss(int i) {
 			return getRuleContext(WssContext.class,i);
+		}
+		public List<NonCapitalTextContext> nonCapitalText() {
+			return getRuleContexts(NonCapitalTextContext.class);
+		}
+		public NonCapitalTextContext nonCapitalText(int i) {
+			return getRuleContext(NonCapitalTextContext.class,i);
+		}
+		public List<TerminalNode> CapitalWord() { return getTokens(ManuscriptParser.CapitalWord); }
+		public TerminalNode CapitalWord(int i) {
+			return getToken(ManuscriptParser.CapitalWord, i);
 		}
 		public CommandContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1730,36 +1814,46 @@ public class ManuscriptParser extends Parser {
 
 	public final CommandContext command() throws RecognitionException {
 		CommandContext _localctx = new CommandContext(_ctx, getState());
-		enterRule(_localctx, 42, RULE_command);
+		enterRule(_localctx, 46, RULE_command);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(259);
+			setState(262);
 			match(LeftParenthesis);
-			setState(261);
+			setState(266); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (_la==WSS) {
+			do {
 				{
-				setState(260);
-				wss();
+				setState(266);
+				_errHandler.sync(this);
+				switch ( getInterpreter().adaptivePredict(_input,40,_ctx) ) {
+				case 1:
+					{
+					setState(263);
+					wss();
+					}
+					break;
+				case 2:
+					{
+					setState(264);
+					nonCapitalText();
+					}
+					break;
+				case 3:
+					{
+					setState(265);
+					match(CapitalWord);
+					}
+					break;
 				}
-			}
-
-			setState(263);
-			anyText();
-			setState(265);
-			_errHandler.sync(this);
-			_la = _input.LA(1);
-			if (_la==WSS) {
-				{
-				setState(264);
-				wss();
 				}
-			}
-
-			setState(267);
+				setState(268); 
+				_errHandler.sync(this);
+				_la = _input.LA(1);
+			} while ( ((_la) & ~0x3f) == 0 && ((1L << _la) & 25800L) != 0 );
+			setState(270);
 			match(RightParenthesis);
 			}
 		}
@@ -1774,49 +1868,11 @@ public class ManuscriptParser extends Parser {
 		return _localctx;
 	}
 
-	public static class CapitalwordContext extends ParserRuleContext {
-		public TerminalNode CapitalWord() { return getToken(ManuscriptParser.CapitalWord, 0); }
-		public CapitalwordContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_capitalword; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).enterCapitalword(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).exitCapitalword(this);
-		}
-	}
-
-	public final CapitalwordContext capitalword() throws RecognitionException {
-		CapitalwordContext _localctx = new CapitalwordContext(_ctx, getState());
-		enterRule(_localctx, 44, RULE_capitalword);
-		try {
-			enterOuterAlt(_localctx, 1);
-			{
-			setState(269);
-			match(CapitalWord);
-			}
-		}
-		catch (RecognitionException re) {
-			_localctx.exception = re;
-			_errHandler.reportError(this, re);
-			_errHandler.recover(this, re);
-		}
-		finally {
-			exitRule();
-		}
-		return _localctx;
-	}
-
-	public static class AnyTextContext extends ParserRuleContext {
-		public List<WssContext> wss() {
-			return getRuleContexts(WssContext.class);
-		}
-		public WssContext wss(int i) {
-			return getRuleContext(WssContext.class,i);
+	@SuppressWarnings("CheckReturnValue")
+	public static class NonCapitalWordContext extends ParserRuleContext {
+		public List<TerminalNode> Minuscule() { return getTokens(ManuscriptParser.Minuscule); }
+		public TerminalNode Minuscule(int i) {
+			return getToken(ManuscriptParser.Minuscule, i);
 		}
 		public List<TerminalNode> CapitalWord() { return getTokens(ManuscriptParser.CapitalWord); }
 		public TerminalNode CapitalWord(int i) {
@@ -1834,47 +1890,38 @@ public class ManuscriptParser extends Parser {
 		public TerminalNode Extra(int i) {
 			return getToken(ManuscriptParser.Extra, i);
 		}
-		public List<TerminalNode> Minus() { return getTokens(ManuscriptParser.Minus); }
-		public TerminalNode Minus(int i) {
-			return getToken(ManuscriptParser.Minus, i);
-		}
-		public List<TerminalNode> MinusculeWord() { return getTokens(ManuscriptParser.MinusculeWord); }
-		public TerminalNode MinusculeWord(int i) {
-			return getToken(ManuscriptParser.MinusculeWord, i);
-		}
-		public AnyTextContext(ParserRuleContext parent, int invokingState) {
+		public NonCapitalWordContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
-		@Override public int getRuleIndex() { return RULE_anyText; }
+		@Override public int getRuleIndex() { return RULE_nonCapitalWord; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).enterAnyText(this);
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).enterNonCapitalWord(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).exitAnyText(this);
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).exitNonCapitalWord(this);
 		}
 	}
 
-	public final AnyTextContext anyText() throws RecognitionException {
-		AnyTextContext _localctx = new AnyTextContext(_ctx, getState());
-		enterRule(_localctx, 46, RULE_anyText);
+	public final NonCapitalWordContext nonCapitalWord() throws RecognitionException {
+		NonCapitalWordContext _localctx = new NonCapitalWordContext(_ctx, getState());
+		enterRule(_localctx, 48, RULE_nonCapitalWord);
 		int _la;
 		try {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(272); 
+			setState(275);
 			_errHandler.sync(this);
-			_alt = 1;
-			do {
-				switch (_alt) {
-				case 1:
+			_alt = getInterpreter().adaptivePredict(_input,42,_ctx);
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+				if ( _alt==1 ) {
 					{
 					{
-					setState(271);
+					setState(272);
 					_la = _input.LA(1);
-					if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number) | (1L << MinusculeWord))) != 0)) ) {
+					if ( !(((_la) & ~0x3f) == 0 && ((1L << _la) & 25792L) != 0) ) {
 					_errHandler.recoverInline(this);
 					}
 					else {
@@ -1883,58 +1930,105 @@ public class ManuscriptParser extends Parser {
 						consume();
 					}
 					}
-					}
-					break;
-				default:
-					throw new NoViableAltException(this);
+					} 
 				}
-				setState(274); 
+				setState(277);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,43,_ctx);
-			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
-			setState(284);
+				_alt = getInterpreter().adaptivePredict(_input,42,_ctx);
+			}
+			setState(278);
+			match(Minuscule);
+			setState(282);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,45,_ctx);
+			_alt = getInterpreter().adaptivePredict(_input,43,_ctx);
 			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(276);
-					wss();
-					setState(278); 
-					_errHandler.sync(this);
-					_alt = 1;
-					do {
-						switch (_alt) {
-						case 1:
-							{
-							{
-							setState(277);
-							_la = _input.LA(1);
-							if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << Punctuation) | (1L << Extra) | (1L << Minus) | (1L << CapitalWord) | (1L << Number) | (1L << MinusculeWord))) != 0)) ) {
-							_errHandler.recoverInline(this);
-							}
-							else {
-								if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
-								_errHandler.reportMatch(this);
-								consume();
-							}
-							}
-							}
-							break;
-						default:
-							throw new NoViableAltException(this);
-						}
-						setState(280); 
-						_errHandler.sync(this);
-						_alt = getInterpreter().adaptivePredict(_input,44,_ctx);
-					} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
+					setState(279);
+					_la = _input.LA(1);
+					if ( !(((_la) & ~0x3f) == 0 && ((1L << _la) & 25792L) != 0) ) {
+					_errHandler.recoverInline(this);
+					}
+					else {
+						if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+						_errHandler.reportMatch(this);
+						consume();
+					}
 					}
 					} 
 				}
-				setState(286);
+				setState(284);
 				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,45,_ctx);
+				_alt = getInterpreter().adaptivePredict(_input,43,_ctx);
+			}
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	@SuppressWarnings("CheckReturnValue")
+	public static class NonCapitalTextContext extends ParserRuleContext {
+		public List<NonCapitalWordContext> nonCapitalWord() {
+			return getRuleContexts(NonCapitalWordContext.class);
+		}
+		public NonCapitalWordContext nonCapitalWord(int i) {
+			return getRuleContext(NonCapitalWordContext.class,i);
+		}
+		public List<WssContext> wss() {
+			return getRuleContexts(WssContext.class);
+		}
+		public WssContext wss(int i) {
+			return getRuleContext(WssContext.class,i);
+		}
+		public NonCapitalTextContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_nonCapitalText; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).enterNonCapitalText(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof ManuscriptParserListener ) ((ManuscriptParserListener)listener).exitNonCapitalText(this);
+		}
+	}
+
+	public final NonCapitalTextContext nonCapitalText() throws RecognitionException {
+		NonCapitalTextContext _localctx = new NonCapitalTextContext(_ctx, getState());
+		enterRule(_localctx, 50, RULE_nonCapitalText);
+		try {
+			int _alt;
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(285);
+			nonCapitalWord();
+			setState(291);
+			_errHandler.sync(this);
+			_alt = getInterpreter().adaptivePredict(_input,44,_ctx);
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+				if ( _alt==1 ) {
+					{
+					{
+					setState(286);
+					wss();
+					setState(287);
+					nonCapitalWord();
+					}
+					} 
+				}
+				setState(293);
+				_errHandler.sync(this);
+				_alt = getInterpreter().adaptivePredict(_input,44,_ctx);
 			}
 			}
 		}
@@ -1950,110 +2044,200 @@ public class ManuscriptParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\22\u0122\4\2\t\2"+
-		"\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
-		"\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
-		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31\t\31"+
-		"\3\2\5\2\64\n\2\3\2\5\2\67\n\2\3\2\5\2:\n\2\3\2\5\2=\n\2\3\2\5\2@\n\2"+
-		"\3\2\3\2\3\3\3\3\3\3\6\3G\n\3\r\3\16\3H\3\4\3\4\3\5\3\5\3\5\6\5P\n\5\r"+
-		"\5\16\5Q\3\6\3\6\3\7\3\7\3\7\6\7Y\n\7\r\7\16\7Z\3\b\3\b\3\t\3\t\6\ta\n"+
-		"\t\r\t\16\tb\3\t\5\tf\n\t\3\n\6\ni\n\n\r\n\16\nj\3\n\7\nn\n\n\f\n\16\n"+
-		"q\13\n\6\ns\n\n\r\n\16\nt\3\13\3\13\3\f\3\f\3\r\5\r|\n\r\3\r\3\r\3\16"+
-		"\3\16\6\16\u0082\n\16\r\16\16\16\u0083\3\16\5\16\u0087\n\16\3\17\6\17"+
-		"\u008a\n\17\r\17\16\17\u008b\3\20\3\20\6\20\u0090\n\20\r\20\16\20\u0091"+
-		"\3\20\3\20\6\20\u0096\n\20\r\20\16\20\u0097\7\20\u009a\n\20\f\20\16\20"+
-		"\u009d\13\20\3\20\3\20\3\20\6\20\u00a2\n\20\r\20\16\20\u00a3\3\20\3\20"+
-		"\3\20\3\20\5\20\u00aa\n\20\3\20\6\20\u00ad\n\20\r\20\16\20\u00ae\6\20"+
-		"\u00b1\n\20\r\20\16\20\u00b2\6\20\u00b5\n\20\r\20\16\20\u00b6\6\20\u00b9"+
-		"\n\20\r\20\16\20\u00ba\3\21\3\21\3\22\6\22\u00c0\n\22\r\22\16\22\u00c1"+
-		"\3\22\3\22\6\22\u00c6\n\22\r\22\16\22\u00c7\7\22\u00ca\n\22\f\22\16\22"+
-		"\u00cd\13\22\3\23\3\23\3\23\3\23\7\23\u00d3\n\23\f\23\16\23\u00d6\13\23"+
-		"\3\24\3\24\3\25\3\25\3\26\3\26\5\26\u00de\n\26\3\26\6\26\u00e1\n\26\r"+
-		"\26\16\26\u00e2\3\26\5\26\u00e6\n\26\3\26\5\26\u00e9\n\26\7\26\u00eb\n"+
-		"\26\f\26\16\26\u00ee\13\26\3\26\3\26\5\26\u00f2\n\26\3\26\7\26\u00f5\n"+
-		"\26\f\26\16\26\u00f8\13\26\3\26\5\26\u00fb\n\26\3\26\5\26\u00fe\n\26\6"+
-		"\26\u0100\n\26\r\26\16\26\u0101\5\26\u0104\n\26\3\27\3\27\5\27\u0108\n"+
-		"\27\3\27\3\27\5\27\u010c\n\27\3\27\3\27\3\30\3\30\3\31\6\31\u0113\n\31"+
-		"\r\31\16\31\u0114\3\31\3\31\6\31\u0119\n\31\r\31\16\31\u011a\7\31\u011d"+
-		"\n\31\f\31\16\31\u0120\13\31\3\31\2\2\32\2\4\6\b\n\f\16\20\22\24\26\30"+
-		"\32\34\36 \"$&(*,.\60\2\4\5\2\t\t\f\r\20\21\5\2\t\t\f\r\20\22\2\u0137"+
-		"\2\63\3\2\2\2\4C\3\2\2\2\6J\3\2\2\2\bL\3\2\2\2\nS\3\2\2\2\fU\3\2\2\2\16"+
-		"\\\3\2\2\2\20^\3\2\2\2\22r\3\2\2\2\24v\3\2\2\2\26x\3\2\2\2\30{\3\2\2\2"+
-		"\32\177\3\2\2\2\34\u0089\3\2\2\2\36\u008d\3\2\2\2 \u00bc\3\2\2\2\"\u00bf"+
-		"\3\2\2\2$\u00ce\3\2\2\2&\u00d7\3\2\2\2(\u00d9\3\2\2\2*\u0103\3\2\2\2,"+
-		"\u0105\3\2\2\2.\u010f\3\2\2\2\60\u0112\3\2\2\2\62\64\5\4\3\2\63\62\3\2"+
-		"\2\2\63\64\3\2\2\2\64\66\3\2\2\2\65\67\5\b\5\2\66\65\3\2\2\2\66\67\3\2"+
-		"\2\2\679\3\2\2\28:\5\f\7\298\3\2\2\29:\3\2\2\2:<\3\2\2\2;=\5\20\t\2<;"+
-		"\3\2\2\2<=\3\2\2\2=?\3\2\2\2>@\5\32\16\2?>\3\2\2\2?@\3\2\2\2@A\3\2\2\2"+
-		"AB\7\2\2\3B\3\3\2\2\2CD\5\26\f\2DF\5\6\4\2EG\5\30\r\2FE\3\2\2\2GH\3\2"+
-		"\2\2HF\3\2\2\2HI\3\2\2\2I\5\3\2\2\2JK\5\"\22\2K\7\3\2\2\2LM\5\26\f\2M"+
-		"O\5\n\6\2NP\5\30\r\2ON\3\2\2\2PQ\3\2\2\2QO\3\2\2\2QR\3\2\2\2R\t\3\2\2"+
-		"\2ST\5\60\31\2T\13\3\2\2\2UV\5\26\f\2VX\5\16\b\2WY\5\30\r\2XW\3\2\2\2"+
-		"YZ\3\2\2\2ZX\3\2\2\2Z[\3\2\2\2[\r\3\2\2\2\\]\5\60\31\2]\17\3\2\2\2^`\7"+
-		"\16\2\2_a\5\30\r\2`_\3\2\2\2ab\3\2\2\2b`\3\2\2\2bc\3\2\2\2ce\3\2\2\2d"+
-		"f\5\22\n\2ed\3\2\2\2ef\3\2\2\2f\21\3\2\2\2gi\5\24\13\2hg\3\2\2\2ij\3\2"+
-		"\2\2jh\3\2\2\2jk\3\2\2\2ko\3\2\2\2ln\5\30\r\2ml\3\2\2\2nq\3\2\2\2om\3"+
-		"\2\2\2op\3\2\2\2ps\3\2\2\2qo\3\2\2\2rh\3\2\2\2st\3\2\2\2tr\3\2\2\2tu\3"+
-		"\2\2\2u\23\3\2\2\2vw\5\60\31\2w\25\3\2\2\2xy\7\5\2\2y\27\3\2\2\2z|\5\26"+
-		"\f\2{z\3\2\2\2{|\3\2\2\2|}\3\2\2\2}~\7\6\2\2~\31\3\2\2\2\177\u0081\7\17"+
-		"\2\2\u0080\u0082\5\30\r\2\u0081\u0080\3\2\2\2\u0082\u0083\3\2\2\2\u0083"+
-		"\u0081\3\2\2\2\u0083\u0084\3\2\2\2\u0084\u0086\3\2\2\2\u0085\u0087\5\34"+
-		"\17\2\u0086\u0085\3\2\2\2\u0086\u0087\3\2\2\2\u0087\33\3\2\2\2\u0088\u008a"+
-		"\5\36\20\2\u0089\u0088\3\2\2\2\u008a\u008b\3\2\2\2\u008b\u0089\3\2\2\2"+
-		"\u008b\u008c\3\2\2\2\u008c\35\3\2\2\2\u008d\u008f\5 \21\2\u008e\u0090"+
-		"\5\30\r\2\u008f\u008e\3\2\2\2\u0090\u0091\3\2\2\2\u0091\u008f\3\2\2\2"+
-		"\u0091\u0092\3\2\2\2\u0092\u00b8\3\2\2\2\u0093\u0095\5(\25\2\u0094\u0096"+
-		"\5\30\r\2\u0095\u0094\3\2\2\2\u0096\u0097\3\2\2\2\u0097\u0095\3\2\2\2"+
-		"\u0097\u0098\3\2\2\2\u0098\u009a\3\2\2\2\u0099\u0093\3\2\2\2\u009a\u009d"+
-		"\3\2\2\2\u009b\u0099\3\2\2\2\u009b\u009c\3\2\2\2\u009c\u00b4\3\2\2\2\u009d"+
-		"\u009b\3\2\2\2\u009e\u009f\5\26\f\2\u009f\u00a1\5$\23\2\u00a0\u00a2\5"+
-		"\30\r\2\u00a1\u00a0\3\2\2\2\u00a2\u00a3\3\2\2\2\u00a3\u00a1\3\2\2\2\u00a3"+
-		"\u00a4\3\2\2\2\u00a4\u00b0\3\2\2\2\u00a5\u00a6\5\26\f\2\u00a6\u00a7\5"+
-		"&\24\2\u00a7\u00aa\3\2\2\2\u00a8\u00aa\5(\25\2\u00a9\u00a5\3\2\2\2\u00a9"+
-		"\u00a8\3\2\2\2\u00aa\u00ac\3\2\2\2\u00ab\u00ad\5\30\r\2\u00ac\u00ab\3"+
-		"\2\2\2\u00ad\u00ae\3\2\2\2\u00ae\u00ac\3\2\2\2\u00ae\u00af\3\2\2\2\u00af"+
-		"\u00b1\3\2\2\2\u00b0\u00a9\3\2\2\2\u00b1\u00b2\3\2\2\2\u00b2\u00b0\3\2"+
-		"\2\2\u00b2\u00b3\3\2\2\2\u00b3\u00b5\3\2\2\2\u00b4\u009e\3\2\2\2\u00b5"+
-		"\u00b6\3\2\2\2\u00b6\u00b4\3\2\2\2\u00b6\u00b7\3\2\2\2\u00b7\u00b9\3\2"+
-		"\2\2\u00b8\u009b\3\2\2\2\u00b9\u00ba\3\2\2\2\u00ba\u00b8\3\2\2\2\u00ba"+
-		"\u00bb\3\2\2\2\u00bb\37\3\2\2\2\u00bc\u00bd\5\"\22\2\u00bd!\3\2\2\2\u00be"+
-		"\u00c0\t\2\2\2\u00bf\u00be\3\2\2\2\u00c0\u00c1\3\2\2\2\u00c1\u00bf\3\2"+
-		"\2\2\u00c1\u00c2\3\2\2\2\u00c2\u00cb\3\2\2\2\u00c3\u00c5\5\26\f\2\u00c4"+
-		"\u00c6\t\2\2\2\u00c5\u00c4\3\2\2\2\u00c6\u00c7\3\2\2\2\u00c7\u00c5\3\2"+
-		"\2\2\u00c7\u00c8\3\2\2\2\u00c8\u00ca\3\2\2\2\u00c9\u00c3\3\2\2\2\u00ca"+
-		"\u00cd\3\2\2\2\u00cb\u00c9\3\2\2\2\u00cb\u00cc\3\2\2\2\u00cc#\3\2\2\2"+
-		"\u00cd\u00cb\3\2\2\2\u00ce\u00d4\7\20\2\2\u00cf\u00d0\5\26\f\2\u00d0\u00d1"+
-		"\7\20\2\2\u00d1\u00d3\3\2\2\2\u00d2\u00cf\3\2\2\2\u00d3\u00d6\3\2\2\2"+
-		"\u00d4\u00d2\3\2\2\2\u00d4\u00d5\3\2\2\2\u00d5%\3\2\2\2\u00d6\u00d4\3"+
-		"\2\2\2\u00d7\u00d8\5*\26\2\u00d8\'\3\2\2\2\u00d9\u00da\5*\26\2\u00da)"+
-		"\3\2\2\2\u00db\u00ec\5\60\31\2\u00dc\u00de\5\26\f\2\u00dd\u00dc\3\2\2"+
-		"\2\u00dd\u00de\3\2\2\2\u00de\u00df\3\2\2\2\u00df\u00e1\5,\27\2\u00e0\u00dd"+
-		"\3\2\2\2\u00e1\u00e2\3\2\2\2\u00e2\u00e0\3\2\2\2\u00e2\u00e3\3\2\2\2\u00e3"+
-		"\u00e8\3\2\2\2\u00e4\u00e6\5\26\f\2\u00e5\u00e4\3\2\2\2\u00e5\u00e6\3"+
-		"\2\2\2\u00e6\u00e7\3\2\2\2\u00e7\u00e9\5\60\31\2\u00e8\u00e5\3\2\2\2\u00e8"+
-		"\u00e9\3\2\2\2\u00e9\u00eb\3\2\2\2\u00ea\u00e0\3\2\2\2\u00eb\u00ee\3\2"+
-		"\2\2\u00ec\u00ea\3\2\2\2\u00ec\u00ed\3\2\2\2\u00ed\u0104\3\2\2\2\u00ee"+
-		"\u00ec\3\2\2\2\u00ef\u00f6\5,\27\2\u00f0\u00f2\5\26\f\2\u00f1\u00f0\3"+
-		"\2\2\2\u00f1\u00f2\3\2\2\2\u00f2\u00f3\3\2\2\2\u00f3\u00f5\5,\27\2\u00f4"+
-		"\u00f1\3\2\2\2\u00f5\u00f8\3\2\2\2\u00f6\u00f4\3\2\2\2\u00f6\u00f7\3\2"+
-		"\2\2\u00f7\u00fd\3\2\2\2\u00f8\u00f6\3\2\2\2\u00f9\u00fb\5\26\f\2\u00fa"+
-		"\u00f9\3\2\2\2\u00fa\u00fb\3\2\2\2\u00fb\u00fc\3\2\2\2\u00fc\u00fe\5\60"+
-		"\31\2\u00fd\u00fa\3\2\2\2\u00fd\u00fe\3\2\2\2\u00fe\u0100\3\2\2\2\u00ff"+
-		"\u00ef\3\2\2\2\u0100\u0101\3\2\2\2\u0101\u00ff\3\2\2\2\u0101\u0102\3\2"+
-		"\2\2\u0102\u0104\3\2\2\2\u0103\u00db\3\2\2\2\u0103\u00ff\3\2\2\2\u0104"+
-		"+\3\2\2\2\u0105\u0107\7\n\2\2\u0106\u0108\5\26\f\2\u0107\u0106\3\2\2\2"+
-		"\u0107\u0108\3\2\2\2\u0108\u0109\3\2\2\2\u0109\u010b\5\60\31\2\u010a\u010c"+
-		"\5\26\f\2\u010b\u010a\3\2\2\2\u010b\u010c\3\2\2\2\u010c\u010d\3\2\2\2"+
-		"\u010d\u010e\7\13\2\2\u010e-\3\2\2\2\u010f\u0110\7\20\2\2\u0110/\3\2\2"+
-		"\2\u0111\u0113\t\3\2\2\u0112\u0111\3\2\2\2\u0113\u0114\3\2\2\2\u0114\u0112"+
-		"\3\2\2\2\u0114\u0115\3\2\2\2\u0115\u011e\3\2\2\2\u0116\u0118\5\26\f\2"+
-		"\u0117\u0119\t\3\2\2\u0118\u0117\3\2\2\2\u0119\u011a\3\2\2\2\u011a\u0118"+
-		"\3\2\2\2\u011a\u011b\3\2\2\2\u011b\u011d\3\2\2\2\u011c\u0116\3\2\2\2\u011d"+
-		"\u0120\3\2\2\2\u011e\u011c\3\2\2\2\u011e\u011f\3\2\2\2\u011f\61\3\2\2"+
-		"\2\u0120\u011e\3\2\2\2\60\63\669<?HQZbejot{\u0083\u0086\u008b\u0091\u0097"+
-		"\u009b\u00a3\u00a9\u00ae\u00b2\u00b6\u00ba\u00c1\u00c7\u00cb\u00d4\u00dd"+
-		"\u00e2\u00e5\u00e8\u00ec\u00f1\u00f6\u00fa\u00fd\u0101\u0103\u0107\u010b"+
-		"\u0114\u011a\u011e";
+		"\u0004\u0001\u000e\u0127\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001"+
+		"\u0002\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004"+
+		"\u0002\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007"+
+		"\u0002\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b\u0007\u000b"+
+		"\u0002\f\u0007\f\u0002\r\u0007\r\u0002\u000e\u0007\u000e\u0002\u000f\u0007"+
+		"\u000f\u0002\u0010\u0007\u0010\u0002\u0011\u0007\u0011\u0002\u0012\u0007"+
+		"\u0012\u0002\u0013\u0007\u0013\u0002\u0014\u0007\u0014\u0002\u0015\u0007"+
+		"\u0015\u0002\u0016\u0007\u0016\u0002\u0017\u0007\u0017\u0002\u0018\u0007"+
+		"\u0018\u0002\u0019\u0007\u0019\u0001\u0000\u0003\u00006\b\u0000\u0001"+
+		"\u0000\u0003\u00009\b\u0000\u0001\u0000\u0003\u0000<\b\u0000\u0001\u0000"+
+		"\u0003\u0000?\b\u0000\u0001\u0000\u0003\u0000B\b\u0000\u0001\u0000\u0001"+
+		"\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0004\u0001I\b\u0001\u000b"+
+		"\u0001\f\u0001J\u0001\u0002\u0001\u0002\u0001\u0003\u0001\u0003\u0001"+
+		"\u0003\u0004\u0003R\b\u0003\u000b\u0003\f\u0003S\u0001\u0004\u0001\u0004"+
+		"\u0001\u0005\u0001\u0005\u0001\u0005\u0004\u0005[\b\u0005\u000b\u0005"+
+		"\f\u0005\\\u0001\u0006\u0001\u0006\u0001\u0007\u0001\u0007\u0004\u0007"+
+		"c\b\u0007\u000b\u0007\f\u0007d\u0001\u0007\u0003\u0007h\b\u0007\u0001"+
+		"\b\u0001\b\u0001\t\u0001\t\u0004\tn\b\t\u000b\t\f\to\u0004\tr\b\t\u000b"+
+		"\t\f\ts\u0001\n\u0001\n\u0001\u000b\u0001\u000b\u0001\f\u0003\f{\b\f\u0001"+
+		"\f\u0001\f\u0001\r\u0001\r\u0004\r\u0081\b\r\u000b\r\f\r\u0082\u0001\r"+
+		"\u0003\r\u0086\b\r\u0001\u000e\u0001\u000e\u0001\u000f\u0004\u000f\u008b"+
+		"\b\u000f\u000b\u000f\f\u000f\u008c\u0001\u0010\u0001\u0010\u0004\u0010"+
+		"\u0091\b\u0010\u000b\u0010\f\u0010\u0092\u0001\u0010\u0001\u0010\u0004"+
+		"\u0010\u0097\b\u0010\u000b\u0010\f\u0010\u0098\u0005\u0010\u009b\b\u0010"+
+		"\n\u0010\f\u0010\u009e\t\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0004"+
+		"\u0010\u00a3\b\u0010\u000b\u0010\f\u0010\u00a4\u0001\u0010\u0001\u0010"+
+		"\u0001\u0010\u0001\u0010\u0003\u0010\u00ab\b\u0010\u0001\u0010\u0004\u0010"+
+		"\u00ae\b\u0010\u000b\u0010\f\u0010\u00af\u0004\u0010\u00b2\b\u0010\u000b"+
+		"\u0010\f\u0010\u00b3\u0004\u0010\u00b6\b\u0010\u000b\u0010\f\u0010\u00b7"+
+		"\u0004\u0010\u00ba\b\u0010\u000b\u0010\f\u0010\u00bb\u0001\u0011\u0001"+
+		"\u0011\u0001\u0012\u0004\u0012\u00c1\b\u0012\u000b\u0012\f\u0012\u00c2"+
+		"\u0001\u0012\u0001\u0012\u0004\u0012\u00c7\b\u0012\u000b\u0012\f\u0012"+
+		"\u00c8\u0005\u0012\u00cb\b\u0012\n\u0012\f\u0012\u00ce\t\u0012\u0001\u0013"+
+		"\u0001\u0013\u0001\u0013\u0001\u0013\u0005\u0013\u00d4\b\u0013\n\u0013"+
+		"\f\u0013\u00d7\t\u0013\u0001\u0014\u0001\u0014\u0001\u0015\u0001\u0015"+
+		"\u0001\u0016\u0001\u0016\u0003\u0016\u00df\b\u0016\u0001\u0016\u0004\u0016"+
+		"\u00e2\b\u0016\u000b\u0016\f\u0016\u00e3\u0001\u0016\u0003\u0016\u00e7"+
+		"\b\u0016\u0001\u0016\u0003\u0016\u00ea\b\u0016\u0005\u0016\u00ec\b\u0016"+
+		"\n\u0016\f\u0016\u00ef\t\u0016\u0001\u0016\u0001\u0016\u0003\u0016\u00f3"+
+		"\b\u0016\u0001\u0016\u0005\u0016\u00f6\b\u0016\n\u0016\f\u0016\u00f9\t"+
+		"\u0016\u0001\u0016\u0003\u0016\u00fc\b\u0016\u0001\u0016\u0003\u0016\u00ff"+
+		"\b\u0016\u0004\u0016\u0101\b\u0016\u000b\u0016\f\u0016\u0102\u0003\u0016"+
+		"\u0105\b\u0016\u0001\u0017\u0001\u0017\u0001\u0017\u0001\u0017\u0004\u0017"+
+		"\u010b\b\u0017\u000b\u0017\f\u0017\u010c\u0001\u0017\u0001\u0017\u0001"+
+		"\u0018\u0005\u0018\u0112\b\u0018\n\u0018\f\u0018\u0115\t\u0018\u0001\u0018"+
+		"\u0001\u0018\u0005\u0018\u0119\b\u0018\n\u0018\f\u0018\u011c\t\u0018\u0001"+
+		"\u0019\u0001\u0019\u0001\u0019\u0001\u0019\u0005\u0019\u0122\b\u0019\n"+
+		"\u0019\f\u0019\u0125\t\u0019\u0001\u0019\u0000\u0000\u001a\u0000\u0002"+
+		"\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0016\u0018\u001a\u001c\u001e"+
+		" \"$&(*,.02\u0000\u0002\u0003\u0000\u0007\u0007\n\n\r\u000e\u0003\u0000"+
+		"\u0006\u0007\n\n\r\u000e\u013a\u00005\u0001\u0000\u0000\u0000\u0002E\u0001"+
+		"\u0000\u0000\u0000\u0004L\u0001\u0000\u0000\u0000\u0006N\u0001\u0000\u0000"+
+		"\u0000\bU\u0001\u0000\u0000\u0000\nW\u0001\u0000\u0000\u0000\f^\u0001"+
+		"\u0000\u0000\u0000\u000e`\u0001\u0000\u0000\u0000\u0010i\u0001\u0000\u0000"+
+		"\u0000\u0012q\u0001\u0000\u0000\u0000\u0014u\u0001\u0000\u0000\u0000\u0016"+
+		"w\u0001\u0000\u0000\u0000\u0018z\u0001\u0000\u0000\u0000\u001a~\u0001"+
+		"\u0000\u0000\u0000\u001c\u0087\u0001\u0000\u0000\u0000\u001e\u008a\u0001"+
+		"\u0000\u0000\u0000 \u008e\u0001\u0000\u0000\u0000\"\u00bd\u0001\u0000"+
+		"\u0000\u0000$\u00c0\u0001\u0000\u0000\u0000&\u00cf\u0001\u0000\u0000\u0000"+
+		"(\u00d8\u0001\u0000\u0000\u0000*\u00da\u0001\u0000\u0000\u0000,\u0104"+
+		"\u0001\u0000\u0000\u0000.\u0106\u0001\u0000\u0000\u00000\u0113\u0001\u0000"+
+		"\u0000\u00002\u011d\u0001\u0000\u0000\u000046\u0003\u0002\u0001\u0000"+
+		"54\u0001\u0000\u0000\u000056\u0001\u0000\u0000\u000068\u0001\u0000\u0000"+
+		"\u000079\u0003\u0006\u0003\u000087\u0001\u0000\u0000\u000089\u0001\u0000"+
+		"\u0000\u00009;\u0001\u0000\u0000\u0000:<\u0003\n\u0005\u0000;:\u0001\u0000"+
+		"\u0000\u0000;<\u0001\u0000\u0000\u0000<>\u0001\u0000\u0000\u0000=?\u0003"+
+		"\u000e\u0007\u0000>=\u0001\u0000\u0000\u0000>?\u0001\u0000\u0000\u0000"+
+		"?A\u0001\u0000\u0000\u0000@B\u0003\u001a\r\u0000A@\u0001\u0000\u0000\u0000"+
+		"AB\u0001\u0000\u0000\u0000BC\u0001\u0000\u0000\u0000CD\u0005\u0000\u0000"+
+		"\u0001D\u0001\u0001\u0000\u0000\u0000EF\u0003\u0016\u000b\u0000FH\u0003"+
+		"\u0004\u0002\u0000GI\u0003\u0018\f\u0000HG\u0001\u0000\u0000\u0000IJ\u0001"+
+		"\u0000\u0000\u0000JH\u0001\u0000\u0000\u0000JK\u0001\u0000\u0000\u0000"+
+		"K\u0003\u0001\u0000\u0000\u0000LM\u0003$\u0012\u0000M\u0005\u0001\u0000"+
+		"\u0000\u0000NO\u0003\u0016\u000b\u0000OQ\u0003\b\u0004\u0000PR\u0003\u0018"+
+		"\f\u0000QP\u0001\u0000\u0000\u0000RS\u0001\u0000\u0000\u0000SQ\u0001\u0000"+
+		"\u0000\u0000ST\u0001\u0000\u0000\u0000T\u0007\u0001\u0000\u0000\u0000"+
+		"UV\u00032\u0019\u0000V\t\u0001\u0000\u0000\u0000WX\u0003\u0016\u000b\u0000"+
+		"XZ\u0003\f\u0006\u0000Y[\u0003\u0018\f\u0000ZY\u0001\u0000\u0000\u0000"+
+		"[\\\u0001\u0000\u0000\u0000\\Z\u0001\u0000\u0000\u0000\\]\u0001\u0000"+
+		"\u0000\u0000]\u000b\u0001\u0000\u0000\u0000^_\u00032\u0019\u0000_\r\u0001"+
+		"\u0000\u0000\u0000`b\u0003\u0010\b\u0000ac\u0003\u0018\f\u0000ba\u0001"+
+		"\u0000\u0000\u0000cd\u0001\u0000\u0000\u0000db\u0001\u0000\u0000\u0000"+
+		"de\u0001\u0000\u0000\u0000eg\u0001\u0000\u0000\u0000fh\u0003\u0012\t\u0000"+
+		"gf\u0001\u0000\u0000\u0000gh\u0001\u0000\u0000\u0000h\u000f\u0001\u0000"+
+		"\u0000\u0000ij\u0005\u000b\u0000\u0000j\u0011\u0001\u0000\u0000\u0000"+
+		"km\u0003\u0014\n\u0000ln\u0003\u0018\f\u0000ml\u0001\u0000\u0000\u0000"+
+		"no\u0001\u0000\u0000\u0000om\u0001\u0000\u0000\u0000op\u0001\u0000\u0000"+
+		"\u0000pr\u0001\u0000\u0000\u0000qk\u0001\u0000\u0000\u0000rs\u0001\u0000"+
+		"\u0000\u0000sq\u0001\u0000\u0000\u0000st\u0001\u0000\u0000\u0000t\u0013"+
+		"\u0001\u0000\u0000\u0000uv\u00032\u0019\u0000v\u0015\u0001\u0000\u0000"+
+		"\u0000wx\u0005\u0003\u0000\u0000x\u0017\u0001\u0000\u0000\u0000y{\u0003"+
+		"\u0016\u000b\u0000zy\u0001\u0000\u0000\u0000z{\u0001\u0000\u0000\u0000"+
+		"{|\u0001\u0000\u0000\u0000|}\u0005\u0004\u0000\u0000}\u0019\u0001\u0000"+
+		"\u0000\u0000~\u0080\u0003\u001c\u000e\u0000\u007f\u0081\u0003\u0018\f"+
+		"\u0000\u0080\u007f\u0001\u0000\u0000\u0000\u0081\u0082\u0001\u0000\u0000"+
+		"\u0000\u0082\u0080\u0001\u0000\u0000\u0000\u0082\u0083\u0001\u0000\u0000"+
+		"\u0000\u0083\u0085\u0001\u0000\u0000\u0000\u0084\u0086\u0003\u001e\u000f"+
+		"\u0000\u0085\u0084\u0001\u0000\u0000\u0000\u0085\u0086\u0001\u0000\u0000"+
+		"\u0000\u0086\u001b\u0001\u0000\u0000\u0000\u0087\u0088\u0005\f\u0000\u0000"+
+		"\u0088\u001d\u0001\u0000\u0000\u0000\u0089\u008b\u0003 \u0010\u0000\u008a"+
+		"\u0089\u0001\u0000\u0000\u0000\u008b\u008c\u0001\u0000\u0000\u0000\u008c"+
+		"\u008a\u0001\u0000\u0000\u0000\u008c\u008d\u0001\u0000\u0000\u0000\u008d"+
+		"\u001f\u0001\u0000\u0000\u0000\u008e\u0090\u0003\"\u0011\u0000\u008f\u0091"+
+		"\u0003\u0018\f\u0000\u0090\u008f\u0001\u0000\u0000\u0000\u0091\u0092\u0001"+
+		"\u0000\u0000\u0000\u0092\u0090\u0001\u0000\u0000\u0000\u0092\u0093\u0001"+
+		"\u0000\u0000\u0000\u0093\u00b9\u0001\u0000\u0000\u0000\u0094\u0096\u0003"+
+		"*\u0015\u0000\u0095\u0097\u0003\u0018\f\u0000\u0096\u0095\u0001\u0000"+
+		"\u0000\u0000\u0097\u0098\u0001\u0000\u0000\u0000\u0098\u0096\u0001\u0000"+
+		"\u0000\u0000\u0098\u0099\u0001\u0000\u0000\u0000\u0099\u009b\u0001\u0000"+
+		"\u0000\u0000\u009a\u0094\u0001\u0000\u0000\u0000\u009b\u009e\u0001\u0000"+
+		"\u0000\u0000\u009c\u009a\u0001\u0000\u0000\u0000\u009c\u009d\u0001\u0000"+
+		"\u0000\u0000\u009d\u00b5\u0001\u0000\u0000\u0000\u009e\u009c\u0001\u0000"+
+		"\u0000\u0000\u009f\u00a0\u0003\u0016\u000b\u0000\u00a0\u00a2\u0003&\u0013"+
+		"\u0000\u00a1\u00a3\u0003\u0018\f\u0000\u00a2\u00a1\u0001\u0000\u0000\u0000"+
+		"\u00a3\u00a4\u0001\u0000\u0000\u0000\u00a4\u00a2\u0001\u0000\u0000\u0000"+
+		"\u00a4\u00a5\u0001\u0000\u0000\u0000\u00a5\u00b1\u0001\u0000\u0000\u0000"+
+		"\u00a6\u00a7\u0003\u0016\u000b\u0000\u00a7\u00a8\u0003(\u0014\u0000\u00a8"+
+		"\u00ab\u0001\u0000\u0000\u0000\u00a9\u00ab\u0003*\u0015\u0000\u00aa\u00a6"+
+		"\u0001\u0000\u0000\u0000\u00aa\u00a9\u0001\u0000\u0000\u0000\u00ab\u00ad"+
+		"\u0001\u0000\u0000\u0000\u00ac\u00ae\u0003\u0018\f\u0000\u00ad\u00ac\u0001"+
+		"\u0000\u0000\u0000\u00ae\u00af\u0001\u0000\u0000\u0000\u00af\u00ad\u0001"+
+		"\u0000\u0000\u0000\u00af\u00b0\u0001\u0000\u0000\u0000\u00b0\u00b2\u0001"+
+		"\u0000\u0000\u0000\u00b1\u00aa\u0001\u0000\u0000\u0000\u00b2\u00b3\u0001"+
+		"\u0000\u0000\u0000\u00b3\u00b1\u0001\u0000\u0000\u0000\u00b3\u00b4\u0001"+
+		"\u0000\u0000\u0000\u00b4\u00b6\u0001\u0000\u0000\u0000\u00b5\u009f\u0001"+
+		"\u0000\u0000\u0000\u00b6\u00b7\u0001\u0000\u0000\u0000\u00b7\u00b5\u0001"+
+		"\u0000\u0000\u0000\u00b7\u00b8\u0001\u0000\u0000\u0000\u00b8\u00ba\u0001"+
+		"\u0000\u0000\u0000\u00b9\u009c\u0001\u0000\u0000\u0000\u00ba\u00bb\u0001"+
+		"\u0000\u0000\u0000\u00bb\u00b9\u0001\u0000\u0000\u0000\u00bb\u00bc\u0001"+
+		"\u0000\u0000\u0000\u00bc!\u0001\u0000\u0000\u0000\u00bd\u00be\u0003$\u0012"+
+		"\u0000\u00be#\u0001\u0000\u0000\u0000\u00bf\u00c1\u0007\u0000\u0000\u0000"+
+		"\u00c0\u00bf\u0001\u0000\u0000\u0000\u00c1\u00c2\u0001\u0000\u0000\u0000"+
+		"\u00c2\u00c0\u0001\u0000\u0000\u0000\u00c2\u00c3\u0001\u0000\u0000\u0000"+
+		"\u00c3\u00cc\u0001\u0000\u0000\u0000\u00c4\u00c6\u0003\u0016\u000b\u0000"+
+		"\u00c5\u00c7\u0007\u0000\u0000\u0000\u00c6\u00c5\u0001\u0000\u0000\u0000"+
+		"\u00c7\u00c8\u0001\u0000\u0000\u0000\u00c8\u00c6\u0001\u0000\u0000\u0000"+
+		"\u00c8\u00c9\u0001\u0000\u0000\u0000\u00c9\u00cb\u0001\u0000\u0000\u0000"+
+		"\u00ca\u00c4\u0001\u0000\u0000\u0000\u00cb\u00ce\u0001\u0000\u0000\u0000"+
+		"\u00cc\u00ca\u0001\u0000\u0000\u0000\u00cc\u00cd\u0001\u0000\u0000\u0000"+
+		"\u00cd%\u0001\u0000\u0000\u0000\u00ce\u00cc\u0001\u0000\u0000\u0000\u00cf"+
+		"\u00d5\u0005\r\u0000\u0000\u00d0\u00d1\u0003\u0016\u000b\u0000\u00d1\u00d2"+
+		"\u0005\r\u0000\u0000\u00d2\u00d4\u0001\u0000\u0000\u0000\u00d3\u00d0\u0001"+
+		"\u0000\u0000\u0000\u00d4\u00d7\u0001\u0000\u0000\u0000\u00d5\u00d3\u0001"+
+		"\u0000\u0000\u0000\u00d5\u00d6\u0001\u0000\u0000\u0000\u00d6\'\u0001\u0000"+
+		"\u0000\u0000\u00d7\u00d5\u0001\u0000\u0000\u0000\u00d8\u00d9\u0003,\u0016"+
+		"\u0000\u00d9)\u0001\u0000\u0000\u0000\u00da\u00db\u0003,\u0016\u0000\u00db"+
+		"+\u0001\u0000\u0000\u0000\u00dc\u00ed\u00032\u0019\u0000\u00dd\u00df\u0003"+
+		"\u0016\u000b\u0000\u00de\u00dd\u0001\u0000\u0000\u0000\u00de\u00df\u0001"+
+		"\u0000\u0000\u0000\u00df\u00e0\u0001\u0000\u0000\u0000\u00e0\u00e2\u0003"+
+		".\u0017\u0000\u00e1\u00de\u0001\u0000\u0000\u0000\u00e2\u00e3\u0001\u0000"+
+		"\u0000\u0000\u00e3\u00e1\u0001\u0000\u0000\u0000\u00e3\u00e4\u0001\u0000"+
+		"\u0000\u0000\u00e4\u00e9\u0001\u0000\u0000\u0000\u00e5\u00e7\u0003\u0016"+
+		"\u000b\u0000\u00e6\u00e5\u0001\u0000\u0000\u0000\u00e6\u00e7\u0001\u0000"+
+		"\u0000\u0000\u00e7\u00e8\u0001\u0000\u0000\u0000\u00e8\u00ea\u00032\u0019"+
+		"\u0000\u00e9\u00e6\u0001\u0000\u0000\u0000\u00e9\u00ea\u0001\u0000\u0000"+
+		"\u0000\u00ea\u00ec\u0001\u0000\u0000\u0000\u00eb\u00e1\u0001\u0000\u0000"+
+		"\u0000\u00ec\u00ef\u0001\u0000\u0000\u0000\u00ed\u00eb\u0001\u0000\u0000"+
+		"\u0000\u00ed\u00ee\u0001\u0000\u0000\u0000\u00ee\u0105\u0001\u0000\u0000"+
+		"\u0000\u00ef\u00ed\u0001\u0000\u0000\u0000\u00f0\u00f7\u0003.\u0017\u0000"+
+		"\u00f1\u00f3\u0003\u0016\u000b\u0000\u00f2\u00f1\u0001\u0000\u0000\u0000"+
+		"\u00f2\u00f3\u0001\u0000\u0000\u0000\u00f3\u00f4\u0001\u0000\u0000\u0000"+
+		"\u00f4\u00f6\u0003.\u0017\u0000\u00f5\u00f2\u0001\u0000\u0000\u0000\u00f6"+
+		"\u00f9\u0001\u0000\u0000\u0000\u00f7\u00f5\u0001\u0000\u0000\u0000\u00f7"+
+		"\u00f8\u0001\u0000\u0000\u0000\u00f8\u00fe\u0001\u0000\u0000\u0000\u00f9"+
+		"\u00f7\u0001\u0000\u0000\u0000\u00fa\u00fc\u0003\u0016\u000b\u0000\u00fb"+
+		"\u00fa\u0001\u0000\u0000\u0000\u00fb\u00fc\u0001\u0000\u0000\u0000\u00fc"+
+		"\u00fd\u0001\u0000\u0000\u0000\u00fd\u00ff\u00032\u0019\u0000\u00fe\u00fb"+
+		"\u0001\u0000\u0000\u0000\u00fe\u00ff\u0001\u0000\u0000\u0000\u00ff\u0101"+
+		"\u0001\u0000\u0000\u0000\u0100\u00f0\u0001\u0000\u0000\u0000\u0101\u0102"+
+		"\u0001\u0000\u0000\u0000\u0102\u0100\u0001\u0000\u0000\u0000\u0102\u0103"+
+		"\u0001\u0000\u0000\u0000\u0103\u0105\u0001\u0000\u0000\u0000\u0104\u00dc"+
+		"\u0001\u0000\u0000\u0000\u0104\u0100\u0001\u0000\u0000\u0000\u0105-\u0001"+
+		"\u0000\u0000\u0000\u0106\u010a\u0005\b\u0000\u0000\u0107\u010b\u0003\u0016"+
+		"\u000b\u0000\u0108\u010b\u00032\u0019\u0000\u0109\u010b\u0005\r\u0000"+
+		"\u0000\u010a\u0107\u0001\u0000\u0000\u0000\u010a\u0108\u0001\u0000\u0000"+
+		"\u0000\u010a\u0109\u0001\u0000\u0000\u0000\u010b\u010c\u0001\u0000\u0000"+
+		"\u0000\u010c\u010a\u0001\u0000\u0000\u0000\u010c\u010d\u0001\u0000\u0000"+
+		"\u0000\u010d\u010e\u0001\u0000\u0000\u0000\u010e\u010f\u0005\t\u0000\u0000"+
+		"\u010f/\u0001\u0000\u0000\u0000\u0110\u0112\u0007\u0001\u0000\u0000\u0111"+
+		"\u0110\u0001\u0000\u0000\u0000\u0112\u0115\u0001\u0000\u0000\u0000\u0113"+
+		"\u0111\u0001\u0000\u0000\u0000\u0113\u0114\u0001\u0000\u0000\u0000\u0114"+
+		"\u0116\u0001\u0000\u0000\u0000\u0115\u0113\u0001\u0000\u0000\u0000\u0116"+
+		"\u011a\u0005\u0006\u0000\u0000\u0117\u0119\u0007\u0001\u0000\u0000\u0118"+
+		"\u0117\u0001\u0000\u0000\u0000\u0119\u011c\u0001\u0000\u0000\u0000\u011a"+
+		"\u0118\u0001\u0000\u0000\u0000\u011a\u011b\u0001\u0000\u0000\u0000\u011b"+
+		"1\u0001\u0000\u0000\u0000\u011c\u011a\u0001\u0000\u0000\u0000\u011d\u0123"+
+		"\u00030\u0018\u0000\u011e\u011f\u0003\u0016\u000b\u0000\u011f\u0120\u0003"+
+		"0\u0018\u0000\u0120\u0122\u0001\u0000\u0000\u0000\u0121\u011e\u0001\u0000"+
+		"\u0000\u0000\u0122\u0125\u0001\u0000\u0000\u0000\u0123\u0121\u0001\u0000"+
+		"\u0000\u0000\u0123\u0124\u0001\u0000\u0000\u0000\u01243\u0001\u0000\u0000"+
+		"\u0000\u0125\u0123\u0001\u0000\u0000\u0000-58;>AJS\\dgosz\u0082\u0085"+
+		"\u008c\u0092\u0098\u009c\u00a4\u00aa\u00af\u00b3\u00b7\u00bb\u00c2\u00c8"+
+		"\u00cc\u00d5\u00de\u00e3\u00e6\u00e9\u00ed\u00f2\u00f7\u00fb\u00fe\u0102"+
+		"\u0104\u010a\u010c\u0113\u011a\u0123";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

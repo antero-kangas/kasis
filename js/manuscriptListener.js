@@ -221,7 +221,7 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 
 	// Enter a parse tree produced by ManuscriptParser#scenesHeading.
 	enterScenesHeading(ctx) {
-		this.add("scsnesHeading", ctx.getText().trim());
+		this.add("scenesHeading", ctx.getText().trim());
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#scenesHeading.
@@ -333,7 +333,5 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	// Exit a parse tree produced by ManuscriptParser#anyText.
 	exitAnyText(ctx) {
 	}
-
-
 
 }

@@ -13,20 +13,22 @@ manuscript:
 
 titleParagraph: wss title eol+;
 title: heading;
+
 authorParagraph: wss author eol+;
-author: anyText;
+author: nonCapitalText;
+
 dateParagraph: wss date eol+;
-date: anyText;
+date: nonCapitalText;
 
 synopsisPart: synopsisTitle eol+ synopsisParagraphs?;
 synopsisTitle: Synopsis;
-synopsisParagraphs: (synopsisParagraph+ eol*)+;
-synopsisParagraph: anyText;
+synopsisParagraphs: (synopsisParagraph eol+)+;
+synopsisParagraph: nonCapitalText;
 
 wss: WSS;
 eol: wss? EOL;
 
-scenesPart: sceneHeading eol+ scenes?;
+scenesPart: scenesHeading eol+ scenes?;
 scenesHeading: Scene;
 scenes: scene+;
 
@@ -47,25 +49,33 @@ scene:
 sceneHeading: heading;
 
 heading:
-    (CapitalWord | Number | Punctuation | Extra | Minus)+ 
-    (wss (CapitalWord | Number | Punctuation | Extra | Minus)+)* 
+    (CapitalWord | Number | Punctuation | Extra)+ 
+    (wss (CapitalWord | Number | Punctuation | Extra)+)* 
     ;
 
 name: CapitalWord (wss CapitalWord)*;
-replique : anyTextOrCommand ;
-parenthesis: anyTextOrCommand ;
-//anyTextOrCommand: (anyText | command) (wss? anyText | wss? command)* ;
-anyTextOrCommand: 
-    ( anyText ((wss? command)+ (wss? anyText)?)* 
-    | (command (wss? command)* (wss? anyText)?)+ 
+replique : nonCapitalTextOrCommand ;
+parenthesis: nonCapitalTextOrCommand ;
+//nonCapitalTextOrCommand: (nonCapitalText | command) (wss? nonCapitalText | wss? command)* ;
+nonCapitalTextOrCommand: 
+    ( nonCapitalText ((wss? command)+ (wss? nonCapitalText)?)* 
+    | (command (wss? command)* (wss? nonCapitalText)?)+ 
     )
     ;
-command: LeftParenthesis wss? anyText wss? RightParenthesis;
+command: LeftParenthesis (wss | nonCapitalText | CapitalWord)+ RightParenthesis;
 
-capitalword: CapitalWord ;
+//nonCapitalText: 
+//    (CapitalWord | Number | Punctuation | Extra | Minus | MinusculeWord)+
+//    ( wss (CapitalWord | Number | Punctuation | Extra | Minus | MinusculeWord)+
+//    )*
+//    ;
 
-anyText: 
-    (CapitalWord | Number | Punctuation | Extra | Minus | MinusculeWord)+
-    ( wss (CapitalWord | Number | Punctuation | Extra | Minus | MinusculeWord)+
-    )*
+
+nonCapitalWord: 
+    (CapitalWord | Number | Punctuation | Extra | Minuscule)*
+    Minuscule
+    (CapitalWord | Number | Punctuation | Extra | Minuscule)*
     ;
+
+nonCapitalText: nonCapitalWord (wss nonCapitalWord)*;
+
