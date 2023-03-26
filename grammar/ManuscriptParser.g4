@@ -66,9 +66,20 @@ command: LeftParenthesis (wss | nonCapitalText | CapitalWord)+ RightParenthesis;
 
 nonCapitalWord: 
     CapitalWord*
-    (Number | Punctuation | Extra | Minuscule)
-    (CapitalWord | Number | Punctuation | Extra | Minuscule)*
+    (Number | Punctuation | Extra | MinusculeWord)
+    (CapitalWord | Number | Punctuation | Extra | MinusculeWord)*
     ;
 
-nonCapitalText: nonCapitalWord (wss nonCapitalWord)*;
+//nonCapitalText: nonCapitalWord (wss nonCapitalWord)*;
+
+nonCapitalText: 
+    (
+        (CapitalWord 
+            (wss (CapitalWord | nonCapitalWord))*
+        ) wss nonCapitalWord
+    |
+    nonCapitalWord
+    )
+    (wss (CapitalWord | nonCapitalWord))* 
+    ;
 
