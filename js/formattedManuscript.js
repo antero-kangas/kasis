@@ -27,7 +27,7 @@ export default class FormattedManuscript {
 	}
 
 	manuscript(json) {
-		console.log("manuscript")
+		// console.log("manuscript")
 		let result = "";
 		result += this.title(json.title);
 		result += this.author(json.author);
@@ -38,7 +38,7 @@ export default class FormattedManuscript {
 	}
 
 	title(json) {
-		console.log("title", json)
+		// console.log("title", json)
 		let result = "";
 		if (json) {
 			result += this.center(json, MINTITLEINDENT) + NEWLINE + NEWLINE;
@@ -47,7 +47,7 @@ export default class FormattedManuscript {
 	}
 
 	author(json) {
-		console.log("author", json)
+		// console.log("author", json)
 		let result = "";
 		if (json) {
 			result += this.center(json, MINTITLEINDENT) + NEWLINE;
@@ -56,7 +56,7 @@ export default class FormattedManuscript {
 	}
 
 	date(json) {
-		console.log("date", json)
+		// console.log("date", json)
 		let result = "";
 		if (json) {
 			result += this.center(json, MINTITLEINDENT) + NEWLINE + NEWLINE + NEWLINE;
@@ -65,7 +65,7 @@ export default class FormattedManuscript {
 	}
 
 	synopsis(json) {
-		console.log("synopsis")
+		// console.log("synopsis")
 		let result = "";
 		if (json) {
 			result += this.left(json.synopsisTitle) + NEWLINE + NEWLINE;
@@ -75,11 +75,10 @@ export default class FormattedManuscript {
 	}
 
 	synopsisParagraphs(json) {
-		console.log("synopsisParagraphs:", json, !!json, json.length)
+		// console.log("synopsisParagraphs:", json, !!json, json.length)
 		let result = "";
 		if (json) {
 			json.forEach(synopsisParagraph => {
-				console.log("sP=", synopsisParagraph);
 				result += this.synopsisParagraph(synopsisParagraph.synopsisParagraph)
 			})
 		}
@@ -87,7 +86,7 @@ export default class FormattedManuscript {
 	}
 
 	synopsisParagraph(json) {
-		console.log("synopsisParagraph", json)
+		// console.log("synopsisParagraph", json)
 		let result = "";
 		if (json) {
 			result += this.left(json) + NEWLINE +  NEWLINE;
@@ -96,10 +95,38 @@ export default class FormattedManuscript {
 	}
 
 	scenesPart(json) {
-		console.log("scenesPart", json)
+		// console.log("scenesPart", json)
 		let result = "";
-		result += NEWLINE + this.left(json.scenesHeading) + NEWLINE  + NEWLINE ;
+		if (json) {
+			result += NEWLINE + this.left(json.scenesHeading) + NEWLINE  + NEWLINE ;
+			result += this.scenes(json.scenes);
+		}
 		return result;
 	}
 
+	scenes(json) {
+		// console.log("scenes::::", json)
+		let result = "";
+		if (json) {
+			json.forEach(scene => {
+				// console.log("scene.scene=", scene.scene)
+				result += this.scene(scene.scene)
+			})
+		}
+		return result;
+	}
+
+	scene(json) {
+		console.log("\nscene", json);
+		let result = "";
+		if (json) {
+			json.forEach(scenePart => {
+				switch (scenePart) {
+					case 
+				}
+				result += this.left(json.sceneHeading);
+			})
+		}
+		return result;
+	}
 }	
