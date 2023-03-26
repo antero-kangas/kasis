@@ -23,4 +23,3 @@ Synopsis:           'SYNOPSIS' | 'TIIVISTELMÄ';
 Scene:				'KOHTAUKSET';
 CapitalWord:        Capital+;
 Number:             Digit+;
-//MinusculeWord:      (Minuscule | Capital)* Minuscule (Minuscule | Capital)*;

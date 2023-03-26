@@ -72,8 +72,8 @@ command: LeftParenthesis (wss | nonCapitalText | CapitalWord)+ RightParenthesis;
 
 
 nonCapitalWord: 
-    (CapitalWord | Number | Punctuation | Extra | Minuscule)*
-    Minuscule
+    CapitalWord*
+    (Number | Punctuation | Extra | Minuscule)
     (CapitalWord | Number | Punctuation | Extra | Minuscule)*
     ;
 
