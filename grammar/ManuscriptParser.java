@@ -1948,17 +1948,17 @@ public class ManuscriptParser extends Parser {
 	}
 
 	public static class NonCapitalTextContext extends ParserRuleContext {
-		public List<WssContext> wss() {
-			return getRuleContexts(WssContext.class);
-		}
-		public WssContext wss(int i) {
-			return getRuleContext(WssContext.class,i);
-		}
 		public List<NonCapitalWordContext> nonCapitalWord() {
 			return getRuleContexts(NonCapitalWordContext.class);
 		}
 		public NonCapitalWordContext nonCapitalWord(int i) {
 			return getRuleContext(NonCapitalWordContext.class,i);
+		}
+		public List<WssContext> wss() {
+			return getRuleContexts(WssContext.class);
+		}
+		public WssContext wss(int i) {
+			return getRuleContext(WssContext.class,i);
 		}
 		public List<TerminalNode> CapitalWord() { return getTokens(ManuscriptParser.CapitalWord); }
 		public TerminalNode CapitalWord(int i) {
@@ -1985,10 +1985,11 @@ public class ManuscriptParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(300);
+			setState(310);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,46,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,48,_ctx) ) {
 			case 1:
+				{
 				{
 				{
 				setState(285);
@@ -2031,45 +2032,46 @@ public class ManuscriptParser extends Parser {
 				setState(297);
 				nonCapitalWord();
 				}
+				}
 				break;
 			case 2:
 				{
 				setState(299);
 				nonCapitalWord();
+				setState(307);
+				_errHandler.sync(this);
+				_alt = getInterpreter().adaptivePredict(_input,47,_ctx);
+				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+					if ( _alt==1 ) {
+						{
+						{
+						setState(300);
+						wss();
+						setState(303);
+						_errHandler.sync(this);
+						switch ( getInterpreter().adaptivePredict(_input,46,_ctx) ) {
+						case 1:
+							{
+							setState(301);
+							match(CapitalWord);
+							}
+							break;
+						case 2:
+							{
+							setState(302);
+							nonCapitalWord();
+							}
+							break;
+						}
+						}
+						} 
+					}
+					setState(309);
+					_errHandler.sync(this);
+					_alt = getInterpreter().adaptivePredict(_input,47,_ctx);
+				}
 				}
 				break;
-			}
-			setState(309);
-			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,48,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
-					{
-					{
-					setState(302);
-					wss();
-					setState(305);
-					_errHandler.sync(this);
-					switch ( getInterpreter().adaptivePredict(_input,47,_ctx) ) {
-					case 1:
-						{
-						setState(303);
-						match(CapitalWord);
-						}
-						break;
-					case 2:
-						{
-						setState(304);
-						nonCapitalWord();
-						}
-						break;
-					}
-					}
-					} 
-				}
-				setState(311);
-				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,48,_ctx);
 			}
 			}
 		}
@@ -2111,15 +2113,15 @@ public class ManuscriptParser extends Parser {
 		"\3\31\3\31\3\31\3\31\6\31\u010d\n\31\r\31\16\31\u010e\3\31\3\31\3\32\7"+
 		"\32\u0114\n\32\f\32\16\32\u0117\13\32\3\32\3\32\7\32\u011b\n\32\f\32\16"+
 		"\32\u011e\13\32\3\33\3\33\3\33\3\33\5\33\u0124\n\33\7\33\u0126\n\33\f"+
-		"\33\16\33\u0129\13\33\3\33\3\33\3\33\3\33\5\33\u012f\n\33\3\33\3\33\3"+
-		"\33\5\33\u0134\n\33\7\33\u0136\n\33\f\33\16\33\u0139\13\33\3\33\2\2\34"+
+		"\33\16\33\u0129\13\33\3\33\3\33\3\33\3\33\3\33\3\33\3\33\5\33\u0132\n"+
+		"\33\7\33\u0134\n\33\f\33\16\33\u0137\13\33\5\33\u0139\n\33\3\33\2\2\34"+
 		"\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\2\5\6\2\7\7"+
 		"\n\n\r\r\17\17\5\2\7\7\n\n\16\17\5\2\7\7\n\n\r\17\2\u0152\2\67\3\2\2\2"+
 		"\4G\3\2\2\2\6N\3\2\2\2\bP\3\2\2\2\nW\3\2\2\2\fY\3\2\2\2\16`\3\2\2\2\20"+
 		"b\3\2\2\2\22k\3\2\2\2\24s\3\2\2\2\26w\3\2\2\2\30y\3\2\2\2\32|\3\2\2\2"+
 		"\34\u0080\3\2\2\2\36\u0089\3\2\2\2 \u008c\3\2\2\2\"\u0090\3\2\2\2$\u00bf"+
 		"\3\2\2\2&\u00c2\3\2\2\2(\u00d1\3\2\2\2*\u00da\3\2\2\2,\u00dc\3\2\2\2."+
-		"\u0106\3\2\2\2\60\u0108\3\2\2\2\62\u0115\3\2\2\2\64\u012e\3\2\2\2\668"+
+		"\u0106\3\2\2\2\60\u0108\3\2\2\2\62\u0115\3\2\2\2\64\u0138\3\2\2\2\668"+
 		"\5\4\3\2\67\66\3\2\2\2\678\3\2\2\28:\3\2\2\29;\5\b\5\2:9\3\2\2\2:;\3\2"+
 		"\2\2;=\3\2\2\2<>\5\f\7\2=<\3\2\2\2=>\3\2\2\2>@\3\2\2\2?A\5\20\t\2@?\3"+
 		"\2\2\2@A\3\2\2\2AC\3\2\2\2BD\5\34\17\2CB\3\2\2\2CD\3\2\2\2DE\3\2\2\2E"+
@@ -2191,15 +2193,15 @@ public class ManuscriptParser extends Parser {
 		"\u0122\u0124\5\62\32\2\u0123\u0121\3\2\2\2\u0123\u0122\3\2\2\2\u0124\u0126"+
 		"\3\2\2\2\u0125\u0120\3\2\2\2\u0126\u0129\3\2\2\2\u0127\u0125\3\2\2\2\u0127"+
 		"\u0128\3\2\2\2\u0128\u012a\3\2\2\2\u0129\u0127\3\2\2\2\u012a\u012b\5\30"+
-		"\r\2\u012b\u012c\5\62\32\2\u012c\u012f\3\2\2\2\u012d\u012f\5\62\32\2\u012e"+
-		"\u011f\3\2\2\2\u012e\u012d\3\2\2\2\u012f\u0137\3\2\2\2\u0130\u0133\5\30"+
-		"\r\2\u0131\u0134\7\r\2\2\u0132\u0134\5\62\32\2\u0133\u0131\3\2\2\2\u0133"+
-		"\u0132\3\2\2\2\u0134\u0136\3\2\2\2\u0135\u0130\3\2\2\2\u0136\u0139\3\2"+
-		"\2\2\u0137\u0135\3\2\2\2\u0137\u0138\3\2\2\2\u0138\65\3\2\2\2\u0139\u0137"+
-		"\3\2\2\2\63\67:=@CLU^fiqu|\u0084\u0087\u008e\u0094\u009a\u009e\u00a6\u00ac"+
-		"\u00b1\u00b5\u00b9\u00bd\u00c4\u00ca\u00ce\u00d7\u00e0\u00e5\u00e8\u00eb"+
-		"\u00ef\u00f4\u00f9\u00fd\u0100\u0104\u0106\u010c\u010e\u0115\u011c\u0123"+
-		"\u0127\u012e\u0133\u0137";
+		"\r\2\u012b\u012c\5\62\32\2\u012c\u0139\3\2\2\2\u012d\u0135\5\62\32\2\u012e"+
+		"\u0131\5\30\r\2\u012f\u0132\7\r\2\2\u0130\u0132\5\62\32\2\u0131\u012f"+
+		"\3\2\2\2\u0131\u0130\3\2\2\2\u0132\u0134\3\2\2\2\u0133\u012e\3\2\2\2\u0134"+
+		"\u0137\3\2\2\2\u0135\u0133\3\2\2\2\u0135\u0136\3\2\2\2\u0136\u0139\3\2"+
+		"\2\2\u0137\u0135\3\2\2\2\u0138\u011f\3\2\2\2\u0138\u012d\3\2\2\2\u0139"+
+		"\65\3\2\2\2\63\67:=@CLU^fiqu|\u0084\u0087\u008e\u0094\u009a\u009e\u00a6"+
+		"\u00ac\u00b1\u00b5\u00b9\u00bd\u00c4\u00ca\u00ce\u00d7\u00e0\u00e5\u00e8"+
+		"\u00eb\u00ef\u00f4\u00f9\u00fd\u0100\u0104\u0106\u010c\u010e\u0115\u011c"+
+		"\u0123\u0127\u0131\u0135\u0138";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

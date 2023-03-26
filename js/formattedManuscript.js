@@ -14,16 +14,39 @@ export default class FormattedManuscript {
 	}
 
 	center(text, minindent) {
-		let words = text.split(" ");
+		const words = text.split(" ");
 		let t = words.join(" ");
-		const prefixLength = (LINEWIDTH - t.length) / 2;
-		console.log(prefixLength)
+		let prefixLength = (LINEWIDTH - t.length) / 2;
+		// console.log(prefixLength)
+		prefixLength = Math.max(0, prefixLength);
 		t = " ".repeat(prefixLength) + t;
 		return t;
 	}
 
 	left(text) {
 		return text.split(" ").join(" ");
+	}
+
+	formatName(text) {
+		return this.center(text, 0);
+	}
+
+	formatParenthesis(text) {
+		let words = text.split(" ");
+		let result = "";
+		let i = 0;
+		let line = " ";
+		while (i < words.length) {
+			let test = i==0?words[i] : " "+words[i];
+			while ((line+test).length <= LINEWIDTH && i < words.length) {
+				line += test;
+				i++;
+				test = i==0?words[i] : " "+words[i];
+			}
+			result += line + NEWLINE; 
+			line = words[i]; 
+		}
+		return result
 	}
 
 	manuscript(json) {
@@ -89,7 +112,7 @@ export default class FormattedManuscript {
 		// console.log("synopsisParagraph", json)
 		let result = "";
 		if (json) {
-			result += this.left(json) + NEWLINE +  NEWLINE;
+			result += this.formatParenthesis(json) + NEWLINE +  NEWLINE;
 		}
 		return result;
 	}
@@ -117,14 +140,26 @@ export default class FormattedManuscript {
 	}
 
 	scene(json) {
-		console.log("\nscene", json);
+		// console.log("\nscene", json);
 		let result = "";
 		if (json) {
 			json.forEach(scenePart => {
-				switch (scenePart) {
-					case 
+				console.log("scenePart=",scenePart,Object.keys(scenePart)[0])
+				console.log(scenePart[scenePart,Object.keys(scenePart)[0]])
+				switch (Object.keys(scenePart)[0]) {
+					case "sceneHeading": 
+						result += NEWLINE + NEWLINE + this.left(scenePart.sceneHeading) + NEWLINE + NEWLINE;
+						break;
+					case "name": 
+						result += NEWLINE + this.center(scenePart.name) + NEWLINE + NEWLINE;
+						break;
+					case "parenthesis": 
+						result += this.left(scenePart.parenthesis) + NEWLINE + NEWLINE;
+						break;
+					case "replique": 
+						result += this.center(scenePart.replique) + NEWLINE + NEWLINE;
+						break;
 				}
-				result += this.left(json.sceneHeading);
 			})
 		}
 		return result;

@@ -70,16 +70,16 @@ nonCapitalWord:
     (CapitalWord | Number | Punctuation | Extra | MinusculeWord)*
     ;
 
-//nonCapitalText: nonCapitalWord (wss nonCapitalWord)*;
-
 nonCapitalText: 
     (
-        (CapitalWord 
-            (wss (CapitalWord | nonCapitalWord))*
-        ) wss nonCapitalWord
+        (
+            (CapitalWord 
+                (wss (CapitalWord | nonCapitalWord))*
+            ) wss nonCapitalWord
+        )
     |
-    nonCapitalWord
+        nonCapitalWord
+        (wss (CapitalWord | nonCapitalWord))* 
     )
-    (wss (CapitalWord | nonCapitalWord))* 
     ;
 

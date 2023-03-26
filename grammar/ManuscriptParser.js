@@ -53,9 +53,9 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u001a\u0003\u001a\u0007\u001a\u011b\n\u001a\f\u001a\u000e\u001a\u011e",
     "\u000b\u001a\u0003\u001b\u0003\u001b\u0003\u001b\u0003\u001b\u0005\u001b",
     "\u0124\n\u001b\u0007\u001b\u0126\n\u001b\f\u001b\u000e\u001b\u0129\u000b",
-    "\u001b\u0003\u001b\u0003\u001b\u0003\u001b\u0003\u001b\u0005\u001b\u012f",
-    "\n\u001b\u0003\u001b\u0003\u001b\u0003\u001b\u0005\u001b\u0134\n\u001b",
-    "\u0007\u001b\u0136\n\u001b\f\u001b\u000e\u001b\u0139\u000b\u001b\u0003",
+    "\u001b\u0003\u001b\u0003\u001b\u0003\u001b\u0003\u001b\u0003\u001b\u0003",
+    "\u001b\u0003\u001b\u0005\u001b\u0132\n\u001b\u0007\u001b\u0134\n\u001b",
+    "\f\u001b\u000e\u001b\u0137\u000b\u001b\u0005\u001b\u0139\n\u001b\u0003",
     "\u001b\u0002\u0002\u001c\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014",
     "\u0016\u0018\u001a\u001c\u001e \"$&(*,.024\u0002\u0005\u0006\u0002\u0007",
     "\u0007\n\n\r\r\u000f\u000f\u0005\u0002\u0007\u0007\n\n\u000e\u000f\u0005",
@@ -71,7 +71,7 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u0002\u0002\u0002(\u00d1\u0003\u0002\u0002\u0002*\u00da\u0003\u0002",
     "\u0002\u0002,\u00dc\u0003\u0002\u0002\u0002.\u0106\u0003\u0002\u0002",
     "\u00020\u0108\u0003\u0002\u0002\u00022\u0115\u0003\u0002\u0002\u0002",
-    "4\u012e\u0003\u0002\u0002\u000268\u0005\u0004\u0003\u000276\u0003\u0002",
+    "4\u0138\u0003\u0002\u0002\u000268\u0005\u0004\u0003\u000276\u0003\u0002",
     "\u0002\u000278\u0003\u0002\u0002\u00028:\u0003\u0002\u0002\u00029;\u0005",
     "\b\u0005\u0002:9\u0003\u0002\u0002\u0002:;\u0003\u0002\u0002\u0002;",
     "=\u0003\u0002\u0002\u0002<>\u0005\f\u0007\u0002=<\u0003\u0002\u0002",
@@ -206,18 +206,18 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u0127\u0125\u0003\u0002\u0002\u0002\u0127\u0128\u0003\u0002\u0002\u0002",
     "\u0128\u012a\u0003\u0002\u0002\u0002\u0129\u0127\u0003\u0002\u0002\u0002",
     "\u012a\u012b\u0005\u0018\r\u0002\u012b\u012c\u00052\u001a\u0002\u012c",
-    "\u012f\u0003\u0002\u0002\u0002\u012d\u012f\u00052\u001a\u0002\u012e",
-    "\u011f\u0003\u0002\u0002\u0002\u012e\u012d\u0003\u0002\u0002\u0002\u012f",
-    "\u0137\u0003\u0002\u0002\u0002\u0130\u0133\u0005\u0018\r\u0002\u0131",
-    "\u0134\u0007\r\u0002\u0002\u0132\u0134\u00052\u001a\u0002\u0133\u0131",
-    "\u0003\u0002\u0002\u0002\u0133\u0132\u0003\u0002\u0002\u0002\u0134\u0136",
-    "\u0003\u0002\u0002\u0002\u0135\u0130\u0003\u0002\u0002\u0002\u0136\u0139",
-    "\u0003\u0002\u0002\u0002\u0137\u0135\u0003\u0002\u0002\u0002\u0137\u0138",
-    "\u0003\u0002\u0002\u0002\u01385\u0003\u0002\u0002\u0002\u0139\u0137",
+    "\u0139\u0003\u0002\u0002\u0002\u012d\u0135\u00052\u001a\u0002\u012e",
+    "\u0131\u0005\u0018\r\u0002\u012f\u0132\u0007\r\u0002\u0002\u0130\u0132",
+    "\u00052\u001a\u0002\u0131\u012f\u0003\u0002\u0002\u0002\u0131\u0130",
+    "\u0003\u0002\u0002\u0002\u0132\u0134\u0003\u0002\u0002\u0002\u0133\u012e",
+    "\u0003\u0002\u0002\u0002\u0134\u0137\u0003\u0002\u0002\u0002\u0135\u0133",
+    "\u0003\u0002\u0002\u0002\u0135\u0136\u0003\u0002\u0002\u0002\u0136\u0139",
+    "\u0003\u0002\u0002\u0002\u0137\u0135\u0003\u0002\u0002\u0002\u0138\u011f",
+    "\u0003\u0002\u0002\u0002\u0138\u012d\u0003\u0002\u0002\u0002\u01395",
     "\u0003\u0002\u0002\u000237:=@CLU^fiqu|\u0084\u0087\u008e\u0094\u009a",
     "\u009e\u00a6\u00ac\u00b1\u00b5\u00b9\u00bd\u00c4\u00ca\u00ce\u00d7\u00e0",
     "\u00e5\u00e8\u00eb\u00ef\u00f4\u00f9\u00fd\u0100\u0104\u0106\u010c\u010e",
-    "\u0115\u011c\u0123\u0127\u012e\u0133\u0137"].join("");
+    "\u0115\u011c\u0123\u0127\u0131\u0135\u0138"].join("");
 
 
 const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -1387,9 +1387,9 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    this.enterRule(localctx, 50, ManuscriptParser.RULE_nonCapitalText);
 	    try { let _alt;
 	        this.enterOuterAlt(localctx, 1);
-	        this.state = 300;
+	        this.state = 310;
 	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,46,this._ctx);
+	        var la_ = this._interp.adaptivePredict(this._input,48,this._ctx);
 	        switch(la_) {
 	        case 1:
 	            this.state = 285;
@@ -1431,37 +1431,37 @@ export default class ManuscriptParser extends antlr4.Parser {
 	        case 2:
 	            this.state = 299;
 	            this.nonCapitalWord();
+	            this.state = 307;
+	            this._errHandler.sync(this);
+	            _alt = this._interp.adaptivePredict(this._input,47,this._ctx)
+	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+	                if(_alt===1) {
+	                    this.state = 300;
+	                    this.wss();
+	                    this.state = 303;
+	                    this._errHandler.sync(this);
+	                    var la_ = this._interp.adaptivePredict(this._input,46,this._ctx);
+	                    switch(la_) {
+	                    case 1:
+	                        this.state = 301;
+	                        this.match(ManuscriptParser.CapitalWord);
+	                        break;
+
+	                    case 2:
+	                        this.state = 302;
+	                        this.nonCapitalWord();
+	                        break;
+
+	                    } 
+	                }
+	                this.state = 309;
+	                this._errHandler.sync(this);
+	                _alt = this._interp.adaptivePredict(this._input,47,this._ctx);
+	            }
+
 	            break;
 
 	        }
-	        this.state = 309;
-	        this._errHandler.sync(this);
-	        _alt = this._interp.adaptivePredict(this._input,48,this._ctx)
-	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	            if(_alt===1) {
-	                this.state = 302;
-	                this.wss();
-	                this.state = 305;
-	                this._errHandler.sync(this);
-	                var la_ = this._interp.adaptivePredict(this._input,47,this._ctx);
-	                switch(la_) {
-	                case 1:
-	                    this.state = 303;
-	                    this.match(ManuscriptParser.CapitalWord);
-	                    break;
-
-	                case 2:
-	                    this.state = 304;
-	                    this.nonCapitalWord();
-	                    break;
-
-	                } 
-	            }
-	            this.state = 311;
-	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,48,this._ctx);
-	        }
-
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
@@ -2786,17 +2786,6 @@ class NonCapitalTextContext extends antlr4.ParserRuleContext {
         this.ruleIndex = ManuscriptParser.RULE_nonCapitalText;
     }
 
-	wss = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(WssContext);
-	    } else {
-	        return this.getTypedRuleContext(WssContext,i);
-	    }
-	};
-
 	nonCapitalWord = function(i) {
 	    if(i===undefined) {
 	        i = null;
@@ -2805,6 +2794,17 @@ class NonCapitalTextContext extends antlr4.ParserRuleContext {
 	        return this.getTypedRuleContexts(NonCapitalWordContext);
 	    } else {
 	        return this.getTypedRuleContext(NonCapitalWordContext,i);
+	    }
+	};
+
+	wss = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(WssContext);
+	    } else {
+	        return this.getTypedRuleContext(WssContext,i);
 	    }
 	};
 

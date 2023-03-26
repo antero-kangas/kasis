@@ -89,9 +89,13 @@
           },
           {
             "replique": "Olipa ihastuttava neito."
-          },
+          }
+        ]
+      },
+      {
+        "scene": [
           {
-            "parenthesis": "KOHTAUS 2: REGINA LAINAA PUVUN"
+            "sceneHeading": "KOHTAUS 2: REGINA LAINAA PUVUN"
           },
           {
             "parenthesis": "REGINA saapuu kartanolle ja koputtaa oveen."
@@ -155,9 +159,13 @@
           },
           {
             "replique": "Muistakin, ruhtinatar osaa olla ankara!"
-          },
+          }
+        ]
+      },
+      {
+        "scene": [
           {
-            "parenthesis": "KOHTAUS 3: ENSIMMÄISET TANSSIAISET"
+            "sceneHeading": "KOHTAUS 3: ENSIMMÄISET TANSSIAISET"
           },
           {
             "parenthesis": "Salonkitanssijat ja ENGELBERT kokoontuvat tanssisalin keskelle."
@@ -224,9 +232,13 @@
           },
           {
             "parenthesis": "ENGELBERT pyytää naisia sovittamaan kenkää. REGINAA ei löydy."
-          },
+          }
+        ]
+      },
+      {
+        "scene": [
           {
-            "parenthesis": "KOHTAUS 4: TOTUUS PALJASTUU"
+            "sceneHeading": "KOHTAUS 4: TOTUUS PALJASTUU"
           },
           {
             "parenthesis": "REGINA on palauttamassa pukua MATILDALLE. MATILDA hätääntyy."
@@ -338,9 +350,13 @@
           },
           {
             "parenthesis": "MATILDA ja ONTREI katsovat toisiaan ja ottavat toisiaan kädestä kiinni."
-          },
+          }
+        ]
+      },
+      {
+        "scene": [
           {
-            "parenthesis": "KOHTAUS 5: ENGELBERT LÄHTEE TANSSIKURSSILLE"
+            "sceneHeading": "KOHTAUS 5: ENGELBERT LÄHTEE TANSSIKURSSILLE"
           },
           {
             "parenthesis": "REGINA on yksin."
@@ -404,9 +420,13 @@
           },
           {
             "parenthesis": "ENGELBERT ja REGINA poistuvat eri suuntiin. ONTREI hetken päästä ENGELBERTIN perään."
-          },
+          }
+        ]
+      },
+      {
+        "scene": [
           {
-            "parenthesis": "KOHTAUS 6: JÄLLEENNÄKEMINEN"
+            "sceneHeading": "KOHTAUS 6: JÄLLEENNÄKEMINEN"
           },
           {
             "parenthesis": "On taas Loppiaistanssiaiset. Ei naamioita. Salonkitanssijat kokoontuvat salin keskelle."
