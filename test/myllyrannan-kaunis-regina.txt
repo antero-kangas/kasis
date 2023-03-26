@@ -1,6 +1,6 @@
-                                 MYLLYRANNAN KAUNIS REGINA 
+ MYLLYRANNAN KAUNIS REGINA TOSI PITKÄ NIMI JA JATKUU JA JATKUU AINA VAIN JA JOSSAIN VAIHEESSAA ALKAA TOISTUMAAN YHÄ UUDESTAAN JA UUDESTAAN
 
-                                      ak Antero Kangas
+                                      Antero Kangas
                                         21.1.2023
 
 SYNOPSIS
@@ -17,6 +17,51 @@ REGINA ja ENGELBERT eivät saa toisiaan mielestään. Kun he seuraavan kerran ta
 
 REGINA ja MATILDA ovat tanssiaisissa, mutta he vain istuvat ja odottavat ENGELBERTIA ja ONTREITA. Paljastuu, että REGINA on varannut tanssikortistaan kaikki tanssit pelkästään ENGELBERTILLE ja MATILDA ONTREILLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, ENGELBERT ja ONTREI saapuvat ja hakevat REGINAN ja MATILDAN tanssimaan.
 
+/*
+ROOLIT
+[
+    {
+        name: "narrator",
+        pitch: 2,
+        rate: 4,
+        volume: 2,
+        lang: "fi"
+    },
+    {
+        name: "JOHAN",
+        pitch: 1,
+        rate: 4,
+        volume: 2,
+        lang: "fi"
+    },
+    {
+        name: "JOHAN JA ONTREI",
+        type: "GROUP",
+        roles: ["JOHAN", "ONTREI]
+        rate: 4
+    }
+]
+
+EFEKTIT
+[
+    {
+        name: "tauko",
+        type: "delay",
+        duration: 3000
+        
+    },
+    {
+        name: "pang",
+        type: "file",
+        file: "pang.mp3",
+        start: 300,
+        end: 1000
+        fadein: 100,
+        fadeout: 100,
+        volume: 2
+    }
+]
+*/
 
 KOHTAUKSET
 
@@ -244,7 +289,7 @@ ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä.
 
         REGINA
 
-    Minäkin teitä (tauko) - +  - ja tanssiaisia.
+    Minäkin teitä (tauko) - ja tanssiaisia.
 
         ENGELBERT
 
@@ -316,7 +361,7 @@ MATILDA huokaisee. (tauko)
 
 Masurkka kuulutetaan.
 
-ENGELBERT ilmestyy paikalle mukanaan ruusukimppu, ONTREI seu-raa hänen perässään.
+ENGELBERT ilmestyy paikalle mukanaan ruusukimppu, ONTREI seuraa hänen perässään.
 
 ENGELBERT menee REGINAN eteen ja ONTREI MATILDAN eteen. He seisovat ryhdikkäinä.
 

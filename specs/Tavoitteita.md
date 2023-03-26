@@ -45,3 +45,13 @@ SYNOPSIS // kiinte
 ISO
 
 - Sisältää vain ISOJA kirjaimia, numeroita välilyöntejä ja erikoismerkkejä, ainakin ISOJA kirjaimia
+
+match leveys N
+
+```
+|------------------|       |------------------|
+xxx xxxxxxxx xx xxxxxx ->  xxx xxxxxxxx xx 
+                           xxxxxx 
+```
+
+
