@@ -56,7 +56,7 @@ heading:
 name: CapitalWord (wss CapitalWord)*;
 replique : nonCapitalTextOrCommand ;
 parenthesis: nonCapitalTextOrCommand ;
-//nonCapitalTextOrCommand: (nonCapitalText | command) (wss? nonCapitalText | wss? command)* ;
+
 nonCapitalTextOrCommand: 
     ( nonCapitalText ((wss? command)+ (wss? nonCapitalText)?)* 
     | (command (wss? command)* (wss? nonCapitalText)?)+ 
