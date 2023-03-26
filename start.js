@@ -7,12 +7,8 @@ async function main(){
 	//const manuscriptFilename = args[0];
 
   	const manuscriptFilename = '/data/data/com.termux/files/home/git/kasis/test/myllyrannan-kaunis-regina.txt';
-	// Calling the readFileSync() method
-	// to read 'input.txt' file
 	const manuscriptText = readFileSync(manuscriptFilename,
 				{encoding:'utf8', flag:'r'});
-	 
-	// Display the file data
 	console.log(manuscriptText);
 
 	const manuscriptJSON = await parseManuscript(manuscriptText);
