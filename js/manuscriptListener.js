@@ -21,6 +21,7 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 
 		this.report = "";				// Kootaan virheilmoitukset ja varoitukset 
 
+		this.nonCapitalTextOrCommand = false;
 	}
 
 	push() {
@@ -278,23 +279,24 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 
 	// Enter a parse tree produced by ManuscriptParser#replique.
 	enterReplique(ctx) {
-		this.add("replique", ctx.getText().trim())
+		this.addAndGo("replique", []);
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#replique.
 	exitReplique(ctx) {
+		this.back();
 	}
 
 
 	// Enter a parse tree produced by ManuscriptParser#parenthesis.
 	enterParenthesis(ctx) {
-		this.add("parenthesis", ctx.getText().trim())
+		this.addAndGo("parenthesis", []);
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#parenthesis.
 	exitParenthesis(ctx) {
+		this.back();
 	}
-
 
 	// Enter a parse tree produced by ManuscriptParser#anyTextOrCommand.
 	enterAnyTextOrCommand(ctx) {
@@ -305,30 +307,43 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	}
 
 
+	// Enter a parse tree produced by ManuscriptParser#nonCapitalTextOrCommand.
+	enterNonCapitalTextOrCommand(ctx) {
+		this.nonCapitalTextOrCommand = true;
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#nonCapitalTextOrCommand.
+	exitNonCapitalTextOrCommand(ctx) {
+		this.nonCapitalTextOrCommand = false;
+	}
+
 	// Enter a parse tree produced by ManuscriptParser#command.
 	enterCommand(ctx) {
+		this.add("command", ctx.getText().trim());
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#command.
 	exitCommand(ctx) {
 	}
 
-
-	// Enter a parse tree produced by ManuscriptParser#capitalword.
-	enterCapitalword(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#nonCapitalWord.
+	enterNonCapitalWord(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#capitalword.
-	exitCapitalword(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#nonCapitalWord.
+	exitNonCapitalWord(ctx) {
 	}
 
+	// Enter a parse tree produced by ManuscriptParser#nonCapitalText.
+	enterNonCapitalText(ctx) {
+		if (this.nonCapitalTextOrCommand) {
+			this.add("noncapitalText", ctx.getText().trim());
+		}
 
-	// Enter a parse tree produced by ManuscriptParser#anyText.
-	enterAnyText(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#anyText.
-	exitAnyText(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#nonCapitalText.
+	exitNonCapitalText(ctx) {
 	}
 
 }

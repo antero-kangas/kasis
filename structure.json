@@ -34,61 +34,135 @@
             "sceneHeading": "KOHTAUS 1: ENSIKOHTAAMINEN"
           },
           {
-            "parenthesis": "REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan (askelia)."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan"
+              },
+              {
+                "command": "(askelia)"
+              },
+              {
+                "noncapitalText": "askelia"
+              },
+              {
+                "noncapitalText": "."
+              }
+            ]
           },
           {
-            "parenthesis": "(aurinko paistaa)"
+            "parenthesis": [
+              {
+                "command": "(aurinko paistaa)"
+              },
+              {
+                "noncapitalText": "aurinko paistaa"
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA niiaa nöyrästi ja esittelee kukkiaan."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA niiaa nöyrästi ja esittelee kukkiaan."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "(itsevarmasti)"
+            "replique": [
+              {
+                "command": "(itsevarmasti)"
+              },
+              {
+                "noncapitalText": "itsevarmasti"
+              }
+            ]
           },
           {
-            "parenthesis": "(itsevarmasti)"
+            "parenthesis": [
+              {
+                "command": "(itsevarmasti)"
+              },
+              {
+                "noncapitalText": "itsevarmasti"
+              }
+            ]
           },
           {
-            "replique": "Komea herra. Ostakaa ruusu morsiamellenne."
+            "replique": [
+              {
+                "noncapitalText": "Komea herra. Ostakaa ruusu morsiamellenne."
+              }
+            ]
           },
           {
-            "replique": "Naiset pitävät siitä, että saavat kukkia."
+            "replique": [
+              {
+                "noncapitalText": "Naiset pitävät siitä, että saavat kukkia."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Hyvä idea. Tosin minulla ei ole morsianta, vielä."
+            "replique": [
+              {
+                "noncapitalText": "Hyvä idea. Tosin minulla ei ole morsianta, vielä."
+              }
+            ]
           },
           {
-            "replique": "Mutta olen juuri menossa Hakkarin kartanoon pyytääkseni Elisabeth-neitiä seurakseni tanssiaisin, mutta en tiedä miten."
+            "replique": [
+              {
+                "noncapitalText": "Mutta olen juuri menossa Hakkarin kartanoon pyytääkseni Elisabeth-neitiä seurakseni tanssiaisin, mutta en tiedä miten."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Kimppu ruusuja puhuu kyllä puolestanne."
+            "replique": [
+              {
+                "noncapitalText": "Kimppu ruusuja puhuu kyllä puolestanne."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Siinä tapauksessa ostan kaikki ruususi."
+            "replique": [
+              {
+                "noncapitalText": "Siinä tapauksessa ostan kaikki ruususi."
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA ojentaa ruusunsa ENGELBERTILLE, joka maksaa hänelle kolikoilla."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA ojentaa ruusunsa ENGELBERTILLE, joka maksaa hänelle kolikoilla."
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA poistuu, ja ENGELBERT jää katselemaan hänen peräänsä."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA poistuu, ja ENGELBERT jää katselemaan hänen peräänsä."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Olipa ihastuttava neito."
+            "replique": [
+              {
+                "noncapitalText": "Olipa ihastuttava neito."
+              }
+            ]
           }
         ]
       },
@@ -98,67 +172,131 @@
             "sceneHeading": "KOHTAUS 2: REGINA LAINAA PUVUN"
           },
           {
-            "parenthesis": "REGINA saapuu kartanolle ja koputtaa oveen."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA saapuu kartanolle ja koputtaa oveen."
+              }
+            ]
           },
           {
-            "parenthesis": "MATILDA avaa oven."
+            "parenthesis": [
+              {
+                "noncapitalText": "MATILDA avaa oven."
+              }
+            ]
           },
           {
             "name": "MATILDA"
           },
           {
-            "replique": "Hei REGINA. Kiva nähdä sinua. Mitä Myllyrantaan ja sinulle kuuluu?"
+            "replique": [
+              {
+                "noncapitalText": "Hei REGINA. Kiva nähdä sinua. Mitä Myllyrantaan ja sinulle kuuluu?"
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Hei MATILDA."
+            "replique": [
+              {
+                "noncapitalText": "Hei MATILDA."
+              }
+            ]
           },
           {
-            "replique": "Kuulin, että Nuorisoseurantalolla on taas tanssiaiset."
+            "replique": [
+              {
+                "noncapitalText": "Kuulin, että Nuorisoseurantalolla on taas tanssiaiset."
+              }
+            ]
           },
           {
-            "replique": "Haluaisin kovasti mennä sinne, mutta minulla ei ole pukua."
+            "replique": [
+              {
+                "noncapitalText": "Haluaisin kovasti mennä sinne, mutta minulla ei ole pukua."
+              }
+            ]
           },
           {
-            "replique": "Voisinko lainata täältä pukua?"
+            "replique": [
+              {
+                "noncapitalText": "Voisinko lainata täältä pukua?"
+              }
+            ]
           },
           {
             "name": "MATILDA"
           },
           {
-            "replique": "Pyydät aika paljon."
+            "replique": [
+              {
+                "noncapitalText": "Pyydät aika paljon."
+              }
+            ]
           },
           {
-            "replique": "Emännälläni, ruhtinattarella, luutnantti von Lejoncronan serkulla, on paljon pukuja."
+            "replique": [
+              {
+                "noncapitalText": "Emännälläni, ruhtinattarella, luutnantti von Lejoncronan serkulla, on paljon pukuja."
+              }
+            ]
           },
           {
-            "replique": "Valitettavasti hän on niistä kovin tarkka."
+            "replique": [
+              {
+                "noncapitalText": "Valitettavasti hän on niistä kovin tarkka."
+              }
+            ]
           },
           {
-            "replique": "Onneksi hän ei ole nyt paikalla, joten etköhän voi lainata."
+            "replique": [
+              {
+                "noncapitalText": "Onneksi hän ei ole nyt paikalla, joten etköhän voi lainata."
+              }
+            ]
           },
           {
-            "replique": "Mutta lupaathan palauttaa sen ennen keskiyötä."
+            "replique": [
+              {
+                "noncapitalText": "Mutta lupaathan palauttaa sen ennen keskiyötä."
+              }
+            ]
           },
           {
-            "parenthesis": "MATILDA ojentaa puvun ja kengät REGINALLE."
+            "parenthesis": [
+              {
+                "noncapitalText": "MATILDA ojentaa puvun ja kengät REGINALLE."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Kiitos MATILDA, olet tosi ystävä."
+            "replique": [
+              {
+                "noncapitalText": "Kiitos MATILDA, olet tosi ystävä."
+              }
+            ]
           },
           {
-            "replique": "Ja, älä huoli, palautan nämä ennen keskiyötä."
+            "replique": [
+              {
+                "noncapitalText": "Ja, älä huoli, palautan nämä ennen keskiyötä."
+              }
+            ]
           },
           {
             "name": "MATILDA"
           },
           {
-            "replique": "Muistakin, ruhtinatar osaa olla ankara!"
+            "replique": [
+              {
+                "noncapitalText": "Muistakin, ruhtinatar osaa olla ankara!"
+              }
+            ]
           }
         ]
       },
@@ -168,70 +306,142 @@
             "sceneHeading": "KOHTAUS 3: ENSIMMÄISET TANSSIAISET"
           },
           {
-            "parenthesis": "Salonkitanssijat ja ENGELBERT kokoontuvat tanssisalin keskelle."
+            "parenthesis": [
+              {
+                "noncapitalText": "Salonkitanssijat ja ENGELBERT kokoontuvat tanssisalin keskelle."
+              }
+            ]
           },
           {
-            "parenthesis": "Kaikilla on naamiot, eikä ENGELBERT tunnista ketään."
-          },
-          {
-            "name": "ENGELBERT"
-          },
-          {
-            "replique": "Kukahan näistä kaunottarista on Elisabeth?"
-          },
-          {
-            "replique": "Naamiaiset eivät olleetkaan kovin hyvä idea."
-          },
-          {
-            "parenthesis": "Masurkka kuulutetaan."
-          },
-          {
-            "parenthesis": "REGINA saapuu hienossa puvussa. Hänelläkin on naamio."
-          },
-          {
-            "parenthesis": "ENGELBERT menee REGINAA vastaan, kumartaa ja tarjoaa kätensä."
+            "parenthesis": [
+              {
+                "noncapitalText": "Kaikilla on naamiot, eikä ENGELBERT tunnista ketään."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Kaunis neito, en tunnista teitä, mutta suotteko minulle kunnian tanssia kanssanne?"
+            "replique": [
+              {
+                "noncapitalText": "Kukahan näistä kaunottarista on Elisabeth?"
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA nyökkää ja tarttuu ENGELBERTIN tarjoamaan käteen. ENGELBERT saattaa REGINAN tanssisaliin tanssijoiden joukkoon."
+            "replique": [
+              {
+                "noncapitalText": "Naamiaiset eivät olleetkaan kovin hyvä idea."
+              }
+            ]
           },
           {
-            "parenthesis": "Salonkitanssijat sekä ENGELBERT ja REGINA tanssivat masurkan."
+            "parenthesis": [
+              {
+                "noncapitalText": "Masurkka kuulutetaan."
+              }
+            ]
           },
           {
-            "parenthesis": "Tanssin päätyttyä kello lyö kaksitoista."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA saapuu hienossa puvussa. Hänelläkin on naamio."
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA hätääntyy."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT menee REGINAA vastaan, kumartaa ja tarjoaa kätensä."
+              }
+            ]
+          },
+          {
+            "name": "ENGELBERT"
+          },
+          {
+            "replique": [
+              {
+                "noncapitalText": "Kaunis neito, en tunnista teitä, mutta suotteko minulle kunnian tanssia kanssanne?"
+              }
+            ]
+          },
+          {
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA nyökkää ja tarttuu ENGELBERTIN tarjoamaan käteen. ENGELBERT saattaa REGINAN tanssisaliin tanssijoiden joukkoon."
+              }
+            ]
+          },
+          {
+            "parenthesis": [
+              {
+                "noncapitalText": "Salonkitanssijat sekä ENGELBERT ja REGINA tanssivat masurkan."
+              }
+            ]
+          },
+          {
+            "parenthesis": [
+              {
+                "noncapitalText": "Tanssin päätyttyä kello lyö kaksitoista."
+              }
+            ]
+          },
+          {
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA hätääntyy."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Voi ei, minun pitää palauttaa puku, ettei MATILDA joudu vaikeuksiin."
+            "replique": [
+              {
+                "noncapitalText": "Voi ei, minun pitää palauttaa puku, ettei MATILDA joudu vaikeuksiin."
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA poistuu juosten salin ympäri pudottaen toisen kenkänsä."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA poistuu juosten salin ympäri pudottaen toisen kenkänsä."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT poimii kengän käteensä."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT poimii kengän käteensä."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Olipa hienoa tanssia hänen kanssaan, mutta en tiedä edes hänen nimeään."
+            "replique": [
+              {
+                "noncapitalText": "Olipa hienoa tanssia hänen kanssaan, mutta en tiedä edes hänen nimeään."
+              }
+            ]
           },
           {
-            "replique": "Olisikohan hän kuitenkin vielä täällä?"
+            "replique": [
+              {
+                "noncapitalText": "Olisikohan hän kuitenkin vielä täällä?"
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT pyytää naisia sovittamaan kenkää. REGINAA ei löydy."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT pyytää naisia sovittamaan kenkää. REGINAA ei löydy."
+              }
+            ]
           }
         ]
       },
@@ -241,115 +451,237 @@
             "sceneHeading": "KOHTAUS 4: TOTUUS PALJASTUU"
           },
           {
-            "parenthesis": "REGINA on palauttamassa pukua MATILDALLE. MATILDA hätääntyy."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA on palauttamassa pukua MATILDALLE. MATILDA hätääntyy."
+              }
+            ]
           },
           {
             "name": "MATILDA"
           },
           {
-            "replique": "Voi ei, palautat puvun ilman toista kenkää."
+            "replique": [
+              {
+                "noncapitalText": "Voi ei, palautat puvun ilman toista kenkää."
+              }
+            ]
           },
           {
-            "replique": "Mitähän ruhtinatar nyt sanoo?"
+            "replique": [
+              {
+                "noncapitalText": "Mitähän ruhtinatar nyt sanoo?"
+              }
+            ]
           },
           {
-            "parenthesis": "ONTREI, luutnantin palvelija, saapuu paikalle."
+            "parenthesis": [
+              {
+                "noncapitalText": "ONTREI, luutnantin palvelija, saapuu paikalle."
+              }
+            ]
           },
           {
             "name": "ONTREI"
           },
           {
-            "replique": "Kuulin, mitä puhuitte."
+            "replique": [
+              {
+                "noncapitalText": "Kuulin, mitä puhuitte."
+              }
+            ]
           },
           {
-            "replique": "Teinä minä tunnustaisin luutnantille."
+            "replique": [
+              {
+                "noncapitalText": "Teinä minä tunnustaisin luutnantille."
+              }
+            ]
           },
           {
-            "replique": "Hän on yleensä aika reilu ja ymmärtäväinen."
+            "replique": [
+              {
+                "noncapitalText": "Hän on yleensä aika reilu ja ymmärtäväinen."
+              }
+            ]
           },
           {
             "name": "MATILDA"
           },
           {
-            "replique": "En minä luutnanttia pelkääkään."
+            "replique": [
+              {
+                "noncapitalText": "En minä luutnanttia pelkääkään."
+              }
+            ]
           },
           {
-            "replique": "Minä pelkään, että kuultuaan tapahtuneesta ruhtinatar antaa minulle potkut."
+            "replique": [
+              {
+                "noncapitalText": "Minä pelkään, että kuultuaan tapahtuneesta ruhtinatar antaa minulle potkut."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "MATILDA, älä huoli, minä tunnustan kaiken."
+            "replique": [
+              {
+                "noncapitalText": "MATILDA, älä huoli, minä tunnustan kaiken."
+              }
+            ]
           },
           {
-            "replique": "En kerro sinun osuuttasi ollenkaan."
+            "replique": [
+              {
+                "noncapitalText": "En kerro sinun osuuttasi ollenkaan."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT saapuu paikalle. Hänellä on REGINAN hukkaama kenkä kädessään. Hän huomaa puvun ja toisen kengän."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT saapuu paikalle. Hänellä on REGINAN hukkaama kenkä kädessään. Hän huomaa puvun ja toisen kengän."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Mikäs hätä neideillä on?"
+            "replique": [
+              {
+                "noncapitalText": "Mikäs hätä neideillä on?"
+              }
+            ]
           },
           {
-            "replique": "Hei, tuohan on tuttu kenkä!"
+            "replique": [
+              {
+                "noncapitalText": "Hei, tuohan on tuttu kenkä!"
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Minun täytyy tunnustaa."
+            "replique": [
+              {
+                "noncapitalText": "Minun täytyy tunnustaa."
+              }
+            ]
           },
           {
-            "replique": "Lainasin puvun ja kengät ilman lupaa päästäkseni tanssiaisiin."
+            "replique": [
+              {
+                "noncapitalText": "Lainasin puvun ja kengät ilman lupaa päästäkseni tanssiaisiin."
+              }
+            ]
           },
           {
-            "replique": "Pyydän, älkää kertoko ruhtinattarelle."
+            "replique": [
+              {
+                "noncapitalText": "Pyydän, älkää kertoko ruhtinattarelle."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT ojentaa kengän REGINALLE."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT ojentaa kengän REGINALLE."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "En toki."
+            "replique": [
+              {
+                "noncapitalText": "En toki."
+              }
+            ]
           },
           {
-            "parenthesis": "(tauko)"
+            "parenthesis": [
+              {
+                "command": "(tauko)"
+              },
+              {
+                "noncapitalText": "tauko"
+              }
+            ]
           },
           {
-            "replique": "Kaipaat varmaan tätä kenkää."
+            "replique": [
+              {
+                "noncapitalText": "Kaipaat varmaan tätä kenkää."
+              }
+            ]
           },
           {
-            "replique": "Kai kiitokseksi lähdet kanssani kahdestaan souturetkelle?"
+            "replique": [
+              {
+                "noncapitalText": "Kai kiitokseksi lähdet kanssani kahdestaan souturetkelle?"
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "(kiukkuisesti)"
+            "replique": [
+              {
+                "command": "(kiukkuisesti)"
+              },
+              {
+                "noncapitalText": "kiukkuisesti"
+              }
+            ]
           },
           {
-            "replique": "Hyvä herra! Emmehän me edes tunne toisiamme!"
+            "replique": [
+              {
+                "noncapitalText": "Hyvä herra! Emmehän me edes tunne toisiamme!"
+              }
+            ]
           },
           {
-            "replique": "Ehdotuksenne souturetkestä ilman"
+            "replique": [
+              {
+                "noncapitalText": "Ehdotuksenne souturetkestä ilman"
+              }
+            ]
           },
           {
-            "replique": "esiliinaa ei ole kunniallinen!"
+            "replique": [
+              {
+                "noncapitalText": "esiliinaa ei ole kunniallinen!"
+              }
+            ]
           },
           {
-            "replique": "Mitä te oikein minusta kuvittelette?"
+            "replique": [
+              {
+                "noncapitalText": "Mitä te oikein minusta kuvittelette?"
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA kääntää selkänsä ja poistuu kiukkuisena."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA kääntää selkänsä ja poistuu kiukkuisena."
+              }
+            ]
           },
           {
-            "parenthesis": "MATILDA ja ONTREI katsovat toisiaan ja ottavat toisiaan kädestä kiinni."
+            "parenthesis": [
+              {
+                "noncapitalText": "MATILDA ja ONTREI katsovat toisiaan ja ottavat toisiaan kädestä kiinni."
+              }
+            ]
           }
         ]
       },
@@ -359,67 +691,132 @@
             "sceneHeading": "KOHTAUS 5: ENGELBERT LÄHTEE TANSSIKURSSILLE"
           },
           {
-            "parenthesis": "REGINA on yksin."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA on yksin."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Olinkohan liian tyly hänelle?"
+            "replique": [
+              {
+                "noncapitalText": "Olinkohan liian tyly hänelle?"
+              }
+            ]
           },
           {
-            "replique": "Tekihän hän minulle palveluksen, ja oli niin hienoa saada tanssia Loppiaistanssiaisissa."
+            "replique": [
+              {
+                "noncapitalText": "Tekihän hän minulle palveluksen, ja oli niin hienoa saada tanssia Loppiaistanssiaisissa."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Hyvä neiti. Pyydän anteeksi käytöstäni."
+            "replique": [
+              {
+                "noncapitalText": "Hyvä neiti. Pyydän anteeksi käytöstäni."
+              }
+            ]
           },
           {
-            "replique": "Tunnustan, olen ajatellut teitä paljon."
+            "replique": [
+              {
+                "noncapitalText": "Tunnustan, olen ajatellut teitä paljon."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Minäkin teitä (tauko) - ja tanssiaisia."
+            "replique": [
+              {
+                "noncapitalText": "Minäkin teitä"
+              },
+              {
+                "command": "(tauko)"
+              },
+              {
+                "noncapitalText": "tauko"
+              },
+              {
+                "noncapitalText": "- ja tanssiaisia."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Tulisitko kanssani Loppiaistanssiaisiin?"
+            "replique": [
+              {
+                "noncapitalText": "Tulisitko kanssani Loppiaistanssiaisiin?"
+              }
+            ]
           },
           {
-            "replique": "Nolottaa, mutta armeijassa meille opetettiin vain masurkkaa, ja siitäkin vain muutama kuvio."
+            "replique": [
+              {
+                "noncapitalText": "Nolottaa, mutta armeijassa meille opetettiin vain masurkkaa, ja siitäkin vain muutama kuvio."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Mene Lempäälän Nuorisoseuran tanssikurssille."
+            "replique": [
+              {
+                "noncapitalText": "Mene Lempäälän Nuorisoseuran tanssikurssille."
+              }
+            ]
           },
           {
-            "replique": "Siellä on tosi hyvä opettaja ja kiva porukka."
+            "replique": [
+              {
+                "noncapitalText": "Siellä on tosi hyvä opettaja ja kiva porukka."
+              }
+            ]
           },
           {
             "name": "ENGELBERT"
           },
           {
-            "replique": "Kiitos neuvosta. Lähden heti. Ja sinä, ONTREI, tulet mukaani. Tekee se hyvää sinullekin."
+            "replique": [
+              {
+                "noncapitalText": "Kiitos neuvosta. Lähden heti. Ja sinä, ONTREI, tulet mukaani. Tekee se hyvää sinullekin."
+              }
+            ]
           },
           {
             "name": "ONTREI"
           },
           {
-            "replique": "Käskystä, herra luutnantti."
+            "replique": [
+              {
+                "noncapitalText": "Käskystä, herra luutnantti."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT ja REGINA poistuvat eri suuntiin. ONTREI hetken päästä ENGELBERTIN perään."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT ja REGINA poistuvat eri suuntiin. ONTREI hetken päästä ENGELBERTIN perään."
+              }
+            ]
           }
         ]
       },
@@ -429,106 +826,227 @@
             "sceneHeading": "KOHTAUS 6: JÄLLEENNÄKEMINEN"
           },
           {
-            "parenthesis": "On taas Loppiaistanssiaiset. Ei naamioita. Salonkitanssijat kokoontuvat salin keskelle."
+            "parenthesis": [
+              {
+                "noncapitalText": "On taas Loppiaistanssiaiset. Ei naamioita. Salonkitanssijat kokoontuvat salin keskelle."
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA ja MATILDA istuvat salin edessä olevilla tuoleilla heilutellen viuhkojaan."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA ja MATILDA istuvat salin edessä olevilla tuoleilla heilutellen viuhkojaan."
+              }
+            ]
           },
           {
-            "parenthesis": "Heitä käydään monta kertaa pyytämässä tanssimaan, mutta he kieltäytyvät jokaisesta pyynnöstä."
+            "parenthesis": [
+              {
+                "noncapitalText": "Heitä käydään monta kertaa pyytämässä tanssimaan, mutta he kieltäytyvät jokaisesta pyynnöstä."
+              }
+            ]
           },
           {
             "name": "MATILDA"
           },
           {
-            "replique": "Sinulla kävi tuuri, kun sait pitää tuon puvun, ja me molemmat pääsimme tanssiaisiin."
+            "replique": [
+              {
+                "noncapitalText": "Sinulla kävi tuuri, kun sait pitää tuon puvun, ja me molemmat pääsimme tanssiaisiin."
+              }
+            ]
           },
           {
-            "replique": "Oletko kuullut ENGELBERTISTA mitään?"
+            "replique": [
+              {
+                "noncapitalText": "Oletko kuullut ENGELBERTISTA mitään?"
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "En kohta vuoteen."
+            "replique": [
+              {
+                "noncapitalText": "En kohta vuoteen."
+              }
+            ]
           },
           {
-            "replique": "Kuulin, että hän innostui tanssimisesta ja on kiertänyt tanssikouluja ympäri maata."
+            "replique": [
+              {
+                "noncapitalText": "Kuulin, että hän innostui tanssimisesta ja on kiertänyt tanssikouluja ympäri maata."
+              }
+            ]
           },
           {
             "name": "MATILDA"
           },
           {
-            "replique": "Niin, ja ONTREI on hänen mukanaan."
+            "replique": [
+              {
+                "noncapitalText": "Niin, ja ONTREI on hänen mukanaan."
+              }
+            ]
           },
           {
-            "parenthesis": "MATILDA huokaisee. (tauko)"
+            "parenthesis": [
+              {
+                "noncapitalText": "MATILDA huokaisee."
+              },
+              {
+                "command": "(tauko)"
+              },
+              {
+                "noncapitalText": "tauko"
+              }
+            ]
           },
           {
             "name": "MATILDA"
           },
           {
-            "replique": "Huomaan, että olet varannut koko tanssikorttisi ENGELBERTILLE."
+            "replique": [
+              {
+                "noncapitalText": "Huomaan, että olet varannut koko tanssikorttisi ENGELBERTILLE."
+              }
+            ]
           },
           {
-            "replique": "Häntä vaan ei näy."
+            "replique": [
+              {
+                "noncapitalText": "Häntä vaan ei näy."
+              }
+            ]
           },
           {
-            "replique": "Mahtaakohan hän tulla ollenkaan?"
+            "replique": [
+              {
+                "noncapitalText": "Mahtaakohan hän tulla ollenkaan?"
+              }
+            ]
           },
           {
-            "replique": "Hyväksyisit nyt muidenkin tanssipyynnöt, tai saamme vain istua koko illan."
+            "replique": [
+              {
+                "noncapitalText": "Hyväksyisit nyt muidenkin tanssipyynnöt, tai saamme vain istua koko illan."
+              }
+            ]
           },
           {
             "name": "REGINA"
           },
           {
-            "replique": "Paraskin puhuja, sinun kortissasi lukee ONTREI jokaisella tanssilla."
+            "replique": [
+              {
+                "noncapitalText": "Paraskin puhuja, sinun kortissasi lukee ONTREI jokaisella tanssilla."
+              }
+            ]
           },
           {
-            "replique": "(tauko)"
+            "replique": [
+              {
+                "command": "(tauko)"
+              },
+              {
+                "noncapitalText": "tauko"
+              }
+            ]
           },
           {
-            "replique": "ENGELBERT lupasi tanssia kanssani täällä. Luotan, että kyllä hän tulee."
+            "replique": [
+              {
+                "noncapitalText": "ENGELBERT lupasi tanssia kanssani täällä. Luotan, että kyllä hän tulee."
+              }
+            ]
           },
           {
-            "replique": "REGINA pyyhkii nenäliinalla kyyneleen silmäkulmastaan."
+            "replique": [
+              {
+                "noncapitalText": "REGINA pyyhkii nenäliinalla kyyneleen silmäkulmastaan."
+              }
+            ]
           },
           {
-            "parenthesis": "Masurkka kuulutetaan."
+            "parenthesis": [
+              {
+                "noncapitalText": "Masurkka kuulutetaan."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT ilmestyy paikalle mukanaan ruusukimppu, ONTREI seuraa hänen perässään."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT ilmestyy paikalle mukanaan ruusukimppu, ONTREI seuraa hänen perässään."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT menee REGINAN eteen ja ONTREI MATILDAN eteen. He seisovat ryhdikkäinä."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT menee REGINAN eteen ja ONTREI MATILDAN eteen. He seisovat ryhdikkäinä."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT ojentaa ruusut REGINALLE."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT ojentaa ruusut REGINALLE."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT ja ONTREI kumartavat ja sanovat yhteen ääneen:"
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT ja ONTREI kumartavat ja sanovat yhteen ääneen:"
+              }
+            ]
           },
           {
             "name": "ENGELBERT JA ONTREI"
           },
           {
-            "replique": "Suotteko minulle kunnian tanssia kanssanne?"
+            "replique": [
+              {
+                "noncapitalText": "Suotteko minulle kunnian tanssia kanssanne?"
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA ja MATILDA nyökkäävät armollisesti."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA ja MATILDA nyökkäävät armollisesti."
+              }
+            ]
           },
           {
-            "parenthesis": "REGINA jättää ruusut tuolille."
+            "parenthesis": [
+              {
+                "noncapitalText": "REGINA jättää ruusut tuolille."
+              }
+            ]
           },
           {
-            "parenthesis": "ENGELBERT ja ONTREI saattavat daaminsa tanssipaikalle."
+            "parenthesis": [
+              {
+                "noncapitalText": "ENGELBERT ja ONTREI saattavat daaminsa tanssipaikalle."
+              }
+            ]
           },
           {
-            "parenthesis": "Salonkitanssijat, ENGELBERT ja REGINA sekä ONTREI ja MATILDA tanssivat masurkan. Masurkassa on uusia kuvioita."
+            "parenthesis": [
+              {
+                "noncapitalText": "Salonkitanssijat, ENGELBERT ja REGINA sekä ONTREI ja MATILDA tanssivat masurkan. Masurkassa on uusia kuvioita."
+              }
+            ]
           },
           {
-            "parenthesis": "Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle."
+            "parenthesis": [
+              {
+                "noncapitalText": "Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle."
+              }
+            ]
           }
         ]
       }
