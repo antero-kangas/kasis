@@ -85,14 +85,13 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	}
 
 
-	// Enter a parse tree produced by ManuscriptParser#titleParagraph.
-	enterTitleParagraph(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#titlePart.
+	enterTitlePart(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#titleParagraph.
-	exitTitleParagraph(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#titlePart.
+	exitTitlePart(ctx) {
 	}
-
 
 	// Enter a parse tree produced by ManuscriptParser#title.
 	enterTitle(ctx) {
@@ -103,23 +102,21 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	exitTitle(ctx) {
 	}
 
-
-	// Enter a parse tree produced by ManuscriptParser#authorParagraph.
-	enterAuthorParagraph(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#authorsPart.
+	enterAuthorsPart(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#authorParagraph.
-	exitAuthorParagraph(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#authorsPart.
+	exitAuthorsPart(ctx) {
 	}
-
 
 	// Enter a parse tree produced by ManuscriptParser#author.
-	enterAuthor(ctx) {
-		this.add("author", ctx.getText().trim());
+	enterAuthors(ctx) {
+		this.add("authors", ctx.getText().trim());
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#author.
-	exitAuthor(ctx) {
+	exitAuthors(ctx) {
 	}
 
 

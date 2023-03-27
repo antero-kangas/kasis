@@ -4,18 +4,18 @@ options {
 }
 
 manuscript: 
-    titleParagraph? 
-    authorParagraph? 
+    titlePart? 
+    authorsPart? 
     dateParagraph? 
     synopsisPart?
     scenesPart? 
     EOF;
 
-titleParagraph: wss title eol+;
+titlePart: wss (title eol+)+;
 title: heading;
 
-authorParagraph: wss author eol+;
-author: nonCapitalText;
+authorsPart: wss (authors eol+)+;
+authors: nonCapitalText;
 
 dateParagraph: wss date eol+;
 date: nonCapitalText;

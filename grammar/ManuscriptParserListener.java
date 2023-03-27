@@ -17,15 +17,15 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 */
 	void exitManuscript(ManuscriptParser.ManuscriptContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ManuscriptParser#titleParagraph}.
+	 * Enter a parse tree produced by {@link ManuscriptParser#titlePart}.
 	 * @param ctx the parse tree
 	 */
-	void enterTitleParagraph(ManuscriptParser.TitleParagraphContext ctx);
+	void enterTitlePart(ManuscriptParser.TitlePartContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ManuscriptParser#titleParagraph}.
+	 * Exit a parse tree produced by {@link ManuscriptParser#titlePart}.
 	 * @param ctx the parse tree
 	 */
-	void exitTitleParagraph(ManuscriptParser.TitleParagraphContext ctx);
+	void exitTitlePart(ManuscriptParser.TitlePartContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ManuscriptParser#title}.
 	 * @param ctx the parse tree
@@ -37,25 +37,25 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 */
 	void exitTitle(ManuscriptParser.TitleContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ManuscriptParser#authorParagraph}.
+	 * Enter a parse tree produced by {@link ManuscriptParser#authorsPart}.
 	 * @param ctx the parse tree
 	 */
-	void enterAuthorParagraph(ManuscriptParser.AuthorParagraphContext ctx);
+	void enterAuthorsPart(ManuscriptParser.AuthorsPartContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ManuscriptParser#authorParagraph}.
+	 * Exit a parse tree produced by {@link ManuscriptParser#authorsPart}.
 	 * @param ctx the parse tree
 	 */
-	void exitAuthorParagraph(ManuscriptParser.AuthorParagraphContext ctx);
+	void exitAuthorsPart(ManuscriptParser.AuthorsPartContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ManuscriptParser#author}.
+	 * Enter a parse tree produced by {@link ManuscriptParser#authors}.
 	 * @param ctx the parse tree
 	 */
-	void enterAuthor(ManuscriptParser.AuthorContext ctx);
+	void enterAuthors(ManuscriptParser.AuthorsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ManuscriptParser#author}.
+	 * Exit a parse tree produced by {@link ManuscriptParser#authors}.
 	 * @param ctx the parse tree
 	 */
-	void exitAuthor(ManuscriptParser.AuthorContext ctx);
+	void exitAuthors(ManuscriptParser.AuthorsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ManuscriptParser#dateParagraph}.
 	 * @param ctx the parse tree

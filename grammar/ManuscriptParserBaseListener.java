@@ -27,13 +27,13 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTitleParagraph(ManuscriptParser.TitleParagraphContext ctx) { }
+	@Override public void enterTitlePart(ManuscriptParser.TitlePartContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTitleParagraph(ManuscriptParser.TitleParagraphContext ctx) { }
+	@Override public void exitTitlePart(ManuscriptParser.TitlePartContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -51,25 +51,25 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAuthorParagraph(ManuscriptParser.AuthorParagraphContext ctx) { }
+	@Override public void enterAuthorsPart(ManuscriptParser.AuthorsPartContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAuthorParagraph(ManuscriptParser.AuthorParagraphContext ctx) { }
+	@Override public void exitAuthorsPart(ManuscriptParser.AuthorsPartContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAuthor(ManuscriptParser.AuthorContext ctx) { }
+	@Override public void enterAuthors(ManuscriptParser.AuthorsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAuthor(ManuscriptParser.AuthorContext ctx) { }
+	@Override public void exitAuthors(ManuscriptParser.AuthorsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

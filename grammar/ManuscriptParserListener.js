@@ -14,12 +14,12 @@ export default class ManuscriptParserListener extends antlr4.tree.ParseTreeListe
 	}
 
 
-	// Enter a parse tree produced by ManuscriptParser#titleParagraph.
-	enterTitleParagraph(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#titlePart.
+	enterTitlePart(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#titleParagraph.
-	exitTitleParagraph(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#titlePart.
+	exitTitlePart(ctx) {
 	}
 
 
@@ -32,21 +32,21 @@ export default class ManuscriptParserListener extends antlr4.tree.ParseTreeListe
 	}
 
 
-	// Enter a parse tree produced by ManuscriptParser#authorParagraph.
-	enterAuthorParagraph(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#authorsPart.
+	enterAuthorsPart(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#authorParagraph.
-	exitAuthorParagraph(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#authorsPart.
+	exitAuthorsPart(ctx) {
 	}
 
 
-	// Enter a parse tree produced by ManuscriptParser#author.
-	enterAuthor(ctx) {
+	// Enter a parse tree produced by ManuscriptParser#authors.
+	enterAuthors(ctx) {
 	}
 
-	// Exit a parse tree produced by ManuscriptParser#author.
-	exitAuthor(ctx) {
+	// Exit a parse tree produced by ManuscriptParser#authors.
+	exitAuthors(ctx) {
 	}
 
 

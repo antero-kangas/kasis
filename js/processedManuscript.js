@@ -1,32 +1,30 @@
 const LINEWIDTH = 66;
 const NEWLINE = "\n";
-const MINTITLEINDENT = 10;
+const MINCENTERINDENT = 10;
 const NAMELEFT = 20;
 const REPLIQUELEFT = 10;
 const REPLIQUERIGHT = 60;
 
-export default class FormattedManuscript {
+const NARRATOR = "narrator";
+const PAUSE = "pause";
+
+export default class ProcessedManuscript {
 	constructor (json) {
 		this.json = json;
-		this.output = this.manuscript(json);
+		let fmt, snd; 
+		[fmt, snd] = this.manuscript(json);
+		this.formatted = fmt;
+		this.sound = snd;
 	}
 
-	center(text, minindent) {
-		const words = text.split(" ");
-		let t = words.join(" ");
-		let prefixLength = (LINEWIDTH - t.length) / 2;
-		prefixLength = Math.max(0, prefixLength);
-		t = " ".repeat(prefixLength) + t;
-		return t;
+	center(text) {
+		return this.match(text, MINCENTERINDENT, LINEWIDTH-MINCENTERINDENT, true);
 	}
 
-	// left(text) {
-	// 	return text.split(" ").join(" ");
-	// }
-
-	match(text, left=0, right=LINEWIDTH) {
+	match(text, left=0, right=LINEWIDTH, center=false) {
 		const LEN = right-left;
 		const words = text.split(" ");
+		let add;
 		let result = "";
 		let line = "";
 		if (words.length > 0) {
@@ -37,12 +35,14 @@ export default class FormattedManuscript {
 				if (line.length + 1 + words[i].length < LEN) {
 					line += " " + words[i];
 				} else {
-					result += " ".repeat(left) + line + NEWLINE;
+					add = left+(center? (LEN-line.length)/2: 0);
+					result += " ".repeat(add) + line + NEWLINE;
 					line = words[i];
 				};
 				i++
 			}
-			result += " ".repeat(left) + line + NEWLINE;
+			add = left+(center? (LEN-line.length)/2: 0);
+			result += " ".repeat(add) + line + NEWLINE;
 		} 
 		return result;
 	}
@@ -87,26 +87,34 @@ export default class FormattedManuscript {
 
 	manuscript(json) {
 		let result = "";
-		result += this.title(json.title);
-		result += this.author(json.author);
+		let sound = [];
+		let res, snd;
+		[res, snd] = this.title(json.title);
+		result += res;
+		sound = sound.concat(snd);
+		result += this.authors(json.authors);
 		result += this.date(json.date); 
 		result += this.synopsis(json.synopsis);
-		result += this.scenesPart(json.scenesPart);
-		return result;
+		[res, snd] = this.scenesPart(json.scenesPart);
+		result += res;
+		sound = sound.concat(snd);
+		return [result, sound];
 	}
 
 	title(json) {
 		let result = "";
+		let sound = [];
 		if (json) {
-			result += this.center(json, MINTITLEINDENT) + NEWLINE + NEWLINE;
+			result += this.center(json) + NEWLINE;
+			sound.push({name: NARRATOR, text: json})
 		}
-		return result;
+		return [result, sound];
 	}
 
-	author(json) {
+	authors(json) {
 		let result = "";
 		if (json) {
-			result += this.center(json, MINTITLEINDENT) + NEWLINE;
+			result += this.center(json);
 		}
 		return result;
 	}
@@ -114,7 +122,7 @@ export default class FormattedManuscript {
 	date(json) {
 		let result = "";
 		if (json) {
-			result += this.center(json, MINTITLEINDENT) + NEWLINE + NEWLINE + NEWLINE;
+			result += this.center(json) + NEWLINE + NEWLINE;
 		}
 		return result;
 	}
@@ -122,7 +130,7 @@ export default class FormattedManuscript {
 	synopsis(json) {
 		let result = "";
 		if (json) {
-			result += this.formatLeft(json.synopsisTitle) + NEWLINE + NEWLINE;
+			result += this.formatLeft(json.synopsisTitle) + NEWLINE;
 			result += this.synopsisParagraphs(json.synopsisParagraphs);
 		}
 		return result;
@@ -141,50 +149,66 @@ export default class FormattedManuscript {
 	synopsisParagraph(json) {
 		let result = "";
 		if (json) {
-			result += this.formatLeft(json) + NEWLINE +  NEWLINE;
+			result += this.formatLeft(json) + NEWLINE;
 		}
 		return result;
 	}
 
 	scenesPart(json) {
 		let result = "";
+		let sound = [];
+		let fmt, snd;
 		if (json) {
-			result += NEWLINE + this.formatLeft(json.scenesHeading) + NEWLINE  + NEWLINE ;
-			result += this.scenes(json.scenes);
+			result += NEWLINE + this.formatLeft(json.scenesHeading);	
+			[fmt, snd] = this.scenes(json.scenes);
+			result += fmt;
+			sound = sound.concat(snd);
 		}
-		return result;
+		return [result, sound];
 	}
 
 	scenes(json) {
 		let result = "";
+		let sound = [];
+		let res, snd;
 		if (json) {
 			json.forEach(scene => {
-				result += this.scene(scene.scene)
+				[res, snd] = this.scene(scene.scene);
+				result += res;
+				sound = sound.concat(snd);
 			})
 		}
-		return result;
+		return [result, sound];
 	}
 
 	scene(json) {
 		let result = "";
+		let sound = [];
+		let name = NARRATOR;
 		if (json) {
 			json.forEach(scenePart => {
 				switch (Object.keys(scenePart)[0]) {
 					case "sceneHeading": 
-						result += NEWLINE + NEWLINE + this.formatLeft(scenePart.sceneHeading) + NEWLINE;
+						result += NEWLINE + this.formatLeft(scenePart.sceneHeading) + NEWLINE;
+						sound.push({"effect": PAUSE});
+						sound.push({"name": NARRATOR, "text": scenePart.sceneHeading});
 						break;
 					case "name": 
 						result += NEWLINE + this.formatName(scenePart.name) + NEWLINE;
+						name = scenePart.name;
+						sound.push({"name": NARRATOR, "text": scenePart.name});
 						break;
 					case "parenthesis": 
 						result += this.formatLeft(scenePart.parenthesis) + NEWLINE;
+						sound.push({"name": NARRATOR, "text": scenePart.parenthesis});
 						break;
 					case "replique": 
 						result += this.formatReplique(scenePart.replique) + NEWLINE;
+						sound.push({"name": name, "text": scenePart.replique});
 						break;
 				}
 			})
 		}
-		return result;
+		return [result, sound];
 	}
 }	
