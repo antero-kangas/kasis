@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, unlinkSync } from 'fs';
 import parseManuscript from './js/parseManuscript.js';
 import ProcessedManuscript from './js/ProcessedManuscript.js';
 
@@ -7,7 +7,15 @@ async function main(){
 	const manuscriptFilename = args[0];
 	const splitted = manuscriptFilename.split("/");
 	const name = splitted[splitted.length-1];
-
+	try {
+		unlinkSync("structure.json");
+	} catch (e) {} finally {}; 	
+	try {
+		unlinkSync("formatted_"+name);
+	} catch (e) {} finally {};
+	try {
+		unlinkSync("sound.json");
+	} catch (e) {} finally {};
   	//const manuscriptFilename = '/data/data/com.termux/files/home/git/kasis/test/myllyrannan-kaunis-regina.txt';
 	const manuscriptText = readFileSync(manuscriptFilename,
 				{encoding:'utf8', flag:'r'});

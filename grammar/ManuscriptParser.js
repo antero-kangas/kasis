@@ -266,7 +266,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new ManuscriptContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 0, ManuscriptParser.RULE_manuscript);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 53;
 	        this._errHandler.sync(this);
@@ -330,7 +330,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new TitlePartContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 2, ManuscriptParser.RULE_titlePart);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 69;
 	        this.wss();
@@ -379,7 +379,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	title() {
 	    let localctx = new TitleContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 4, ManuscriptParser.RULE_title);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 80;
 	        this.heading();
@@ -403,7 +403,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new AuthorsPartContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 6, ManuscriptParser.RULE_authorsPart);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 82;
 	        this.wss();
@@ -452,7 +452,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	authors() {
 	    let localctx = new AuthorsContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 8, ManuscriptParser.RULE_authors);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 93;
 	        this.nonCapitalText();
@@ -476,7 +476,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new DateParagraphContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 10, ManuscriptParser.RULE_dateParagraph);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 95;
 	        this.wss();
@@ -511,7 +511,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	date() {
 	    let localctx = new DateContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 12, ManuscriptParser.RULE_date);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 102;
 	        this.nonCapitalText();
@@ -535,7 +535,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new SynopsisPartContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 14, ManuscriptParser.RULE_synopsisPart);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 104;
 	        this.synopsisTitle();
@@ -576,7 +576,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	synopsisTitle() {
 	    let localctx = new SynopsisTitleContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 16, ManuscriptParser.RULE_synopsisTitle);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 113;
 	        this.match(ManuscriptParser.Synopsis);
@@ -600,7 +600,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new SynopsisParagraphsContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 18, ManuscriptParser.RULE_synopsisParagraphs);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 121; 
 	        this._errHandler.sync(this);
@@ -641,7 +641,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	synopsisParagraph() {
 	    let localctx = new SynopsisParagraphContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 20, ManuscriptParser.RULE_synopsisParagraph);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 125;
 	        this.nonCapitalText();
@@ -664,7 +664,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	wss() {
 	    let localctx = new WssContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 22, ManuscriptParser.RULE_wss);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 127;
 	        this.match(ManuscriptParser.WSS);
@@ -688,7 +688,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new EolContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 24, ManuscriptParser.RULE_eol);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 130;
 	        this._errHandler.sync(this);
@@ -720,7 +720,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new ScenesPartContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 26, ManuscriptParser.RULE_scenesPart);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 134;
 	        this.scenesHeading();
@@ -761,7 +761,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	scenesHeading() {
 	    let localctx = new ScenesHeadingContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 28, ManuscriptParser.RULE_scenesHeading);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 143;
 	        this.match(ManuscriptParser.Scene);
@@ -785,7 +785,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new ScenesContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 30, ManuscriptParser.RULE_scenes);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 146; 
 	        this._errHandler.sync(this);
@@ -817,7 +817,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new SceneContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 32, ManuscriptParser.RULE_scene);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 150;
 	        this.sceneHeading();
@@ -981,7 +981,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	sceneHeading() {
 	    let localctx = new SceneHeadingContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 34, ManuscriptParser.RULE_sceneHeading);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 197;
 	        this.heading();
@@ -1005,7 +1005,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new HeadingContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 36, ManuscriptParser.RULE_heading);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 200; 
 	        this._errHandler.sync(this);
@@ -1073,7 +1073,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	name() {
 	    let localctx = new NameContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 38, ManuscriptParser.RULE_name);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 215;
 	        this.match(ManuscriptParser.CapitalWord);
@@ -1111,7 +1111,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	replique() {
 	    let localctx = new RepliqueContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 40, ManuscriptParser.RULE_replique);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 224;
 	        this.nonCapitalTextOrCommand();
@@ -1134,7 +1134,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	parenthesis() {
 	    let localctx = new ParenthesisContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 42, ManuscriptParser.RULE_parenthesis);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 226;
 	        this.nonCapitalTextOrCommand();
@@ -1158,7 +1158,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new NonCapitalTextOrCommandContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 44, ManuscriptParser.RULE_nonCapitalTextOrCommand);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 268;
 	        this._errHandler.sync(this);
@@ -1294,7 +1294,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new CommandContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 46, ManuscriptParser.RULE_command);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 270;
 	        this.match(ManuscriptParser.LeftParenthesis);
@@ -1348,7 +1348,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	    let localctx = new NonCapitalWordContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 48, ManuscriptParser.RULE_nonCapitalWord);
 	    var _la = 0; // Token type
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 283;
 	        this._errHandler.sync(this);
@@ -1408,7 +1408,7 @@ export default class ManuscriptParser extends antlr4.Parser {
 	nonCapitalText() {
 	    let localctx = new NonCapitalTextContext(this, this._ctx, this.state);
 	    this.enterRule(localctx, 50, ManuscriptParser.RULE_nonCapitalText);
-	    try { let _alt
+	    try { let  _alt
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 318;
 	        this._errHandler.sync(this);

@@ -1,664 +1,395 @@
 [
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MYLLYRANNAN KAUNIS REGINA TOSI PITKÄ NIMI JA JATKUU JA JATKUU AINA VAIN JA JOSSAIN VAIHEESSAA ALKAA TOISTUMAAN YHÄ UUDESTAAN JA UUDESTAAN"
   },
   {
-    "effect": "pause"
+    "effect": "(tauko))"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "KOHTAUS 1: ENSIKOHTAAMINEN"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan (askelia)."
   },
   {
-    "name": "narrator",
+    "effect": "(askelia)"
+  },
+  {
+    "name": "kertoja",
     "text": "(aurinko paistaa)"
   },
   {
-    "name": "narrator",
+    "effect": "(aurinko paistaa)"
+  },
+  {
+    "name": "kertoja",
     "text": "REGINA niiaa nöyrästi ja esittelee kukkiaan."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
+    "effect": "(itsevarmasti)"
+  },
+  {
+    "name": "kertoja",
     "text": "(itsevarmasti)"
   },
   {
-    "name": "narrator",
-    "text": "(itsevarmasti)"
+    "effect": "(itsevarmasti)"
   },
   {
-    "name": "REGINA",
-    "text": "Komea herra. Ostakaa ruusu morsiamellenne."
-  },
-  {
-    "name": "REGINA",
-    "text": "Naiset pitävät siitä, että saavat kukkia."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Hyvä idea. Tosin minulla ei ole morsianta, vielä."
-  },
-  {
-    "name": "ENGELBERT",
-    "text": "Mutta olen juuri menossa Hakkarin kartanoon pyytääkseni Elisabeth-neitiä seurakseni tanssiaisin, mutta en tiedä miten."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Kimppu ruusuja puhuu kyllä puolestanne."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Siinä tapauksessa ostan kaikki ruususi."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA ojentaa ruusunsa ENGELBERTILLE, joka maksaa hänelle kolikoilla."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA poistuu, ja ENGELBERT jää katselemaan hänen peräänsä."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Olipa ihastuttava neito."
+    "effect": "(tauko))"
   },
   {
-    "effect": "pause"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "KOHTAUS 2: REGINA LAINAA PUVUN"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA saapuu kartanolle ja koputtaa oveen."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA avaa oven."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA"
   },
   {
-    "name": "MATILDA",
-    "text": "Hei REGINA. Kiva nähdä sinua. Mitä Myllyrantaan ja sinulle kuuluu?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Hei MATILDA."
-  },
-  {
-    "name": "REGINA",
-    "text": "Kuulin, että Nuorisoseurantalolla on taas tanssiaiset."
-  },
-  {
-    "name": "REGINA",
-    "text": "Haluaisin kovasti mennä sinne, mutta minulla ei ole pukua."
-  },
-  {
-    "name": "REGINA",
-    "text": "Voisinko lainata täältä pukua?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA"
   },
   {
-    "name": "MATILDA",
-    "text": "Pyydät aika paljon."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Emännälläni, ruhtinattarella, luutnantti von Lejoncronan serkulla, on paljon pukuja."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Valitettavasti hän on niistä kovin tarkka."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Onneksi hän ei ole nyt paikalla, joten etköhän voi lainata."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Mutta lupaathan palauttaa sen ennen keskiyötä."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA ojentaa puvun ja kengät REGINALLE."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Kiitos MATILDA, olet tosi ystävä."
-  },
-  {
-    "name": "REGINA",
-    "text": "Ja, älä huoli, palautan nämä ennen keskiyötä."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA"
   },
   {
-    "name": "MATILDA",
-    "text": "Muistakin, ruhtinatar osaa olla ankara!"
+    "effect": "(tauko))"
   },
   {
-    "effect": "pause"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "KOHTAUS 3: ENSIMMÄISET TANSSIAISET"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Salonkitanssijat ja ENGELBERT kokoontuvat tanssisalin keskelle."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Kaikilla on naamiot, eikä ENGELBERT tunnista ketään."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Kukahan näistä kaunottarista on Elisabeth?"
-  },
-  {
-    "name": "ENGELBERT",
-    "text": "Naamiaiset eivät olleetkaan kovin hyvä idea."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Masurkka kuulutetaan."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA saapuu hienossa puvussa. Hänelläkin on naamio."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT menee REGINAA vastaan, kumartaa ja tarjoaa kätensä."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Kaunis neito, en tunnista teitä, mutta suotteko minulle kunnian tanssia kanssanne?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA nyökkää ja tarttuu ENGELBERTIN tarjoamaan käteen. ENGELBERT saattaa REGINAN tanssisaliin tanssijoiden joukkoon."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Salonkitanssijat sekä ENGELBERT ja REGINA tanssivat masurkan."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Tanssin päätyttyä kello lyö kaksitoista."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA hätääntyy."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Voi ei, minun pitää palauttaa puku, ettei MATILDA joudu vaikeuksiin."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA poistuu juosten salin ympäri pudottaen toisen kenkänsä."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT poimii kengän käteensä."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Olipa hienoa tanssia hänen kanssaan, mutta en tiedä edes hänen nimeään."
-  },
-  {
-    "name": "ENGELBERT",
-    "text": "Olisikohan hän kuitenkin vielä täällä?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT pyytää naisia sovittamaan kenkää. REGINAA ei löydy."
   },
   {
-    "effect": "pause"
+    "effect": "(tauko))"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "KOHTAUS 4: TOTUUS PALJASTUU"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA on palauttamassa pukua MATILDALLE. MATILDA hätääntyy."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA"
   },
   {
-    "name": "MATILDA",
-    "text": "Voi ei, palautat puvun ilman toista kenkää."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Mitähän ruhtinatar nyt sanoo?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ONTREI, luutnantin palvelija, saapuu paikalle."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ONTREI"
   },
   {
-    "name": "ONTREI",
-    "text": "Kuulin, mitä puhuitte."
-  },
-  {
-    "name": "ONTREI",
-    "text": "Teinä minä tunnustaisin luutnantille."
-  },
-  {
-    "name": "ONTREI",
-    "text": "Hän on yleensä aika reilu ja ymmärtäväinen."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA"
   },
   {
-    "name": "MATILDA",
-    "text": "En minä luutnanttia pelkääkään."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Minä pelkään, että kuultuaan tapahtuneesta ruhtinatar antaa minulle potkut."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "MATILDA, älä huoli, minä tunnustan kaiken."
-  },
-  {
-    "name": "REGINA",
-    "text": "En kerro sinun osuuttasi ollenkaan."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT saapuu paikalle. Hänellä on REGINAN hukkaama kenkä kädessään. Hän huomaa puvun ja toisen kengän."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Mikäs hätä neideillä on?"
-  },
-  {
-    "name": "ENGELBERT",
-    "text": "Hei, tuohan on tuttu kenkä!"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Minun täytyy tunnustaa."
-  },
-  {
-    "name": "REGINA",
-    "text": "Lainasin puvun ja kengät ilman lupaa päästäkseni tanssiaisiin."
-  },
-  {
-    "name": "REGINA",
-    "text": "Pyydän, älkää kertoko ruhtinattarelle."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT ojentaa kengän REGINALLE."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "En toki."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "(tauko)"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Kaipaat varmaan tätä kenkää."
+    "effect": "(tauko)"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Kai kiitokseksi lähdet kanssani kahdestaan souturetkelle?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "(kiukkuisesti)"
+    "effect": "(kiukkuisesti)"
   },
   {
-    "name": "REGINA",
-    "text": "Hyvä herra! Emmehän me edes tunne toisiamme!"
-  },
-  {
-    "name": "REGINA",
-    "text": "Ehdotuksenne souturetkestä ilman"
-  },
-  {
-    "name": "REGINA",
-    "text": "esiliinaa ei ole kunniallinen!"
-  },
-  {
-    "name": "REGINA",
-    "text": "Mitä te oikein minusta kuvittelette?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA kääntää selkänsä ja poistuu kiukkuisena."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA ja ONTREI katsovat toisiaan ja ottavat toisiaan kädestä kiinni."
   },
   {
-    "effect": "pause"
+    "effect": "(tauko))"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "KOHTAUS 5: ENGELBERT LÄHTEE TANSSIKURSSILLE"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA on yksin."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Olinkohan liian tyly hänelle?"
-  },
-  {
-    "name": "REGINA",
-    "text": "Tekihän hän minulle palveluksen, ja oli niin hienoa saada tanssia Loppiaistanssiaisissa."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Hyvä neiti. Pyydän anteeksi käytöstäni."
-  },
-  {
-    "name": "ENGELBERT",
-    "text": "Tunnustan, olen ajatellut teitä paljon."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Minäkin teitä (tauko) - ja tanssiaisia."
+    "effect": "(tauko)"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Tulisitko kanssani Loppiaistanssiaisiin?"
-  },
-  {
-    "name": "ENGELBERT",
-    "text": "Nolottaa, mutta armeijassa meille opetettiin vain masurkkaa, ja siitäkin vain muutama kuvio."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Mene Lempäälän Nuorisoseuran tanssikurssille."
-  },
-  {
-    "name": "REGINA",
-    "text": "Siellä on tosi hyvä opettaja ja kiva porukka."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT"
   },
   {
-    "name": "ENGELBERT",
-    "text": "Kiitos neuvosta. Lähden heti. Ja sinä, ONTREI, tulet mukaani. Tekee se hyvää sinullekin."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ONTREI"
   },
   {
-    "name": "ONTREI",
-    "text": "Käskystä, herra luutnantti."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT ja REGINA poistuvat eri suuntiin. ONTREI hetken päästä ENGELBERTIN perään."
   },
   {
-    "effect": "pause"
+    "effect": "(tauko))"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "KOHTAUS 6: JÄLLEENNÄKEMINEN"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "On taas Loppiaistanssiaiset. Ei naamioita. Salonkitanssijat kokoontuvat salin keskelle."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA ja MATILDA istuvat salin edessä olevilla tuoleilla heilutellen viuhkojaan."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Heitä käydään monta kertaa pyytämässä tanssimaan, mutta he kieltäytyvät jokaisesta pyynnöstä."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA"
   },
   {
-    "name": "MATILDA",
-    "text": "Sinulla kävi tuuri, kun sait pitää tuon puvun, ja me molemmat pääsimme tanssiaisiin."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Oletko kuullut ENGELBERTISTA mitään?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "En kohta vuoteen."
-  },
-  {
-    "name": "REGINA",
-    "text": "Kuulin, että hän innostui tanssimisesta ja on kiertänyt tanssikouluja ympäri maata."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA"
   },
   {
-    "name": "MATILDA",
-    "text": "Niin, ja ONTREI on hänen mukanaan."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "MATILDA huokaisee. (tauko)"
   },
   {
-    "name": "narrator",
+    "effect": "(tauko)"
+  },
+  {
+    "name": "kertoja",
     "text": "MATILDA"
   },
   {
-    "name": "MATILDA",
-    "text": "Huomaan, että olet varannut koko tanssikorttisi ENGELBERTILLE."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Häntä vaan ei näy."
-  },
-  {
-    "name": "MATILDA",
-    "text": "Mahtaakohan hän tulla ollenkaan?"
-  },
-  {
-    "name": "MATILDA",
-    "text": "Hyväksyisit nyt muidenkin tanssipyynnöt, tai saamme vain istua koko illan."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA"
   },
   {
-    "name": "REGINA",
-    "text": "Paraskin puhuja, sinun kortissasi lukee ONTREI jokaisella tanssilla."
+    "effect": "(tauko)"
   },
   {
-    "name": "REGINA",
-    "text": "(tauko)"
-  },
-  {
-    "name": "REGINA",
-    "text": "ENGELBERT lupasi tanssia kanssani täällä. Luotan, että kyllä hän tulee."
-  },
-  {
-    "name": "REGINA",
-    "text": "REGINA pyyhkii nenäliinalla kyyneleen silmäkulmastaan."
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Masurkka kuulutetaan."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT ilmestyy paikalle mukanaan ruusukimppu, ONTREI seuraa hänen perässään."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT menee REGINAN eteen ja ONTREI MATILDAN eteen. He seisovat ryhdikkäinä."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT ojentaa ruusut REGINALLE."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT ja ONTREI kumartavat ja sanovat yhteen ääneen:"
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT JA ONTREI"
   },
   {
-    "name": "ENGELBERT JA ONTREI",
-    "text": "Suotteko minulle kunnian tanssia kanssanne?"
-  },
-  {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA ja MATILDA nyökkäävät armollisesti."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "REGINA jättää ruusut tuolille."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "ENGELBERT ja ONTREI saattavat daaminsa tanssipaikalle."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Salonkitanssijat, ENGELBERT ja REGINA sekä ONTREI ja MATILDA tanssivat masurkan. Masurkassa on uusia kuvioita."
   },
   {
-    "name": "narrator",
+    "name": "kertoja",
     "text": "Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle."
   }
 ]

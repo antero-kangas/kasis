@@ -5,8 +5,8 @@ const NAMELEFT = 20;
 const REPLIQUELEFT = 10;
 const REPLIQUERIGHT = 60;
 
-const NARRATOR = "narrator";
-const PAUSE = "pause";
+const NARRATOR = "kertoja";
+const PAUSE = "(tauko))";
 
 export default class ProcessedManuscript {
 	constructor (json) {
@@ -25,7 +25,7 @@ export default class ProcessedManuscript {
 		const LEN = right-left;
 		const words = text.split(" ");
 		let add;
-		let result = "";
+		let format = "";
 		let line = "";
 		if (words.length > 0) {
 			let i = 0;
@@ -36,40 +36,41 @@ export default class ProcessedManuscript {
 					line += " " + words[i];
 				} else {
 					add = left+(center? (LEN-line.length)/2: 0);
-					result += " ".repeat(add) + line + NEWLINE;
+					format += " ".repeat(add) + line + NEWLINE;
 					line = words[i];
 				};
 				i++
 			}
 			add = left+(center? (LEN-line.length)/2: 0);
-			result += " ".repeat(add) + line + NEWLINE;
+			format += " ".repeat(add) + line + NEWLINE;
 		} 
-		return result;
+		return format;
 	}
 
 	formatLeft(text) {
-		let result = this.match(text);
-		return result;
+		let format = this.match(text);
+		return format;
 	}
 
 	formatSceneHeading(text) {
-		let result = this.match(text);
-		return result;
+		let format = this.match(text);
+		return format;
 	}
 
 	formatName(text) {
-		let result = this.match(text, NAMELEFT);
-		return result;
+		let format = this.match(text, NAMELEFT);
+		return format;
 	}
 
 	formatReplique(text) {
-		let result = this.match(text, REPLIQUELEFT, REPLIQUERIGHT);
-		return result;
+		console.log("formatReplique text=", text)
+		let format = this.match(text, REPLIQUELEFT, REPLIQUERIGHT);
+		return format;
 	}
 
 	formatParenthesis(text) {
 		let words = text.split(" ");
-		let result = "";
+		let format = "";
 		let i = 0;
 		let line = " ";
 		while (i < words.length) {
@@ -79,136 +80,181 @@ export default class ProcessedManuscript {
 				i++;
 				test = i==0?words[i] : " "+words[i];
 			}
-			result += line + NEWLINE; 
+			format += line + NEWLINE; 
 			line = words[i]; 
 		}
-		return result
+		return format
 	}
 
 	manuscript(json) {
-		let result = "";
+		let format = "";
 		let sound = [];
-		let res, snd;
-		[res, snd] = this.title(json.title);
-		result += res;
+		let fmt, snd;
+		[fmt, snd] = this.title(json.title);
+		format += fmt;
 		sound = sound.concat(snd);
-		result += this.authors(json.authors);
-		result += this.date(json.date); 
-		result += this.synopsis(json.synopsis);
-		[res, snd] = this.scenesPart(json.scenesPart);
-		result += res;
+		format += this.authors(json.authors);
+		format += this.date(json.date); 
+		format += this.synopsis(json.synopsis);
+		[fmt, snd] = this.scenesPart(json.scenesPart);
+		format += fmt;
 		sound = sound.concat(snd);
-		return [result, sound];
+		return [format, sound];
 	}
 
 	title(json) {
-		let result = "";
+		let format = "";
 		let sound = [];
 		if (json) {
-			result += this.center(json) + NEWLINE;
+			format += this.center(json) + NEWLINE;
 			sound.push({name: NARRATOR, text: json})
 		}
-		return [result, sound];
+		return [format, sound];
 	}
 
 	authors(json) {
-		let result = "";
+		let format = "";
 		if (json) {
-			result += this.center(json);
+			format += this.center(json);
 		}
-		return result;
+		return format;
 	}
 
 	date(json) {
-		let result = "";
+		let format = "";
 		if (json) {
-			result += this.center(json) + NEWLINE + NEWLINE;
+			format += this.center(json) + NEWLINE + NEWLINE;
 		}
-		return result;
+		return format;
 	}
 
 	synopsis(json) {
-		let result = "";
+		let format = "";
 		if (json) {
-			result += this.formatLeft(json.synopsisTitle) + NEWLINE;
-			result += this.synopsisParagraphs(json.synopsisParagraphs);
+			format += this.formatLeft(json.synopsisTitle) + NEWLINE;
+			format += this.synopsisParagraphs(json.synopsisParagraphs);
 		}
-		return result;
+		return format;
 	}
 
 	synopsisParagraphs(json) {
-		let result = "";
+		let format = "";
 		if (json) {
 			json.forEach(synopsisParagraph => {
-				result += this.synopsisParagraph(synopsisParagraph.synopsisParagraph)
+				format += this.synopsisParagraph(synopsisParagraph.synopsisParagraph)
 			})
 		}
-		return result;
+		return format;
 	}
 
 	synopsisParagraph(json) {
-		let result = "";
+		let format = "";
 		if (json) {
-			result += this.formatLeft(json) + NEWLINE;
+			format += this.formatLeft(json) + NEWLINE;
 		}
-		return result;
+		return format;
 	}
 
 	scenesPart(json) {
-		let result = "";
+		let format = "";
 		let sound = [];
 		let fmt, snd;
 		if (json) {
-			result += NEWLINE + this.formatLeft(json.scenesHeading);	
+			format += NEWLINE + this.formatLeft(json.scenesHeading);	
 			[fmt, snd] = this.scenes(json.scenes);
-			result += fmt;
+			format += fmt;
 			sound = sound.concat(snd);
 		}
-		return [result, sound];
+		return [format, sound];
 	}
 
 	scenes(json) {
-		let result = "";
+		let format = "";
 		let sound = [];
-		let res, snd;
+		let fmt, snd;
 		if (json) {
 			json.forEach(scene => {
-				[res, snd] = this.scene(scene.scene);
-				result += res;
+				[fmt, snd] = this.scene(scene.scene);
+				format += fmt;
 				sound = sound.concat(snd);
 			})
 		}
-		return [result, sound];
+		return [format, sound];
 	}
 
 	scene(json) {
-		let result = "";
+		let format = "";
 		let sound = [];
+		let fmt, snd;
 		let name = NARRATOR;
+		let x;
 		if (json) {
 			json.forEach(scenePart => {
 				switch (Object.keys(scenePart)[0]) {
 					case "sceneHeading": 
-						result += NEWLINE + this.formatLeft(scenePart.sceneHeading) + NEWLINE;
+						format += NEWLINE + this.formatLeft(scenePart.sceneHeading) + NEWLINE;
 						sound.push({"effect": PAUSE});
 						sound.push({"name": NARRATOR, "text": scenePart.sceneHeading});
 						break;
 					case "name": 
-						result += NEWLINE + this.formatName(scenePart.name) + NEWLINE;
+						format += NEWLINE + this.formatName(scenePart.name) + NEWLINE;
 						name = scenePart.name;
 						sound.push({"name": NARRATOR, "text": scenePart.name});
 						break;
 					case "parenthesis": 
-						result += this.formatLeft(scenePart.parenthesis) + NEWLINE;
-						sound.push({"name": NARRATOR, "text": scenePart.parenthesis});
+						x = this.parenthesis(scenePart.parenthesis);
+						[fmt, snd] = this.parenthesis(scenePart.parenthesis);
+						format += fmt;
+						sound = sound.concat(snd);
 						break;
 					case "replique": 
-						result += this.formatReplique(scenePart.replique) + NEWLINE;
-						sound.push({"name": name, "text": scenePart.replique});
+						[fmt, snd] = this.replique(scenePart.replique);
+						format += fmt;
+						sound = sound.concat(snd);
 						break;
 				}
 			})
 		}
-		return [result, sound];
+		return [format, sound];
+	}
+
+	parenthesis(json) {
+		let format = "";
+		let sound = [];
+		if (json) {
+			json.forEach(parenthesisPart => {
+				switch (Object.keys(parenthesisPart)[0]) {
+				case "nonCapitalTextOrCommand": 
+					format += this.formatLeft(parenthesisPart.nonCapitalTextOrCommand) + NEWLINE;
+					sound.push({"name": NARRATOR, "text": parenthesisPart.nonCapitalTextOrCommand});
+					break;
+				case "command":
+					sound.push({"effect": parenthesisPart.command});
+
+					break;
+				}
+			})
+		} 
+		return [format, sound];
+	}
+
+	replique(json) {
+		let format = "";
+		let sound = [];
+		if (json) {
+			json.forEach(repliquePart => {
+				switch (Object.keys(repliquePart)[0]) {
+				case "nonCapitalTextOrCommand": 
+					format += this.formatReplique(repliquePart.nonCapitalTextOrCommand) + NEWLINE;
+					break;
+				case "command":
+					format += this.formatReplique(repliquePart.comamnd) + NEWLINE;
+					sound.push({"effect": repliquePart.command});
+					break;
+				}
+			})
+		} 
+		return [format, sound];
+
 	}
 }	

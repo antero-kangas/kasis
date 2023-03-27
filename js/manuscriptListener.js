@@ -22,6 +22,7 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 		this.report = "";				// Kootaan virheilmoitukset ja varoitukset 
 
 		this.nonCapitalTextOrCommand = false;
+		this.parenthesis = false;
 	}
 
 	push() {
@@ -291,25 +292,21 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	// Enter a parse tree produced by ManuscriptParser#parenthesis.
 	enterParenthesis(ctx) {
 		this.addAndGo("parenthesis", []);
+		this.parenthesis = true;
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#parenthesis.
 	exitParenthesis(ctx) {
 		this.back();
+		this.parenthesis = true;
 	}
-
-	// Enter a parse tree produced by ManuscriptParser#anyTextOrCommand.
-	enterAnyTextOrCommand(ctx) {
-	}
-
-	// Exit a parse tree produced by ManuscriptParser#anyTextOrCommand.
-	exitAnyTextOrCommand(ctx) {
-	}
-
 
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalTextOrCommand.
 	enterNonCapitalTextOrCommand(ctx) {
 		this.nonCapitalTextOrCommand = true;
+		if (this.parenthesis) {
+			this.add("nonCapitalTextOrCommand", ctx.getText().trim());
+		}
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#nonCapitalTextOrCommand.
@@ -320,10 +317,12 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	// Enter a parse tree produced by ManuscriptParser#command.
 	enterCommand(ctx) {
 		this.add("command", ctx.getText().trim());
+		this.nonCapitalTextOrCommand = false;
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#command.
 	exitCommand(ctx) {
+		this.nonCapitalTextOrCommand = true;
 	}
 
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalWord.
@@ -336,8 +335,9 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalText.
 	enterNonCapitalText(ctx) {
-		if (this.nonCapitalTextOrCommand) {
-			this.add("noncapitalText", ctx.getText().trim());
+		if (this.nonCapitalTextOrCommand &&
+			!this.nonCapitalTextOrCommand) {
+			this.add("nonCapitalText", ctx.getText().trim());
 		}
 
 	}
