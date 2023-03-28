@@ -1,6 +1,7 @@
 {
   "title": "MYLLYRANNAN KAUNIS REGINA TOSI PITKÄ NIMI JA JATKUU JA JATKUU AINA VAIN JA JOSSAIN VAIHEESSAA ALKAA TOISTUMAAN YHÄ UUDESTAAN JA UUDESTAAN",
   "authors": "Antero Kangas",
+  "nonCapitalText": "21.1.2023",
   "date": "21.1.2023",
   "synopsis": {
     "synopsisTitle": "SYNOPSIS",
@@ -9,19 +10,37 @@
         "synopsisParagraph": "REGINA on köyhä tyttö, joka asuu Myllyrannassa ja myy kukkia. Hän tapaa komean luutnantti ENGELBERT von Lejoncronan, joka ostaa kaikki hänen ruusunsa. Luutnantti mainitsee tulevat Loppiaistanssiaiset Lempäälän Nuorisoseurantalolla."
       },
       {
+        "nonCapitalText": "REGINA on köyhä tyttö, joka asuu Myllyrannassa ja myy kukkia. Hän tapaa komean luutnantti ENGELBERT von Lejoncronan, joka ostaa kaikki hänen ruusunsa. Luutnantti mainitsee tulevat Loppiaistanssiaiset Lempäälän Nuorisoseurantalolla."
+      },
+      {
         "synopsisParagraph": "REGINA menee tapaamaan ystäväänsä MATILDAA, joka on töissä luutnantin kartanossa. REGINA haluaa palavasti mukaan tanssiaisiin ja lainaa kartanosta luutnantin serkun puvun."
+      },
+      {
+        "nonCapitalText": "REGINA menee tapaamaan ystäväänsä MATILDAA, joka on töissä luutnantin kartanossa. REGINA haluaa palavasti mukaan tanssiaisiin ja lainaa kartanosta luutnantin serkun puvun."
       },
       {
         "synopsisParagraph": "Hän menee tanssiaisiin, ja luutnantti tanssii hänen kanssaan masurkkaa. REGINAN täytyy kuitenkin ehtiä palauttaa puku, joten hän poistuu kesken tanssiaisia pudottaen toisen kenkänsä. ENGELBERT on ihastunut REGINAAN. Hän yrittää löytää tämän pyytämällä paikalla olevia naisia sovittamaan kenkää."
       },
       {
+        "nonCapitalText": "Hän menee tanssiaisiin, ja luutnantti tanssii hänen kanssaan masurkkaa. REGINAN täytyy kuitenkin ehtiä palauttaa puku, joten hän poistuu kesken tanssiaisia pudottaen toisen kenkänsä. ENGELBERT on ihastunut REGINAAN. Hän yrittää löytää tämän pyytämällä paikalla olevia naisia sovittamaan kenkää."
+      },
+      {
         "synopsisParagraph": "Jotta MATILDAA ei syytettäisi, paljastaa REGINA, ENGELBERTIN palvelijan, ONTREIN, ehdotuksesta, olleensa tanssiaisissa. ENGELBERT pyytää hänet souturetkelle, mutta REGINAN mielestä se ei ole sopivaa ilman esiliinaa."
+      },
+      {
+        "nonCapitalText": "Jotta MATILDAA ei syytettäisi, paljastaa REGINA, ENGELBERTIN palvelijan, ONTREIN, ehdotuksesta, olleensa tanssiaisissa. ENGELBERT pyytää hänet souturetkelle, mutta REGINAN mielestä se ei ole sopivaa ilman esiliinaa."
       },
       {
         "synopsisParagraph": "REGINA ja ENGELBERT eivät saa toisiaan mielestään. Kun he seuraavan kerran tapaavat, kertoo ENGELBERT haluavansa tanssia REGINAN kanssa jälleen Loppiaistanssiaisissa. ENGELBERT lupaa mennä Lempäälän Nuorisoseuraan opettelemaan lisää tansseja. Siellä on kuulemma hyvä opettaja. Hän määrää ONTREIN mukaansa."
       },
       {
+        "nonCapitalText": "REGINA ja ENGELBERT eivät saa toisiaan mielestään. Kun he seuraavan kerran tapaavat, kertoo ENGELBERT haluavansa tanssia REGINAN kanssa jälleen Loppiaistanssiaisissa. ENGELBERT lupaa mennä Lempäälän Nuorisoseuraan opettelemaan lisää tansseja. Siellä on kuulemma hyvä opettaja. Hän määrää ONTREIN mukaansa."
+      },
+      {
         "synopsisParagraph": "REGINA ja MATILDA ovat tanssiaisissa, mutta he vain istuvat ja odottavat ENGELBERTIA ja ONTREITA. Paljastuu, että REGINA on varannut tanssikortistaan kaikki tanssit pelkästään ENGELBERTILLE ja MATILDA ONTREILLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, ENGELBERT ja ONTREI saapuvat ja hakevat REGINAN ja MATILDAN tanssimaan."
+      },
+      {
+        "nonCapitalText": "REGINA ja MATILDA ovat tanssiaisissa, mutta he vain istuvat ja odottavat ENGELBERTIA ja ONTREITA. Paljastuu, että REGINA on varannut tanssikortistaan kaikki tanssit pelkästään ENGELBERTILLE ja MATILDA ONTREILLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, ENGELBERT ja ONTREI saapuvat ja hakevat REGINAN ja MATILDAN tanssimaan."
       }
     ]
   },
@@ -39,7 +58,16 @@
                 "nonCapitalTextOrCommand": "REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan (askelia)."
               },
               {
+                "nonCapitalText": "REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan"
+              },
+              {
                 "command": "(askelia)"
+              },
+              {
+                "nonCapitalText": "askelia"
+              },
+              {
+                "nonCapitalText": "."
               }
             ]
           },
@@ -50,6 +78,9 @@
               },
               {
                 "command": "(aurinko paistaa)"
+              },
+              {
+                "nonCapitalText": "aurinko paistaa"
               }
             ]
           },
@@ -57,6 +88,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA niiaa nöyrästi ja esittelee kukkiaan."
+              },
+              {
+                "nonCapitalText": "REGINA niiaa nöyrästi ja esittelee kukkiaan."
               }
             ]
           },
@@ -70,6 +104,9 @@
               },
               {
                 "command": "(itsevarmasti)"
+              },
+              {
+                "nonCapitalText": "itsevarmasti"
               }
             ]
           },
@@ -80,13 +117,34 @@
               },
               {
                 "command": "(itsevarmasti)"
+              },
+              {
+                "nonCapitalText": "itsevarmasti"
               }
             ]
           },
           {
             "replique": [
               {
-                "nonCapitalTextOrCommand": "Komea herra. Ostakaa ruusu morsiamellenne."
+                "nonCapitalTextOrCommand": "Komea herra. Ostakaa ruusu (tuoksuu)  morsiamellenne. (kikattaen)"
+              },
+              {
+                "nonCapitalText": "Komea herra. Ostakaa ruusu"
+              },
+              {
+                "command": "(tuoksuu)"
+              },
+              {
+                "nonCapitalText": "tuoksuu"
+              },
+              {
+                "nonCapitalText": "morsiamellenne."
+              },
+              {
+                "command": "(kikattaen)"
+              },
+              {
+                "nonCapitalText": "kikattaen"
               }
             ]
           },
@@ -94,6 +152,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Naiset pitävät siitä, että saavat kukkia."
+              },
+              {
+                "nonCapitalText": "Naiset pitävät siitä, että saavat kukkia."
               }
             ]
           },
@@ -104,6 +165,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Hyvä idea. Tosin minulla ei ole morsianta, vielä."
+              },
+              {
+                "nonCapitalText": "Hyvä idea. Tosin minulla ei ole morsianta, vielä."
               }
             ]
           },
@@ -111,6 +175,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Mutta olen juuri menossa Hakkarin kartanoon pyytääkseni Elisabeth-neitiä seurakseni tanssiaisin, mutta en tiedä miten."
+              },
+              {
+                "nonCapitalText": "Mutta olen juuri menossa Hakkarin kartanoon pyytääkseni Elisabeth-neitiä seurakseni tanssiaisin, mutta en tiedä miten."
               }
             ]
           },
@@ -121,6 +188,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kimppu ruusuja puhuu kyllä puolestanne."
+              },
+              {
+                "nonCapitalText": "Kimppu ruusuja puhuu kyllä puolestanne."
               }
             ]
           },
@@ -131,6 +201,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Siinä tapauksessa ostan kaikki ruususi."
+              },
+              {
+                "nonCapitalText": "Siinä tapauksessa ostan kaikki ruususi."
               }
             ]
           },
@@ -138,6 +211,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA ojentaa ruusunsa ENGELBERTILLE, joka maksaa hänelle kolikoilla."
+              },
+              {
+                "nonCapitalText": "REGINA ojentaa ruusunsa ENGELBERTILLE, joka maksaa hänelle kolikoilla."
               }
             ]
           },
@@ -145,6 +221,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA poistuu, ja ENGELBERT jää katselemaan hänen peräänsä."
+              },
+              {
+                "nonCapitalText": "REGINA poistuu, ja ENGELBERT jää katselemaan hänen peräänsä."
               }
             ]
           },
@@ -155,6 +234,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Olipa ihastuttava neito."
+              },
+              {
+                "nonCapitalText": "Olipa ihastuttava neito."
               }
             ]
           }
@@ -169,6 +251,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA saapuu kartanolle ja koputtaa oveen."
+              },
+              {
+                "nonCapitalText": "REGINA saapuu kartanolle ja koputtaa oveen."
               }
             ]
           },
@@ -176,6 +261,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "MATILDA avaa oven."
+              },
+              {
+                "nonCapitalText": "MATILDA avaa oven."
               }
             ]
           },
@@ -186,6 +274,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Hei REGINA. Kiva nähdä sinua. Mitä Myllyrantaan ja sinulle kuuluu?"
+              },
+              {
+                "nonCapitalText": "Hei REGINA. Kiva nähdä sinua. Mitä Myllyrantaan ja sinulle kuuluu?"
               }
             ]
           },
@@ -196,6 +287,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Hei MATILDA."
+              },
+              {
+                "nonCapitalText": "Hei MATILDA."
               }
             ]
           },
@@ -203,6 +297,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kuulin, että Nuorisoseurantalolla on taas tanssiaiset."
+              },
+              {
+                "nonCapitalText": "Kuulin, että Nuorisoseurantalolla on taas tanssiaiset."
               }
             ]
           },
@@ -210,6 +307,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Haluaisin kovasti mennä sinne, mutta minulla ei ole pukua."
+              },
+              {
+                "nonCapitalText": "Haluaisin kovasti mennä sinne, mutta minulla ei ole pukua."
               }
             ]
           },
@@ -217,6 +317,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Voisinko lainata täältä pukua?"
+              },
+              {
+                "nonCapitalText": "Voisinko lainata täältä pukua?"
               }
             ]
           },
@@ -227,6 +330,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Pyydät aika paljon."
+              },
+              {
+                "nonCapitalText": "Pyydät aika paljon."
               }
             ]
           },
@@ -234,6 +340,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Emännälläni, ruhtinattarella, luutnantti von Lejoncronan serkulla, on paljon pukuja."
+              },
+              {
+                "nonCapitalText": "Emännälläni, ruhtinattarella, luutnantti von Lejoncronan serkulla, on paljon pukuja."
               }
             ]
           },
@@ -241,6 +350,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Valitettavasti hän on niistä kovin tarkka."
+              },
+              {
+                "nonCapitalText": "Valitettavasti hän on niistä kovin tarkka."
               }
             ]
           },
@@ -248,6 +360,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Onneksi hän ei ole nyt paikalla, joten etköhän voi lainata."
+              },
+              {
+                "nonCapitalText": "Onneksi hän ei ole nyt paikalla, joten etköhän voi lainata."
               }
             ]
           },
@@ -255,6 +370,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Mutta lupaathan palauttaa sen ennen keskiyötä."
+              },
+              {
+                "nonCapitalText": "Mutta lupaathan palauttaa sen ennen keskiyötä."
               }
             ]
           },
@@ -262,6 +380,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "MATILDA ojentaa puvun ja kengät REGINALLE."
+              },
+              {
+                "nonCapitalText": "MATILDA ojentaa puvun ja kengät REGINALLE."
               }
             ]
           },
@@ -272,6 +393,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kiitos MATILDA, olet tosi ystävä."
+              },
+              {
+                "nonCapitalText": "Kiitos MATILDA, olet tosi ystävä."
               }
             ]
           },
@@ -279,6 +403,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Ja, älä huoli, palautan nämä ennen keskiyötä."
+              },
+              {
+                "nonCapitalText": "Ja, älä huoli, palautan nämä ennen keskiyötä."
               }
             ]
           },
@@ -289,6 +416,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Muistakin, ruhtinatar osaa olla ankara!"
+              },
+              {
+                "nonCapitalText": "Muistakin, ruhtinatar osaa olla ankara!"
               }
             ]
           }
@@ -303,6 +433,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Salonkitanssijat ja ENGELBERT kokoontuvat tanssisalin keskelle."
+              },
+              {
+                "nonCapitalText": "Salonkitanssijat ja ENGELBERT kokoontuvat tanssisalin keskelle."
               }
             ]
           },
@@ -310,6 +443,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Kaikilla on naamiot, eikä ENGELBERT tunnista ketään."
+              },
+              {
+                "nonCapitalText": "Kaikilla on naamiot, eikä ENGELBERT tunnista ketään."
               }
             ]
           },
@@ -320,6 +456,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kukahan näistä kaunottarista on Elisabeth?"
+              },
+              {
+                "nonCapitalText": "Kukahan näistä kaunottarista on Elisabeth?"
               }
             ]
           },
@@ -327,6 +466,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Naamiaiset eivät olleetkaan kovin hyvä idea."
+              },
+              {
+                "nonCapitalText": "Naamiaiset eivät olleetkaan kovin hyvä idea."
               }
             ]
           },
@@ -334,6 +476,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Masurkka kuulutetaan."
+              },
+              {
+                "nonCapitalText": "Masurkka kuulutetaan."
               }
             ]
           },
@@ -341,6 +486,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA saapuu hienossa puvussa. Hänelläkin on naamio."
+              },
+              {
+                "nonCapitalText": "REGINA saapuu hienossa puvussa. Hänelläkin on naamio."
               }
             ]
           },
@@ -348,6 +496,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT menee REGINAA vastaan, kumartaa ja tarjoaa kätensä."
+              },
+              {
+                "nonCapitalText": "ENGELBERT menee REGINAA vastaan, kumartaa ja tarjoaa kätensä."
               }
             ]
           },
@@ -358,6 +509,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kaunis neito, en tunnista teitä, mutta suotteko minulle kunnian tanssia kanssanne?"
+              },
+              {
+                "nonCapitalText": "Kaunis neito, en tunnista teitä, mutta suotteko minulle kunnian tanssia kanssanne?"
               }
             ]
           },
@@ -365,6 +519,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA nyökkää ja tarttuu ENGELBERTIN tarjoamaan käteen. ENGELBERT saattaa REGINAN tanssisaliin tanssijoiden joukkoon."
+              },
+              {
+                "nonCapitalText": "REGINA nyökkää ja tarttuu ENGELBERTIN tarjoamaan käteen. ENGELBERT saattaa REGINAN tanssisaliin tanssijoiden joukkoon."
               }
             ]
           },
@@ -372,6 +529,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Salonkitanssijat sekä ENGELBERT ja REGINA tanssivat masurkan."
+              },
+              {
+                "nonCapitalText": "Salonkitanssijat sekä ENGELBERT ja REGINA tanssivat masurkan."
               }
             ]
           },
@@ -379,6 +539,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Tanssin päätyttyä kello lyö kaksitoista."
+              },
+              {
+                "nonCapitalText": "Tanssin päätyttyä kello lyö kaksitoista."
               }
             ]
           },
@@ -386,6 +549,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA hätääntyy."
+              },
+              {
+                "nonCapitalText": "REGINA hätääntyy."
               }
             ]
           },
@@ -396,6 +562,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Voi ei, minun pitää palauttaa puku, ettei MATILDA joudu vaikeuksiin."
+              },
+              {
+                "nonCapitalText": "Voi ei, minun pitää palauttaa puku, ettei MATILDA joudu vaikeuksiin."
               }
             ]
           },
@@ -403,6 +572,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA poistuu juosten salin ympäri pudottaen toisen kenkänsä."
+              },
+              {
+                "nonCapitalText": "REGINA poistuu juosten salin ympäri pudottaen toisen kenkänsä."
               }
             ]
           },
@@ -410,6 +582,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT poimii kengän käteensä."
+              },
+              {
+                "nonCapitalText": "ENGELBERT poimii kengän käteensä."
               }
             ]
           },
@@ -420,6 +595,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Olipa hienoa tanssia hänen kanssaan, mutta en tiedä edes hänen nimeään."
+              },
+              {
+                "nonCapitalText": "Olipa hienoa tanssia hänen kanssaan, mutta en tiedä edes hänen nimeään."
               }
             ]
           },
@@ -427,6 +605,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Olisikohan hän kuitenkin vielä täällä?"
+              },
+              {
+                "nonCapitalText": "Olisikohan hän kuitenkin vielä täällä?"
               }
             ]
           },
@@ -434,6 +615,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT pyytää naisia sovittamaan kenkää. REGINAA ei löydy."
+              },
+              {
+                "nonCapitalText": "ENGELBERT pyytää naisia sovittamaan kenkää. REGINAA ei löydy."
               }
             ]
           }
@@ -448,6 +632,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA on palauttamassa pukua MATILDALLE. MATILDA hätääntyy."
+              },
+              {
+                "nonCapitalText": "REGINA on palauttamassa pukua MATILDALLE. MATILDA hätääntyy."
               }
             ]
           },
@@ -458,6 +645,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Voi ei, palautat puvun ilman toista kenkää."
+              },
+              {
+                "nonCapitalText": "Voi ei, palautat puvun ilman toista kenkää."
               }
             ]
           },
@@ -465,6 +655,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Mitähän ruhtinatar nyt sanoo?"
+              },
+              {
+                "nonCapitalText": "Mitähän ruhtinatar nyt sanoo?"
               }
             ]
           },
@@ -472,6 +665,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ONTREI, luutnantin palvelija, saapuu paikalle."
+              },
+              {
+                "nonCapitalText": "ONTREI, luutnantin palvelija, saapuu paikalle."
               }
             ]
           },
@@ -482,6 +678,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kuulin, mitä puhuitte."
+              },
+              {
+                "nonCapitalText": "Kuulin, mitä puhuitte."
               }
             ]
           },
@@ -489,6 +688,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Teinä minä tunnustaisin luutnantille."
+              },
+              {
+                "nonCapitalText": "Teinä minä tunnustaisin luutnantille."
               }
             ]
           },
@@ -496,6 +698,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Hän on yleensä aika reilu ja ymmärtäväinen."
+              },
+              {
+                "nonCapitalText": "Hän on yleensä aika reilu ja ymmärtäväinen."
               }
             ]
           },
@@ -506,6 +711,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "En minä luutnanttia pelkääkään."
+              },
+              {
+                "nonCapitalText": "En minä luutnanttia pelkääkään."
               }
             ]
           },
@@ -513,6 +721,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Minä pelkään, että kuultuaan tapahtuneesta ruhtinatar antaa minulle potkut."
+              },
+              {
+                "nonCapitalText": "Minä pelkään, että kuultuaan tapahtuneesta ruhtinatar antaa minulle potkut."
               }
             ]
           },
@@ -523,6 +734,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "MATILDA, älä huoli, minä tunnustan kaiken."
+              },
+              {
+                "nonCapitalText": "MATILDA, älä huoli, minä tunnustan kaiken."
               }
             ]
           },
@@ -530,6 +744,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "En kerro sinun osuuttasi ollenkaan."
+              },
+              {
+                "nonCapitalText": "En kerro sinun osuuttasi ollenkaan."
               }
             ]
           },
@@ -537,6 +754,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT saapuu paikalle. Hänellä on REGINAN hukkaama kenkä kädessään. Hän huomaa puvun ja toisen kengän."
+              },
+              {
+                "nonCapitalText": "ENGELBERT saapuu paikalle. Hänellä on REGINAN hukkaama kenkä kädessään. Hän huomaa puvun ja toisen kengän."
               }
             ]
           },
@@ -547,6 +767,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Mikäs hätä neideillä on?"
+              },
+              {
+                "nonCapitalText": "Mikäs hätä neideillä on?"
               }
             ]
           },
@@ -554,6 +777,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Hei, tuohan on tuttu kenkä!"
+              },
+              {
+                "nonCapitalText": "Hei, tuohan on tuttu kenkä!"
               }
             ]
           },
@@ -564,6 +790,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Minun täytyy tunnustaa."
+              },
+              {
+                "nonCapitalText": "Minun täytyy tunnustaa."
               }
             ]
           },
@@ -571,6 +800,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Lainasin puvun ja kengät ilman lupaa päästäkseni tanssiaisiin."
+              },
+              {
+                "nonCapitalText": "Lainasin puvun ja kengät ilman lupaa päästäkseni tanssiaisiin."
               }
             ]
           },
@@ -578,6 +810,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Pyydän, älkää kertoko ruhtinattarelle."
+              },
+              {
+                "nonCapitalText": "Pyydän, älkää kertoko ruhtinattarelle."
               }
             ]
           },
@@ -585,6 +820,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT ojentaa kengän REGINALLE."
+              },
+              {
+                "nonCapitalText": "ENGELBERT ojentaa kengän REGINALLE."
               }
             ]
           },
@@ -595,6 +833,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "En toki."
+              },
+              {
+                "nonCapitalText": "En toki."
               }
             ]
           },
@@ -605,6 +846,9 @@
               },
               {
                 "command": "(tauko)"
+              },
+              {
+                "nonCapitalText": "tauko"
               }
             ]
           },
@@ -612,6 +856,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kaipaat varmaan tätä kenkää."
+              },
+              {
+                "nonCapitalText": "Kaipaat varmaan tätä kenkää."
               }
             ]
           },
@@ -619,6 +866,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kai kiitokseksi lähdet kanssani kahdestaan souturetkelle?"
+              },
+              {
+                "nonCapitalText": "Kai kiitokseksi lähdet kanssani kahdestaan souturetkelle?"
               }
             ]
           },
@@ -632,6 +882,9 @@
               },
               {
                 "command": "(kiukkuisesti)"
+              },
+              {
+                "nonCapitalText": "kiukkuisesti"
               }
             ]
           },
@@ -639,6 +892,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Hyvä herra! Emmehän me edes tunne toisiamme!"
+              },
+              {
+                "nonCapitalText": "Hyvä herra! Emmehän me edes tunne toisiamme!"
               }
             ]
           },
@@ -646,6 +902,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Ehdotuksenne souturetkestä ilman"
+              },
+              {
+                "nonCapitalText": "Ehdotuksenne souturetkestä ilman"
               }
             ]
           },
@@ -653,6 +912,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "esiliinaa ei ole kunniallinen!"
+              },
+              {
+                "nonCapitalText": "esiliinaa ei ole kunniallinen!"
               }
             ]
           },
@@ -660,6 +922,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Mitä te oikein minusta kuvittelette?"
+              },
+              {
+                "nonCapitalText": "Mitä te oikein minusta kuvittelette?"
               }
             ]
           },
@@ -667,6 +932,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA kääntää selkänsä ja poistuu kiukkuisena."
+              },
+              {
+                "nonCapitalText": "REGINA kääntää selkänsä ja poistuu kiukkuisena."
               }
             ]
           },
@@ -674,6 +942,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "MATILDA ja ONTREI katsovat toisiaan ja ottavat toisiaan kädestä kiinni."
+              },
+              {
+                "nonCapitalText": "MATILDA ja ONTREI katsovat toisiaan ja ottavat toisiaan kädestä kiinni."
               }
             ]
           }
@@ -688,6 +959,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA on yksin."
+              },
+              {
+                "nonCapitalText": "REGINA on yksin."
               }
             ]
           },
@@ -698,6 +972,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Olinkohan liian tyly hänelle?"
+              },
+              {
+                "nonCapitalText": "Olinkohan liian tyly hänelle?"
               }
             ]
           },
@@ -705,6 +982,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Tekihän hän minulle palveluksen, ja oli niin hienoa saada tanssia Loppiaistanssiaisissa."
+              },
+              {
+                "nonCapitalText": "Tekihän hän minulle palveluksen, ja oli niin hienoa saada tanssia Loppiaistanssiaisissa."
               }
             ]
           },
@@ -712,6 +992,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä."
+              },
+              {
+                "nonCapitalText": "ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä."
               }
             ]
           },
@@ -722,6 +1005,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Hyvä neiti. Pyydän anteeksi käytöstäni."
+              },
+              {
+                "nonCapitalText": "Hyvä neiti. Pyydän anteeksi käytöstäni."
               }
             ]
           },
@@ -729,6 +1015,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Tunnustan, olen ajatellut teitä paljon."
+              },
+              {
+                "nonCapitalText": "Tunnustan, olen ajatellut teitä paljon."
               }
             ]
           },
@@ -741,7 +1030,16 @@
                 "nonCapitalTextOrCommand": "Minäkin teitä (tauko) - ja tanssiaisia."
               },
               {
+                "nonCapitalText": "Minäkin teitä"
+              },
+              {
                 "command": "(tauko)"
+              },
+              {
+                "nonCapitalText": "tauko"
+              },
+              {
+                "nonCapitalText": "- ja tanssiaisia."
               }
             ]
           },
@@ -752,6 +1050,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Tulisitko kanssani Loppiaistanssiaisiin?"
+              },
+              {
+                "nonCapitalText": "Tulisitko kanssani Loppiaistanssiaisiin?"
               }
             ]
           },
@@ -759,6 +1060,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Nolottaa, mutta armeijassa meille opetettiin vain masurkkaa, ja siitäkin vain muutama kuvio."
+              },
+              {
+                "nonCapitalText": "Nolottaa, mutta armeijassa meille opetettiin vain masurkkaa, ja siitäkin vain muutama kuvio."
               }
             ]
           },
@@ -769,6 +1073,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Mene Lempäälän Nuorisoseuran tanssikurssille."
+              },
+              {
+                "nonCapitalText": "Mene Lempäälän Nuorisoseuran tanssikurssille."
               }
             ]
           },
@@ -776,6 +1083,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Siellä on tosi hyvä opettaja ja kiva porukka."
+              },
+              {
+                "nonCapitalText": "Siellä on tosi hyvä opettaja ja kiva porukka."
               }
             ]
           },
@@ -786,6 +1096,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kiitos neuvosta. Lähden heti. Ja sinä, ONTREI, tulet mukaani. Tekee se hyvää sinullekin."
+              },
+              {
+                "nonCapitalText": "Kiitos neuvosta. Lähden heti. Ja sinä, ONTREI, tulet mukaani. Tekee se hyvää sinullekin."
               }
             ]
           },
@@ -796,6 +1109,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Käskystä, herra luutnantti."
+              },
+              {
+                "nonCapitalText": "Käskystä, herra luutnantti."
               }
             ]
           },
@@ -803,6 +1119,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT ja REGINA poistuvat eri suuntiin. ONTREI hetken päästä ENGELBERTIN perään."
+              },
+              {
+                "nonCapitalText": "ENGELBERT ja REGINA poistuvat eri suuntiin. ONTREI hetken päästä ENGELBERTIN perään."
               }
             ]
           }
@@ -817,6 +1136,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "On taas Loppiaistanssiaiset. Ei naamioita. Salonkitanssijat kokoontuvat salin keskelle."
+              },
+              {
+                "nonCapitalText": "On taas Loppiaistanssiaiset. Ei naamioita. Salonkitanssijat kokoontuvat salin keskelle."
               }
             ]
           },
@@ -824,6 +1146,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA ja MATILDA istuvat salin edessä olevilla tuoleilla heilutellen viuhkojaan."
+              },
+              {
+                "nonCapitalText": "REGINA ja MATILDA istuvat salin edessä olevilla tuoleilla heilutellen viuhkojaan."
               }
             ]
           },
@@ -831,6 +1156,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Heitä käydään monta kertaa pyytämässä tanssimaan, mutta he kieltäytyvät jokaisesta pyynnöstä."
+              },
+              {
+                "nonCapitalText": "Heitä käydään monta kertaa pyytämässä tanssimaan, mutta he kieltäytyvät jokaisesta pyynnöstä."
               }
             ]
           },
@@ -841,6 +1169,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Sinulla kävi tuuri, kun sait pitää tuon puvun, ja me molemmat pääsimme tanssiaisiin."
+              },
+              {
+                "nonCapitalText": "Sinulla kävi tuuri, kun sait pitää tuon puvun, ja me molemmat pääsimme tanssiaisiin."
               }
             ]
           },
@@ -848,6 +1179,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Oletko kuullut ENGELBERTISTA mitään?"
+              },
+              {
+                "nonCapitalText": "Oletko kuullut ENGELBERTISTA mitään?"
               }
             ]
           },
@@ -858,6 +1192,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "En kohta vuoteen."
+              },
+              {
+                "nonCapitalText": "En kohta vuoteen."
               }
             ]
           },
@@ -865,6 +1202,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Kuulin, että hän innostui tanssimisesta ja on kiertänyt tanssikouluja ympäri maata."
+              },
+              {
+                "nonCapitalText": "Kuulin, että hän innostui tanssimisesta ja on kiertänyt tanssikouluja ympäri maata."
               }
             ]
           },
@@ -875,6 +1215,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Niin, ja ONTREI on hänen mukanaan."
+              },
+              {
+                "nonCapitalText": "Niin, ja ONTREI on hänen mukanaan."
               }
             ]
           },
@@ -884,7 +1227,13 @@
                 "nonCapitalTextOrCommand": "MATILDA huokaisee. (tauko)"
               },
               {
+                "nonCapitalText": "MATILDA huokaisee."
+              },
+              {
                 "command": "(tauko)"
+              },
+              {
+                "nonCapitalText": "tauko"
               }
             ]
           },
@@ -895,6 +1244,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Huomaan, että olet varannut koko tanssikorttisi ENGELBERTILLE."
+              },
+              {
+                "nonCapitalText": "Huomaan, että olet varannut koko tanssikorttisi ENGELBERTILLE."
               }
             ]
           },
@@ -902,6 +1254,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Häntä vaan ei näy."
+              },
+              {
+                "nonCapitalText": "Häntä vaan ei näy."
               }
             ]
           },
@@ -909,6 +1264,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Mahtaakohan hän tulla ollenkaan?"
+              },
+              {
+                "nonCapitalText": "Mahtaakohan hän tulla ollenkaan?"
               }
             ]
           },
@@ -916,6 +1274,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Hyväksyisit nyt muidenkin tanssipyynnöt, tai saamme vain istua koko illan."
+              },
+              {
+                "nonCapitalText": "Hyväksyisit nyt muidenkin tanssipyynnöt, tai saamme vain istua koko illan."
               }
             ]
           },
@@ -926,6 +1287,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Paraskin puhuja, sinun kortissasi lukee ONTREI jokaisella tanssilla."
+              },
+              {
+                "nonCapitalText": "Paraskin puhuja, sinun kortissasi lukee ONTREI jokaisella tanssilla."
               }
             ]
           },
@@ -936,6 +1300,9 @@
               },
               {
                 "command": "(tauko)"
+              },
+              {
+                "nonCapitalText": "tauko"
               }
             ]
           },
@@ -943,6 +1310,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT lupasi tanssia kanssani täällä. Luotan, että kyllä hän tulee."
+              },
+              {
+                "nonCapitalText": "ENGELBERT lupasi tanssia kanssani täällä. Luotan, että kyllä hän tulee."
               }
             ]
           },
@@ -950,6 +1320,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "REGINA pyyhkii nenäliinalla kyyneleen silmäkulmastaan."
+              },
+              {
+                "nonCapitalText": "REGINA pyyhkii nenäliinalla kyyneleen silmäkulmastaan."
               }
             ]
           },
@@ -957,6 +1330,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Masurkka kuulutetaan."
+              },
+              {
+                "nonCapitalText": "Masurkka kuulutetaan."
               }
             ]
           },
@@ -964,6 +1340,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT ilmestyy paikalle mukanaan ruusukimppu, ONTREI seuraa hänen perässään."
+              },
+              {
+                "nonCapitalText": "ENGELBERT ilmestyy paikalle mukanaan ruusukimppu, ONTREI seuraa hänen perässään."
               }
             ]
           },
@@ -971,6 +1350,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT menee REGINAN eteen ja ONTREI MATILDAN eteen. He seisovat ryhdikkäinä."
+              },
+              {
+                "nonCapitalText": "ENGELBERT menee REGINAN eteen ja ONTREI MATILDAN eteen. He seisovat ryhdikkäinä."
               }
             ]
           },
@@ -978,6 +1360,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT ojentaa ruusut REGINALLE."
+              },
+              {
+                "nonCapitalText": "ENGELBERT ojentaa ruusut REGINALLE."
               }
             ]
           },
@@ -985,6 +1370,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT ja ONTREI kumartavat ja sanovat yhteen ääneen:"
+              },
+              {
+                "nonCapitalText": "ENGELBERT ja ONTREI kumartavat ja sanovat yhteen ääneen:"
               }
             ]
           },
@@ -995,6 +1383,9 @@
             "replique": [
               {
                 "nonCapitalTextOrCommand": "Suotteko minulle kunnian tanssia kanssanne?"
+              },
+              {
+                "nonCapitalText": "Suotteko minulle kunnian tanssia kanssanne?"
               }
             ]
           },
@@ -1002,6 +1393,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA ja MATILDA nyökkäävät armollisesti."
+              },
+              {
+                "nonCapitalText": "REGINA ja MATILDA nyökkäävät armollisesti."
               }
             ]
           },
@@ -1009,6 +1403,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "REGINA jättää ruusut tuolille."
+              },
+              {
+                "nonCapitalText": "REGINA jättää ruusut tuolille."
               }
             ]
           },
@@ -1016,6 +1413,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "ENGELBERT ja ONTREI saattavat daaminsa tanssipaikalle."
+              },
+              {
+                "nonCapitalText": "ENGELBERT ja ONTREI saattavat daaminsa tanssipaikalle."
               }
             ]
           },
@@ -1023,6 +1423,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Salonkitanssijat, ENGELBERT ja REGINA sekä ONTREI ja MATILDA tanssivat masurkan. Masurkassa on uusia kuvioita."
+              },
+              {
+                "nonCapitalText": "Salonkitanssijat, ENGELBERT ja REGINA sekä ONTREI ja MATILDA tanssivat masurkan. Masurkassa on uusia kuvioita."
               }
             ]
           },
@@ -1030,6 +1433,9 @@
             "parenthesis": [
               {
                 "nonCapitalTextOrCommand": "Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle."
+              },
+              {
+                "nonCapitalText": "Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle."
               }
             ]
           }

@@ -335,10 +335,11 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalText.
 	enterNonCapitalText(ctx) {
-		if (this.nonCapitalTextOrCommand &&
-			!this.nonCapitalTextOrCommand) {
-			this.add("nonCapitalText", ctx.getText().trim());
-		}
+		this.add("nonCapitalText", ctx.getText().trim());
+		// if (this.nonCapitalTextOrCommand &&
+		// 	!this.nonCapitalTextOrCommand) {
+		// 	this.add("nonCapitalText", ctx.getText().trim());
+		// }
 
 	}
 
