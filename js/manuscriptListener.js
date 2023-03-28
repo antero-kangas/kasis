@@ -318,11 +318,13 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	enterCommand(ctx) {
 		this.add("command", ctx.getText().trim());
 		this.nonCapitalTextOrCommand = false;
+		this.command = true;
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#command.
 	exitCommand(ctx) {
 		this.nonCapitalTextOrCommand = true;
+		this.command = false;
 	}
 
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalWord.
@@ -335,7 +337,9 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalText.
 	enterNonCapitalText(ctx) {
-		this.add("nonCapitalText", ctx.getText().trim());
+		if (!this.commmand) {
+			this.add("nonCapitalText", ctx.getText().trim());
+		}
 		// if (this.nonCapitalTextOrCommand &&
 		// 	!this.nonCapitalTextOrCommand) {
 		// 	this.add("nonCapitalText", ctx.getText().trim());
