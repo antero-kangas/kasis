@@ -240,14 +240,14 @@ export default class ProcessedManuscript {
 					sound.push({"name": NARRATOR, "text": parenthesisPart.nonCapitalText});
 					break;
 				case "command":
-					let command = parenthesisPart.command;
+					command = parenthesisPart.command;
 					if (this.effects.includes(command)){
 						sound.push({"effect": command});
 					} else {
 						sound.push({"name": NARRATOR, text: command});
 					}
 					break;
-				}
+				};
 			})
 		} 
 		return [format, sound];
@@ -268,7 +268,7 @@ export default class ProcessedManuscript {
 					break;
 				case "command":
 					command = repliquePart.command;
-					format += this.formatReplique(command) + NEWLINE;
+					// format += this.formatReplique(command) + NEWLINE;
 					if (this.effects.includes(command)) {
 						sound.push({"effect": command});
 					} else {
@@ -276,7 +276,7 @@ export default class ProcessedManuscript {
 					}
 					break;
 				}
-			})
+			});
 		} 
 		return [format, sound];
 

@@ -1,8 +1,7 @@
                     MYLLYRANNAN KAUNIS REGINA
 
                           Antero Kangas
-               21.1.2023 kahdeskymmenesensimmäinen
-                         ensimmäistä 2023
+                            21.1.2023
 
 
 SYNOPSIS
@@ -45,28 +44,18 @@ KOHTAUKSET
 
 KOHTAUS 1: ENSIKOHTAAMINEN
 
-REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan
-(askelia).
+REGINA lähtee kotoaan myymään ruusuja. Hänen mummonsa toivottaa
+hänelle onnea.
 
-(aurinko paistaa)
+ENGELBERT tulee häntä vastaan.
 
 REGINA niiaa nöyrästi ja esittelee kukkiaan.
 
 
                     REGINA
 
-          (itsevarmasti)
-
-          (itsevarmasti)
-
-(itsevarmasti)
-
           Komea herra. Ostakaa ruusu (tuoksuu) 
           morsiamellenne. (kikattaen)
-
-          (tuoksuu)
-
-          (kikattaen)
 
           Naiset pitävät siitä, että saavat kukkia.
 
@@ -286,8 +275,6 @@ ENGELBERT ojentaa kengän REGINALLE.
 
           (kiukkuisesti)
 
-          (kiukkuisesti)
-
           Hyvä herra! Emmehän me edes tunne toisiamme!
 
           Ehdotuksenne souturetkestä ilman
@@ -327,8 +314,6 @@ ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä.
                     REGINA
 
           Minäkin teitä (tauko) - ja tanssiaisia.
-
-          (tauko)
 
 
                     ENGELBERT
@@ -412,8 +397,6 @@ MATILDA huokaisee. (tauko)
 
           Paraskin puhuja, sinun kortissasi lukee ONTREI
           jokaisella tanssilla.
-
-          (tauko)
 
           (tauko)
 

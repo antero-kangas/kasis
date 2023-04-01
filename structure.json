@@ -1,8 +1,8 @@
 {
   "title": "MYLLYRANNAN KAUNIS REGINA",
   "authors": "Antero Kangas",
-  "nonCapitalText": "21.1.2023 kahdeskymmenesensimmäinen ensimmäistä 2023",
-  "date": "21.1.2023 kahdeskymmenesensimmäinen ensimmäistä 2023",
+  "nonCapitalText": "21.1.2023",
+  "date": "21.1.2023",
   "synopsis": {
     "synopsisTitle": "SYNOPSIS",
     "synopsisParagraphs": [
@@ -51,26 +51,20 @@
           {
             "parenthesis": [
               {
-                "nonCapitalTextOrCommand": "REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan (askelia)."
+                "nonCapitalTextOrCommand": "REGINA lähtee kotoaan myymään ruusuja. Hänen mummonsa toivottaa hänelle onnea."
               },
               {
-                "nonCapitalText": "REGINA on myymässä ruusuja. ENGELBERT tulee häntä vastaan"
-              },
-              {
-                "command": "(askelia)"
-              },
-              {
-                "nonCapitalText": "."
+                "nonCapitalText": "REGINA lähtee kotoaan myymään ruusuja. Hänen mummonsa toivottaa hänelle onnea."
               }
             ]
           },
           {
             "parenthesis": [
               {
-                "nonCapitalTextOrCommand": "(aurinko paistaa)"
+                "nonCapitalTextOrCommand": "ENGELBERT tulee häntä vastaan."
               },
               {
-                "command": "(aurinko paistaa)"
+                "nonCapitalText": "ENGELBERT tulee häntä vastaan."
               }
             ]
           },
@@ -86,26 +80,6 @@
           },
           {
             "name": "REGINA"
-          },
-          {
-            "replique": [
-              {
-                "nonCapitalTextOrCommand": "(itsevarmasti)"
-              },
-              {
-                "command": "(itsevarmasti)"
-              }
-            ]
-          },
-          {
-            "parenthesis": [
-              {
-                "nonCapitalTextOrCommand": "(itsevarmasti)"
-              },
-              {
-                "command": "(itsevarmasti)"
-              }
-            ]
           },
           {
             "replique": [
