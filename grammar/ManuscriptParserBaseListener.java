@@ -171,6 +171,42 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterEffectsPart(ManuscriptParser.EffectsPartContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEffectsPart(ManuscriptParser.EffectsPartContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEffectsTitle(ManuscriptParser.EffectsTitleContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEffectsTitle(ManuscriptParser.EffectsTitleContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEffects(ManuscriptParser.EffectsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEffects(ManuscriptParser.EffectsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterScenesPart(ManuscriptParser.ScenesPartContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -291,6 +327,18 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterCapitalWord(ManuscriptParser.CapitalWordContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCapitalWord(ManuscriptParser.CapitalWordContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterCommand(ManuscriptParser.CommandContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -298,6 +346,18 @@ public class ManuscriptParserBaseListener implements ManuscriptParserListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCommand(ManuscriptParser.CommandContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCommandText(ManuscriptParser.CommandTextContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCommandText(ManuscriptParser.CommandTextContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

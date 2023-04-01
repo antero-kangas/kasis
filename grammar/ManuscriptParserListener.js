@@ -122,6 +122,33 @@ export default class ManuscriptParserListener extends antlr4.tree.ParseTreeListe
 	}
 
 
+	// Enter a parse tree produced by ManuscriptParser#effectsPart.
+	enterEffectsPart(ctx) {
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#effectsPart.
+	exitEffectsPart(ctx) {
+	}
+
+
+	// Enter a parse tree produced by ManuscriptParser#effectsTitle.
+	enterEffectsTitle(ctx) {
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#effectsTitle.
+	exitEffectsTitle(ctx) {
+	}
+
+
+	// Enter a parse tree produced by ManuscriptParser#effects.
+	enterEffects(ctx) {
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#effects.
+	exitEffects(ctx) {
+	}
+
+
 	// Enter a parse tree produced by ManuscriptParser#scenesPart.
 	enterScenesPart(ctx) {
 	}
@@ -212,12 +239,30 @@ export default class ManuscriptParserListener extends antlr4.tree.ParseTreeListe
 	}
 
 
+	// Enter a parse tree produced by ManuscriptParser#capitalWord.
+	enterCapitalWord(ctx) {
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#capitalWord.
+	exitCapitalWord(ctx) {
+	}
+
+
 	// Enter a parse tree produced by ManuscriptParser#command.
 	enterCommand(ctx) {
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#command.
 	exitCommand(ctx) {
+	}
+
+
+	// Enter a parse tree produced by ManuscriptParser#commandText.
+	enterCommandText(ctx) {
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#commandText.
+	exitCommandText(ctx) {
 	}
 
 

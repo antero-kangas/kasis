@@ -137,6 +137,36 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 */
 	void exitEol(ManuscriptParser.EolContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link ManuscriptParser#effectsPart}.
+	 * @param ctx the parse tree
+	 */
+	void enterEffectsPart(ManuscriptParser.EffectsPartContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ManuscriptParser#effectsPart}.
+	 * @param ctx the parse tree
+	 */
+	void exitEffectsPart(ManuscriptParser.EffectsPartContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ManuscriptParser#effectsTitle}.
+	 * @param ctx the parse tree
+	 */
+	void enterEffectsTitle(ManuscriptParser.EffectsTitleContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ManuscriptParser#effectsTitle}.
+	 * @param ctx the parse tree
+	 */
+	void exitEffectsTitle(ManuscriptParser.EffectsTitleContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ManuscriptParser#effects}.
+	 * @param ctx the parse tree
+	 */
+	void enterEffects(ManuscriptParser.EffectsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ManuscriptParser#effects}.
+	 * @param ctx the parse tree
+	 */
+	void exitEffects(ManuscriptParser.EffectsContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link ManuscriptParser#scenesPart}.
 	 * @param ctx the parse tree
 	 */
@@ -237,6 +267,16 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 */
 	void exitNonCapitalTextOrCommand(ManuscriptParser.NonCapitalTextOrCommandContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link ManuscriptParser#capitalWord}.
+	 * @param ctx the parse tree
+	 */
+	void enterCapitalWord(ManuscriptParser.CapitalWordContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ManuscriptParser#capitalWord}.
+	 * @param ctx the parse tree
+	 */
+	void exitCapitalWord(ManuscriptParser.CapitalWordContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link ManuscriptParser#command}.
 	 * @param ctx the parse tree
 	 */
@@ -246,6 +286,16 @@ public interface ManuscriptParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCommand(ManuscriptParser.CommandContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ManuscriptParser#commandText}.
+	 * @param ctx the parse tree
+	 */
+	void enterCommandText(ManuscriptParser.CommandTextContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ManuscriptParser#commandText}.
+	 * @param ctx the parse tree
+	 */
+	void exitCommandText(ManuscriptParser.CommandTextContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ManuscriptParser#nonCapitalWord}.
 	 * @param ctx the parse tree

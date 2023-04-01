@@ -1,8 +1,8 @@
 {
-  "title": "MYLLYRANNAN KAUNIS REGINA TOSI PITKÄ NIMI JA JATKUU JA JATKUU AINA VAIN JA JOSSAIN VAIHEESSAA ALKAA TOISTUMAAN YHÄ UUDESTAAN JA UUDESTAAN",
+  "title": "MYLLYRANNAN KAUNIS REGINA",
   "authors": "Antero Kangas",
-  "nonCapitalText": "21.1.2023",
-  "date": "21.1.2023",
+  "nonCapitalText": "21.1.2023 kahdeskymmenesensimmäinen ensimmäistä 2023",
+  "date": "21.1.2023 kahdeskymmenesensimmäinen ensimmäistä 2023",
   "synopsis": {
     "synopsisTitle": "SYNOPSIS",
     "synopsisParagraphs": [
@@ -10,37 +10,33 @@
         "synopsisParagraph": "REGINA on köyhä tyttö, joka asuu Myllyrannassa ja myy kukkia. Hän tapaa komean luutnantti ENGELBERT von Lejoncronan, joka ostaa kaikki hänen ruusunsa. Luutnantti mainitsee tulevat Loppiaistanssiaiset Lempäälän Nuorisoseurantalolla."
       },
       {
-        "nonCapitalText": "REGINA on köyhä tyttö, joka asuu Myllyrannassa ja myy kukkia. Hän tapaa komean luutnantti ENGELBERT von Lejoncronan, joka ostaa kaikki hänen ruusunsa. Luutnantti mainitsee tulevat Loppiaistanssiaiset Lempäälän Nuorisoseurantalolla."
-      },
-      {
         "synopsisParagraph": "REGINA menee tapaamaan ystäväänsä MATILDAA, joka on töissä luutnantin kartanossa. REGINA haluaa palavasti mukaan tanssiaisiin ja lainaa kartanosta luutnantin serkun puvun."
-      },
-      {
-        "nonCapitalText": "REGINA menee tapaamaan ystäväänsä MATILDAA, joka on töissä luutnantin kartanossa. REGINA haluaa palavasti mukaan tanssiaisiin ja lainaa kartanosta luutnantin serkun puvun."
       },
       {
         "synopsisParagraph": "Hän menee tanssiaisiin, ja luutnantti tanssii hänen kanssaan masurkkaa. REGINAN täytyy kuitenkin ehtiä palauttaa puku, joten hän poistuu kesken tanssiaisia pudottaen toisen kenkänsä. ENGELBERT on ihastunut REGINAAN. Hän yrittää löytää tämän pyytämällä paikalla olevia naisia sovittamaan kenkää."
       },
       {
-        "nonCapitalText": "Hän menee tanssiaisiin, ja luutnantti tanssii hänen kanssaan masurkkaa. REGINAN täytyy kuitenkin ehtiä palauttaa puku, joten hän poistuu kesken tanssiaisia pudottaen toisen kenkänsä. ENGELBERT on ihastunut REGINAAN. Hän yrittää löytää tämän pyytämällä paikalla olevia naisia sovittamaan kenkää."
-      },
-      {
         "synopsisParagraph": "Jotta MATILDAA ei syytettäisi, paljastaa REGINA, ENGELBERTIN palvelijan, ONTREIN, ehdotuksesta, olleensa tanssiaisissa. ENGELBERT pyytää hänet souturetkelle, mutta REGINAN mielestä se ei ole sopivaa ilman esiliinaa."
-      },
-      {
-        "nonCapitalText": "Jotta MATILDAA ei syytettäisi, paljastaa REGINA, ENGELBERTIN palvelijan, ONTREIN, ehdotuksesta, olleensa tanssiaisissa. ENGELBERT pyytää hänet souturetkelle, mutta REGINAN mielestä se ei ole sopivaa ilman esiliinaa."
       },
       {
         "synopsisParagraph": "REGINA ja ENGELBERT eivät saa toisiaan mielestään. Kun he seuraavan kerran tapaavat, kertoo ENGELBERT haluavansa tanssia REGINAN kanssa jälleen Loppiaistanssiaisissa. ENGELBERT lupaa mennä Lempäälän Nuorisoseuraan opettelemaan lisää tansseja. Siellä on kuulemma hyvä opettaja. Hän määrää ONTREIN mukaansa."
       },
       {
-        "nonCapitalText": "REGINA ja ENGELBERT eivät saa toisiaan mielestään. Kun he seuraavan kerran tapaavat, kertoo ENGELBERT haluavansa tanssia REGINAN kanssa jälleen Loppiaistanssiaisissa. ENGELBERT lupaa mennä Lempäälän Nuorisoseuraan opettelemaan lisää tansseja. Siellä on kuulemma hyvä opettaja. Hän määrää ONTREIN mukaansa."
-      },
-      {
         "synopsisParagraph": "REGINA ja MATILDA ovat tanssiaisissa, mutta he vain istuvat ja odottavat ENGELBERTIA ja ONTREITA. Paljastuu, että REGINA on varannut tanssikortistaan kaikki tanssit pelkästään ENGELBERTILLE ja MATILDA ONTREILLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, ENGELBERT ja ONTREI saapuvat ja hakevat REGINAN ja MATILDAN tanssimaan."
+      }
+    ]
+  },
+  "effectsPart": {
+    "effectsTitle": "EFEKTIT",
+    "effects": [
+      {
+        "command": "(tauko)"
       },
       {
-        "nonCapitalText": "REGINA ja MATILDA ovat tanssiaisissa, mutta he vain istuvat ja odottavat ENGELBERTIA ja ONTREITA. Paljastuu, että REGINA on varannut tanssikortistaan kaikki tanssit pelkästään ENGELBERTILLE ja MATILDA ONTREILLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, ENGELBERT ja ONTREI saapuvat ja hakevat REGINAN ja MATILDAN tanssimaan."
+        "command": "(pang)"
+      },
+      {
+        "command": "(jyrähdys)"
       }
     ]
   },
@@ -64,9 +60,6 @@
                 "command": "(askelia)"
               },
               {
-                "nonCapitalText": "askelia"
-              },
-              {
                 "nonCapitalText": "."
               }
             ]
@@ -78,9 +71,6 @@
               },
               {
                 "command": "(aurinko paistaa)"
-              },
-              {
-                "nonCapitalText": "aurinko paistaa"
               }
             ]
           },
@@ -104,9 +94,6 @@
               },
               {
                 "command": "(itsevarmasti)"
-              },
-              {
-                "nonCapitalText": "itsevarmasti"
               }
             ]
           },
@@ -117,9 +104,6 @@
               },
               {
                 "command": "(itsevarmasti)"
-              },
-              {
-                "nonCapitalText": "itsevarmasti"
               }
             ]
           },
@@ -135,16 +119,10 @@
                 "command": "(tuoksuu)"
               },
               {
-                "nonCapitalText": "tuoksuu"
-              },
-              {
                 "nonCapitalText": "morsiamellenne."
               },
               {
                 "command": "(kikattaen)"
-              },
-              {
-                "nonCapitalText": "kikattaen"
               }
             ]
           },
@@ -846,9 +824,6 @@
               },
               {
                 "command": "(tauko)"
-              },
-              {
-                "nonCapitalText": "tauko"
               }
             ]
           },
@@ -882,9 +857,6 @@
               },
               {
                 "command": "(kiukkuisesti)"
-              },
-              {
-                "nonCapitalText": "kiukkuisesti"
               }
             ]
           },
@@ -1034,9 +1006,6 @@
               },
               {
                 "command": "(tauko)"
-              },
-              {
-                "nonCapitalText": "tauko"
               },
               {
                 "nonCapitalText": "- ja tanssiaisia."
@@ -1231,9 +1200,6 @@
               },
               {
                 "command": "(tauko)"
-              },
-              {
-                "nonCapitalText": "tauko"
               }
             ]
           },
@@ -1300,9 +1266,6 @@
               },
               {
                 "command": "(tauko)"
-              },
-              {
-                "nonCapitalText": "tauko"
               }
             ]
           },

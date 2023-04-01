@@ -20,9 +20,9 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 		this.semanticWarnings = [];		// Löydetyt semanttiset varoitukset
 
 		this.report = "";				// Kootaan virheilmoitukset ja varoitukset 
-
-		this.nonCapitalTextOrCommand = false;
-		this.parenthesis = false;
+		// erikoistapaukset, sisäkkäisten tekstien valinta
+		this.synopsis = false;
+		this.command = false;
 	}
 
 	push() {
@@ -55,7 +55,7 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 		} else {
 			this.current[key] = value;
 		}
-		// lisättyyn tyhjään Arrayhin tai objektiin aina jatketaan juuri siihen!
+		// lisättyyn tyhjään Arrayhin tai objektiin aina jatketaan juuri siihen
 		if (this.isEmpty(value)) return value;
 		return this.current;
 	}
@@ -130,7 +130,6 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	exitDateParagraph(ctx) {
 	}
 
-
 	// Enter a parse tree produced by ManuscriptParser#date.
 	enterDate(ctx) {
 		this.add("date", ctx.getText().trim());
@@ -140,10 +139,16 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	exitDate(ctx) {
 	}
 
-
 	// Enter a parse tree produced by ManuscriptParser#synopsisPart.
 	enterSynopsisPart(ctx) {
 		this.addAndGo("synopsis", {});
+		this.synopsis = true;
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#synopsisPart.
+	exitSynopsisPart(ctx) {
+		this.back();
+		this.synopsis = false;
 	}
 
 	// Enter a parse tree produced by ManuscriptParser#synopsisParagraphs.
@@ -163,11 +168,6 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 
 	// Exit a parse tree produced by ManuscriptParser#synopsisParagraph.
 	exitSynopsisParagraph(ctx) {
-	}
-
-	// Exit a parse tree produced by ManuscriptParser#synopsisPart.
-	exitSynopsisPart(ctx) {
-		this.back();
 	}
 
 	// Enter a parse tree produced by ManuscriptParser#synopsisTitle.
@@ -207,6 +207,26 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	}
 
 
+	// Enter a parse tree produced by ManuscriptParser#effectsPart.
+	enterEffectsPart(ctx) {
+		this.addAndGo("effectsPart", {})
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#effectsPart.
+	exitEffectsPart(ctx) {
+		this.back();
+	}
+
+
+	// Enter a parse tree produced by ManuscriptParser#effectsTitle.
+	enterEffectsTitle(ctx) {
+		this.add("effectsTitle", ctx.getText().trim());
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#effectsTitle.
+	exitEffectsTitle(ctx) {
+
+	}
 	// Enter a parse tree produced by ManuscriptParser#scenesPart.
 	enterScenesPart(ctx) {
 		this.addAndGo("scenesPart", {});
@@ -217,6 +237,15 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 		this.back();
 	}
 
+	// Enter a parse tree produced by ManuscriptParser#effects.
+	enterEffects(ctx) {
+		this.addAndGo("effects", []);
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#effects.
+	exitEffects(ctx) {
+		this.back();
+	}
 
 	// Enter a parse tree produced by ManuscriptParser#scenesHeading.
 	enterScenesHeading(ctx) {
@@ -277,7 +306,6 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 	exitName(ctx) {
 	}
 
-
 	// Enter a parse tree produced by ManuscriptParser#replique.
 	enterReplique(ctx) {
 		this.addAndGo("replique", []);
@@ -288,45 +316,56 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 		this.back();
 	}
 
-
 	// Enter a parse tree produced by ManuscriptParser#parenthesis.
 	enterParenthesis(ctx) {
 		this.addAndGo("parenthesis", []);
-		this.parenthesis = true;
+		// this.parenthesis = true;
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#parenthesis.
 	exitParenthesis(ctx) {
 		this.back();
-		this.parenthesis = true;
+		// this.parenthesis = true;
 	}
 
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalTextOrCommand.
 	enterNonCapitalTextOrCommand(ctx) {
-		this.nonCapitalTextOrCommand = true;
-		if (this.parenthesis) {
+		if (!this.command && !this.synopsis) {
 			this.add("nonCapitalTextOrCommand", ctx.getText().trim());
 		}
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#nonCapitalTextOrCommand.
 	exitNonCapitalTextOrCommand(ctx) {
-		this.nonCapitalTextOrCommand = false;
+	}
+
+	// Enter a parse tree produced by ManuscriptParser#capitalWord.
+	enterCapitalWord(ctx) {
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#capitalWord.
+	exitCapitalWord(ctx) {
 	}
 
 	// Enter a parse tree produced by ManuscriptParser#command.
 	enterCommand(ctx) {
 		this.add("command", ctx.getText().trim());
-		this.nonCapitalTextOrCommand = false;
 		this.command = true;
 	}
 
 	// Exit a parse tree produced by ManuscriptParser#command.
 	exitCommand(ctx) {
-		this.nonCapitalTextOrCommand = true;
 		this.command = false;
 	}
 
+	// Enter a parse tree produced by ManuscriptParser#commandText.
+	enterCommandText(ctx) {
+	}
+
+	// Exit a parse tree produced by ManuscriptParser#commandText.
+	exitCommandText(ctx) {
+	}
+	
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalWord.
 	enterNonCapitalWord(ctx) {
 	}
@@ -337,13 +376,12 @@ export default class ManuscriptListener extends ManuscriptParserListener {
 
 	// Enter a parse tree produced by ManuscriptParser#nonCapitalText.
 	enterNonCapitalText(ctx) {
-		if (!this.commmand) {
+
+		let c = this.command;
+		let s = this.synopsis;
+		if (!c && !s) {
 			this.add("nonCapitalText", ctx.getText().trim());
 		}
-		// if (this.nonCapitalTextOrCommand &&
-		// 	!this.nonCapitalTextOrCommand) {
-		// 	this.add("nonCapitalText", ctx.getText().trim());
-		// }
 
 	}
 

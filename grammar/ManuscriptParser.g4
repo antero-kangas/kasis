@@ -8,6 +8,7 @@ manuscript:
     authorsPart? 
     dateParagraph? 
     synopsisPart?
+    effectsPart?
     scenesPart? 
     EOF;
 
@@ -27,6 +28,10 @@ synopsisParagraph: nonCapitalText;
 
 wss: WSS;
 eol: wss? EOL;
+
+effectsPart: effectsTitle eol+ effects?; 
+effectsTitle: Effects;
+effects: (wss? command eol+)+;
 
 scenesPart: scenesHeading eol+ scenes?;
 scenesHeading: Scene;
@@ -62,8 +67,9 @@ nonCapitalTextOrCommand:
     | (command (wss? command)* (wss? nonCapitalText)?)+ 
     )
     ;
-command: LeftParenthesis (wss | nonCapitalText | CapitalWord)+ RightParenthesis;
-
+capitalWord: CapitalWord;
+command: LeftParenthesis commandText RightParenthesis;
+commandText: (wss | nonCapitalText | capitalWord)+;
 nonCapitalWord: 
     CapitalWord*
     (Number | Punctuation | Extra | MinusculeWord)

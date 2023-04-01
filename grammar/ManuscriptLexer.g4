@@ -21,6 +21,7 @@ Extra:              [+*=#"|'@€%/] | Minus ;
 
 Synopsis:           'SYNOPSIS' | 'TIIVISTELMÄ';
 Scene:				'KOHTAUKSET';
+Effects:            'EFEKTIT';
 CapitalWord:        Capital+;
 MinusculeWord:      Minuscule+;
 Number:             Digit+;

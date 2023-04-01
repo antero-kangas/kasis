@@ -1,3 +1,5 @@
+import { joinToStrAndArr } from "./tools.js";
+
 const LINEWIDTH = 66;
 const NEWLINE = "\n";
 const MINCENTERINDENT = 10;
@@ -6,15 +8,14 @@ const REPLIQUELEFT = 10;
 const REPLIQUERIGHT = 60;
 
 const NARRATOR = "kertoja";
-const PAUSE = "(tauko))";
+const PAUSE = "(tauko)";
 
 export default class ProcessedManuscript {
 	constructor (json) {
 		this.json = json;
-		let fmt, snd; 
-		[fmt, snd] = this.manuscript(json);
-		this.formatted = fmt;
-		this.sound = snd;
+		this.name = NARRATOR;
+		this.effects = [];
+		[this.formatted, this.sound] = this.manuscript(json);
 	}
 
 	center(text) {
@@ -63,7 +64,6 @@ export default class ProcessedManuscript {
 	}
 
 	formatReplique(text) {
-		console.log("formatReplique text=", text)
 		let format = this.match(text, REPLIQUELEFT, REPLIQUERIGHT);
 		return format;
 	}
@@ -89,16 +89,12 @@ export default class ProcessedManuscript {
 	manuscript(json) {
 		let format = "";
 		let sound = [];
-		let fmt, snd;
-		[fmt, snd] = this.title(json.title);
-		format += fmt;
-		sound = sound.concat(snd);
-		format += this.authors(json.authors);
-		format += this.date(json.date); 
-		format += this.synopsis(json.synopsis);
-		[fmt, snd] = this.scenesPart(json.scenesPart);
-		format += fmt;
-		sound = sound.concat(snd);
+		[format, sound] = joinToStrAndArr(format, sound, this.title(json.title));
+		[format, sound] = joinToStrAndArr(format, sound, this.authors(json.authors));
+		[format, sound] = joinToStrAndArr(format, sound, this.date(json.date));
+		[format, sound] = joinToStrAndArr(format, sound, this.synopsis(json.synopsis));
+		this.effectsPart(json.effectsPart);
+		[format, sound] = joinToStrAndArr(format, sound, this.scenesPart(json.scenesPart));
 		return [format, sound];
 	}
 
@@ -114,45 +110,64 @@ export default class ProcessedManuscript {
 
 	authors(json) {
 		let format = "";
+		let sound = [];
 		if (json) {
 			format += this.center(json);
+			sound.push({name: NARRATOR, text: json})
 		}
-		return format;
+		return [format, sound];
 	}
 
 	date(json) {
 		let format = "";
+		let sound = [];
 		if (json) {
 			format += this.center(json) + NEWLINE + NEWLINE;
+			sound.push({name: NARRATOR, text: json})
 		}
-		return format;
+		return [format, sound];
 	}
 
 	synopsis(json) {
 		let format = "";
+		let sound = [];
 		if (json) {
 			format += this.formatLeft(json.synopsisTitle) + NEWLINE;
-			format += this.synopsisParagraphs(json.synopsisParagraphs);
+			sound.push({"name": NARRATOR, "text": json.synopsisTitle});
+			[format, sound] = joinToStrAndArr(format, sound, 
+				this.synopsisParagraphs(json.synopsisParagraphs));
 		}
-		return format;
+		return [format, sound];
 	}
 
 	synopsisParagraphs(json) {
 		let format = "";
+		let sound = [];
 		if (json) {
 			json.forEach(synopsisParagraph => {
-				format += this.synopsisParagraph(synopsisParagraph.synopsisParagraph)
+				[format, sound] = joinToStrAndArr(format, sound, 
+					this.synopsisParagraph(synopsisParagraph.synopsisParagraph));
 			})
 		}
-		return format;
+		return [format, sound];
 	}
 
 	synopsisParagraph(json) {
 		let format = "";
+		let sound = [];
 		if (json) {
 			format += this.formatLeft(json) + NEWLINE;
+			sound.push({"name": NARRATOR, "text": json});
 		}
-		return format;
+		return [format, sound];
+	}
+
+	effectsPart(json) {
+		if (json && json.effects) {
+			json.effects.forEach(effect => {
+				this.effects.push(effect.command)
+			})
+		}
 	}
 
 	scenesPart(json) {
@@ -161,9 +176,9 @@ export default class ProcessedManuscript {
 		let fmt, snd;
 		if (json) {
 			format += NEWLINE + this.formatLeft(json.scenesHeading);	
-			[fmt, snd] = this.scenes(json.scenes);
-			format += fmt;
-			sound = sound.concat(snd);
+			sound.push({"name": NARRATOR, "text": json.scenesHeading});
+			[format, sound] = joinToStrAndArr (format, sound, 
+				this.scenes(json.scenes));
 		}
 		return [format, sound];
 	}
@@ -171,12 +186,10 @@ export default class ProcessedManuscript {
 	scenes(json) {
 		let format = "";
 		let sound = [];
-		let fmt, snd;
 		if (json) {
 			json.forEach(scene => {
-				[fmt, snd] = this.scene(scene.scene);
-				format += fmt;
-				sound = sound.concat(snd);
+				[format, sound] = joinToStrAndArr(format, sound,
+					this.scene(scene.scene));
 			})
 		}
 		return [format, sound];
@@ -185,9 +198,7 @@ export default class ProcessedManuscript {
 	scene(json) {
 		let format = "";
 		let sound = [];
-		let fmt, snd;
-		let name = NARRATOR;
-		let x;
+		this.name = NARRATOR;
 		if (json) {
 			json.forEach(scenePart => {
 				switch (Object.keys(scenePart)[0]) {
@@ -198,19 +209,16 @@ export default class ProcessedManuscript {
 						break;
 					case "name": 
 						format += NEWLINE + this.formatName(scenePart.name) + NEWLINE;
-						name = scenePart.name;
+						this.name = scenePart.name;
 						sound.push({"name": NARRATOR, "text": scenePart.name});
 						break;
 					case "parenthesis": 
-						x = this.parenthesis(scenePart.parenthesis);
-						[fmt, snd] = this.parenthesis(scenePart.parenthesis);
-						format += fmt;
-						sound = sound.concat(snd);
+						[format, sound] = joinToStrAndArr(format, sound,
+							this.parenthesis(scenePart.parenthesis));
 						break;
 					case "replique": 
-						[fmt, snd] = this.replique(scenePart.replique);
-						format += fmt;
-						sound = sound.concat(snd);
+						[format, sound] = joinToStrAndArr(format, sound,
+							this.replique(scenePart.replique));
 						break;
 				}
 			})
@@ -221,16 +229,23 @@ export default class ProcessedManuscript {
 	parenthesis(json) {
 		let format = "";
 		let sound = [];
+		let command;
 		if (json) {
 			json.forEach(parenthesisPart => {
 				switch (Object.keys(parenthesisPart)[0]) {
 				case "nonCapitalTextOrCommand": 
 					format += this.formatLeft(parenthesisPart.nonCapitalTextOrCommand) + NEWLINE;
-					sound.push({"name": NARRATOR, "text": parenthesisPart.nonCapitalTextOrCommand});
+					break;
+				case "nonCapitalText":
+					sound.push({"name": NARRATOR, "text": parenthesisPart.nonCapitalText});
 					break;
 				case "command":
-					sound.push({"effect": parenthesisPart.command});
-
+					let command = parenthesisPart.command;
+					if (this.effects.includes(command)){
+						sound.push({"effect": command});
+					} else {
+						sound.push({"name": NARRATOR, text: command});
+					}
 					break;
 				}
 			})
@@ -241,15 +256,24 @@ export default class ProcessedManuscript {
 	replique(json) {
 		let format = "";
 		let sound = [];
+		let command;
 		if (json) {
 			json.forEach(repliquePart => {
 				switch (Object.keys(repliquePart)[0]) {
 				case "nonCapitalTextOrCommand": 
 					format += this.formatReplique(repliquePart.nonCapitalTextOrCommand) + NEWLINE;
 					break;
+				case "nonCapitalText":
+					sound.push({"name": this.name, "text": repliquePart.nonCapitalText});
+					break;
 				case "command":
-					format += this.formatReplique(repliquePart.comamnd) + NEWLINE;
-					sound.push({"effect": repliquePart.command});
+					command = repliquePart.command;
+					format += this.formatReplique(command) + NEWLINE;
+					if (this.effects.includes(command)) {
+						sound.push({"effect": command});
+					} else {
+						sound.push({"name": NARRATOR, text: command});
+					}
 					break;
 				}
 			})

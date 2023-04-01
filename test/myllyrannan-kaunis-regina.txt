@@ -1,7 +1,6 @@
- MYLLYRANNAN KAUNIS REGINA TOSI PITKÄ NIMI JA JATKUU JA JATKUU AINA VAIN JA JOSSAIN VAIHEESSAA ALKAA TOISTUMAAN YHÄ UUDESTAAN JA UUDESTAAN
-
+                            MYLLYRANNAN KAUNIS REGINA
                                       Antero Kangas
-                                        21.1.2023
+                                        21.1.2023 kahdeskymmenesensimmäinen ensimmäistä 2023
 
 SYNOPSIS
 
@@ -41,8 +40,14 @@ ROOLIT
         rate: 4
     }
 ]
+*/
 
 EFEKTIT
+(tauko)
+(pang)
+(jyrähdys)
+
+/*
 [
     {
         name: "tauko",
@@ -382,5 +387,3 @@ ENGELBERT ja ONTREI saattavat daaminsa tanssipaikalle.
 Salonkitanssijat, ENGELBERT ja REGINA sekä ONTREI ja MATILDA tanssivat masurkan. Masurkassa on uusia kuvioita.
 
 Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle.
-
-
