@@ -1,20 +1,21 @@
-                            MYLLYRANNAN KAUNIS REGINA
+                            MYLLYRANNAN KAUNIS CHRISTINA VERSIO 2
+
                                       Antero Kangas
                                         21.1.2023
 
 SYNOPSIS
 
-REGINA on köyhä tyttö, joka asuu Myllyrannassa ja myy kukkia. Hän tapaa komean luutnantti ENGELBERT von Lejoncronan, joka ostaa kaikki hänen ruusunsa. Luutnantti mainitsee tulevat Loppiaistanssiaiset Lempäälän Nuorisoseurantalolla.
+CHRISTINA on köyhä tyttö, joka asuu Myllyrannassa ja myy kukkia. Hän tapaa komean luutnantti JOHAN von Lejoncronan, joka ostaa kaikki hänen ruusunsa. Luutnantti mainitsee tulevat Loppiaistanssiaiset Lempäälän Nuorisoseurantalolla.
 
-REGINA menee tapaamaan ystäväänsä MATILDAA, joka on töissä luutnantin kartanossa. REGINA haluaa palavasti mukaan tanssiaisiin ja lainaa kartanosta luutnantin serkun puvun.
+CHRISTINA menee tapaamaan ystäväänsä THEODOREA, joka on töissä luutnantin kartanossa. CHRISTINA haluaa palavasti mukaan tanssiaisiin ja lainaa kartanosta luutnantin serkun puvun.
 
-Hän menee tanssiaisiin, ja luutnantti tanssii hänen kanssaan masurkkaa. REGINAN täytyy kuitenkin ehtiä palauttaa puku, joten hän poistuu kesken tanssiaisia pudottaen toisen kenkänsä. ENGELBERT on ihastunut REGINAAN. Hän yrittää löytää tämän pyytämällä paikalla olevia naisia sovittamaan kenkää.
+Hän menee tanssiaisiin, ja luutnantti tanssii hänen kanssaan masurkkaa. CHRISTINAN täytyy kuitenkin ehtiä palauttaa puku, joten hän poistuu kesken tanssiaisia pudottaen toisen kenkänsä. JOHAN on ihastunut CHRISTINAAN. Hän yrittää löytää tämän pyytämällä paikalla olevia naisia sovittamaan kenkää.
 
-Jotta MATILDAA ei syytettäisi, paljastaa REGINA, ENGELBERTIN palvelijan, ONTREIN, ehdotuksesta, olleensa tanssiaisissa. ENGELBERT pyytää hänet souturetkelle, mutta REGINAN mielestä se ei ole sopivaa ilman esiliinaa.
+Jotta THEODOREA ei syytettäisi, paljastaa CHRISTINA, JOHANIN palvelijan, MAURITZN, ehdotuksesta, olleensa tanssiaisissa. JOHAN pyytää hänet souturetkelle, mutta CHRISTINAN mielestä se ei ole sopivaa ilman esiliinaa.
 
-REGINA ja ENGELBERT eivät saa toisiaan mielestään. Kun he seuraavan kerran tapaavat, kertoo ENGELBERT haluavansa tanssia REGINAN kanssa jälleen Loppiaistanssiaisissa. ENGELBERT lupaa mennä Lempäälän Nuorisoseuraan opettelemaan lisää tansseja. Siellä on kuulemma hyvä opettaja. Hän määrää ONTREIN mukaansa.
+CHRISTINA ja JOHAN eivät saa toisiaan mielestään. Kun he seuraavan kerran tapaavat, kertoo JOHAN haluavansa tanssia CHRISTINAN kanssa jälleen Loppiaistanssiaisissa. JOHAN lupaa mennä Lempäälän Nuorisoseuraan opettelemaan lisää tansseja. Siellä on kuulemma hyvä opettaja. Hän määrää MAURITZN mukaansa.
 
-REGINA ja MATILDA ovat tanssiaisissa, mutta he vain istuvat ja odottavat ENGELBERTIA ja ONTREITA. Paljastuu, että REGINA on varannut tanssikortistaan kaikki tanssit pelkästään ENGELBERTILLE ja MATILDA ONTREILLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, ENGELBERT ja ONTREI saapuvat ja hakevat REGINAN ja MATILDAN tanssimaan.
+CHRISTINA ja THEODORE ovat tanssiaisissa, mutta he vain istuvat ja odottavat JOHANIA ja MAURITZTA. Paljastuu, että CHRISTINA on varannut tanssikortistaan kaikki tanssit pelkästään JOHANILLE ja THEODORE MAURITZLLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, JOHAN ja MAURITZ saapuvat ja hakevat CHRISTINAN ja THEODOREN tanssimaan.
 
 /*
 ROOLIT
@@ -34,9 +35,9 @@ ROOLIT
         lang: "fi"
     },
     {
-        name: "JOHAN JA ONTREI",
+        name: "JOHAN JA MAURITZ",
         type: "GROUP",
-        roles: ["JOHAN", "ONTREI]
+        roles: ["JOHAN", "MAURITZ]
         rate: 4
     }
 ]
@@ -73,53 +74,53 @@ KOHTAUKSET
 
 KOHTAUS 1: ENSIKOHTAAMINEN
 
-REGINA lähtee kotoaan myymään ruusuja. Hänen mummonsa toivottaa hänelle onnea.
+CHRISTINA lähtee kotoaan myymään ruusuja. Hänen mummonsa toivottaa hänelle onnea.
 
-ENGELBERT tulee häntä vastaan.
+JOHAN tulee häntä vastaan.
 
-REGINA niiaa nöyrästi ja esittelee kukkiaan.
+CHRISTINA niiaa nöyrästi ja esittelee kukkiaan.
 
-        REGINA
+        CHRISTINA
 
-    Komea herra. Ostakaa ruusu (tuoksuu)  morsiamellenne. (kikattaen)
+    Komea herra. Ostakaa ruusu morsiamellenne.
 
     Naiset pitävät siitä, että saavat kukkia.
 
-        ENGELBERT
+        JOHAN
 
     Hyvä idea. Tosin minulla ei ole morsianta, vielä.
 
     Mutta olen juuri menossa Hakkarin kartanoon pyytääkseni Elisabeth-neitiä seurakseni tanssiaisin, mutta en tiedä miten.
 
-        REGINA
+        CHRISTINA
 
     Kimppu ruusuja puhuu kyllä puolestanne.
 
-        ENGELBERT
+        JOHAN
 
     Siinä tapauksessa ostan kaikki ruususi.
 
-REGINA ojentaa ruusunsa ENGELBERTILLE, joka maksaa hänelle kolikoilla.
+CHRISTINA ojentaa ruusunsa JOHANILLE, joka maksaa hänelle kolikoilla.
 
-REGINA poistuu, ja ENGELBERT jää katselemaan hänen peräänsä.
+CHRISTINA poistuu, ja JOHAN jää katselemaan hänen peräänsä.
 
-        ENGELBERT
+        JOHAN
 
     Olipa ihastuttava neito.
 
-KOHTAUS 2: REGINA LAINAA PUVUN
+KOHTAUS 2: CHRISTINA LAINAA PUVUN
 
-REGINA saapuu kartanolle ja koputtaa oveen.
+CHRISTINA saapuu kartanolle ja koputtaa oveen.
 
-MATILDA avaa oven.
+THEODORE avaa oven.
 
-        MATILDA
+        THEODORE
 
-    Hei REGINA. Kiva nähdä sinua. Mitä Myllyrantaan ja sinulle kuuluu?
+    Hei CHRISTINA. Kiva nähdä sinua. Mitä Myllyrantaan ja sinulle kuuluu?
 
-        REGINA
+        CHRISTINA
 
-    Hei MATILDA.
+    Hei THEODORE.
 
     Kuulin, että Nuorisoseurantalolla on taas tanssiaiset.
 
@@ -127,7 +128,7 @@ MATILDA avaa oven.
 
     Voisinko lainata täältä pukua?
 
-        MATILDA
+        THEODORE
 
     Pyydät aika paljon.
 
@@ -139,25 +140,25 @@ MATILDA avaa oven.
 
     Mutta lupaathan palauttaa sen ennen keskiyötä.
 
-MATILDA ojentaa puvun ja kengät REGINALLE.
+THEODORE ojentaa puvun ja kengät CHRISTINALLE.
 
-        REGINA
+        CHRISTINA
 
-    Kiitos MATILDA, olet tosi ystävä.
+    Kiitos THEODORE, olet tosi ystävä.
 
     Ja, älä huoli, palautan nämä ennen keskiyötä.
 
-        MATILDA
+        THEODORE
 
     Muistakin, ruhtinatar osaa olla ankara!
 
 KOHTAUS 3: ENSIMMÄISET TANSSIAISET
 
-Salonkitanssijat ja ENGELBERT kokoontuvat tanssisalin keskelle.
+Salonkitanssijat ja JOHAN kokoontuvat tanssisalin keskelle.
 
-Kaikilla on naamiot, eikä ENGELBERT tunnista ketään.
+Kaikilla on naamiot, eikä JOHAN tunnista ketään.
 
-        ENGELBERT
+        JOHAN
 
     Kukahan näistä kaunottarista on Elisabeth?
 
@@ -165,51 +166,51 @@ Kaikilla on naamiot, eikä ENGELBERT tunnista ketään.
 
 Masurkka kuulutetaan.
 
-REGINA saapuu hienossa puvussa. Hänelläkin on naamio.
+CHRISTINA saapuu hienossa puvussa. Hänelläkin on naamio.
 
-ENGELBERT menee REGINAA vastaan, kumartaa ja tarjoaa kätensä.
+JOHAN menee CHRISTINAA vastaan, kumartaa ja tarjoaa kätensä.
 
-      ENGELBERT
+      JOHAN
 
     Kaunis neito, en tunnista teitä, mutta suotteko minulle kunnian tanssia kanssanne?
 
-REGINA nyökkää ja tarttuu ENGELBERTIN tarjoamaan käteen. ENGELBERT saattaa REGINAN tanssisaliin tanssijoiden joukkoon.
+CHRISTINA nyökkää ja tarttuu JOHANIN tarjoamaan käteen. JOHAN saattaa CHRISTINAN tanssisaliin tanssijoiden joukkoon.
 
-Salonkitanssijat sekä ENGELBERT ja REGINA tanssivat masurkan.
+Salonkitanssijat sekä JOHAN ja CHRISTINA tanssivat masurkan.
 
 Tanssin päätyttyä kello lyö kaksitoista.
 
-REGINA hätääntyy.
+CHRISTINA hätääntyy.
 
-        REGINA
+        CHRISTINA
 
-    Voi ei, minun pitää palauttaa puku, ettei MATILDA joudu vaikeuksiin.
+    Voi ei, minun pitää palauttaa puku, ettei THEODORE joudu vaikeuksiin.
 
-REGINA poistuu juosten salin ympäri pudottaen toisen kenkänsä.
+CHRISTINA poistuu juosten salin ympäri pudottaen toisen kenkänsä.
 
-ENGELBERT poimii kengän käteensä.
+JOHAN poimii kengän käteensä.
 
-        ENGELBERT
+        JOHAN
 
     Olipa hienoa tanssia hänen kanssaan, mutta en tiedä edes hänen nimeään.
 
     Olisikohan hän kuitenkin vielä täällä?
 
-ENGELBERT pyytää naisia sovittamaan kenkää. REGINAA ei löydy.
+JOHAN pyytää naisia sovittamaan kenkää. CHRISTINAA ei löydy.
 
 KOHTAUS 4: TOTUUS PALJASTUU
 
-REGINA on palauttamassa pukua MATILDALLE. MATILDA hätääntyy.
+CHRISTINA on palauttamassa pukua THEODORELLE. THEODORE hätääntyy.
 
-        MATILDA
+        THEODORE
 
     Voi ei, palautat puvun ilman toista kenkää.
 
     Mitähän ruhtinatar nyt sanoo?
 
-ONTREI, luutnantin palvelija, saapuu paikalle.
+MAURITZ, luutnantin palvelija, saapuu paikalle.
 
-        ONTREI
+        MAURITZ
 
     Kuulin, mitä puhuitte.
 
@@ -217,27 +218,27 @@ ONTREI, luutnantin palvelija, saapuu paikalle.
 
     Hän on yleensä aika reilu ja ymmärtäväinen.
 
-        MATILDA
+        THEODORE
 
     En minä luutnanttia pelkääkään.
 
     Minä pelkään, että kuultuaan tapahtuneesta ruhtinatar antaa minulle potkut.
 
-        REGINA
+        CHRISTINA
 
-    MATILDA, älä huoli, minä tunnustan kaiken.
+    THEODORE, älä huoli, minä tunnustan kaiken.
 
     En kerro sinun osuuttasi ollenkaan.
 
-ENGELBERT saapuu paikalle. Hänellä on REGINAN hukkaama kenkä kädessään. Hän huomaa puvun ja toisen kengän.
+JOHAN saapuu paikalle. Hänellä on CHRISTINAN hukkaama kenkä kädessään. Hän huomaa puvun ja toisen kengän.
 
-        ENGELBERT
+        JOHAN
 
     Mikäs hätä neideillä on?
 
     Hei, tuohan on tuttu kenkä!
 
-        REGINA
+        CHRISTINA
 
     Minun täytyy tunnustaa.
 
@@ -245,9 +246,9 @@ ENGELBERT saapuu paikalle. Hänellä on REGINAN hukkaama kenkä kädessään. H�
 
     Pyydän, älkää kertoko ruhtinattarelle.
 
-ENGELBERT ojentaa kengän REGINALLE.
+JOHAN ojentaa kengän CHRISTINALLE.
 
-        ENGELBERT
+        JOHAN
 
     En toki.
 
@@ -257,7 +258,7 @@ ENGELBERT ojentaa kengän REGINALLE.
 
     Kai kiitokseksi lähdet kanssani kahdestaan souturetkelle?
 
-        REGINA
+        CHRISTINA
 
     (kiukkuisesti)
 
@@ -268,83 +269,83 @@ ENGELBERT ojentaa kengän REGINALLE.
 
     Mitä te oikein minusta kuvittelette?
 
-REGINA kääntää selkänsä ja poistuu kiukkuisena.
+CHRISTINA kääntää selkänsä ja poistuu kiukkuisena.
 
-MATILDA ja ONTREI katsovat toisiaan ja ottavat toisiaan kädestä kiinni.
+THEODORE ja MAURITZ katsovat toisiaan ja ottavat toisiaan kädestä kiinni.
 
-KOHTAUS 5: ENGELBERT LÄHTEE TANSSIKURSSILLE
+KOHTAUS 5: JOHAN LÄHTEE TANSSIKURSSILLE
 
-REGINA on yksin.
+CHRISTINA on yksin.
 
-        REGINA
+        CHRISTINA
 
     Olinkohan liian tyly hänelle?
 
     Tekihän hän minulle palveluksen, ja oli niin hienoa saada tanssia Loppiaistanssiaisissa.
 
-ENGELBERT saapuu REGINAN luo. Myös ONTREI on lähettyvillä.
+JOHAN saapuu CHRISTINAN luo. Myös MAURITZ on lähettyvillä.
 
-        ENGELBERT
+        JOHAN
 
     Hyvä neiti. Pyydän anteeksi käytöstäni.
 
     Tunnustan, olen ajatellut teitä paljon.
 
-        REGINA
+        CHRISTINA
 
     Minäkin teitä (tauko) - ja tanssiaisia.
 
-        ENGELBERT
+        JOHAN
 
     Tulisitko kanssani Loppiaistanssiaisiin?
 
     Nolottaa, mutta armeijassa meille opetettiin vain masurkkaa, ja siitäkin vain muutama kuvio.
 
-        REGINA
+        CHRISTINA
 
     Mene Lempäälän Nuorisoseuran tanssikurssille.
 
     Siellä on tosi hyvä opettaja ja kiva porukka.
 
-        ENGELBERT
+        JOHAN
 
-    Kiitos neuvosta. Lähden heti. Ja sinä, ONTREI, tulet mukaani. Tekee se hyvää sinullekin.
+    Kiitos neuvosta. Lähden heti. Ja sinä, MAURITZ, tulet mukaani. Tekee se hyvää sinullekin.
 
-        ONTREI
+        MAURITZ
 
     Käskystä, herra luutnantti.
 
-ENGELBERT ja REGINA poistuvat eri suuntiin. ONTREI hetken päästä ENGELBERTIN perään.
+JOHAN ja CHRISTINA poistuvat eri suuntiin. MAURITZ hetken päästä JOHANIN perään.
 
 KOHTAUS 6: JÄLLEENNÄKEMINEN
 
 On taas Loppiaistanssiaiset. Ei naamioita. Salonkitanssijat kokoontuvat salin keskelle.
 
-REGINA ja MATILDA istuvat salin edessä olevilla tuoleilla heilutellen viuhkojaan.
+CHRISTINA ja THEODORE istuvat salin edessä olevilla tuoleilla heilutellen viuhkojaan.
 
 Heitä käydään monta kertaa pyytämässä tanssimaan, mutta he kieltäytyvät jokaisesta pyynnöstä.
 
-        MATILDA
+        THEODORE
 
     Sinulla kävi tuuri, kun sait pitää tuon puvun, ja me molemmat pääsimme tanssiaisiin.
 
-    Oletko kuullut ENGELBERTISTA mitään?
+    Oletko kuullut JOHANISTA mitään?
 
-        REGINA
+        CHRISTINA
 
     En kohta vuoteen.
 
     Kuulin, että hän innostui tanssimisesta ja on kiertänyt tanssikouluja ympäri maata.
 
-        MATILDA
+        THEODORE
 
-    Niin, ja ONTREI on hänen mukanaan.
+    Niin, ja MAURITZ on hänen mukanaan.
 
-MATILDA huokaisee. (tauko)
+THEODORE huokaisee. (tauko)
 
-        MATILDA
+        THEODORE
 
-    Huomaan, että olet varannut koko tanssikorttisi ENGELBERTILLE.
+    Huomaan, että olet varannut koko tanssikorttisi JOHANILLE.
 
     Häntä vaan ei näy.
 
@@ -352,36 +353,36 @@ MATILDA huokaisee. (tauko)
 
     Hyväksyisit nyt muidenkin tanssipyynnöt, tai saamme vain istua koko illan.
 
-        REGINA
+        CHRISTINA
 
-    Paraskin puhuja, sinun kortissasi lukee ONTREI jokaisella tanssilla.
+    Paraskin puhuja, sinun kortissasi lukee MAURITZ jokaisella tanssilla.
 
     (tauko)
 
-    ENGELBERT lupasi tanssia kanssani täällä. Luotan, että kyllä hän tulee.
+    JOHAN lupasi tanssia kanssani täällä. Luotan, että kyllä hän tulee.
 
-    REGINA pyyhkii nenäliinalla kyyneleen silmäkulmastaan.
+    CHRISTINA pyyhkii nenäliinalla kyyneleen silmäkulmastaan.
 
 Masurkka kuulutetaan.
 
-ENGELBERT ilmestyy paikalle mukanaan ruusukimppu, ONTREI seuraa hänen perässään.
+JOHAN ilmestyy paikalle mukanaan ruusukimppu, MAURITZ seuraa hänen perässään.
 
-ENGELBERT menee REGINAN eteen ja ONTREI MATILDAN eteen. He seisovat ryhdikkäinä.
+JOHAN menee CHRISTINAN eteen ja MAURITZ THEODOREN eteen. He seisovat ryhdikkäinä.
 
-ENGELBERT ojentaa ruusut REGINALLE.
+JOHAN ojentaa ruusut CHRISTINALLE.
 
-ENGELBERT ja ONTREI kumartavat ja sanovat yhteen ääneen:
+JOHAN ja MAURITZ kumartavat ja sanovat yhteen ääneen:
 
-        ENGELBERT JA ONTREI
+        JOHAN JA MAURITZ
 
     Suotteko minulle kunnian tanssia kanssanne?
 
-REGINA ja MATILDA nyökkäävät armollisesti.
+CHRISTINA ja THEODORE nyökkäävät armollisesti.
 
-REGINA jättää ruusut tuolille.
+CHRISTINA jättää ruusut tuolille.
 
-ENGELBERT ja ONTREI saattavat daaminsa tanssipaikalle.
+JOHAN ja MAURITZ saattavat daaminsa tanssipaikalle.
 
-Salonkitanssijat, ENGELBERT ja REGINA sekä ONTREI ja MATILDA tanssivat masurkan. Masurkassa on uusia kuvioita.
+Salonkitanssijat, JOHAN ja CHRISTINA sekä MAURITZ ja THEODORE tanssivat masurkan. Masurkassa on uusia kuvioita.
 
 Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle.

@@ -14,7 +14,19 @@
    - Kirjastoituja ääniä 
    - Myös kirjastoituja rooliasetuksia
    - Kaiken käsittely lomakkeilla
-4. Yksittäisten roolien äänet voi äänittää
+4. äänen generointivaihtoehtoja
+   - otsikko
+   - author+date
+   - synopsis
+   - kohtausotsikot
+   - parenteesit
+   - nimet
+   - repliikit
+
+   - vain repliikit ja efektit = repliikit
+   - myös nimet, parenteesit ja kohtaukset = kohtaukset
+   - kaikki = kaikki
+5. Yksittäisten roolien äänet voi äänittää
 
 ## Formaatti
 

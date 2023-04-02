@@ -12,7 +12,7 @@ const PAUSE = "(tauko)";
 
 export default class ProcessedManuscript {
 	constructor (json) {
-		this.json = json;
+		// this.json = json;
 		this.name = NARRATOR;
 		this.effects = [];
 		[this.formatted, this.sound] = this.manuscript(json);
@@ -113,7 +113,7 @@ export default class ProcessedManuscript {
 		let sound = [];
 		if (json) {
 			format += this.center(json);
-			sound.push({name: NARRATOR, text: json})
+			sound.push({name: NARRATOR, text: "Kirjoittanut "+json})
 		}
 		return [format, sound];
 	}
