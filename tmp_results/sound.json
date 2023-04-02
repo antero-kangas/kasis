@@ -700,5 +700,12 @@
   {
     "name": "kertoja",
     "text": "Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle."
+  },
+  {
+    "effect": "(tauko)"
+  },
+  {
+    "name": "kertoja",
+    "text": "XXX"
   }
 ]

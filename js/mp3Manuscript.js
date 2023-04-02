@@ -39,6 +39,8 @@ export default class Mp3Manuscript {
 		const wait = async () => {await sleep(1000)};
 		wait()
 		// console.log(mp3Files)
+		
+		mp3Files.pop()
 		audioconcat(mp3Files)
 		.concat(dir+'/all.mp3')
 		.on('start', function (command) {
