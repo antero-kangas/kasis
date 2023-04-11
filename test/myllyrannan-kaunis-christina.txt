@@ -1,0 +1,394 @@
+                            MYLLYRANNAN KAUNIS CHRISTINA, VERSIO 3
+
+                                      Antero Kangas
+                                        2.4..2023
+
+SYNOPSIS
+
+CHRISTINA on köyhä tyttö, joka asuu Myllyrannassa ja myy kukkia. Hän tapaa komean luutnantti JOHAN von Lejoncronan, joka ostaa kaikki hänen ruusunsa. Luutnantti mainitsee tulevat Loppiaisbaalit Lempäälän Nuorisoseurantalolla.
+
+CHRISTINA menee tapaamaan ystäväänsä THEODOREA, joka on töissä luutnantin kartanossa. CHRISTINA haluaa palavasti mukaan baaleihin ja lainaa kartanosta luutnantin serkun puvun.
+
+Hän menee baaleihin, ja luutnantti tanssii hänen kanssaan masurkkaa. CHRISTINAN täytyy kuitenkin ehtiä palauttaa puku, joten hän poistuu kesken baaleja pudottaen toisen kenkänsä. JOHAN on ihastunut CHRISTINAAN. Hän yrittää löytää tämän pyytämällä paikalla olevia naisia sovittamaan kenkää.
+
+Jotta THEODOREA ei syytettäisi, paljastaa CHRISTINA - JOHANIN palvelijan, MAURITZIN, ehdotuksesta - olleensa baaleissa. JOHAN pyytää hänet souturetkelle, mutta CHRISTINAN mielestä se ei ole sopivaa ilman esiliinaa.
+
+CHRISTINA ja JOHAN eivät saa toisiaan mielestään. Kun he seuraavan kerran tapaavat, kertoo JOHAN haluavansa tanssia CHRISTINAN kanssa jälleen Loppiaisbaaleissa. JOHAN lupaa mennä Lempäälän Nuorisoseuraan opettelemaan lisää tansseja. Siellä on kuulemma hyvä opettaja. Hän määrää MAURITZN mukaansa.
+
+CHRISTINA ja THEODORE ovat baaleissa, mutta he vain istuvat ja odottavat JOHANIA ja MAURITZTA. Paljastuu, että CHRISTINA on varannut tanssikortistaan kaikki tanssit pelkästään JOHANILLE ja THEODORE MAURITZLLE. Mutta heitä ei vain näy. Kuitenkin, juuri kun masurkka on kuulutettu, JOHAN ja MAURITZ saapuvat ja hakevat CHRISTINAN ja THEODOREN tanssimaan.
+
+/*
+ROOLIT
+[
+    {
+        name: "narrator",
+        pitch: 2,
+        rate: 4,
+        volume: 2,
+        lang: "fi"
+    },
+    {
+        name: "JOHAN",
+        pitch: 1,
+        rate: 4,
+        volume: 2,
+        lang: "fi"
+    },
+    {
+        name: "JOHAN JA MAURITZ",
+        type: "GROUP",
+        roles: ["JOHAN", "MAURITZ]
+        rate: 4
+    }
+]
+*/
+
+EFEKTIT
+(tauko)
+(pang)
+(jyrähdys)
+
+/*
+[
+    {
+        name: "tauko",
+        type: "delay",
+        duration: 3000
+        
+    },
+    {
+        name: "pang",
+        type: "file",
+        file: "pang.mp3",
+        start: 300,
+        end: 1000
+        fadein: 100,
+        fadeout: 100,
+        volume: 2
+    }
+]
+*/
+/*
+KOHTAUKSET
+
+
+KOHTAUS 1: ENSIKOHTAAMINEN
+
+CHRISTINA lähtee kotoaan myymään ruusuja. Hänen mummonsa toivottaa hänelle onnea.
+
+JOHAN tulee häntä vastaan.
+
+CHRISTINA niiaa nöyrästi ja esittelee kukkiaan.
+
+        CHRISTINA
+
+    Komea herra. Ostakaa ruusu morsiamellenne.
+
+    Naiset pitävät siitä, että saavat kukkia.
+
+        JOHAN
+
+    Hyvä idea. Tosin minulla ei ole morsianta, vielä.
+
+    Mutta olen juuri menossa Hakkarin kartanoon pyytääkseni Elisabeth-neitiä seurakseni Loppiaisbaaleihin, mutta en tiedä miten.
+
+        CHRISTINA
+
+    Kimppu ruusuja puhuu kyllä puolestanne.
+
+        JOHAN
+
+    Siinä tapauksessa ostan kaikki ruususi.
+
+CHRISTINA ojentaa ruusunsa JOHANILLE, joka maksaa hänelle kolikoilla.
+
+CHRISTINA poistuu, ja JOHAN jää katselemaan hänen peräänsä.
+
+        JOHAN
+
+    Olipa ihastuttava neito.
+
+KOHTAUS 2: CHRISTINA LAINAA PUVUN
+
+CHRISTINA saapuu kartanolle ja koputtaa oveen.
+
+THEODORE avaa oven. Hänen takanaan roikkuu henkarissa hieno puku, ja niiden alla on tanssikengät.
+
+        THEODORE
+
+    Hei CHRISTINA. Kiva nähdä sinua. Mitä Myllyrantaan ja sinulle kuuluu?
+
+        CHRISTINA
+
+    Hei THEODORE.
+
+    Kuulin, että Nuorisoseurantalolla on taas Loppiaisbaalit.
+
+    Haluaisin kovasti mennä sinne, mutta minulla ei ole pukua.
+
+    Voisinko lainata täältä pukua?
+
+        THEODORE
+
+    Pyydät aika paljon.
+
+    Emännälläni, ruhtinattarella, luutnantti von Lejoncronan serkulla, on paljon pukuja.
+
+    Valitettavasti hän on niistä kovin tarkka.
+
+    Onneksi hän ei ole nyt paikalla, joten etköhän voi lainata.
+
+    Mutta lupaathan palauttaa sen ennen keskiyötä.
+
+THEODORE ojentaa puvun ja kengät CHRISTINALLE.
+
+        CHRISTINA
+
+    Kiitos THEODORE, olet tosi ystävä.
+
+    Ja, älä huoli, palautan nämä ennen keskiyötä.
+
+        THEODORE
+
+    Muistakin, ruhtinatar osaa olla ankara!
+
+KOHTAUS 3: ENSIMMÄISET BAALIT
+
+Salonkitanssijat ja JOHAN kokoontuvat tanssisalin keskelle.
+
+Kaikilla on naamiot, eikä JOHAN tunnista ketään.
+
+        JOHAN
+
+    Kukahan näistä kaunottarista on Elisabeth?
+
+    Naamiaiset eivät olleetkaan kovin hyvä idea.
+
+Masurkka kuulutetaan.
+
+CHRISTINA saapuu hienossa puvussa. Hänelläkin on naamio.
+
+JOHAN menee CHRISTINAA vastaan, kumartaa ja tarjoaa kätensä.
+
+      JOHAN
+
+    Kaunis neito, en tunnista teitä, mutta suotteko minulle kunnian tanssia kanssanne?
+
+CHRISTINA nyökkää ja tarttuu JOHANIN tarjoamaan käteen. JOHAN saattaa CHRISTINAN tanssisaliin tanssijoiden joukkoon.
+
+Salonkitanssijat sekä JOHAN ja CHRISTINA tanssivat masurkan.
+
+Tanssin päätyttyä kello lyö kaksitoista.
+
+CHRISTINA hätääntyy.
+
+        CHRISTINA
+
+    Voi ei, minun pitää palauttaa puku, ettei THEODORE joudu vaikeuksiin.
+
+CHRISTINA poistuu juosten salin ympäri pudottaen toisen kenkänsä.
+
+JOHAN poimii kengän käteensä.
+
+        JOHAN
+
+    Olipa hienoa tanssia hänen kanssaan, mutta en tiedä edes hänen nimeään.
+
+    Olisikohan hän kuitenkin vielä täällä?
+
+JOHAN pyytää naisia sovittamaan kenkää. CHRISTINAA ei löydy.
+
+KOHTAUS 4: TOTUUS PALJASTUU
+
+CHRISTINA on palauttamassa pukua THEODORELLE. THEODORE hätääntyy.
+
+        THEODORE
+
+    Voi ei, palautat puvun ilman toista kenkää.
+
+    Mitähän ruhtinatar nyt sanoo?
+
+MAURITZ, luutnantin palvelija, saapuu paikalle.
+
+        MAURITZ
+
+    Kuulin, mitä puhuitte.
+
+    Teinä minä tunnustaisin luutnantille.
+
+    Hän on yleensä aika reilu ja ymmärtäväinen.
+
+        THEODORE
+
+    En minä luutnanttia pelkääkään.
+
+    Minä pelkään, että kuultuaan tapahtuneesta ruhtinatar antaa minulle potkut.
+
+        CHRISTINA
+
+    THEODORE, älä huoli, minä tunnustan kaiken.
+
+    Enkä kerro sinun osuuttasi ollenkaan.
+
+JOHAN saapuu paikalle. Hänellä on CHRISTINAN hukkaama kenkä kädessään. Hän huomaa puvun ja toisen kengän.
+
+        JOHAN
+
+    Mikäs hätä neideillä on?
+
+    Hei, tuohan on tuttu kenkä!
+
+        CHRISTINA
+
+    Minun täytyy tunnustaa.
+
+    Lainasin puvun ja kengät ilman lupaa päästäkseni baaleihin.
+
+    Pyydän, älkää kertoko ruhtinattarelle.
+
+JOHAN ojentaa kengän CHRISTINALLE.
+
+        JOHAN
+
+    En toki.
+
+    (tauko)
+
+    Kaipaat varmaan tätä kenkää.
+
+    Kai kiitokseksi lähdet seurakseni seuraaviin Loppiasbaaleihin?
+
+        CHRISTINA
+
+    (kiukkuisesti)
+
+    Hyvä herra! Ettehän te osaa tanssia muuta kuin masurkkaa.
+
+    Ehei, luuletteko, että se riittää minulle!
+
+
+CHRISTINA kääntää selkänsä ja poistuu kiukkuisena.
+
+THEODORE ja MAURITZ katsovat toisiaan ja ottavat toisiaan kädestä kiinni.
+
+KOHTAUS 5: JOHAN LÄHTEE TANSSIKURSSILLE
+
+CHRISTINA on yksin.
+
+        CHRISTINA
+
+    Olinkohan liian tyly hänelle?
+
+    Tekihän hän minulle palveluksen, ja oli niin hienoa saada tanssia Loppiaisbaaleissa.
+
+JOHAN saapuu CHRISTINAN luo. Myös MAURITZ on lähettyvillä.
+
+        JOHAN
+
+    Hyvä neiti. Pyydän anteeksi käytöstäni.
+
+    Tunnustan, olen ajatellut teitä paljon.
+
+        CHRISTINA
+
+    Minäkin teitä (tauko) - ja baaleja.
+
+        JOHAN
+
+    Vaan, voisitteko sittenkin harkita tulla kanssani Loppiaisbaaleihin?
+
+    Nolottaa myöntää, mutta olitte vii-meksi oikeassa. 
+
+    Armeijassa meille opetettiin vain masurkkaa, ja siitäkin vain muutama kuvio.
+
+
+        CHRISTINA
+
+    Mene Lempäälän Nuorisoseuran tanssikurssille.
+
+    Siellä on tosi hyvä opettaja ja kiva porukka.
+
+        JOHAN
+
+    Kiitos neuvosta. Lähden heti. Ja sinä, MAURITZ, tulet mukaani. Tekee se hyvää sinullekin.
+
+        MAURITZ
+
+    Käskystä, herra luutnantti.
+
+JOHAN ja CHRISTINA poistuvat eri suuntiin. MAURITZ poistuu hetken päästä JOHANIN perään, ja THEODORE CHRISTINAN perään.
+
+KOHTAUS 6: JÄLLEENNÄKEMINEN
+
+On taas Loppiaisbaalit. Ei naamioita. Salonkitanssijat kokoontuvat salin keskelle.
+
+CHRISTINA ja THEODORE istuvat salin edessä olevilla tuoleilla heilutellen viuhkojaan.
+
+Heitä käydään monta kertaa pyytämässä tanssimaan, mutta he kieltäytyvät jokaisesta pyynnöstä.
+
+        THEODORE
+
+    Sinulla kävi tuuri, kun sait pitää tuon puvun, ja me molemmat pääsimme baaleihin.
+
+    Oletko kuullut JOHANISTA mitään?
+
+        CHRISTINA
+
+    En kohta vuoteen.
+
+    Kuulin, että hän innostui tanssimisesta ja on kiertänyt tanssikouluja ympäri maata.
+
+        THEODORE
+
+    Niin, ja MAURITZ on hänen mukanaan.
+
+THEODORE huokaisee. (tauko)
+
+        THEODORE
+
+    Huomaan, että olet varannut koko tanssikorttisi JOHANILLE.
+
+    Häntä vaan ei näy.
+
+    Mahtaakohan hän tulla ollenkaan?
+
+    Hyväksyisit nyt muidenkin tanssipyynnöt, tai saamme vain istua koko illan.
+
+        CHRISTINA
+
+    Paraskin puhuja, sinun kortissasi lukee MAURITZ jokaisen tanssin kohdalla.
+
+    (tauko)
+
+    JOHAN lupasi, itse asissa pyysi saada, tanssia kanssani täällä. Luotan, että kyllä hän tulee.
+
+    CHRISTINA pyyhkii nenäliinalla kyyneleen silmäkulmastaan.
+
+Masurkka kuulutetaan.
+
+JOHAN ilmestyy paikalle mukanaan ruusukimppu, MAURITZ seuraa hänen perässään.
+
+JOHAN menee CHRISTINAN eteen ja MAURITZ THEODOREN eteen. He seisovat ryhdikkäinä.
+
+JOHAN ojentaa ruusut CHRISTINALLE.
+
+JOHAN ja MAURITZ kumartavat ja sanovat yhteen ääneen:
+
+        JOHAN JA MAURITZ
+
+    Suotteko minulle kunnian tanssia kanssanne?
+
+CHRISTINA ja THEODORE nyökkäävät armollisesti.
+
+CHRISTINA jättää ruusut tuolille.
+
+JOHAN ja MAURITZ saattavat daaminsa tanssipaikalle.
+
+Salonkitanssijat, JOHAN ja CHRISTINA sekä MAURITZ ja THEODORE tanssivat masurkan. Masurkassa on uusia kuvioita.
+
+Lopuksi Salonkitanssijat ja näyttelijät kumartavat yleisölle.
+
+
+
+
+*/

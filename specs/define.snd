@@ -1,0 +1,22 @@
+define {
+	a = ffmpeg(params);
+	b :=  
+
+
+}
+
+
+define: 'define' '{' statememnts? '}'
+statements: statement (";" statement)*;
+statement : declare | call ;
+
+declare : id ':=' id '(' inputs? ')' '{' calls '}';
+inputs : id ("," id)*;
+calls := call (";" call)* ;
+call : (id '=')* id '(' values? ')';
+values : value ("," value)*;
+value : literal | id | array;
+literal : string | number;
+array: '[' list? ']';
+list : elem ("," elem)*;
+elem : value;

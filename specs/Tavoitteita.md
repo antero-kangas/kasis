@@ -26,7 +26,20 @@
    - vain repliikit ja efektit = repliikit
    - myös nimet, parenteesit ja kohtaukset = kohtaukset
    - kaikki = kaikki
-5. Yksittäisten roolien äänet voi äänittää
+
+5. current namen parametrin asetus väliaikaisesti/pysyvästi
+   - esim. kieli
+   - komento
+
+6. repliikin talletus eli mp3-tiedoston luonti
+
+7. Overlay
+   - henkilöryhmä
+   - henkilön/äänen päällekkäisyys
+
+8. äänien käsitely ffmpeg
+
+9. Yksittäisten roolien äänet voi äänittää oikeasta puheesta
 
 ## Formaatti
 

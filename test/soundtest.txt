@@ -1,0 +1,8 @@
+x(a,b) = (
+	cut(a,b)
+	fadein(2)
+	fadeout(5)
+)
+ffmpeg(
+	overlay([a,b,c], "xyz.mp3")
+)

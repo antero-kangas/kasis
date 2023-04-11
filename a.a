@@ -1,0 +1,220 @@
+Käsis: /Users/antero/Rojektit/kasis/test/myllyrannan-kaunis-christina.txt
+manuscriptText
+manuscriptJSON
+processedManuscript
+mp3Manuscript-->
+retry start1: 0 100
+retry start2: 1 100
+retval= 1 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 2 100
+retval= 2 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 3 100
+retval= 3 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 4 100
+retval= 4 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 5 100
+retval= 5 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 6 100
+retval= 6 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 7 100
+retval= 7 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 8 100
+retval= 8 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 9 100
+retval= 9 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 10 100
+retval= 10 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 11 100
+retval= 11 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 12 100
+retval= 12 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 13 100
+retval= 13 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 14 100
+retval= 14 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 15 100
+retval= 15 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 16 100
+retval= 16 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 17 100
+retval= 17 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 18 100
+retval= 18 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 19 100
+retval= 19 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 20 100
+retval= 20 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 21 100
+retval= 21 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 22 100
+retval= 22 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 23 100
+retval= 23 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 24 100
+retval= 24 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 25 100
+retval= 25 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 26 100
+retval= 26 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 27 100
+retval= 27 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 28 100
+retval= 28 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 29 100
+retval= 29 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 30 100
+retval= 30 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 31 100
+retval= 31 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 32 100
+retval= 32 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 33 100
+retval= 33 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 34 100
+retval= 34 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 35 100
+retval= 35 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 36 100
+retval= 36 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 37 100
+retval= 37 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 38 100
+retval= 38 100 Promise { <pending> }
+retry start1: 0 100
+retry start2: 39 100
+retval= 39 100 Promise { <pending> }
+promises1= 39 [
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }, Promise { <pending> },
+  Promise { <pending> }
+]
+spokenJSONText
+mp3Manuscriptt
+catch error= 1 100
+-->retry
+catch error= 3 100
+-->retry
+catch error= 2 100
+-->retry
+catch error= 18 100
+-->retry
+catch error= 30 100
+-->retry
+catch error= 6 100
+-->retry
+catch error= 9 100
+-->retry
+catch error= 28 100
+-->retry
+catch error= 23 100
+-->retry
+catch error= 16 100
+-->retry
+catch error= 38 100
+-->retry
+catch error= 14 100
+-->retry
+catch error= 7 100
+-->retry
+catch error= 36 100
+-->retry
+catch error= 11 100
+-->retry
+catch error= 21 100
+-->retry
+catch error= 24 100
+-->retry
+catch error= 5 100
+-->retry
+catch error= 22 100
+-->retry
+catch error= 27 100
+-->retry
+catch error= 19 100
+-->retry
+catch error= 31 100
+-->retry
+catch error= 12 100
+-->retry
+catch error= 17 100
+-->retry
+catch error= 39 100
+-->retry
+catch error= 8 100
+-->retry
+catch error= 20 100
+-->retry
+catch error= 10 100
+-->retry
+catch error= 33 100
+-->retry
+catch error= 4 100
+-->retry
+catch error= 37 100
+-->retry
+catch error= 13 100
+-->retry
+catch error= 26 100
+-->retry
+catch error= 32 100
+-->retry
+catch error= 34 100
+-->retry
+catch error= 15 100
+-->retry
+retry start1: 0 100
+retry start2: 40 100
