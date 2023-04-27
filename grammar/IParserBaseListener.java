@@ -5,384 +5,396 @@ import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link ManuscriptParserListener},
+ * This class provides an empty implementation of {@link IParserListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
 @SuppressWarnings("CheckReturnValue")
-public class ManuscriptParserBaseListener implements ManuscriptParserListener {
+public class IParserBaseListener implements IParserListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterManuscript(ManuscriptParser.ManuscriptContext ctx) { }
+	@Override public void enterI(IParser.IContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitManuscript(ManuscriptParser.ManuscriptContext ctx) { }
+	@Override public void exitI(IParser.IContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTitlePart(ManuscriptParser.TitlePartContext ctx) { }
+	@Override public void enterStatements(IParser.StatementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTitlePart(ManuscriptParser.TitlePartContext ctx) { }
+	@Override public void exitStatements(IParser.StatementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTitle(ManuscriptParser.TitleContext ctx) { }
+	@Override public void enterStatement(IParser.StatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTitle(ManuscriptParser.TitleContext ctx) { }
+	@Override public void exitStatement(IParser.StatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAuthorsPart(ManuscriptParser.AuthorsPartContext ctx) { }
+	@Override public void enterDefinition(IParser.DefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAuthorsPart(ManuscriptParser.AuthorsPartContext ctx) { }
+	@Override public void exitDefinition(IParser.DefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAuthors(ManuscriptParser.AuthorsContext ctx) { }
+	@Override public void enterSList(IParser.SListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAuthors(ManuscriptParser.AuthorsContext ctx) { }
+	@Override public void exitSList(IParser.SListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDateParagraph(ManuscriptParser.DateParagraphContext ctx) { }
+	@Override public void enterSParam(IParser.SParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDateParagraph(ManuscriptParser.DateParagraphContext ctx) { }
+	@Override public void exitSParam(IParser.SParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDate(ManuscriptParser.DateContext ctx) { }
+	@Override public void enterType(IParser.TypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDate(ManuscriptParser.DateContext ctx) { }
+	@Override public void exitType(IParser.TypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSynopsisPart(ManuscriptParser.SynopsisPartContext ctx) { }
+	@Override public void enterDefaultValue(IParser.DefaultValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSynopsisPart(ManuscriptParser.SynopsisPartContext ctx) { }
+	@Override public void exitDefaultValue(IParser.DefaultValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSynopsisTitle(ManuscriptParser.SynopsisTitleContext ctx) { }
+	@Override public void enterCall(IParser.CallContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSynopsisTitle(ManuscriptParser.SynopsisTitleContext ctx) { }
+	@Override public void exitCall(IParser.CallContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSynopsisParagraphs(ManuscriptParser.SynopsisParagraphsContext ctx) { }
+	@Override public void enterVList(IParser.VListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSynopsisParagraphs(ManuscriptParser.SynopsisParagraphsContext ctx) { }
+	@Override public void exitVList(IParser.VListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSynopsisParagraph(ManuscriptParser.SynopsisParagraphContext ctx) { }
+	@Override public void enterVParam(IParser.VParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSynopsisParagraph(ManuscriptParser.SynopsisParagraphContext ctx) { }
+	@Override public void exitVParam(IParser.VParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWss(ManuscriptParser.WssContext ctx) { }
+	@Override public void enterAssignment(IParser.AssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWss(ManuscriptParser.WssContext ctx) { }
+	@Override public void exitAssignment(IParser.AssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEol(ManuscriptParser.EolContext ctx) { }
+	@Override public void enterExpression(IParser.ExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEol(ManuscriptParser.EolContext ctx) { }
+	@Override public void exitExpression(IParser.ExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEffectsPart(ManuscriptParser.EffectsPartContext ctx) { }
+	@Override public void enterPower(IParser.PowerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEffectsPart(ManuscriptParser.EffectsPartContext ctx) { }
+	@Override public void exitPower(IParser.PowerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEffectsTitle(ManuscriptParser.EffectsTitleContext ctx) { }
+	@Override public void enterTerm(IParser.TermContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEffectsTitle(ManuscriptParser.EffectsTitleContext ctx) { }
+	@Override public void exitTerm(IParser.TermContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEffects(ManuscriptParser.EffectsContext ctx) { }
+	@Override public void enterFactor(IParser.FactorContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEffects(ManuscriptParser.EffectsContext ctx) { }
+	@Override public void exitFactor(IParser.FactorContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterScenesPart(ManuscriptParser.ScenesPartContext ctx) { }
+	@Override public void enterValue(IParser.ValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitScenesPart(ManuscriptParser.ScenesPartContext ctx) { }
+	@Override public void exitValue(IParser.ValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterScenesHeading(ManuscriptParser.ScenesHeadingContext ctx) { }
+	@Override public void enterDollar(IParser.DollarContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitScenesHeading(ManuscriptParser.ScenesHeadingContext ctx) { }
+	@Override public void exitDollar(IParser.DollarContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterScenes(ManuscriptParser.ScenesContext ctx) { }
+	@Override public void enterLParen(IParser.LParenContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitScenes(ManuscriptParser.ScenesContext ctx) { }
+	@Override public void exitLParen(IParser.LParenContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterScene(ManuscriptParser.SceneContext ctx) { }
+	@Override public void enterRParen(IParser.RParenContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitScene(ManuscriptParser.SceneContext ctx) { }
+	@Override public void exitRParen(IParser.RParenContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSceneHeading(ManuscriptParser.SceneHeadingContext ctx) { }
+	@Override public void enterId(IParser.IdContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSceneHeading(ManuscriptParser.SceneHeadingContext ctx) { }
+	@Override public void exitId(IParser.IdContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterHeading(ManuscriptParser.HeadingContext ctx) { }
+	@Override public void enterEqual(IParser.EqualContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitHeading(ManuscriptParser.HeadingContext ctx) { }
+	@Override public void exitEqual(IParser.EqualContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterName(ManuscriptParser.NameContext ctx) { }
+	@Override public void enterComma(IParser.CommaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitName(ManuscriptParser.NameContext ctx) { }
+	@Override public void exitComma(IParser.CommaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterReplique(ManuscriptParser.RepliqueContext ctx) { }
+	@Override public void enterColon(IParser.ColonContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReplique(ManuscriptParser.RepliqueContext ctx) { }
+	@Override public void exitColon(IParser.ColonContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParenthesis(ManuscriptParser.ParenthesisContext ctx) { }
+	@Override public void enterPlus(IParser.PlusContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParenthesis(ManuscriptParser.ParenthesisContext ctx) { }
+	@Override public void exitPlus(IParser.PlusContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNonCapitalTextOrCommand(ManuscriptParser.NonCapitalTextOrCommandContext ctx) { }
+	@Override public void enterMinus(IParser.MinusContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNonCapitalTextOrCommand(ManuscriptParser.NonCapitalTextOrCommandContext ctx) { }
+	@Override public void exitMinus(IParser.MinusContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCapitalWord(ManuscriptParser.CapitalWordContext ctx) { }
+	@Override public void enterToPower(IParser.ToPowerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCapitalWord(ManuscriptParser.CapitalWordContext ctx) { }
+	@Override public void exitToPower(IParser.ToPowerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCommand(ManuscriptParser.CommandContext ctx) { }
+	@Override public void enterTimes(IParser.TimesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCommand(ManuscriptParser.CommandContext ctx) { }
+	@Override public void exitTimes(IParser.TimesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCommandText(ManuscriptParser.CommandTextContext ctx) { }
+	@Override public void enterDiv(IParser.DivContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCommandText(ManuscriptParser.CommandTextContext ctx) { }
+	@Override public void exitDiv(IParser.DivContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNonCapitalWord(ManuscriptParser.NonCapitalWordContext ctx) { }
+	@Override public void enterMod(IParser.ModContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNonCapitalWord(ManuscriptParser.NonCapitalWordContext ctx) { }
+	@Override public void exitMod(IParser.ModContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNonCapitalText(ManuscriptParser.NonCapitalTextContext ctx) { }
+	@Override public void enterNumber(IParser.NumberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNonCapitalText(ManuscriptParser.NonCapitalTextContext ctx) { }
+	@Override public void exitNumber(IParser.NumberContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterString(IParser.StringContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitString(IParser.StringContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
