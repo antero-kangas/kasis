@@ -1,27 +1,35 @@
-lexer grammar ManuscriptLexer;
+lexer grammar ManuscriptLexer ;
 options { 
-    language = 'JavaScript';
+    language = 'JavaScript' ;
 }
 
-MultiLineComment:   '/*' .*? '*/'             -> channel(HIDDEN);
-SingleLineComment:  '//' ~[\r\n\u2028\u2029]* -> channel(HIDDEN);
+MultiLineComment:   '/*' .*? '*/'             -> channel(HIDDEN) ;
+SingleLineComment:  '//' ~[\r\n\u2028\u2029]* -> channel(HIDDEN) ;
 
 
-fragment WhiteSpace: [ \t];
+fragment WhiteSpace: [ \t] ;
 WSS:				WhiteSpace+ ;
-EOL:                '\r'? '\n';
-fragment Capital:   [A-ZÅÄÖ];
-fragment Minuscule: [a-zåäö];        
-fragment Digit:     [0-9];
-Punctuation:        [.,;:!?];
-LeftParenthesis:    '(';
-RightParenthesis:   ')';
-fragment Minus:     '-';
+EOL:                '\r'? '\n' ;
+fragment Capital:   [A-ZÅÄÖ] ;
+fragment Minuscule: [a-zåäö] ;        
+fragment Digit:     [0-9] ;
+Punctuation:        [., ;:!?] ;
+LeftParenthesis:    '(' ;
+RightParenthesis:   ')' ;
+fragment Minus:     '-' ;
 Extra:              [+*=#"|'@€%/] | Minus ;
 
-Synopsis:           'SYNOPSIS' | 'TIIVISTELMÄ';
-Scene:				'KOHTAUKSET';
-Effects:            'EFEKTIT';
-CapitalWord:        Capital+;
-MinusculeWord:      Minuscule+;
-Number:             Digit+;
+Synopsis:           'SYNOPSIS' | 'TIIVISTELMÄ' ;
+Scene:				'KOHTAUKSET' ;
+Effects:            'EFEKTIT' ;
+CapitalWord:        Capital+ ;
+MinusculeWord:      Minuscule+ ;
+Number:             Digit+ ;
+
+Dollar:             '$' -> pushMode(ModeImmutable) ;
+
+mode ModeImmutable ;
+MISemicolon : ';' ;
+
+
+MIDollar: Dollar -> popMode() ;

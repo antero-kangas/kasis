@@ -37,5 +37,5 @@ Div : '/' ;
 Mod : '%' ; 
 fragment DQ : '"' ;
 fragment SQ : '\'' ;
-DQString : DQ ~'"'*? DQ ;
-SQString : SQ '\''*? SQ ;
+DQString : DQ ('\\"' | ~'"')*? DQ ;
+SQString : SQ ('\\\'' | .)*? SQ ;

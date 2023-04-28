@@ -45,4 +45,6 @@ div : Div ;
 mod : Mod ;
 number : Number ;
 
-string : DQString | SQString ;
+string : dQString | sQString ;
+dQString : DQString ;
+sQString : SQString ;

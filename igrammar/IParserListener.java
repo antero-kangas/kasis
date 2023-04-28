@@ -346,4 +346,24 @@ public interface IParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitString(IParser.StringContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#dQString}.
+	 * @param ctx the parse tree
+	 */
+	void enterDQString(IParser.DQStringContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#dQString}.
+	 * @param ctx the parse tree
+	 */
+	void exitDQString(IParser.DQStringContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#sQString}.
+	 * @param ctx the parse tree
+	 */
+	void enterSQString(IParser.SQStringContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#sQString}.
+	 * @param ctx the parse tree
+	 */
+	void exitSQString(IParser.SQStringContext ctx);
 }

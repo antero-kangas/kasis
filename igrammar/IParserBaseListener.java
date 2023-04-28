@@ -418,6 +418,30 @@ public class IParserBaseListener implements IParserListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitString(IParser.StringContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDQString(IParser.DQStringContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDQString(IParser.DQStringContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSQString(IParser.SQStringContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSQString(IParser.SQStringContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
