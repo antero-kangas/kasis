@@ -7,16 +7,17 @@ MultiLineComment:   '/*' .*? '*/'             -> channel(HIDDEN);
 SingleLineComment:  '//' ~[\r\n\u2028\u2029]* -> channel(HIDDEN);
 
 
-WhiteSpace: [ \t] -> channel(HIDDEN);
+WhiteSpace: [ \t\n\r] -> channel(HIDDEN);
 
-Dollar : '#«' ;
+Dollar : '#' ;
 Semicolon : ';' ;
 LParen : '(' ;
 RParen : ')' ;
 fragment Letter : [a-zA-Z] ;
 fragment Digit : [0-9] ;
 fragment Int : Digit+ ;
-Number : Int (Comma Int?)? [Ee](Plus | Minus)? Int ;
+Dot : '.' ;
+Number : Int (Dot Int?)? ([Ee](Plus | Minus)? Int)? ;
 Id : Letter (Letter | Digit) * ;
 Equal : '=' ;
 Comma : ',' ;
