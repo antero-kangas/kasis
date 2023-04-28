@@ -5,11 +5,13 @@ options {
 
 i : dollar statements? dollar ;
 
-statements : statement (Semicolon+ statement)* Semicolon* ;
+statements : Semicolon* statement (Semicolon+ statement)* Semicolon* ;
 
-statement : definition | expression | call | assignment | expression | lParen statements rParen ;
+statement : expression | assignment | lParen statements rParen ;
 
 definition : id lParen sList? rParen equal statement ;
+overload : id lParen sList? rParen defines statement ;
+
 sList : sParam (comma sParam)* ;
 sParam : id (colon type)? (equal defaultValue)? ;
 type : id ;
@@ -19,17 +21,19 @@ call : id lParen vList? rParen ;
 vList : vParam (comma vParam)* ;
 vParam : expression ;
 
-assignment : id equal expression ;
+assignment : id equal statement ;
+
 expression : expression plus power | expression minus power | power ;
 power : term toPower power | term ;
 term : term times factor | term div factor | term mod factor | factor ;
-factor : (plus | minus) factor | value | lParen expression rParen ;
-value : number | string | id ;
+factor : (plus | minus) factor | value | lParen statement rParen ;
+value : number | string | id | definition | overload | call ;
 
 dollar : Dollar ;
 lParen : LParen ;
 rParen : RParen ;
 id : Id ;
+defines: Defines ;
 equal : Equal ;
 comma : Comma ;
 colon : Colon ;

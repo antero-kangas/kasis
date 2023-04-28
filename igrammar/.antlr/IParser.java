@@ -1,4 +1,4 @@
-// Generated from IParser.g4 by ANTLR 4.9
+// Generated from /Users/antero/Rojektit/kasis/igrammar/IParser.g4 by ANTLR 4.9.2
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class IParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -121,14 +121,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_i; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterI(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitI(this);
-		}
 	}
 
 	public final IContext i() throws RecognitionException {
@@ -180,14 +172,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statements; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterStatements(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitStatements(this);
-		}
 	}
 
 	public final StatementsContext statements() throws RecognitionException {
@@ -291,14 +275,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitStatement(this);
-		}
 	}
 
 	public final StatementContext statement() throws RecognitionException {
@@ -369,14 +345,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_definition; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterDefinition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitDefinition(this);
-		}
 	}
 
 	public final DefinitionContext definition() throws RecognitionException {
@@ -442,14 +410,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_overload; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterOverload(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitOverload(this);
-		}
 	}
 
 	public final OverloadContext overload() throws RecognitionException {
@@ -509,14 +469,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sList; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterSList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitSList(this);
-		}
 	}
 
 	public final SListContext sList() throws RecognitionException {
@@ -577,14 +529,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sParam; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterSParam(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitSParam(this);
-		}
 	}
 
 	public final SParamContext sParam() throws RecognitionException {
@@ -641,14 +585,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_type; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitType(this);
-		}
 	}
 
 	public final TypeContext type() throws RecognitionException {
@@ -680,14 +616,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_defaultValue; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterDefaultValue(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitDefaultValue(this);
-		}
 	}
 
 	public final DefaultValueContext defaultValue() throws RecognitionException {
@@ -728,14 +656,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_call; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterCall(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitCall(this);
-		}
 	}
 
 	public final CallContext call() throws RecognitionException {
@@ -791,14 +711,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_vList; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterVList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitVList(this);
-		}
 	}
 
 	public final VListContext vList() throws RecognitionException {
@@ -847,14 +759,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_vParam; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterVParam(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitVParam(this);
-		}
 	}
 
 	public final VParamContext vParam() throws RecognitionException {
@@ -892,14 +796,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_assignment; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterAssignment(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitAssignment(this);
-		}
 	}
 
 	public final AssignmentContext assignment() throws RecognitionException {
@@ -944,14 +840,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitExpression(this);
-		}
 	}
 
 	public final ExpressionContext expression() throws RecognitionException {
@@ -1043,14 +931,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_power; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterPower(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitPower(this);
-		}
 	}
 
 	public final PowerContext power() throws RecognitionException {
@@ -1111,14 +991,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_term; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterTerm(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitTerm(this);
-		}
 	}
 
 	public final TermContext term() throws RecognitionException {
@@ -1234,14 +1106,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_factor; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterFactor(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitFactor(this);
-		}
 	}
 
 	public final FactorContext factor() throws RecognitionException {
@@ -1336,14 +1200,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_value; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterValue(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitValue(this);
-		}
 	}
 
 	public final ValueContext value() throws RecognitionException {
@@ -1414,14 +1270,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_dollar; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterDollar(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitDollar(this);
-		}
 	}
 
 	public final DollarContext dollar() throws RecognitionException {
@@ -1451,14 +1299,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_lParen; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterLParen(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitLParen(this);
-		}
 	}
 
 	public final LParenContext lParen() throws RecognitionException {
@@ -1488,14 +1328,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_rParen; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterRParen(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitRParen(this);
-		}
 	}
 
 	public final RParenContext rParen() throws RecognitionException {
@@ -1525,14 +1357,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_id; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterId(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitId(this);
-		}
 	}
 
 	public final IdContext id() throws RecognitionException {
@@ -1562,14 +1386,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_defines; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterDefines(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitDefines(this);
-		}
 	}
 
 	public final DefinesContext defines() throws RecognitionException {
@@ -1599,14 +1415,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_equal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterEqual(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitEqual(this);
-		}
 	}
 
 	public final EqualContext equal() throws RecognitionException {
@@ -1636,14 +1444,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_comma; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterComma(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitComma(this);
-		}
 	}
 
 	public final CommaContext comma() throws RecognitionException {
@@ -1673,14 +1473,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_colon; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterColon(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitColon(this);
-		}
 	}
 
 	public final ColonContext colon() throws RecognitionException {
@@ -1710,14 +1502,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_plus; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterPlus(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitPlus(this);
-		}
 	}
 
 	public final PlusContext plus() throws RecognitionException {
@@ -1747,14 +1531,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_minus; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterMinus(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitMinus(this);
-		}
 	}
 
 	public final MinusContext minus() throws RecognitionException {
@@ -1784,14 +1560,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_toPower; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterToPower(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitToPower(this);
-		}
 	}
 
 	public final ToPowerContext toPower() throws RecognitionException {
@@ -1821,14 +1589,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_times; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterTimes(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitTimes(this);
-		}
 	}
 
 	public final TimesContext times() throws RecognitionException {
@@ -1858,14 +1618,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_div; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterDiv(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitDiv(this);
-		}
 	}
 
 	public final DivContext div() throws RecognitionException {
@@ -1895,14 +1647,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_mod; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterMod(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitMod(this);
-		}
 	}
 
 	public final ModContext mod() throws RecognitionException {
@@ -1932,14 +1676,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_number; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterNumber(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitNumber(this);
-		}
 	}
 
 	public final NumberContext number() throws RecognitionException {
@@ -1970,14 +1706,6 @@ public class IParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_string; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).enterString(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof IParserListener ) ((IParserListener)listener).exitString(this);
-		}
 	}
 
 	public final StringContext string() throws RecognitionException {

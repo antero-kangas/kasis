@@ -9,7 +9,13 @@ SingleLineComment:  '//' ~[\r\n\u2028\u2029]* -> channel(HIDDEN);
 
 WhiteSpace: [ \t\n\r] -> channel(HIDDEN);
 
-Dollar : '#' ;
+True : 'true' ;
+False : 'false' ;
+Bool : 'bool' ;
+Num : 'number' ;
+String : 'string' ; 
+
+Dollar : '$' ;
 Semicolon : ';' ;
 LParen : '(' ;
 RParen : ')' ;
@@ -18,7 +24,8 @@ fragment Digit : [0-9] ;
 fragment Int : Digit+ ;
 Dot : '.' ;
 Number : Int (Dot Int?)? ([Ee](Plus | Minus)? Int)? ;
-Id : Letter (Letter | Digit) * ;
+Id : Letter (Letter | Digit)* ;
+Defines : ':=' ;
 Equal : '=' ;
 Comma : ',' ;
 Colon : ':' ;

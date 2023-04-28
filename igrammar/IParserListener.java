@@ -1,4 +1,4 @@
-// Generated from java-escape by ANTLR 4.11.1
+// Generated from IParser.g4 by ANTLR 4.9
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -46,6 +46,16 @@ public interface IParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDefinition(IParser.DefinitionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#overload}.
+	 * @param ctx the parse tree
+	 */
+	void enterOverload(IParser.OverloadContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#overload}.
+	 * @param ctx the parse tree
+	 */
+	void exitOverload(IParser.OverloadContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link IParser#sList}.
 	 * @param ctx the parse tree
@@ -216,6 +226,16 @@ public interface IParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitId(IParser.IdContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#defines}.
+	 * @param ctx the parse tree
+	 */
+	void enterDefines(IParser.DefinesContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#defines}.
+	 * @param ctx the parse tree
+	 */
+	void exitDefines(IParser.DefinesContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link IParser#equal}.
 	 * @param ctx the parse tree
