@@ -137,6 +137,16 @@ public interface IParserListener extends ParseTreeListener {
 	 */
 	void exitAssignment(IParser.AssignmentContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link IParser#indexing}.
+	 * @param ctx the parse tree
+	 */
+	void enterIndexing(IParser.IndexingContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#indexing}.
+	 * @param ctx the parse tree
+	 */
+	void exitIndexing(IParser.IndexingContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link IParser#expression}.
 	 * @param ctx the parse tree
 	 */
@@ -187,6 +197,106 @@ public interface IParserListener extends ParseTreeListener {
 	 */
 	void exitValue(IParser.ValueContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link IParser#proposition}.
+	 * @param ctx the parse tree
+	 */
+	void enterProposition(IParser.PropositionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#proposition}.
+	 * @param ctx the parse tree
+	 */
+	void exitProposition(IParser.PropositionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#disjunction}.
+	 * @param ctx the parse tree
+	 */
+	void enterDisjunction(IParser.DisjunctionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#disjunction}.
+	 * @param ctx the parse tree
+	 */
+	void exitDisjunction(IParser.DisjunctionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#conjunction}.
+	 * @param ctx the parse tree
+	 */
+	void enterConjunction(IParser.ConjunctionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#conjunction}.
+	 * @param ctx the parse tree
+	 */
+	void exitConjunction(IParser.ConjunctionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#relation}.
+	 * @param ctx the parse tree
+	 */
+	void enterRelation(IParser.RelationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#relation}.
+	 * @param ctx the parse tree
+	 */
+	void exitRelation(IParser.RelationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#relationOperator}.
+	 * @param ctx the parse tree
+	 */
+	void enterRelationOperator(IParser.RelationOperatorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#relationOperator}.
+	 * @param ctx the parse tree
+	 */
+	void exitRelationOperator(IParser.RelationOperatorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#list}.
+	 * @param ctx the parse tree
+	 */
+	void enterList(IParser.ListContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#list}.
+	 * @param ctx the parse tree
+	 */
+	void exitList(IParser.ListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#object}.
+	 * @param ctx the parse tree
+	 */
+	void enterObject(IParser.ObjectContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#object}.
+	 * @param ctx the parse tree
+	 */
+	void exitObject(IParser.ObjectContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#keyValues}.
+	 * @param ctx the parse tree
+	 */
+	void enterKeyValues(IParser.KeyValuesContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#keyValues}.
+	 * @param ctx the parse tree
+	 */
+	void exitKeyValues(IParser.KeyValuesContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#keyValue}.
+	 * @param ctx the parse tree
+	 */
+	void enterKeyValue(IParser.KeyValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#keyValue}.
+	 * @param ctx the parse tree
+	 */
+	void exitKeyValue(IParser.KeyValueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#key}.
+	 * @param ctx the parse tree
+	 */
+	void enterKey(IParser.KeyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#key}.
+	 * @param ctx the parse tree
+	 */
+	void exitKey(IParser.KeyContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link IParser#dollar}.
 	 * @param ctx the parse tree
 	 */
@@ -196,6 +306,16 @@ public interface IParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDollar(IParser.DollarContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#semicolon}.
+	 * @param ctx the parse tree
+	 */
+	void enterSemicolon(IParser.SemicolonContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#semicolon}.
+	 * @param ctx the parse tree
+	 */
+	void exitSemicolon(IParser.SemicolonContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link IParser#lParen}.
 	 * @param ctx the parse tree
@@ -237,15 +357,75 @@ public interface IParserListener extends ParseTreeListener {
 	 */
 	void exitDefines(IParser.DefinesContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link IParser#equal}.
+	 * Enter a parse tree produced by {@link IParser#ge}.
 	 * @param ctx the parse tree
 	 */
-	void enterEqual(IParser.EqualContext ctx);
+	void enterGe(IParser.GeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link IParser#equal}.
+	 * Exit a parse tree produced by {@link IParser#ge}.
 	 * @param ctx the parse tree
 	 */
-	void exitEqual(IParser.EqualContext ctx);
+	void exitGe(IParser.GeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#gt}.
+	 * @param ctx the parse tree
+	 */
+	void enterGt(IParser.GtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#gt}.
+	 * @param ctx the parse tree
+	 */
+	void exitGt(IParser.GtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#eq}.
+	 * @param ctx the parse tree
+	 */
+	void enterEq(IParser.EqContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#eq}.
+	 * @param ctx the parse tree
+	 */
+	void exitEq(IParser.EqContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#ne}.
+	 * @param ctx the parse tree
+	 */
+	void enterNe(IParser.NeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#ne}.
+	 * @param ctx the parse tree
+	 */
+	void exitNe(IParser.NeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#le}.
+	 * @param ctx the parse tree
+	 */
+	void enterLe(IParser.LeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#le}.
+	 * @param ctx the parse tree
+	 */
+	void exitLe(IParser.LeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#lt}.
+	 * @param ctx the parse tree
+	 */
+	void enterLt(IParser.LtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#lt}.
+	 * @param ctx the parse tree
+	 */
+	void exitLt(IParser.LtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#set}.
+	 * @param ctx the parse tree
+	 */
+	void enterSet(IParser.SetContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#set}.
+	 * @param ctx the parse tree
+	 */
+	void exitSet(IParser.SetContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link IParser#comma}.
 	 * @param ctx the parse tree
@@ -337,6 +517,36 @@ public interface IParserListener extends ParseTreeListener {
 	 */
 	void exitNumber(IParser.NumberContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link IParser#bool}.
+	 * @param ctx the parse tree
+	 */
+	void enterBool(IParser.BoolContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#bool}.
+	 * @param ctx the parse tree
+	 */
+	void exitBool(IParser.BoolContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#trueValue}.
+	 * @param ctx the parse tree
+	 */
+	void enterTrueValue(IParser.TrueValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#trueValue}.
+	 * @param ctx the parse tree
+	 */
+	void exitTrueValue(IParser.TrueValueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#falseValue}.
+	 * @param ctx the parse tree
+	 */
+	void enterFalseValue(IParser.FalseValueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#falseValue}.
+	 * @param ctx the parse tree
+	 */
+	void exitFalseValue(IParser.FalseValueContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link IParser#string}.
 	 * @param ctx the parse tree
 	 */
@@ -366,4 +576,74 @@ public interface IParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitSQString(IParser.SQStringContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#and}.
+	 * @param ctx the parse tree
+	 */
+	void enterAnd(IParser.AndContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#and}.
+	 * @param ctx the parse tree
+	 */
+	void exitAnd(IParser.AndContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#or}.
+	 * @param ctx the parse tree
+	 */
+	void enterOr(IParser.OrContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#or}.
+	 * @param ctx the parse tree
+	 */
+	void exitOr(IParser.OrContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#not}.
+	 * @param ctx the parse tree
+	 */
+	void enterNot(IParser.NotContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#not}.
+	 * @param ctx the parse tree
+	 */
+	void exitNot(IParser.NotContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#lBracket}.
+	 * @param ctx the parse tree
+	 */
+	void enterLBracket(IParser.LBracketContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#lBracket}.
+	 * @param ctx the parse tree
+	 */
+	void exitLBracket(IParser.LBracketContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#rBracket}.
+	 * @param ctx the parse tree
+	 */
+	void enterRBracket(IParser.RBracketContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#rBracket}.
+	 * @param ctx the parse tree
+	 */
+	void exitRBracket(IParser.RBracketContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#lCurly}.
+	 * @param ctx the parse tree
+	 */
+	void enterLCurly(IParser.LCurlyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#lCurly}.
+	 * @param ctx the parse tree
+	 */
+	void exitLCurly(IParser.LCurlyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link IParser#rCurly}.
+	 * @param ctx the parse tree
+	 */
+	void enterRCurly(IParser.RCurlyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link IParser#rCurly}.
+	 * @param ctx the parse tree
+	 */
+	void exitRCurly(IParser.RCurlyContext ctx);
 }
