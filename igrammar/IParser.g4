@@ -18,7 +18,7 @@ type : id ;
 defaultValue : expression ;
 
 call : id lParen vList? rParen ;
-vList : vParam (comma vParam)* ;
+vList : vParam (comma vParamvParamq)* ;
 vParam : statement ;
 
 assignment : id indexing? set statement ;
